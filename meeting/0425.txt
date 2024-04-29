@@ -1,0 +1,7 @@
+Current Problem
+- Parsing error
+- How to decide which version of memory is better
+
+What to do
+- try vllm (vllm_inference_example.ipynb)
+- merge two memories using another agent
