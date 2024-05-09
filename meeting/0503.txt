@@ -1,0 +1,25 @@
+1. if memory ruined -> affect the reesult?
+2. when the memory ruined?
+3. evaluate
+100/'what is enough for the long term memory
+when no more change.how long is it needed to build good memory
+number of instances needed, depends on the task, data
+
+
+
+base line: zero-shot
+if it is worse than zero-shot,
+
+memory: gradyally check, when it gets ruined , effect on the reesult
+
+
+inference
+bhi24(event is on december)
+deadline (june/13)
+8 pages
+
+vllm 으로 할때 시간재고, 아웃풋이 일정하게 나오는가.
+
+command history record. 
+
+this repository push regulary.

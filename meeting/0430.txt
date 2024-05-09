@@ -1,0 +1,44 @@
+model=meta-llama/Meta-Llama-3-70B-Instruct
+volume=/secure/chiahsuan/hf_cache
+token="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"
+    
+docker run --gpus '"device=2,3,4,5"' \
+    --shm-size 20g \
+    -e HUGGING_FACE_HUB_TOKEN=$token \
+    -p 8082:80 \
+    -v $volume:/data ghcr.io/huggingface/text-generation-inference:2.0.1 \
+    --model-id $model \
+    --sharded true \
+    --quantize eetq \
+    --max-input-length 4096 \
+    --max-batch-prefill-tokens 4096 \
+    --max-total-tokens 8196 \
+    --port 80
+
+
+model=m42-health/med42-70b
+volume=/secure/chiahsuan/hf_cache
+token="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"
+    
+docker run --gpus '"device=2,3,4,5"' \
+    --shm-size 20g \
+    -e HUGGING_FACE_HUB_TOKEN=$token \
+    -p 8081:80 \
+    -v $volume:/data ghcr.io/huggingface/text-generation-inference:2.0.1 \
+    --model-id $model \
+    --sharded true \
+    --quantize eetq \
+    --max-input-length 4096 \
+    --max-batch-prefill-tokens 4096 \
+    --max-total-tokens 8192 \
+    --rope-scaling dynamic \
+    --rope-factor 2.0 \
+    --port 80
+
+llama granted link
+https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct
+
+youtube: "The KV Cache: Memory Usage in Transformers"
+
+
+all resources in here: https://github.com/CYang-CCI-Lab/llm_lab_resources/tree/main
