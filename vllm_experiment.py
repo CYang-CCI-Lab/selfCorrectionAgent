@@ -16,7 +16,9 @@ client = OpenAI(
 )
 
 brca_report = pd.read_csv("/secure/shared_data/rag_tnm_results/summary/5_folds_summary/brca_df.csv")
-sample_reports = brca_report.sample(n=50, random_state=123)
+brca_half1 = brca_report.iloc[:500, :]
+# brca_half2 = brca_report.iloc[500:, :]
+sample_reports = brca_half1 # brca_report.sample(n=50, random_state=123)
 
 def is_updated(old_memory, new_memory, threshold):
     old_str = "\n".join(old_memory)
@@ -117,7 +119,8 @@ for idx, row in sample_reports.iterrows():
             messages=[{"role":"system", "content": system_instruction},
                         {"role": "user", "content": prompt}],
             extra_body={"stop_token_ids":[128001,128009], 
-                        "guided_json":based_required_json_schema})
+                        "guided_json":based_required_json_schema},
+            temperature = 0.0)
     try:
         data = json.loads(response.choices[0].message.content)
     except json.JSONDecodeError as e:
@@ -164,7 +167,8 @@ for idx, row in sample_reports.iterrows():
                 messages=[{"role":"system", "content": system_instruction},
                           {"role": "user", "content": prompt}],
                 extra_body={"stop_token_ids":[128001,128009], 
-                            "guided_json":required_json_schema})
+                            "guided_json":required_json_schema},
+                temperature = 0.0)
         try:
             data = json.loads(response.choices[0].message.content)
             memory = data['rules']
@@ -182,7 +186,8 @@ for idx, row in sample_reports.iterrows():
                 messages=[{"role":"system", "content": system_instruction},
                           {"role": "user", "content": prompt}],
                 extra_body={"stop_token_ids":[128001,128009],
-                            "guided_json":required_json_schema})
+                            "guided_json":required_json_schema},
+                temperature = 0.0)
 
         try:
             data = json.loads(response.choices[0].message.content)
@@ -239,7 +244,8 @@ for idx, row in sample_reports.iterrows():
                 messages=[{"role":"system", "content": system_instruction},
                           {"role": "user", "content": prompt}],
                 extra_body={"stop_token_ids":[128001,128009], 
-                            "guided_json":required_json_schema})
+                            "guided_json":required_json_schema},
+                temperature = 0.0)
         try:
             data = json.loads(response.choices[0].message.content)
             memory = data['rules']
@@ -257,7 +263,8 @@ for idx, row in sample_reports.iterrows():
                 messages=[{"role":"system", "content": system_instruction},
                           {"role": "user", "content": prompt}],
                 extra_body={"stop_token_ids":[128001,128009],
-                            "guided_json":required_json_schema})
+                            "guided_json":required_json_schema},
+                temperature = 0.0)
 
         try:
             data = json.loads(response.choices[0].message.content)

@@ -5,21 +5,18 @@
 when no more change.how long is it needed to build good memory
 number of instances needed, depends on the task, data
 
-
-
 base line: zero-shot
 if it is worse than zero-shot,
 
 memory: gradyally check, when it gets ruined , effect on the reesult
 
-
-inference
+conference
 bhi24(event is on december)
-deadline (june/13)
-8 pages
+deadline(june/13)
+8pages(2columns)
 
-vllm 으로 할때 시간재고, 아웃풋이 일정하게 나오는가.
+check how long it takes.
 
-command history record. 
+record command history.
 
-this repository push regulary.
+push this repository regulary.

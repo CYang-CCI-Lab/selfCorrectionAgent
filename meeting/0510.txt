@@ -1,0 +1,32 @@
+If Set to 0:
+
+If temperature is set to 0, the model will:
+Use the logarithm of predicted probabilities (log probability) to guide temperature adjustments.
+Automatically increase the temperature until reaching certain thresholds, resulting in some level of randomness.
+
+"temperature (number, Optional Defaults to 0)
+The sampling temperature, between 0 and 1. Higher values like 0.8 will make the output more random, 
+while lower values like 0.2 will make it more focused and deterministic. 
+If set to 0, the model will use log probability to automatically increase the temperature until certain thresholds
+are hit."
+
+Chris suggests,
+- plot the changes of simularities
+- when prediction is incorrect -> disregard the rules..?(don't update), panelize the rules/reasoning
+- when prediction is correct -> How to decide whether to update memory or not?
+    1. distance/similarity (edit distance funct)
+    2. user feedback/agent's feedback
+
+
+which parts of reasoning are used in inducing rules/memory (Mapping)
+mapping (reasoning - rules/memory)
+    - which one is always used (segments) -> the most reliable reasoning
+    - how frequently each reason is used
+        frequent reasons utilized in rules/memory && correct predcit -> reliable?
+The reasoning that leads wrong prediction should be panalized
+
+
+
+another direction: merge all TNM datasets (correlated tasks)
+
+Yewon's thought: need to control the length of rule/memory. It gets easily to lengthy, which is not effective, and time-consuming

@@ -1,0 +1,6 @@
+1. increase the size of data (if not possible, split now and try one of them)
+2. temperature = 0.0
+
+3. qualitative analysis
+
+
