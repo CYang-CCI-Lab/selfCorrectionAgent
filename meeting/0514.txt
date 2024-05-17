@@ -1,0 +1,16 @@
+1. same experiment with mixture model, so that we can see if the context limit / prompt was the reason
+2. variable order
+3. qualitative analysis (window around wrong predictions, train/test,...etc)
+
+
+Stage	TNMb,c	Description	Illustration
+IIA	T3, N0, M0	T3 = Tumor invades through the muscularis propria into pericolorectal tissues.	
+Stage II colorectal cancer; drawing shows a cross-section of the colon/rectum and a three-panel inset. Each panel shows the layers of the colon/rectum wall: the mucosa, submucosa, muscle layers, and serosa. Also shown are a blood vessel and lymph nodes. The first panel shows stage IIA with cancer in the mucosa, submucosa, muscle layers, and serosa. The second panel shows stage IIB with cancer in all layers and spreading through the serosa to the visceral peritoneum. The third panel shows stage IIC with cancer in all layers and spreading through the serosa to nearby organs.
+N0 = No regional lymph node metastasis.
+M0 = No distant metastasis by imaging, etc.; no evidence of tumor in distant sites or organs. (This category is not assigned by pathologists.)
+IIB	T4a, N0, M0	T4a = Tumor invades through the visceral peritoneum (including gross perforation of the bowel through tumor and continuous invasion of tumor through areas of inflammation to the surface of the visceral peritoneum).
+N0 = No regional lymph node metastasis.
+M0 = No distant metastasis by imaging, etc.; no evidence of tumor in distant sites or organs. (This category is not assigned by pathologists.)
+IIC	T4b, N0, M0	T4b = Tumor directly invades or adheres to adjacent organs or structures.
+N0 = No regional lymph node metastasis.
+M0 = No distant metastasis by imaging, etc.; no evidence of tumor in distant sites or organs. (This category is not assigned by pathologists.)

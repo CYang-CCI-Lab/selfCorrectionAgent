@@ -1,0 +1,1295 @@
+nohup: ignoring input
+/home/yl3427/miniconda3/envs/selfCorrection/lib/python3.9/site-packages/fuzzywuzzy/fuzz.py:11: UserWarning: Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning
+  warnings.warn('Using slow pure-python SequenceMatcher. Install python-Levenshtein to remove this warning')
+baseline
+0
+--------------------
+| index: 0         |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+1
+--------------------
+| index: 1         |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+2
+--------------------
+| index: 2         |
+| Wrong!           |
+| label: T1        |
+| pred: T1c        |
+| reasoning : None |
+| rules : None     |
+--------------------
+3
+--------------------
+| index: 3         |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+4
+--------------------
+| index: 4         |
+| Wrong!           |
+| label: T2        |
+| pred: T1         |
+| reasoning : None |
+| rules : None     |
+--------------------
+5
+--------------------
+| index: 5         |
+| Wrong!           |
+| label: T2        |
+| pred: T1         |
+| reasoning : None |
+| rules : None     |
+--------------------
+6
+--------------------
+| index: 6         |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+7
+--------------------
+| index: 7         |
+| Wrong!           |
+| label: T1        |
+| pred: T1c        |
+| reasoning : None |
+| rules : None     |
+--------------------
+8
+--------------------
+| index: 8         |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+9
+--------------------
+| index: 9         |
+| Wrong!           |
+| label: T1        |
+| pred: T1c        |
+| reasoning : None |
+| rules : None     |
+--------------------
+10
+--------------------
+| index: 10        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+11
+--------------------
+| index: 11        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+12
+--------------------
+| index: 12        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+13
+--------------------
+| index: 13        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+14
+--------------------
+| index: 14        |
+| Correct!         |
+| label: T3        |
+| pred: T3         |
+| reasoning : None |
+| rules : None     |
+--------------------
+15
+--------------------
+| index: 15        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+16
+--------------------
+| index: 16        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+17
+--------------------
+| index: 17        |
+| Correct!         |
+| label: T1        |
+| pred: T1         |
+| reasoning : None |
+| rules : None     |
+--------------------
+18
+--------------------
+| index: 18        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+19
+--------------------
+| index: 19        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+20
+--------------------
+| index: 20        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+21
+--------------------
+| index: 21        |
+| Wrong!           |
+| label: T1        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+22
+--------------------
+| index: 22        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+23
+--------------------
+| index: 23        |
+| Wrong!           |
+| label: T1        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+24
+--------------------
+| index: 24        |
+| Correct!         |
+| label: T1        |
+| pred: T1         |
+| reasoning : None |
+| rules : None     |
+--------------------
+25
+--------------------
+| index: 25        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+26
+--------------------
+| index: 26        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+27
+--------------------
+| index: 27        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+28
+--------------------
+| index: 28        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+29
+--------------------
+| index: 29        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+30
+--------------------
+| index: 30        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+31
+--------------------
+| index: 31        |
+| Wrong!           |
+| label: T3        |
+| pred: T1         |
+| reasoning : None |
+| rules : None     |
+--------------------
+32
+--------------------
+| index: 32        |
+| Correct!         |
+| label: T3        |
+| pred: T3         |
+| reasoning : None |
+| rules : None     |
+--------------------
+33
+--------------------
+| index: 33        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+34
+--------------------
+| index: 34        |
+| Wrong!           |
+| label: T3        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+35
+--------------------
+| index: 35        |
+| Wrong!           |
+| label: T1        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+36
+--------------------
+| index: 36        |
+| Correct!         |
+| label: T1        |
+| pred: T1         |
+| reasoning : None |
+| rules : None     |
+--------------------
+37
+--------------------
+| index: 37        |
+| Correct!         |
+| label: T3        |
+| pred: T3         |
+| reasoning : None |
+| rules : None     |
+--------------------
+38
+--------------------
+| index: 38        |
+| Correct!         |
+| label: T4        |
+| pred: T4         |
+| reasoning : None |
+| rules : None     |
+--------------------
+39
+--------------------
+| index: 39        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+40
+--------------------
+| index: 40        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+41
+--------------------
+| index: 41        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+42
+--------------------
+| index: 42        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+43
+--------------------
+| index: 43        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+44
+--------------------
+| index: 44        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+45
+--------------------
+| index: 45        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+46
+--------------------
+| index: 46        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+47
+--------------------
+| index: 47        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+48
+--------------------
+| index: 48        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+49
+--------------------
+| index: 49        |
+| Wrong!           |
+| label: T1        |
+| pred: T1c        |
+| reasoning : None |
+| rules : None     |
+--------------------
+50
+--------------------
+| index: 50        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+51
+--------------------
+| index: 51        |
+| Correct!         |
+| label: T1        |
+| pred: T1         |
+| reasoning : None |
+| rules : None     |
+--------------------
+52
+--------------------
+| index: 52        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+53
+--------------------
+| index: 53        |
+| Wrong!           |
+| label: T1        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+54
+--------------------
+| index: 54        |
+| Wrong!           |
+| label: T1        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+55
+--------------------
+| index: 55        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+56
+--------------------
+| index: 56        |
+| Wrong!           |
+| label: T1        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+57
+--------------------
+| index: 57        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+58
+--------------------
+| index: 58        |
+| Wrong!           |
+| label: T2        |
+| pred: T1c        |
+| reasoning : None |
+| rules : None     |
+--------------------
+59
+--------------------
+| index: 59        |
+| Wrong!           |
+| label: T1        |
+| pred: T1c        |
+| reasoning : None |
+| rules : None     |
+--------------------
+60
+--------------------
+| index: 60        |
+| Wrong!           |
+| label: T1        |
+| pred: T1c        |
+| reasoning : None |
+| rules : None     |
+--------------------
+61
+--------------------
+| index: 61        |
+| Wrong!           |
+| label: T1        |
+| pred: T1c        |
+| reasoning : None |
+| rules : None     |
+--------------------
+62
+--------------------
+| index: 62        |
+| Wrong!           |
+| label: T3        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+63
+--------------------
+| index: 63        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+64
+--------------------
+| index: 64        |
+| Wrong!           |
+| label: T1        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+65
+--------------------
+| index: 65        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+66
+--------------------
+| index: 66        |
+| Wrong!           |
+| label: T2        |
+| pred: T4         |
+| reasoning : None |
+| rules : None     |
+--------------------
+67
+--------------------
+| index: 67        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+68
+--------------------
+| index: 68        |
+| Correct!         |
+| label: T1        |
+| pred: T1         |
+| reasoning : None |
+| rules : None     |
+--------------------
+69
+--------------------
+| index: 69        |
+| Correct!         |
+| label: T3        |
+| pred: T3         |
+| reasoning : None |
+| rules : None     |
+--------------------
+70
+--------------------
+| index: 70        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+71
+--------------------
+| index: 71        |
+| Correct!         |
+| label: T3        |
+| pred: T3         |
+| reasoning : None |
+| rules : None     |
+--------------------
+72
+--------------------
+| index: 72        |
+| Correct!         |
+| label: T3        |
+| pred: T3         |
+| reasoning : None |
+| rules : None     |
+--------------------
+73
+--------------------
+| index: 73        |
+| Wrong!           |
+| label: T1        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+74
+--------------------
+| index: 74        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+75
+--------------------
+| index: 75        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+76
+--------------------
+| index: 76        |
+| Wrong!           |
+| label: T3        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+77
+--------------------
+| index: 77        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+78
+--------------------
+| index: 78        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+79
+--------------------
+| index: 79        |
+| Correct!         |
+| label: T3        |
+| pred: T3         |
+| reasoning : None |
+| rules : None     |
+--------------------
+80
+--------------------
+| index: 80        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+81
+--------------------
+| index: 81        |
+| Wrong!           |
+| label: T1        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+82
+--------------------
+| index: 82        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+83
+--------------------
+| index: 83        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+84
+--------------------
+| index: 84        |
+| Wrong!           |
+| label: T1        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+85
+--------------------
+| index: 85        |
+| Wrong!           |
+| label: T3        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+86
+--------------------
+| index: 86        |
+| Wrong!           |
+| label: T2        |
+| pred: T1 or T2   |
+| reasoning : None |
+| rules : None     |
+--------------------
+87
+--------------------
+| index: 87        |
+| Wrong!           |
+| label: T3        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+88
+--------------------
+| index: 88        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+89
+--------------------
+| index: 89        |
+| Correct!         |
+| label: T4        |
+| pred: T4         |
+| reasoning : None |
+| rules : None     |
+--------------------
+90
+--------------------
+| index: 90        |
+| Correct!         |
+| label: T3        |
+| pred: T3         |
+| reasoning : None |
+| rules : None     |
+--------------------
+91
+--------------------
+| index: 91        |
+| Correct!         |
+| label: T3        |
+| pred: T3         |
+| reasoning : None |
+| rules : None     |
+--------------------
+92
+--------------------
+| index: 92        |
+| Wrong!           |
+| label: T3        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+93
+--------------------
+| index: 93        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+94
+--------------------
+| index: 94        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+95
+--------------------
+| index: 95        |
+| Wrong!           |
+| label: T3        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+96
+--------------------
+| index: 96        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+97
+--------------------
+| index: 97        |
+| Wrong!           |
+| label: T1        |
+| pred: T1c        |
+| reasoning : None |
+| rules : None     |
+--------------------
+98
+--------------------
+| index: 98        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+99
+--------------------
+| index: 99        |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+100
+--------------------
+| index: 100       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+101
+--------------------
+| index: 101       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+102
+--------------------
+| index: 102       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+103
+--------------------
+| index: 103       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+104
+--------------------
+| index: 104       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+105
+--------------------
+| index: 105       |
+| Wrong!           |
+| label: T3        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+106
+--------------------
+| index: 106       |
+| Wrong!           |
+| label: T1        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+107
+--------------------
+| index: 107       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+108
+--------------------
+| index: 108       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+109
+--------------------
+| index: 109       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+110
+--------------------
+| index: 110       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+111
+--------------------
+| index: 111       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+112
+--------------------
+| index: 112       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+113
+--------------------
+| index: 113       |
+| Wrong!           |
+| label: T1        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+114
+--------------------
+| index: 114       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+115
+--------------------
+| index: 115       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+116
+--------------------
+| index: 116       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+117
+--------------------
+| index: 117       |
+| Wrong!           |
+| label: T3        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+118
+--------------------
+| index: 118       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+119
+--------------------
+| index: 119       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+120
+--------------------
+| index: 120       |
+| Wrong!           |
+| label: T3        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+121
+--------------------
+| index: 121       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+122
+--------------------
+| index: 122       |
+| Correct!         |
+| label: T1        |
+| pred: T1         |
+| reasoning : None |
+| rules : None     |
+--------------------
+123
+--------------------
+| index: 123       |
+| Wrong!           |
+| label: T2        |
+| pred: II         |
+| reasoning : None |
+| rules : None     |
+--------------------
+124
+--------------------
+| index: 124       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+125
+--------------------
+| index: 125       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+126
+--------------------
+| index: 126       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+127
+--------------------
+| index: 127       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+128
+--------------------
+| index: 128       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+129
+--------------------
+| index: 129       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+130
+--------------------
+| index: 130       |
+| Wrong!           |
+| label: T1        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+131
+--------------------
+| index: 131       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+132
+--------------------
+| index: 132       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+133
+--------------------
+| index: 133       |
+| Correct!         |
+| label: T3        |
+| pred: T3         |
+| reasoning : None |
+| rules : None     |
+--------------------
+134
+--------------------
+| index: 134       |
+| Wrong!           |
+| label: T2        |
+| pred: IIA        |
+| reasoning : None |
+| rules : None     |
+--------------------
+135
+--------------------
+| index: 135       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+136
+--------------------
+| index: 136       |
+| Correct!         |
+| label: T3        |
+| pred: T3         |
+| reasoning : None |
+| rules : None     |
+--------------------
+137
+--------------------
+| index: 137       |
+| Correct!         |
+| label: T1        |
+| pred: T1         |
+| reasoning : None |
+| rules : None     |
+--------------------
+138
+--------------------
+| index: 138       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+139
+--------------------
+| index: 139       |
+| Wrong!           |
+| label: T1        |
+| pred: IIA        |
+| reasoning : None |
+| rules : None     |
+--------------------
+140
+--------------------
+| index: 140       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+141
+--------------------
+| index: 141       |
+| Correct!         |
+| label: T2        |
+| pred: T2         |
+| reasoning : None |
+| rules : None     |
+--------------------
+142
+--------------------
+| index: 142       |
+| Wrong!           |
+| label: T2        |
+| pred: IIB        |
+| reasoning : None |
+| rules : None     |
+--------------------
+143
+--------------------
+| index: 143       |
+| Correct!         |
