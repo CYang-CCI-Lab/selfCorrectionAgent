@@ -11,6 +11,7 @@ import os
 from dotenv import load_dotenv
 from prompt import *
 
+
 def is_updated(old_memory, new_memory, threshold):
     old_str = "\n".join(old_memory)
     new_str = "\n".join(new_memory)

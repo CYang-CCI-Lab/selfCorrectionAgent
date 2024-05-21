@@ -1,0 +1,4 @@
+- qualitative
+- swap the memory
+- the problem of llama3: hard to understand lengthy context, (Even thought it's within the limit)
+- check the length of the memory
