@@ -90,13 +90,13 @@ if __name__ == "__main__":
     for idx, row in sample_reports.iterrows():
         print(idx)
         report = row["text"]
-        label = row["t"]
+        label = row["n"]
         prompt = baseline_prompt.format(report=row["text"])
         data = get_response(client, idx, system_instruction+"\n"+prompt, base_schema)
         if not data:
             parsing_error += 1
             continue
-        if f"T{label+1}" == data["predictedStage"]:
+        if f"N{label+1}" == data["predictedStage"]:
             result = "Correct!"
             correct_count += 1
         else:
@@ -105,7 +105,7 @@ if __name__ == "__main__":
         lines = [
             f"index: {idx}",
             result,
-            f"label: T{label+1}",
+            f"label: N{label+1}",
             f"pred: {data['predictedStage']}",
             f"reasoning : {None}",
             f"rules : {None}"
@@ -129,7 +129,7 @@ if __name__ == "__main__":
     for idx, row in sample_reports.iterrows():
         print(idx)
         report = row["text"]
-        label = row["t"]
+        label = row["n"]
         
         if memory == "":
             prompt = initial_predict_prompt.format(report=row["text"])
@@ -145,7 +145,7 @@ if __name__ == "__main__":
         memory = data['rules']
         print(f"new memory: {memory}")
              
-        if f"T{label+1}" == data["predictedStage"]:
+        if f"N{label+1}" == data["predictedStage"]:
             result = "Correct!"
             correct_count += 1
         else:
@@ -154,7 +154,7 @@ if __name__ == "__main__":
         lines = [
             f"index: {idx}",
             result,
-            f"label: T{label+1}",
+            f"label: N{label+1}",
             f"pred: {data['predictedStage']}",
             f"reasoning : {data['reasoning']}",
             f"rules : {data['rules']}"
@@ -179,7 +179,7 @@ if __name__ == "__main__":
     for idx, row in sample_reports.iterrows():
         print(idx)
         report = row["text"]
-        label = row["t"]
+        label = row["n"]
         
         if memory == "":
             prompt = initial_predict_prompt.format(report=row["text"])
@@ -204,7 +204,7 @@ if __name__ == "__main__":
                 memory = data['rules']
                 print(f"new memory: {memory}")
 
-        if f"T{label+1}" == data["predictedStage"]:
+        if f"N{label+1}" == data["predictedStage"]:
             result = "Correct!"
             correct_count += 1
         else:
@@ -213,7 +213,7 @@ if __name__ == "__main__":
         lines = [
             f"index: {idx}",
             result,
-            f"label: T{label+1}",
+            f"label: N{label+1}",
             f"pred: {data['predictedStage']}",
             f"reasoning : {data['reasoning']}",
             f"rules: {data['rules']}"
