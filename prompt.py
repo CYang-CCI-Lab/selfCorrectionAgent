@@ -58,7 +58,7 @@ Please review this report and determine the pathologic stage of the patient's ca
 Here is the report:
 {report}
 
-What is the N stage from this report? Please select from the following four options:  N0, N1, N2, N3.
+What is the N stage from this report? Ignore any substaging information. Please select from the following four options:  N0, N1, N2, N3.
 """
 
 initial_predict_prompt_n03 = """You are provided with a pathology report for a cancer patient.
@@ -67,7 +67,7 @@ Please review this report and determine the pathologic stage of the patient's ca
 Here is the report:
 {report}
 
-What is the N stage from this report? Please select from the following four options:  N0, N1, N2, N3.
+What is the N stage from this report? Ignore any substaging information. Please select from the following four options:  N0, N1, N2, N3.
 
 What is your reasoning to support your stage prediction?
 
@@ -83,7 +83,7 @@ Please review this report and determine the pathologic stage of the patient's ca
 Here is the report:
 {report}
 
-What is the N stage from this report? Please select from the following four options:  N0, N1, N2, N3.
+What is the N stage from this report? Ignore any substaging information. Please select from the following four options:  N0, N1, N2, N3.
 
 What is your reasoning to support your stage prediction?
 
@@ -99,7 +99,7 @@ Please review this report and determine the pathologic stage of the patient's ca
 Here is the report:
 {report}
 
-What is the N stage from this report? Please select from the following four options:  N0, N1, N2, N3.
+What is the N stage from this report? Ignore any substaging information. Please select from the following four options:  N0, N1, N2, N3.
 
 What is your reasoning to support your stage prediction?
 """
