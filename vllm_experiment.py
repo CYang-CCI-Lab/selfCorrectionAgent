@@ -9,7 +9,7 @@ import json
 import time
 import os
 from dotenv import load_dotenv
-from prompt import *
+from selfCorrectionAgent.src.prompt import *
 
 
 def is_updated(old_memory, new_memory, threshold):
