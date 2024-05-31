@@ -142,7 +142,7 @@ class MemoryAgent:
                 parsing_error += 1
                 continue
             
-            testing_dataset.loc[idx, f"mem_{self.label}_reasoning"] = json_output['reasoning']
+            # testing_dataset.loc[idx, f"mem_{self.label}_reasoning"] = json_output['reasoning']
             testing_dataset.loc[idx, f"mem_{self.label}_ans_str"] = json_output['predictedStage']
             
             pbar.update(1)

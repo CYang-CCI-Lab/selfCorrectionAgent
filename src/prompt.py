@@ -48,8 +48,6 @@ Here is the report:
 {report}
 
 What is the T stage from this report? Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
-
-What is your reasoning to support your stage prediction?
 """
 
 baseline_prompt_n03 = """You are provided with a pathology report for a cancer patient.

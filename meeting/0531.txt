@@ -1,0 +1,14 @@
+reasoning for each report vs long term memory 
+
+apply long term memory to error cases from non-memory approach, to check if it helps
+what would be the better mechanism for creating long term memory
+
+current problem: randomness -> regularization needed
+
+
+f1 score is determined by # of reports?
+other factors: len(memory)
+
+run 100 time -> check changes in length of the memory
+
+yewon: wb needed
