@@ -1,0 +1,71 @@
+
+  0%|                                                    | 0/10 [00:00<?, ?it/s]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:206: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = True
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:221: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:222: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_ans_str"] = json_output['predictedStage']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:223: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_str"] =  "\n".join(self.memory)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:224: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_len"] = len(self.memory)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:225: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_str_len"] = len("\n".join(self.memory))
+ 10%|████▍                                       | 1/10 [00:08<01:12,  8.04s/it]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:213: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_edit_distance"] = fuzz.ratio(current_memory_str, new_memory_str)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:217: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_is_updated"] = True
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████| 10/10 [01:22<00:00,  8.24s/it]
+Traceback (most recent call last):
+  File "/home/yl3427/cylab/selfCorrectionAgent/src/test_memory.py", line 53, in <module>
+    train_result = memory_agent.train(df_training_samples)
+  File "/home/yl3427/cylab/selfCorrectionAgent/src/agent.py", line 235, in train
+    invalid_id = wandb.Table(dataframe=training_dataset[invalid_index]["patient_filename"])
+  File "/home/yl3427/miniconda3/envs/selfCorrection/lib/python3.9/site-packages/wandb/data_types.py", line 209, in __init__
+    self._init_from_dataframe(dataframe, columns, optional, dtype)
+  File "/home/yl3427/miniconda3/envs/selfCorrection/lib/python3.9/site-packages/wandb/data_types.py", line 257, in _init_from_dataframe
+    assert util.is_pandas_data_frame(
+AssertionError: dataframe argument expects a `pandas.core.frame.DataFrame` object
+Traceback (most recent call last):
+  File "/home/yl3427/cylab/selfCorrectionAgent/src/test_memory.py", line 53, in <module>
+    train_result = memory_agent.train(df_training_samples)
+  File "/home/yl3427/cylab/selfCorrectionAgent/src/agent.py", line 235, in train
+    invalid_id = wandb.Table(dataframe=training_dataset[invalid_index]["patient_filename"])
+  File "/home/yl3427/miniconda3/envs/selfCorrection/lib/python3.9/site-packages/wandb/data_types.py", line 209, in __init__
+    self._init_from_dataframe(dataframe, columns, optional, dtype)
+  File "/home/yl3427/miniconda3/envs/selfCorrection/lib/python3.9/site-packages/wandb/data_types.py", line 257, in _init_from_dataframe
+    assert util.is_pandas_data_frame(
+AssertionError: dataframe argument expects a `pandas.core.frame.DataFrame` object
+Number of memory updates: 9
+During training, number of parsing errors: 0

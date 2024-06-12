@@ -1,0 +1,338 @@
+
+  0%|                                                                                                                                          | 0/5 [00:00<?, ?it/s]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:207: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = True
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:222: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:223: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_ans_str"] = json_output['predictedStage']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:224: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_str"] =  "\n".join(self.memory)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:225: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_len"] = len(self.memory)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:226: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_str_len"] = len("\n".join(self.memory))
+ 20%|██████████████████████████                                                                                                        | 1/5 [00:08<00:33,  8.31s/it]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:214: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_edit_distance"] = fuzz.ratio(current_memory_str, new_memory_str)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:218: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_is_updated"] = True
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:45<00:00,  9.08s/it]
+Number of memory updates: 4
+During training, number of parsing errors: 0
+  0%|                                                                                                                                         | 0/15 [00:00<?, ?it/s]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:258: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  testing_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = True
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:260: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:261: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  testing_dataset.loc[idx, f"cmem_{self.label}_ans_str"] = json_output['predictedStage']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 15/15 [01:00<00:00,  4.01s/it]
+  0%|                                                                                                                                          | 0/5 [00:00<?, ?it/s]
+  0%|                                                                                                                                          | 0/5 [00:00<?, ?it/s]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:207: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = True
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:222: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:223: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_ans_str"] = json_output['predictedStage']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:224: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_str"] =  "\n".join(self.memory)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:225: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_len"] = len(self.memory)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:226: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_str_len"] = len("\n".join(self.memory))
+  training_dataset.loc[idx, f"cmem_{self.label}_edit_distance"] = fuzz.ratio(current_memory_str, new_memory_str)                       | 1/5 [00:07<00:31,  7.77s/it]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:214: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_edit_distance"] = fuzz.ratio(current_memory_str, new_memory_str)                       | 1/5 [00:07<00:31,  7.77s/it]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:214: SettingWithCopyWarning:
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:220: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_is_updated"] = False
+ 60%|██████████████████████████████████████████████████████████████████████████████                                                    | 3/5 [00:22<00:14,  7.45s/it]
+ 80%|████████████████████████████████████████████████████████████████████████████████████████████████████████                          | 4/5 [00:31<00:07,  7.86s/it]
+ 80%|████████████████████████████████████████████████████████████████████████████████████████████████████████                          | 4/5 [00:31<00:07,  7.86s/it]
+Number of memory updates: 3
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Memory is cleared.
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Number of memory updates: 4
+During training, number of parsing errors: 0
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Memory is cleared.
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Number of memory updates: 4
+During training, number of parsing errors: 0
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Memory is cleared.
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Number of memory updates: 3
+During training, number of parsing errors: 0
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Memory is cleared.
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Number of memory updates: 4
+During training, number of parsing errors: 0
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Memory is cleared.
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Number of memory updates: 2
+During training, number of parsing errors: 0
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Memory is cleared.
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Number of memory updates: 0
+During training, number of parsing errors: 0
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Memory is cleared.
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Number of memory updates: 4
+During training, number of parsing errors: 0
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Memory is cleared.
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Number of memory updates: 4
+During training, number of parsing errors: 0
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+  testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']██████████████████████████████████████████████████| 5/5 [00:40<00:00,  8.10s/it]
+Memory is cleared.

@@ -12,3 +12,17 @@ other factors: len(memory)
 run 100 time -> check changes in length of the memory
 
 yewon: wb needed
+
+
+- similarity test for 10 times
+100 reports ->
+10 different plots
+
+reasoning should be conscese
+
+test -> result, reasoning
+
+
+google -> self refine research paper
+
+similarity 말고도 perplexity, entropy계산해도 되겠지

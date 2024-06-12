@@ -4,9 +4,12 @@ from openai import OpenAI
 import pandas as pd
 from tqdm import tqdm
 import time
+from datetime import datetime
 import json
 from typing import List, Dict, Union
 from fuzzywuzzy import fuzz
+import wandb
+
 
 class ChoiceAgent:
     """ the simplest agent, which is appropriate for zero-shot prompting
@@ -28,7 +31,7 @@ class ChoiceAgent:
         )
         return response.choices[0].message.content
 
-    def run(self, dataset: pd.DataFrame, temperature: float = 0.0) -> pd.DataFrame:
+    def run(self, dataset: pd.DataFrame, temperature: float = 0.1) -> pd.DataFrame:
         pbar = tqdm(total=dataset.shape[0])
         for idx, row in dataset.iterrows():
             report = row["text"]
@@ -56,6 +59,10 @@ class MemoryAgent:
         self.validate_schema()
         self.memory = ""
         self.label = label
+
+        wandb.init(project=f"Rules and Reasoning Comparison_{label}_0612",
+                   config={"class": self.__class__.__name__, "model": model, "label": label,
+                           "date": datetime.now().strftime(r"%m%d%H%M")})
 
     def validate_prompt_template(self) -> None:
         keys = self.prompt_template_dict.keys()
@@ -94,8 +101,8 @@ class MemoryAgent:
                 else:
                     print("Max retries reached. Request faild.")
                     return None
-        
-    def train(self, training_dataset: pd.DataFrame, temperature: float = 0.0) -> pd.DataFrame:
+                
+    def train(self, training_dataset: pd.DataFrame, temperature: float = 0.1) -> pd.DataFrame:
         pbar = tqdm(total=training_dataset.shape[0])
         parsing_error = 0
         for idx, row in training_dataset.iterrows():
@@ -114,18 +121,26 @@ class MemoryAgent:
 
             if not json_output:
                 parsing_error += 1
+                print(f"Error at index: {idx}")
+                training_dataset.loc[idx, f"mem_{self.label}_is_parsed"] = False
                 continue
+            training_dataset.loc[idx, f"mem_{self.label}_is_parsed"] = True
             
             self.memory = json_output['rules']
-            training_dataset.loc[idx, f"mem_{self.label}_reasoning"] = json_output['reasoning']
+
+            # training_dataset.loc[idx, f"mem_{self.label}_reasoning"] = json_output['reasoning']
             training_dataset.loc[idx, f"mem_{self.label}_ans_str"] = json_output['predictedStage']
-            
+            training_dataset.loc[idx, f"mem_{self.label}_memory"] =  "\n".join(self.memory)
+            training_dataset.loc[idx, f"mem_{self.label}_memory_len"] = len(self.memory)
             pbar.update(1)
         pbar.close()
         print(f"During training, number of parsing errors: {parsing_error}")
+        valid_index = training_dataset[f"mem_{self.label}_is_parsed"] == True
+        logging_table = wandb.Table(dataframe=training_dataset[valid_index][["Unnamed: 0", f"mem_{self.label}_memory", f"mem_{self.label}_memory_len"]])
+        wandb.log({"parsing_error":parsing_error, "result":logging_table})
         return training_dataset
     
-    def test(self, testing_dataset: pd.DataFrame, temperature: float = 0.0) -> pd.DataFrame:
+    def test(self, testing_dataset: pd.DataFrame, temperature: float = 0.1) -> pd.DataFrame:
         pbar = tqdm(total=testing_dataset.shape[0])
         parsing_error = 0
         for idx, row in testing_dataset.iterrows():
@@ -140,14 +155,20 @@ class MemoryAgent:
 
             if not json_output:
                 parsing_error += 1
+                print(f"Error at index: {idx}")
+                testing_dataset.loc[idx, f"mem_{self.label}_is_parsed"] = False
                 continue
             
-            # testing_dataset.loc[idx, f"mem_{self.label}_reasoning"] = json_output['reasoning']
+            testing_dataset.loc[idx, f"mem_{self.label}_is_parsed"] = True
+            testing_dataset.loc[idx, f"mem_{self.label}_reasoning"] = json_output['reasoning']
             testing_dataset.loc[idx, f"mem_{self.label}_ans_str"] = json_output['predictedStage']
             
             pbar.update(1)
         pbar.close()
         print(f"During testing, number of parsing errors: {parsing_error}")
+        valid_index = testing_dataset[f"mem_{self.label}_is_parsed"] == True
+        logging_table = wandb.Table(dataframe=testing_dataset[valid_index][["Unnamed: 0", f"mem_{self.label}_reasoning", f"mem_{self.label}_ans_str"]])
+        wandb.log({"parsing_error":parsing_error, "logging_table":logging_table})
         return testing_dataset
     
 
@@ -158,7 +179,7 @@ class ConditionalMemoryAgent(MemoryAgent):
     # inherit all properties and methods from MemoryAgent
     super().__init__(client, model, prompt_template_dict, schema_dict, label)
     
-  def train(self, training_dataset: pd.DataFrame, temperature: float = 0.0, threshold: float = 80) -> pd.DataFrame:
+  def train(self, training_dataset: pd.DataFrame, num: int, temperature: float = 0.1, threshold: float = 80) -> pd.DataFrame:
     # only overide this function because the rest parts are the same
     pbar = tqdm(total=training_dataset.shape[0])
     parsing_error = 0
@@ -179,28 +200,45 @@ class ConditionalMemoryAgent(MemoryAgent):
 
         if not json_output:
             parsing_error += 1
+            print(f"Error at index: {idx}")
+            training_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = False
             continue
-        
+
+        training_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = True
+
         if self.memory == "":
            self.memory = json_output['rules']
         else:
-          current_memory_str = "\n".join(self.memory)
-          new_memory_str = "\n".join(json_output['rules'])
-          if fuzz.ratio(current_memory_str, new_memory_str) >= threshold :
-            self.memory = json_output['rules']
-            num_update += 1
-
+            current_memory_str = "\n".join(self.memory)
+            new_memory_str = "\n".join(json_output['rules'])
+            training_dataset.loc[idx, f"cmem_{self.label}_edit_distance"] = fuzz.ratio(current_memory_str, new_memory_str)
+            if fuzz.ratio(current_memory_str, new_memory_str) >= threshold :
+                self.memory = json_output['rules']
+                num_update += 1
+                training_dataset.loc[idx, f"cmem_{self.label}_is_updated"] = True
+            else:
+                training_dataset.loc[idx, f"cmem_{self.label}_is_updated"] = False
+        
         training_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
+        training_dataset.loc[idx, f"cmem_{self.label}_rules_str"] = "\n".join(json_output['rules'])
         training_dataset.loc[idx, f"cmem_{self.label}_ans_str"] = json_output['predictedStage']
-        training_dataset.loc[idx, f"cmem_{self.label}_num_update"] = num_update
+        training_dataset.loc[idx, f"cmem_{self.label}_memory_str"] =  "\n".join(self.memory)
+        training_dataset.loc[idx, f"cmem_{self.label}_memory_len"] = len(self.memory)
+        training_dataset.loc[idx, f"cmem_{self.label}_memory_str_len"] = len("\n".join(self.memory))
         
         pbar.update(1)
     pbar.close()
     print(f"Number of memory updates: {num_update}")
     print(f"During training, number of parsing errors: {parsing_error}")
+    valid_index = training_dataset[f"cmem_{self.label}_is_parsed"] == True
+    invalid_index = training_dataset[f"cmem_{self.label}_is_parsed"] == False
+
+    logging_table = wandb.Table(dataframe=training_dataset[valid_index][[f"cmem_{self.label}_edit_distance", f"cmem_{self.label}_is_updated",f"cmem_{self.label}_memory_len", f"cmem_{self.label}_memory_str",  f"cmem_{self.label}_memory_str_len"]])
+    invalid_id = wandb.Table(dataframe=training_dataset[invalid_index][["patient_filename"]])
+    wandb.log({f"{num}_train_parsing_error":parsing_error, f"{num}_train_result":logging_table, f"{num}_train_num_update":num_update, f"{num}_train_invalid_id":invalid_id})
     return training_dataset
 
-  def test(self, testing_dataset: pd.DataFrame, temperature: float = 0.0) -> pd.DataFrame:
+  def test(self, testing_dataset: pd.DataFrame, num: int, temperature: float = 0.1) -> pd.DataFrame:
     pbar = tqdm(total=testing_dataset.shape[0])
     parsing_error = 0
     for idx, row in testing_dataset.iterrows():
@@ -215,12 +253,27 @@ class ConditionalMemoryAgent(MemoryAgent):
 
         if not json_output:
             parsing_error += 1
+            print(f"Error at index: {idx}")
+            testing_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = False
             continue
-        
-        # testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
+        testing_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = True
+
+        testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
         testing_dataset.loc[idx, f"cmem_{self.label}_ans_str"] = json_output['predictedStage']
         
         pbar.update(1)
     pbar.close()
-    print(f"During testing, number of parsing errors: {parsing_error}")
+   
+    valid_index = testing_dataset[f"cmem_{self.label}_is_parsed"] == True
+    invalid_index = testing_dataset[f"cmem_{self.label}_is_parsed"] == False
+
+    logging_table = wandb.Table(dataframe=testing_dataset[valid_index][[f"cmem_{self.label}_reasoning", f"cmem_{self.label}_ans_str", f"{self.label}"]])
+    invalid_id = wandb.Table(dataframe=testing_dataset[invalid_index][["patient_filename"]])
+  
+    wandb.log({f"{num}_test_parsing_error":parsing_error, f"{num}_test_result":logging_table, f"{num}_test_invalid_id":invalid_id})
     return testing_dataset
+  
+  def clear_memory(self):
+    self.memory = ""
+    print("Memory is cleared.")
+  

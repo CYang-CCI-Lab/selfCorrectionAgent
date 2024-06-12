@@ -1,0 +1,44 @@
+
+  0%|                                                                                                                                        | 0/100 [00:00<?, ?it/s]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:207: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = True
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:222: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:223: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_rules"] = json_output['rules']
+Traceback (most recent call last):
+  File "/home/yl3427/cylab/selfCorrectionAgent/src/test_memory.py", line 54, in <module>
+    train_result = memory_agent_t14.train(df_training_samples, i)
+  File "/home/yl3427/cylab/selfCorrectionAgent/src/agent.py", line 223, in train
+    training_dataset.loc[idx, f"cmem_{self.label}_rules"] = json_output['rules']
+  File "/home/yl3427/miniconda3/envs/selfCorrection/lib/python3.9/site-packages/pandas/core/indexing.py", line 911, in __setitem__
+    iloc._setitem_with_indexer(indexer, value, self.name)
+  File "/home/yl3427/miniconda3/envs/selfCorrection/lib/python3.9/site-packages/pandas/core/indexing.py", line 1890, in _setitem_with_indexer
+    self._setitem_with_indexer(new_indexer, value, name)
+  File "/home/yl3427/miniconda3/envs/selfCorrection/lib/python3.9/site-packages/pandas/core/indexing.py", line 1942, in _setitem_with_indexer
+    self._setitem_with_indexer_split_path(indexer, value, name)
+  File "/home/yl3427/miniconda3/envs/selfCorrection/lib/python3.9/site-packages/pandas/core/indexing.py", line 1998, in _setitem_with_indexer_split_path
+    raise ValueError(
+ValueError: Must have equal len keys and value when setting with an iterable
+Traceback (most recent call last):
+  File "/home/yl3427/cylab/selfCorrectionAgent/src/test_memory.py", line 54, in <module>
+    train_result = memory_agent_t14.train(df_training_samples, i)
+  File "/home/yl3427/cylab/selfCorrectionAgent/src/agent.py", line 223, in train
+    training_dataset.loc[idx, f"cmem_{self.label}_rules"] = json_output['rules']
+  File "/home/yl3427/miniconda3/envs/selfCorrection/lib/python3.9/site-packages/pandas/core/indexing.py", line 911, in __setitem__
+    iloc._setitem_with_indexer(indexer, value, self.name)
+  File "/home/yl3427/miniconda3/envs/selfCorrection/lib/python3.9/site-packages/pandas/core/indexing.py", line 1890, in _setitem_with_indexer
+    self._setitem_with_indexer(new_indexer, value, name)
+  File "/home/yl3427/miniconda3/envs/selfCorrection/lib/python3.9/site-packages/pandas/core/indexing.py", line 1942, in _setitem_with_indexer
+    self._setitem_with_indexer_split_path(indexer, value, name)
+  File "/home/yl3427/miniconda3/envs/selfCorrection/lib/python3.9/site-packages/pandas/core/indexing.py", line 1998, in _setitem_with_indexer_split_path
+    raise ValueError(
+ValueError: Must have equal len keys and value when setting with an iterable

@@ -1,0 +1,599 @@
+
+  0%|                                                                                                                                        | 0/100 [00:00<?, ?it/s]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:207: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = True
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:222: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:223: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_rules_str"] = "\n".join(json_output['rules'])
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:224: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_ans_str"] = json_output['predictedStage']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:225: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_str"] =  "\n".join(self.memory)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:226: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_len"] = len(self.memory)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:227: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_str_len"] = len("\n".join(self.memory))
+  1%|█▎                                                                                                                              | 1/100 [00:08<13:54,  8.43s/it]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:214: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_edit_distance"] = fuzz.ratio(current_memory_str, new_memory_str)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:218: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_is_updated"] = True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 100/100 [25:19<00:00, 15.19s/it]
+Number of memory updates: 76
+During training, number of parsing errors: 0
+  0%|                                                                                                                                        | 0/100 [00:00<?, ?it/s]
+  0%|                                                                                                                                        | 0/100 [00:00<?, ?it/s]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:207: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = True
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:222: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:223: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_rules_str"] = "\n".join(json_output['rules'])
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:224: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_ans_str"] = json_output['predictedStage']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:225: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_str"] =  "\n".join(self.memory)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:226: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_len"] = len(self.memory)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:227: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_str_len"] = len("\n".join(self.memory))
+  1%|█▎                                                                                                                              | 1/100 [00:08<14:48,  8.97s/it]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:214: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_edit_distance"] = fuzz.ratio(current_memory_str, new_memory_str)
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:218: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"cmem_{self.label}_is_updated"] = True
+  3%|███▊                                                                                                                            | 3/100 [00:26<14:13,  8.80s/it]
+  4%|█████                                                                                                                           | 4/100 [00:34<13:44,  8.59s/it]
+  5%|██████▍                                                                                                                         | 5/100 [00:44<14:25,  9.11s/it]
+  6%|███████▋                                                                                                                        | 6/100 [00:54<14:48,  9.45s/it]
+  7%|████████▉                                                                                                                       | 7/100 [01:07<16:29, 10.64s/it]
+  8%|██████████▏                                                                                                                     | 8/100 [01:19<16:53, 11.02s/it]
+  9%|███████████▌                                                                                                                    | 9/100 [01:33<18:02, 11.90s/it]
+ 10%|████████████▋                                                                                                                  | 10/100 [01:48<19:21, 12.91s/it]
+ 11%|█████████████▉                                                                                                                 | 11/100 [02:04<20:14, 13.65s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+Number of memory updates: 99
+During training, number of parsing errors: 0
+ 12%|███████████████▏                                                                                                               | 12/100 [02:22<21:59, 15.00s/it]
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_str"] =  "\n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+Number of memory updates: 93
+During training, number of parsing errors: 0
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_str"] =  "\n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+Number of memory updates: 82
+During training, number of parsing errors: 0
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+Memory is cleared.
+  training_dataset.loc[idx, f"cmem_{self.label}_memory_str"] =  "\n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]
+A value is trying to be set on a copy of a slice from a DataFrame.n".join(self.memory)                                              | 12/100 [02:22<21:59, 15.00s/it]

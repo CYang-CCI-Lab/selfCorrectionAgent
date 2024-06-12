@@ -1,0 +1,52 @@
+
+  0%|                                                    | 0/10 [00:00<?, ?it/s]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:130: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"mem_{self.label}_reasoning"] = json_output['reasoning']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:131: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  training_dataset.loc[idx, f"mem_{self.label}_ans_str"] = json_output['predictedStage']
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████| 10/10 [01:18<00:00,  7.89s/it]
+  0%|                                                    | 0/20 [00:00<?, ?it/s]
+  0%|                                                    | 0/20 [00:00<?, ?it/s]/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:156: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  testing_dataset.loc[idx, f"mem_{self.label}_reasoning"] = json_output['reasoning']
+/home/yl3427/cylab/selfCorrectionAgent/src/agent.py:157: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  testing_dataset.loc[idx, f"mem_{self.label}_ans_str"] = json_output['predictedStage']
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+100%|███████████████████████████████████████████| 20/20 [01:10<00:00,  3.52s/it]
+During testing, number of parsing errors: 0
