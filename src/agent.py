@@ -60,7 +60,7 @@ class MemoryAgent:
         self.memory = ""
         self.label = label
 
-        wandb.init(project=f"Rules and Reasoning Comparison_{label}_0612",
+        wandb.init(project=f"Dynamic_Test_{label}_0614",
                    config={"class": self.__class__.__name__, "model": model, "label": label,
                            "date": datetime.now().strftime(r"%m%d%H%M")})
 
@@ -233,7 +233,7 @@ class ConditionalMemoryAgent(MemoryAgent):
     valid_index = training_dataset[f"cmem_{self.label}_is_parsed"] == True
     invalid_index = training_dataset[f"cmem_{self.label}_is_parsed"] == False
 
-    logging_table = wandb.Table(dataframe=training_dataset[valid_index][[f"cmem_{self.label}_edit_distance", f"cmem_{self.label}_is_updated",f"cmem_{self.label}_memory_len", f"cmem_{self.label}_memory_str",  f"cmem_{self.label}_memory_str_len"]])
+    logging_table = wandb.Table(dataframe=training_dataset[valid_index][[f"cmem_{self.label}_edit_distance", f"cmem_{self.label}_is_updated", f"cmem_{self.label}_rules_str",f"cmem_{self.label}_memory_len", f"cmem_{self.label}_memory_str",  f"cmem_{self.label}_memory_str_len"]])
     invalid_id = wandb.Table(dataframe=training_dataset[invalid_index][["patient_filename"]])
     wandb.log({f"{num}_train_parsing_error":parsing_error, f"{num}_train_result":logging_table, f"{num}_train_num_update":num_update, f"{num}_train_invalid_id":invalid_id})
     return training_dataset
@@ -271,6 +271,41 @@ class ConditionalMemoryAgent(MemoryAgent):
     invalid_id = wandb.Table(dataframe=testing_dataset[invalid_index][["patient_filename"]])
   
     wandb.log({f"{num}_test_parsing_error":parsing_error, f"{num}_test_result":logging_table, f"{num}_test_invalid_id":invalid_id})
+    return testing_dataset
+  
+
+  def dynatic_test(self, testing_dataset: pd.DataFrame, memory_tup: List[tuple], temperature: float = 0.1) -> pd.DataFrame:
+    pbar = tqdm(total=testing_dataset.shape[0])
+    parsing_error = 0
+    for idx, row in testing_dataset.iterrows():
+
+        report = row["text"]
+
+        pbar = tqdm(total=len(memory_tup))
+        for num, memory in memory_tup:
+            prompt = self.prompt_template_dict["testing_prompt"].format(memory=memory, report=report)
+            system_prompt = system_instruction+ "\n" + prompt
+            messages = [{"role": "user", "content": system_prompt}]
+
+            json_output = self.get_schema_followed_response(messages, self.schema_dict["testing_schema"], temperature)
+
+            if not json_output:
+                parsing_error += 1
+                print(f"Error at index: {idx}")
+                testing_dataset.loc[idx, f"cmem_{self.label}_{num}reports_is_parsed"] = False
+                continue
+            
+            testing_dataset.loc[idx, f"cmem_{self.label}_{num}reports_is_parsed"] = True
+            testing_dataset.loc[idx, f"cmem_{self.label}_{num}reasoning"] = json_output['reasoning']
+            testing_dataset.loc[idx, f"cmem_{self.label}_{num}reports_ans_str"] = json_output['predictedStage']
+            pbar.update(1)
+        pbar.close()
+            
+        pbar.update(1)
+    pbar.close()
+    logging_table = wandb.Table(dataframe=testing_dataset)
+    wandb.log({f"parsing_error":parsing_error, f"test_result":logging_table})
+
     return testing_dataset
   
   def clear_memory(self):

@@ -27,7 +27,8 @@ def t14_performance_report(df, ans_col="ans_str"):
 
     target_names = ['T1', 'T2', 'T3', 'T4']
     print(classification_report(t_labels, coded_pred, target_names=target_names))
-    # precision, recall, f1, support = precision_recall_fscore_support(y_true, y_pred, average='macro')
+    precision, recall, f1, _ = precision_recall_fscore_support(t_labels, coded_pred, average='macro')
+    return precision, recall, f1
 
 
 def n03_performance_report(df, ans_col="ans_str"):
@@ -55,6 +56,8 @@ def n03_performance_report(df, ans_col="ans_str"):
 
     target_names = ['N0', 'N1', 'N2', 'N3']
     print(classification_report(n_labels, coded_pred, target_names=target_names))
+    precision, recall, f1, _ = precision_recall_fscore_support(n_labels, coded_pred, average='macro')
+    return precision, recall, f1
 
 def relax_t14_performance_report(df, ans_col="ans_str"):
     
@@ -112,3 +115,5 @@ def relax_n03_performance_report(df, ans_col="ans_str"):
 
     target_names = ['N0', 'N1', 'N2', 'N3', 'Unk']
     print(classification_report(n_labels, coded_pred, labels=labels, target_names=target_names))
+    precision, recall, f1, _ = precision_recall_fscore_support(n_labels, coded_pred, average='macro')
+    return precision, recall, f1

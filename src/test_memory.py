@@ -17,6 +17,9 @@ class TestingResponse(BaseModel):
     predictedStage: str = Field(description="predicted cancer stage")
     reasoning: str = Field(description="reasoning to support predicted cancer stage") 
 
+class TestResponseWithoutReasoning(BaseModel):
+    predictedStage: str = Field(description="predicted cancer stage")
+
 def split_reports(df, num_train=100):
     indices = np.arange(len(df))
     np.random.shuffle(indices)

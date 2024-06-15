@@ -25,3 +25,10 @@ config: {'class': 'ConditionalMemoryAgent', 'model': 'mistralai/Mixtral-8x7B-Ins
 2024-06-12 12:06:00,157 INFO    MainThread:3358057 [wandb_run.py:_redirect():2300] Wrapping output streams.
 2024-06-12 12:06:00,157 INFO    MainThread:3358057 [wandb_run.py:_redirect():2325] Redirects installed.
 2024-06-12 12:06:00,159 INFO    MainThread:3358057 [wandb_init.py:init():838] run started, returning control to user process
+2024-06-12 18:07:51,506 INFO    MainThread:3358057 [wandb_run.py:_finish():2109] finishing run ssr01357/Rules and Reasoning Comparison_t_0612/0akwudsn
+2024-06-12 18:07:51,506 INFO    MainThread:3358057 [wandb_run.py:_atexit_cleanup():2349] got exitcode: 0
+2024-06-12 18:07:51,506 INFO    MainThread:3358057 [wandb_run.py:_restore():2332] restore
+2024-06-12 18:07:51,506 INFO    MainThread:3358057 [wandb_run.py:_restore():2338] restore done
+2024-06-12 18:08:11,601 INFO    MainThread:3358057 [wandb_run.py:_footer_history_summary_info():4008] rendering history
+2024-06-12 18:08:11,602 INFO    MainThread:3358057 [wandb_run.py:_footer_history_summary_info():4040] rendering summary
+2024-06-12 18:08:11,609 INFO    MainThread:3358057 [wandb_run.py:_footer_sync_info():3967] logging synced files
