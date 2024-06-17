@@ -7,13 +7,13 @@ def t14_performance_report(df, ans_col="ans_str"):
     df['Has_Valid_Prediction'] = df[ans_col].str.contains('T1|T2|T3|T4', case=False)
     coded_pred_list = []
     for _, row in df.iterrows():
-        if "T1" in row[ans_col]:
+        if "T1" in str(row[ans_col]):
             coded_pred_list.append(0)
-        elif "T2" in row[ans_col]:
+        elif "T2" in str(row[ans_col]):
             coded_pred_list.append(1)
-        elif "T3" in row[ans_col]:
+        elif "T3" in str(row[ans_col]):
             coded_pred_list.append(2)
-        elif "T4" in row[ans_col]:
+        elif "T4" in str(row[ans_col]):
             coded_pred_list.append(3)
         else:
             # unvalid answers 
