@@ -1,7 +1,9 @@
 import numpy as np
+import pandas as pd
 from sklearn.metrics import confusion_matrix, classification_report, precision_recall_fscore_support
 from sklearn.utils import resample
 from scipy import stats
+
 # add relaxed versions
 def t14_performance_report(df, ans_col="ans_str"):
     df['Has_Valid_Prediction'] = df[ans_col].str.contains('T1|T2|T3|T4', case=False)
@@ -59,61 +61,169 @@ def n03_performance_report(df, ans_col="ans_str"):
     precision, recall, f1, _ = precision_recall_fscore_support(n_labels, coded_pred, average='macro')
     return precision, recall, f1
 
-def relax_t14_performance_report(df, ans_col="ans_str"):
+
+def t14_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dict:
+
+    # Check for valid inputs
+    if len(true_labels) != len(predictions):
+        raise ValueError("The length of true_labels and predictions must be the same.")
     
-    # transform the prediction string to code
-    # note that following the t column we set T1 = 0, ... T4 = 3 
-    coded_pred_list = []
-    for _, row in df.iterrows():
-        if "T1" in row[ans_col]:
-            coded_pred_list.append(0)
-        elif "T2" in row[ans_col]:
-            coded_pred_list.append(1)
-        elif "T3" in row[ans_col]:
-            coded_pred_list.append(2)
-        elif "T4" in row[ans_col]:
-            coded_pred_list.append(3)
+    if any(pred is None or not isinstance(pred, str) for pred in predictions):
+        raise ValueError("All predictions must be non-null strings.")
+    
+    true_labels = true_labels.apply(lambda x: f'T{x+1}')
+
+    metrics = {}
+    label_counts = {}
+    
+    for label in set(true_labels):
+        metrics[label] = {'tp': 0, 'fp': 0, 'fn': 0}
+        label_counts[label] = 0
+
+    for true_label, prediction in zip(true_labels, predictions):
+        label_counts[true_label] += 1
+        if true_label in prediction:
+            metrics[true_label]['tp'] += 1
         else:
-            # unvalid answers 
-            coded_pred_list.append(100)
+            metrics[true_label]['fn'] += 1
+        
+        for label in metrics:
+            if label in prediction and label != true_label:
+                metrics[label]['fp'] += 1
+    
+    results = {}
+    total_tp = total_fp = total_fn = 0
+    macro_precision = macro_recall = macro_f1 = 0
+    total_instances = len(true_labels)
+    
+    for label, counts in metrics.items():
+        tp = counts['tp']
+        fp = counts['fp']
+        fn = counts['fn']
+        precision = tp / (tp + fp) if (tp + fp) > 0 else 0
+        recall = tp / (tp + fn) if (tp + fn) > 0 else 0
+        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
+        support = label_counts[label]
+        
+        results[label] = {
+            'precision': round(precision, 2),
+            'recall': round(recall, 2),
+            'f1': round(f1, 2),
+            'support': support
+        }
+        
+        total_tp += tp
+        total_fp += fp
+        total_fn += fn
+        
+        macro_precision += precision
+        macro_recall += recall
+        macro_f1 += f1
 
-    df['coded_pred'] = coded_pred_list
+    # Calculate macro-averaged metrics
+    num_labels = len(metrics)
+    macro_precision /= num_labels
+    macro_recall /= num_labels
+    macro_f1 /= num_labels
 
-    coded_pred = df['coded_pred'].to_list()
-    t_labels = df["t"].to_list()
+    # Calculate overall (micro-averaged) precision, recall, and F1 score
+    total_precision = total_tp / (total_tp + total_fp) if (total_tp + total_fp) > 0 else 0
+    total_recall = total_tp / (total_tp + total_fn) if (total_tp + total_fn) > 0 else 0
+    total_f1 = 2 * total_precision * total_recall / (total_precision + total_recall) if (total_precision + total_recall) > 0 else 0
 
-    unique_labels = set(t_labels + coded_pred)
-    labels = sorted(unique_labels)
+    # Calculate weighted (balanced) F1 score
+    weighted_f1 = sum(results[label]['f1'] * label_counts[label] for label in metrics) / total_instances
 
-    target_names = ['T1', 'T2', 'T3', 'T4', 'Unk']
-    print(classification_report(t_labels, coded_pred, labels=labels, target_names=target_names))
+    results['overall'] = {
+        'precision': round(total_precision, 2),
+        'recall': round(total_recall, 2),
+        'f1': round(total_f1, 2),
+        'macro_f1': round(macro_f1, 2),
+        'weighted_f1': round(weighted_f1, 2),
+        'support': total_instances
+    }
+    
+    return results
 
-def relax_n03_performance_report(df, ans_col="ans_str"):
+def n03_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dict:
 
-    # transform the prediction string to code
-    coded_pred_list = []
-    for _, row in df.iterrows():
-        row[ans_col] = str(row[ans_col])
-        if "N0" in row[ans_col]:
-            coded_pred_list.append(0)
-        elif "N1" in row[ans_col]:
-            coded_pred_list.append(1)
-        elif "N2" in row[ans_col]:
-            coded_pred_list.append(2)
-        elif "N3" in row[ans_col]:
-            coded_pred_list.append(3)
+    # Check for valid inputs
+    if len(true_labels) != len(predictions):
+        raise ValueError("The length of true_labels and predictions must be the same.")
+    
+    if any(pred is None or not isinstance(pred, str) for pred in predictions):
+        raise ValueError("All predictions must be non-null strings.")
+    
+    true_labels = true_labels.apply(lambda x: f'N{x}')
+
+    metrics = {}
+    label_counts = {}
+    
+    for label in set(true_labels):
+        metrics[label] = {'tp': 0, 'fp': 0, 'fn': 0}
+        label_counts[label] = 0
+
+    for true_label, prediction in zip(true_labels, predictions):
+        label_counts[true_label] += 1
+        if true_label in prediction:
+            metrics[true_label]['tp'] += 1
         else:
-            # unvalid answers 
-            coded_pred_list.append(100)
-    df['coded_pred'] = coded_pred_list
+            metrics[true_label]['fn'] += 1
+        
+        for label in metrics:
+            if label in prediction and label != true_label:
+                metrics[label]['fp'] += 1
+    
+    results = {}
+    total_tp = total_fp = total_fn = 0
+    macro_precision = macro_recall = macro_f1 = 0
+    total_instances = len(true_labels)
+    
+    for label, counts in metrics.items():
+        tp = counts['tp']
+        fp = counts['fp']
+        fn = counts['fn']
+        precision = tp / (tp + fp) if (tp + fp) > 0 else 0
+        recall = tp / (tp + fn) if (tp + fn) > 0 else 0
+        f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
+        support = label_counts[label]
+        
+        results[label] = {
+            'precision': round(precision, 2),
+            'recall': round(recall, 2),
+            'f1': round(f1, 2),
+            'support': support
+        }
+        
+        total_tp += tp
+        total_fp += fp
+        total_fn += fn
+        
+        macro_precision += precision
+        macro_recall += recall
+        macro_f1 += f1
 
-    coded_pred = df['coded_pred'].to_list()
-    n_labels = df["n"].to_list()
+    # Calculate macro-averaged metrics
+    num_labels = len(metrics)
+    macro_precision /= num_labels
+    macro_recall /= num_labels
+    macro_f1 /= num_labels
 
-    unique_labels = set(n_labels + coded_pred)
-    labels = sorted(unique_labels)
+    # Calculate overall (micro-averaged) precision, recall, and F1 score
+    total_precision = total_tp / (total_tp + total_fp) if (total_tp + total_fp) > 0 else 0
+    total_recall = total_tp / (total_tp + total_fn) if (total_tp + total_fn) > 0 else 0
+    total_f1 = 2 * total_precision * total_recall / (total_precision + total_recall) if (total_precision + total_recall) > 0 else 0
 
-    target_names = ['N0', 'N1', 'N2', 'N3', 'Unk']
-    print(classification_report(n_labels, coded_pred, labels=labels, target_names=target_names))
-    precision, recall, f1, _ = precision_recall_fscore_support(n_labels, coded_pred, average='macro')
-    return precision, recall, f1
+    # Calculate weighted (balanced) F1 score
+    weighted_f1 = sum(results[label]['f1'] * label_counts[label] for label in metrics) / total_instances
+
+    results['overall'] = {
+        'precision': round(total_precision, 2),
+        'recall': round(total_recall, 2),
+        'f1': round(total_f1, 2),
+        'macro_f1': round(macro_f1, 2),
+        'weighted_f1': round(weighted_f1, 2),
+        'support': total_instances
+    }
+    
+    return results

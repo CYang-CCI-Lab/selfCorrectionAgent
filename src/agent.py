@@ -10,7 +10,6 @@ from typing import List, Dict, Union
 from fuzzywuzzy import fuzz
 import wandb
 
-
 class ChoiceAgent:
     """ the simplest agent, which is appropriate for zero-shot prompting
     """
@@ -228,6 +227,7 @@ class ConditionalMemoryAgent(MemoryAgent):
   def test(self, testing_dataset: pd.DataFrame, num: int, temperature: float = 0.1) -> pd.DataFrame:
     pbar = tqdm(total=testing_dataset.shape[0])
     parsing_error = 0
+   
     for idx, row in testing_dataset.iterrows():
 
         report = row["text"]
@@ -276,7 +276,7 @@ class ConditionalMemoryAgent(MemoryAgent):
                 continue
             
             testing_dataset.loc[idx, f"cmem_{self.label}_{num}reports_is_parsed"] = True
-            testing_dataset.loc[idx, f"cmem_{self.label}_{num}reasoning"] = json_output['reasoning']
+            # testing_dataset.loc[idx, f"cmem_{self.label}_{num}reasoning"] = json_output['reasoning']
             testing_dataset.loc[idx, f"cmem_{self.label}_{num}reports_ans_str"] = json_output['predictedStage']
             pbar.update(1)
         pbar.close()

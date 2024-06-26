@@ -1,12 +1,12 @@
-from agent import ConditionalMemoryAgent, MemoryAgent
+from agent import ConditionalMemoryAgent
 from prompt import *
+from metrics import *
 from openai import OpenAI
 import numpy as np
 import pandas as pd
 from pydantic import BaseModel, Field
 from typing import List, Dict, Union
-from datetime import datetime
-import wandb
+from collections import defaultdict
 
 class TrainingResponse(BaseModel):
     predictedStage: str = Field(description="predicted cancer stage")
@@ -17,15 +17,7 @@ class TestingResponse(BaseModel):
     predictedStage: str = Field(description="predicted cancer stage")
     reasoning: str = Field(description="reasoning to support predicted cancer stage") 
 
-class TestResponseWithoutReasoning(BaseModel):
-    predictedStage: str = Field(description="predicted cancer stage")
 
-def split_reports(df, num_train=100):
-    indices = np.arange(len(df))
-    np.random.shuffle(indices)
-    train_index = indices[:num_train]
-    test_index = indices[num_train:]
-    return train_index, test_index
 
 
 if __name__ == "__main__":
@@ -37,10 +29,6 @@ if __name__ == "__main__":
     training_schema = TrainingResponse.model_json_schema()
     testing_schema = TestingResponse.model_json_schema()
 
-    brca_report = pd.read_csv("/secure/shared_data/rag_tnm_results/summary/5_folds_summary/brca_df.csv")
-    brca_report = brca_report[brca_report["n"]!=-1]
-    sorted_df = brca_report.reset_index(drop=True)
-
     # t14
     memory_agent_t14 = ConditionalMemoryAgent(client=client, model="mistralai/Mixtral-8x7B-Instruct-v0.1",
                         prompt_template_dict={"initialized_prompt":initial_predict_prompt_t14,
@@ -49,39 +37,31 @@ if __name__ == "__main__":
                         schema_dict={"learning_schema":training_schema,
                                         "testing_schema":testing_schema},
                                         label = "t")
-    for i in range(10):
-        train_index, test_index = split_reports(sorted_df)
-        df_training_samples = sorted_df.iloc[train_index]
-        df_testing_samples = sorted_df.iloc[test_index]
-  
-        train_result = memory_agent_t14.train(df_training_samples, i)
-        train_result.to_csv(f"t14_train_rules_{i}.csv", index=False)
+    t_train_data = pd.read_csv(f"/home/yl3427/cylab/selfCorrectionAgent/result/t14_test_1.csv")[["patient_filename","text","t"]]
+    t_train_result = memory_agent_t14.train(t_train_data, 1)
+    t_train_result.to_csv(f"t_train_result_1_newPrompt.csv")
 
-        # test_result = memory_agent_t14.test(df_testing_samples, i)
-        # test_result.to_csv(f"t14_test_rules_{i}.csv", index=False)
-
-        memory_agent_t14.clear_memory()
-    wandb.finish()
-
-    # N03
-    memory_agent_n03 = ConditionalMemoryAgent(client=client, model="mistralai/Mixtral-8x7B-Instruct-v0.1",
-                        prompt_template_dict={"initialized_prompt":initial_predict_prompt_n03,
-                                                "learning_prompt":subsequent_predict_prompt_n03,
-                                                "testing_prompt":testing_predict_prompt_n03},
-                        schema_dict={"learning_schema":training_schema,
-                                        "testing_schema":testing_schema},
-                                        label = "n")
+    # test
+    t_intersect_df = pd.read_csv("/home/yl3427/cylab/selfCorrectionAgent/src/t_intersect_for_newPrompt.csv")
+    t_intersect_test_result = memory_agent_t14.test(t_intersect_df, 1)
+    t_intersect_test_result.to_csv("t_intersect_test_result_1_newPrompt.csv")
     
-    for i in range(10):
-        train_index, test_index = split_reports(sorted_df)
-        df_training_samples = sorted_df.iloc[train_index]
-        df_testing_samples = sorted_df.iloc[test_index]
-  
-        train_result = memory_agent_n03.train(df_training_samples, i)
-        train_result.to_csv(f"n03_train_rules_{i}.csv", index=False)
+    t_only_memory_df = pd.read_csv("/home/yl3427/cylab/selfCorrectionAgent/src/t_only_memory_for_newPrompt.csv")
+    t_only_memory_test_result = memory_agent_t14.test(t_only_memory_df, 1)
+    t_only_memory_test_result.to_csv("t_only_memory_test_result_1_newPrompt.csv")
 
-        # test_result = memory_agent_n03.test(df_testing_samples, i)
-        # test_result.to_csv(f"n03_test_rules_{i}.csv", index=False)
+    t_only_zscot_df = pd.read_csv("/home/yl3427/cylab/selfCorrectionAgent/src/t_only_zscot_for_newPrompt.csv")
+    t_only_zscot_test_result = memory_agent_t14.test(t_only_zscot_df, 1)
+    t_only_zscot_test_result.to_csv("t_only_zscot_test_result_1_newPrompt.csv")
 
-        memory_agent_n03.clear_memory()
-    wandb.finish()
+    
+    # # N03
+    # memory_agent_n03 = ConditionalMemoryAgent(client=client, model="mistralai/Mixtral-8x7B-Instruct-v0.1",
+    #                     prompt_template_dict={"initialized_prompt":initial_predict_prompt_n03,
+    #                                             "learning_prompt":subsequent_predict_prompt_n03,
+    #                                             "testing_prompt":testing_predict_prompt_n03},
+    #                     schema_dict={"learning_schema":training_schema,
+    #                                     "testing_schema":testing_schema},
+    #                                     label = "n")
+    
+    
