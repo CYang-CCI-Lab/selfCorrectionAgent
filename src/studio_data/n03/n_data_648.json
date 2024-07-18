@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, the left axillary sentinel node is negative for metastatic disease (0/1). Based on the rules provided, this corresponds to an N0 stage, which indicates no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes. This is further supported by the fact that there is no mention of positive lymph nodes in the report."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report states that a single lymph node was examined and found to be negative for metastatic disease (0/1). This indicates that there is no evidence of cancer in the lymph nodes, which corresponds to an N0 stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

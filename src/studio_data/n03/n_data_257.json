@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, multiple sentinel lymph nodes (2) were excised and found to be negative for metastatic carcinoma (AJCC pN0(i-)(sn)). A single intramammary lymph node and a single right axillary lymph node were also negative for metastatic carcinoma. Based on the new rule 11, N0 can indicate that all assessed lymph nodes are negative for metastatic carcinoma. Therefore, the N stage for this patient's cancer is N0."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that multiple sentinel lymph nodes, an intramammary lymph node, and a single right axillary lymph node were all negative for metastatic carcinoma. Therefore, the N stage for this patient's cancer is N0."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

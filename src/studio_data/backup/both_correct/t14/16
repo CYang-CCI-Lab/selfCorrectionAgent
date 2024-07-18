@@ -1,0 +1,90 @@
+{
+  "id": 16,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 11,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report provides the tumor size as 3.5 x 3.5 X 3.5 cm. According to the rules, T2 tumors are more than 2 cm but not more than 5 cm. The tumor size falls within this range, so the pathologic T stage is T2."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The report states that the tumor size is 3.5 x 3.5 X 3.5 cm. According to the TNM staging system for cancer, a T2 stage is assigned when the tumor is more than 2 cm but not more than 5 cm in size. Therefore, the T stage for this patient's cancer is T2."
+        },
+        {
+          "author": "Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:00:32.910271Z",
+    "updated_at": "2024-07-07T09:20:05.129497Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 10,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 58,
+        "endOffset": 134,
+        "text": "According to the rules, T2 tumors are more than 2 cm but not more than 5 cm.",
+        "paragraphlabels": [
+          "T2 tumors are more than 2 cm but not more than 5 cm."
+        ]
+      },
+      "id": "lAGtCa_HJR",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Explicit"
+        ]
+      },
+      "id": "HNt7O0u6-c",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T09:20:05.057881Z",
+  "updated_at": "2024-07-07T09:20:05.057923Z",
+  "draft_created_at": null,
+  "lead_time": 27.668,
+  "import_id": null,
+  "last_action": null,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

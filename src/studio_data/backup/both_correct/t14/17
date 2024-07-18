@@ -1,0 +1,129 @@
+{
+  "id": 17,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 12,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report indicates that there are two invasive tumor masses in the lower inner quadrant, with the largest mass being 2.5 cm (Mass #1) and the second mass being 1.4 cm (Mass #2). The T stage is determined by the size of the largest tumor, so in this case, the T stage would be T2 as Mass #1 is more than 2 cm but not more than 5 cm."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The patient has two invasive tumor masses in the lower inner quadrant, with the larger mass being 2.5 cm in greatest dimension (Mass #1) and the smaller mass being 1.4 cm in greatest dimension (Mass #2). The T stage for cancer is based on the size of the largest tumor. In this case, the largest tumor (Mass #1) is 2.5 cm, which falls under T2 (Tumor size 2.0 to 5.0 cm) according to the American Joint Committee on Cancer (AJCC) TNM staging system. Therefore, the T stage for this patient is T2."
+        },
+        {
+          "author": "Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:00:32.929698Z",
+    "updated_at": "2024-07-07T09:24:11.912537Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 11,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 180,
+        "endOffset": 239,
+        "text": "The T stage is determined by the size of the largest tumor,",
+        "paragraphlabels": [
+          "Invasive ductal carcinoma staging is based on the largest tumor size."
+        ]
+      },
+      "id": "Jcd-AsplXN",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 180,
+        "endOffset": 239,
+        "text": "The T stage is determined by the size of the largest tumor,",
+        "paragraphlabels": [
+          "The T stage is determined by the size of the largest tumor, ignoring any substaging information."
+        ]
+      },
+      "id": "5YzMu7JqzL",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 180,
+        "endOffset": 239,
+        "text": "The T stage is determined by the size of the largest tumor,",
+        "paragraphlabels": [
+          "Invasive lobular carcinoma staging follows the same rules as invasive ductal carcinoma, based on the largest tumor size."
+        ]
+      },
+      "id": "mTb2CvB2hp",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 180,
+        "endOffset": 239,
+        "text": "The T stage is determined by the size of the largest tumor,",
+        "paragraphlabels": [
+          "The T stage is determined by the largest tumor size, regardless of the type of carcinoma (invasive ductal or invasive lobular)"
+        ]
+      },
+      "id": "KmB_c13A8b",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T09:24:11.827658Z",
+  "updated_at": "2024-07-07T09:24:11.827697Z",
+  "draft_created_at": "2024-07-07T09:23:12.431759Z",
+  "lead_time": 239.286,
+  "import_id": null,
+  "last_action": null,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

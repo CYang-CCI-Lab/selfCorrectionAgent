@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that 12 out of 22 lymph nodes are positive for metastatic carcinoma (12/22). This corresponds to the N3 stage according to the AJCC staging system (New Rule 13). The report also mentions focal extranodal involvement, which supports the N3 stage. The exact number of positive lymph nodes is within the range specified for N3 (4 or more axillary lymph nodes). Therefore, the N stage for this patient is N3."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for cancer is determined by the number of positive lymph nodes. In this report, the right axillary contents show that 12 out of 22 lymph nodes are positive for metastatic carcinoma (12/22). This corresponds to N3 stage in the AJCC Cancer Staging Manual, 7th Edition."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, metastatic adenocarcinoma is identified in 3 out of 27 right axillary lymph nodes. Based on the new rules provided, N1 indicates metastases in 1 to 3 axillary lymph nodes. Therefore, the N stage for this patient's cancer is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for cancer is determined by the number of lymph nodes involved. In this report, metastatic adenocarcinoma is identified in 3 of 27 right axillary lymph nodes. Therefore, the N stage is N2."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N1"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates the presence of a 1.5 cm tumor (lesion at 3 o'clock) and a 2.2 cm tumor (lesion at 6 o'clock). The T stage is determined by the size of the largest tumor, which in this case is the 2.2 cm tumor. Therefore, the T stage is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates the presence of a 1.5 cm tumor (T2 stage) in the 3 o'clock location and a 2.2 cm tumor (T2 stage) in the 6 o'clock portion, separated by at least 1.5 cm of benign breast tissue. The T stage is determined by the size of the largest tumor, so the T2 stage is appropriate based on the size of the larger tumor."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

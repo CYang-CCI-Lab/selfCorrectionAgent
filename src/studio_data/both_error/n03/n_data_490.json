@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-D8-A27T.15237FF6-A56E-4E05-B81D-B87E91B59917"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "Based on the rules provided and the pathology report, the patient has metastases in 1 to 3 axillary lymph nodes, which corresponds to N1 (New Rule 12: N1 indicates metastases in 1 to 3 axillary lymph nodes). The report states 'Metastases carcinomatosae in lymphonodis axillae (No II/II) (NHG2, pT2, pNla)', indicating that 2 out of 2 assessed lymph nodes are positive for metastatic carcinoma, which falls within the criteria for N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report mentions 'Metastases carcinomatosae in lymphonodis axillae (No II/II) (NHG2, pT2, pNla)'. This indicates that there are cancerous metastases in the axillary lymph nodes. The Roman numerals II/II suggest that 2 out of 2 (or 100%) of the examined lymph nodes contain metastases. However, the N stage is not determined by the proportion of positive nodes, but rather by the number of positive nodes. Since there are metastases in 1-3 axillary lymph nodes, the N stage is N1."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N1"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

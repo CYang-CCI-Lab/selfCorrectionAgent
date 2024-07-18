@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-BH-A203.3EBBE51B-6D17-4A77-AAE1-E0424CEA56DB"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that the patient underwent a right axillary lymph node dissection, and out of 39 nodes, 35 were positive for metastatic infiltrating ductal carcinoma. This information corresponds to the AJCC staging system's N2 category, which indicates metastases in 4 to 9 axillary lymph nodes. Therefore, the N stage for this patient is N2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report states that there were 35 out of 39 lymph nodes positive for metastatic infiltrating ductal carcinoma in the right axilla dissection. This indicates that the cancer has spread to multiple (more than 4) axillary lymph nodes, which corresponds to a pathologic N2 stage. The T2 stage is also mentioned in the report, indicating the tumor size is between 2-5 cm. The MX stage indicates that distant metastasis could not be assessed."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

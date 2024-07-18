@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, one out of two sentinel lymph nodes is positive with multiple metastases, the largest measuring 3.5 mm in greatest dimension. This indicates that the patient has metastases in 1 to 3 axillary lymph nodes, which corresponds to N1 based on the AJCC staging system (New Rule 12)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for axillary lymph node involvement in the 7th edition of the AJCC staging system is as follows: \\nNX: Regional lymph nodes cannot be assessed \\nN0: No regional lymph node metastasis \\nN1: Metastasis in 1-3 axillary lymph nodes and/or in infraclavicular lymph nodes \\nN2: Metastasis in 4-9 axillary lymph nodes, and/or in clinically apparent ipsilateral internal mammary lymph nodes in the absence of axillary lymph node metastasis \\nN3: Metastasis in 10 or more axillary lymph nodes, or in clinically apparent ipsilateral internal mammary lymph nodes in the presence of positive axillary lymph nodes. \\nIn this report, the patient has 1 out of 2 sentinel lymph nodes positive with multiple (5) metastases, the largest measuring 3.5 mm in greatest dimension. Extranodal extension is focally present. Therefore, the N stage for this patient is N1."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

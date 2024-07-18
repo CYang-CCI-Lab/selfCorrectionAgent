@@ -1,0 +1,26 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that the largest dimension of the invasive component of the tumor is 1.8 cm (see (A) Right breast, needle-localized segmental mastectomy). Using the rules provided, a T1 tumor is 2 cm or less in size. Therefore, the predicted T stage for this patient's cancer is T1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has invasive ductal carcinoma that measures 1.8 cm in the largest dimension, which falls under T2 staging (T2: Tumor size > 2 cm and \u2264 5 cm). Although the tumor approached the anterior margin in the initial segmental mastectomy specimen, this tissue was re-excised and found to be free of tumor, so tumor does not approach the final surgical margins. The tumor is also 5 mm from the nearest deep margin. Therefore, the T stage is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T1"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

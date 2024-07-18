@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that the patient underwent a right simple mastectomy, and the largest tumor size measured is 10 cm, which is in the T3 category (tumors larger than 5 cm). The tumor is described as multifocal invasive lobular carcinoma. The T stage is determined by the size of the largest tumor, and the type of carcinoma does not affect the T stage. Therefore, the T stage for this patient is T3."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage for cancer is based on the size of the tumor. In this report, the right breast simple mastectomy specimen revealed a multifocal, invasive, lobular carcinoma that measured 10 cm in greatest dimension (specimen D, diagnosis D). Therefore, the T stage for this patient is T3."
+            },
+            {
+                "author": "Answer",
+                "text": "T3"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "Based on the pathology report, there is metastatic carcinoma present in one out of one sentinel lymph node (1/1) in the right axilla. There are no other positive lymph nodes found in the additional level I and II lymph nodes or the axillary dissection. Therefore, the N stage is N1, which corresponds to metastases in 1 to 3 axillary lymph nodes (No/Total), as per New Rule 12."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic carcinoma present in one of one lymph node (1/1) in the right axillary sentinel lymph node #1, with a metastatic focus measuring at least 1.05 cm. No definite extracapsular extension was identified. No tumor was found in any of the other examined lymph nodes (#2, additional level II, additional level I, right axillary contents, and additional level I lymph node #2). Therefore, the N stage is N1."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

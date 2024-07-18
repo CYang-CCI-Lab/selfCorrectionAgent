@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, two sentinel lymph nodes were examined and both were negative for metastases (0/2). Therefore, the N stage for this patient is N0, which indicates no metastatic carcinoma in regional lymph nodes."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that two sentinel lymph nodes were examined and both were negative for carcinoma (0/2). This means that there are no metastases in the regional lymph nodes, so the N stage is N0."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

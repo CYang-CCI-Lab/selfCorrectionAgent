@@ -1,0 +1,98 @@
+{
+  "id": 79,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 3\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1162,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report indicates that the maximum dimension of the invasive component of the tumor is 7.0 cm. Based on the rules provided, T3 tumors are more than 5 cm. Therefore, the pathologic T stage of the patient's cancer is T3."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage of a cancer is determined by the size of the primary tumor. In this report, the size of the tumor is given as 7.0 cm (gross measurement) in the 'B. Breast. Right, modified, radical mastectomy' section. According to the TNM staging system, a T2 stage tumor has a size of 2.0 to 5.0 cm, while a T3 stage tumor is larger than 5.0 cm. Therefore, since the tumor size is 7.0 cm, it falls into the T2 category."
+        },
+        {
+          "author": "Answer",
+          "text": "T3"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T3"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-05T21:11:20.305691Z",
+    "updated_at": "2024-07-17T19:04:31.146351Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 13,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 3,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 97,
+        "endOffset": 156,
+        "text": " Based on the rules provided, T3 tumors are more than 5 cm.",
+        "paragraphlabels": [
+          "T3 tumors are more than 5 cm."
+        ]
+      },
+      "id": "y9SKVhLMSW",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "ZS: incorrect inference"
+        ]
+      },
+      "id": "Hfi53R2g-0",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T14:32:47.432913Z",
+  "updated_at": "2024-07-17T19:04:31.239198Z",
+  "draft_created_at": "2024-07-07T14:32:45.154008Z",
+  "lead_time": 31.381,
+  "import_id": null,
+  "last_action": null,
+  "project": 3,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

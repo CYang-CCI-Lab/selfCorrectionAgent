@@ -1,0 +1,158 @@
+{
+  "id": 29,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 24,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report provides the size of the larger tumor as 5.3 cm, which falls in the T3 category of 'tumors more than 5 cm in size'. The T stage is determined by the size of the largest tumor, and the presence of multifocality does not affect the T stage. The T stage is also not affected by the tumor grade, lymph node involvement, or the presence of angioinvasion. Therefore, the pathologic T stage for this patient's cancer is T3."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage for breast cancer is determined by the size of the tumor and whether it has invaded the chest wall or skin. In this report, the larger tumor is 5.3 cm, which is larger than the 5 cm threshold for a T3 stage. The report also mentions 'further invasive tumor components in the quadrant of the sample excision cavity and retromamillary (maximum surface spread: 0.8 cm)', which suggests that the tumor has invaded the chest wall, which is also indicative of a T3 stage. Therefore, the T stage from this report is T3."
+        },
+        {
+          "author": "Answer",
+          "text": "T3"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:00:33.140335Z",
+    "updated_at": "2024-07-07T09:52:58.263138Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 23,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 95,
+        "endOffset": 124,
+        "text": "tumors more than 5 cm in size",
+        "paragraphlabels": [
+          "T3 tumors are more than 5 cm."
+        ]
+      },
+      "id": "f7XnbFiiBY",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 142,
+        "endOffset": 185,
+        "text": "determined by the size of the largest tumor",
+        "paragraphlabels": [
+          "Invasive ductal carcinoma staging is based on the largest tumor size."
+        ]
+      },
+      "id": "vf1PHfVSk_",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 142,
+        "endOffset": 185,
+        "text": "determined by the size of the largest tumor",
+        "paragraphlabels": [
+          "The T stage is determined by the size of the largest tumor, ignoring any substaging information."
+        ]
+      },
+      "id": "MST3pkFEJx",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 142,
+        "endOffset": 185,
+        "text": "determined by the size of the largest tumor",
+        "paragraphlabels": [
+          "Invasive lobular carcinoma staging follows the same rules as invasive ductal carcinoma, based on the largest tumor size."
+        ]
+      },
+      "id": "Znl1dOacv-",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 142,
+        "endOffset": 186,
+        "text": "determined by the size of the largest tumor,",
+        "paragraphlabels": [
+          "The T stage is determined by the largest tumor size, regardless of the type of carcinoma (invasive ductal or invasive lobular)"
+        ]
+      },
+      "id": "HhoRYxV-rH",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Implicit"
+        ]
+      },
+      "id": "FtRDAlmmOD",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T09:52:46.125247Z",
+  "updated_at": "2024-07-07T09:52:58.172864Z",
+  "draft_created_at": "2024-07-07T09:51:36.715938Z",
+  "lead_time": 105.992,
+  "import_id": null,
+  "last_action": null,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

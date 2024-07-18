@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, there is metastatic carcinoma in 1 out of 2 lymph nodes in sentinel node #4 (E). No other lymph nodes were found to have metastatic carcinoma. Therefore, based on the AJCC staging system and the new rules provided, the pathologic N stage for this patient's cancer is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has 25 lymph nodes examined, with 1 lymph node involved (malignant focus is 0.4 cm in greatest dimension). This corresponds to pN1a."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

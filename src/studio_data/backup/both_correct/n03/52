@@ -1,0 +1,73 @@
+{
+  "id": 52,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 581,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report states that there are 10 lymph nodes examined in total, and metastatic carcinoma is found in 2 of them. This corresponds to N1 stage according to the AJCC staging system. Specifically, the report indicates pN1a, which refers to metastases in 1 to 3 axillary lymph nodes. However, the report does not provide information about the exact number of positive lymph nodes between 1 and 3, so we cannot determine a more specific N1 substage."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The patient has metastatic carcinoma in 2 out of 8 axillary lymph nodes, as per the pathology report. This corresponds to a pathologic N1a stage (TNM staging system)."
+        },
+        {
+          "author": "Answer",
+          "text": "N1"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:18:59.159914Z",
+    "updated_at": "2024-07-07T10:41:33.577521Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 16,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 2,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "No evidence"
+        ]
+      },
+      "id": "ecZQBpTiLm",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T10:41:33.484445Z",
+  "updated_at": "2024-07-07T10:41:33.484480Z",
+  "draft_created_at": null,
+  "lead_time": 79.268,
+  "import_id": null,
+  "last_action": null,
+  "project": 2,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

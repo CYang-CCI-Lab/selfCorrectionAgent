@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that there are metastases in 6 out of 28 right axillary lymph nodes, with three of the positive lymph nodes being matted and forming a mass with extracapsular extension into soft tissue. This information corresponds to the AJCC pN2 stage, as per Rule 12 and Rule 14. Therefore, the N stage for this patient's cancer is N2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic adenocarcinoma in multiple (6 out of 28) right axillary lymph nodes. Three of the positive lymph nodes are matted and form a 1.4 x 1.2 x 1.2 cm mass with extracapsular extension into soft tissue (AJCC pN2). Therefore, the N stage is N2."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

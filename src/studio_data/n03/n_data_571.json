@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, 'Lymph nodes: 0/10 positive for metastasis (Axillary 0/10)'. This indicates that no lymph nodes have metastatic carcinoma. Therefore, based on New Rule 11, the N stage is N0."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that 10 dissected lymph nodes were examined and all of them were negative for metastasis (Axillary 0/10). This corresponds to an N0 stage, which means no regional lymph node metastasis."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

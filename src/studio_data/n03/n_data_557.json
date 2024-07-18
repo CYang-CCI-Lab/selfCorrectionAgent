@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "Based on the pathology report, there is 1 positive lymph node found in level II (1/7) of the left axillary lymph nodes. Therefore, the N stage is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has cancer in 1 out of 7 lymph nodes examined in level II of the left axilla (LN2: 1/7). Therefore, the N stage is N1."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

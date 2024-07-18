@@ -1,0 +1,98 @@
+{
+  "id": 88,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 3\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1171,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report states that the size of the largest tumor is 8.0 x 6.5 x 4.2 cm. According to the rules provided, T3 tumors are more than 5 cm. Therefore, the T stage for this patient's cancer is T3."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage of a cancer is determined by the size of the primary tumor. In this report, the primary tumor is described as having a size of 8.0 x 6.5 x 4.2 cm. According to the TNM staging system for cancer, a T2 stage is assigned to tumors that are greater than 2 cm in size but not greater than 5 cm. Therefore, the T stage for this patient's cancer is T2."
+        },
+        {
+          "author": "Answer",
+          "text": "T3"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T3"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-05T21:11:20.469747Z",
+    "updated_at": "2024-07-17T19:10:27.723058Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 22,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 3,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 76,
+        "endOffset": 138,
+        "text": "According to the rules provided, T3 tumors are more than 5 cm.",
+        "paragraphlabels": [
+          "T3 tumors are more than 5 cm."
+        ]
+      },
+      "id": "xg1lHi5aMj",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "ZS: incorrect inference"
+        ]
+      },
+      "id": "lJNdQbF6qu",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T14:45:44.233888Z",
+  "updated_at": "2024-07-17T19:10:27.771280Z",
+  "draft_created_at": "2024-07-07T14:45:31.381539Z",
+  "lead_time": 73.681,
+  "import_id": null,
+  "last_action": null,
+  "project": 3,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

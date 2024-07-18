@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that 'Axillary lymph nodes: Negative' and 'Special studies (see . to. - ER: Strong expression in >90% of invasive tumor nuclei. - PR: Strong expression in >90% of invasive tumor nuclei. - Her2/neu antigen (FISH): Non-amplified (ratio: 1.10).  - pTNM (AJCC, 7th edition, 2010): pT1c(m)NOMX.' Based on the new rules 10 and 11, N0 indicates no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes or that all assessed lymph nodes are negative for metastatic carcinoma. Therefore, the N stage is N0."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report states that 'Axillary lymph nodes: Negative' which means that there is no evidence of cancer in the axillary lymph nodes. Therefore, the pathologic N stage for this patient is N0."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-B6-A0I5.FA43414D-3757-43CC-8949-77F82DF4FA4D"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The pathology report does not provide information on the lymph nodes or their metastatic status. Therefore, based on New Rule 11, the N stage is N0, indicating that all assessed lymph nodes are negative for metastatic carcinoma."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The pathology report does not mention any involvement of the regional lymph nodes (axillary, internal mammary, or supraclavicular lymph nodes). Therefore, the pathologic N stage for this patient is N0."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N0"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

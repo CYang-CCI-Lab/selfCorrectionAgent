@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The patient's pathology report indicates that metastatic carcinoma was found in 6 out of 23 lymph nodes (6/23) from the right axillary content. Based on the new rules provided, this corresponds to N3 stage as per the AJCC staging system."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient's pathologic N stage is N3 because metastatic carcinoma was found in 6 out of 23 axillary lymph nodes (6/23) and in 1 out of 3 level 3 (right) lymph nodes (1/3). This information is found in sections E and F of the gross description."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

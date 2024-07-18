@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-BH-A1FR.B6E6765F-14BC-4D3D-9266-EF8065354070"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the size of the tumor as 3.0 by 2.2 by 1.7 cm. Using the rules provided, a T2 tumor is more than 2 cm but not more than 5 cm. The tumor size in this report falls within this range, so the predicted T stage is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage for breast cancer is based on the size of the primary tumor. In this report, the size of the tumor is described as 'a tumor mass, 2.2 by 1.7 by 3.0 cm.' The largest dimension of the tumor is 3.0 cm. Therefore, the T stage is T2, as T1 is defined as a tumor 2.0 cm or less in size."
+            },
+            {
+                "author": "Answer",
+                "text": "T4"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

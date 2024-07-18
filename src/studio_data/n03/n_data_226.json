@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The N stage is determined by the number of positive lymph nodes. According to the report, the right breast has 13 positive lymph nodes out of 20 assessed (including 2 of 3 positive sentinel lymph nodes). Therefore, the N stage is N3, as per New Rule 13."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has cancer in 13 out of 20 lymph nodes, including 2 out of 3 sentinel lymph nodes, on the right side. This meets the criteria for N3a stage. The left side has no cancer in the lymph nodes, but the overall N stage is determined by the more advanced side."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

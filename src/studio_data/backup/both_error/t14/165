@@ -1,0 +1,86 @@
+{
+  "id": 165,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0day, 8\u00a0hours",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1252,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Patient filename",
+          "text": "TCGA-AR-A0TW.F832C787-3668-475F-8F67-6342DA3777F4"
+        },
+        {
+          "author": "Memory Reasoning",
+          "text": "The largest tumor is a Nottingham grade III ductal adenocarcinoma with a size of 5.5 cm, which falls in the T2 category (more than 2 cm but not more than 5 cm). The presence of multifocal tumors does not affect the T stage, and it is based on the size of the largest tumor. Therefore, the pathologic T stage of the patient's cancer is T2."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The largest tumor in the right breast measures 5.5 cm in greatest dimension, which falls under the T2 category (T2: Tumor size > 2.0 cm and \u2264 5.0 cm). Although there are multiple additional tumors, the T stage is based on the size of the largest tumor."
+        },
+        {
+          "author": "Answer",
+          "text": "T3"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T2"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-15T05:19:55.177564Z",
+    "updated_at": "2024-07-17T22:58:23.346787Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 25,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 7,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Memory: incorrect inference",
+          "ZS: incorrect inference"
+        ]
+      },
+      "id": "sfkfyr7aH6",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-16T14:29:31.046477Z",
+  "updated_at": "2024-07-17T22:58:23.389152Z",
+  "draft_created_at": null,
+  "lead_time": 330.04400000000004,
+  "import_id": null,
+  "last_action": null,
+  "project": 7,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

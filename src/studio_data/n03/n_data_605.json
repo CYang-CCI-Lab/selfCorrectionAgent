@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, there are multiple (7 out of 28) left axillary lymph nodes positive for metastatic carcinoma. This corresponds to N2 according to the AJCC staging system (New Rule 14). The report also mentions that there are multiple matted left axillary sentinel lymph nodes that are positive for metastatic carcinoma with extranodal extension, but since the exact number of positive sentinel lymph nodes is not specified, the N2 stage is determined by the total number of positive lymph nodes (7 out of 28)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic carcinoma present in 2 of 2 sentinel lymph nodes, with extranodal extension, and in 7 of 28 lymph nodes from axillary dissection, but the largest positive lymph node does not show extranodal extension. According to the AJCC staging system, this would correspond to a pathologic N2 stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that there are 4 sentinel lymph nodes examined, and metastatic carcinoma is found in 3 out of 4 lymph nodes (SLN #1, 2, and 4). Therefore, based on the AJCC staging system and the new rules provided, the pathologic N stage for this patient's cancer is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic carcinoma in 1 out of 4 sentinel lymph nodes, with the largest metastasis measuring 0.6 cm and extranodal extension present. This corresponds to a pathologic N1 stage based on the AJCC Cancer Staging Manual, 7th Edition."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

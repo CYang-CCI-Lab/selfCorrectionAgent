@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-A2-A0CK.B065FC65-CD33-4878-AE2C-7E8C04F5ECAB"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the tumor size as 0.5 cm by microscopy. Based on the rules provided, T1 tumors are 2 cm or less in size. Therefore, the pathologic T stage of the patient's cancer is T1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report states that the 'TUMOR SIZE: 0.5 CM BY MICROSCOPY.' This indicates that the tumor size is 0.5 cm, which falls under T1 category in the TNM staging system for cancer. T1 is defined as a tumor that is 2 cm or less in size. Therefore, the pathologic T stage of the patient's cancer is T1."
+            },
+            {
+                "author": "Answer",
+                "text": "T3"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T1"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T1"
+            }
+        ]
+    }
+}

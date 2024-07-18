@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides a gross measurement of the tumor size, which is 2.5 cm. According to the rules provided, T1 tumors are 2 cm or less in size, and T2 tumors are more than 2 cm but not more than 5 cm. Therefore, the tumor in this report is classified as T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage for staging breast cancer is based on the size of the tumor. In this report, the greatest dimension of the tumor is measured as 2.5 cm. According to the American Joint Committee on Cancer (AJCC) staging system, a T2 stage is assigned to tumors that are greater than 2 cm but not greater than 5 cm in size. Therefore, the T stage for this patient's cancer is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

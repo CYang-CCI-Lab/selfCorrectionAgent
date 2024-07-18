@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-EW-A1IW.D4194F52-3E15-4105-9A1A-1326CF128BF8"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that the invasive lobular carcinoma measures 4.0 cm in its largest focus, which exceeds the 5 cm threshold for T3 tumors. Additionally, the report states that the tumor invades the dermal skin, which is a characteristic of T4 tumors. Therefore, the T stage for this patient's cancer is T4."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage for cancer is determined by the size of the primary tumor. In this report, the largest focus of invasion of the tumor is over 0.1 cm and measures 4 cm. According to the TNM staging system, a T4 stage is assigned to a tumor that is greater than 5 cm in size. However, in this case, the report indicates that the tumor invades the dermal skin (T4b), making the T stage T4."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T4"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T4"
+            }
+        ]
+    }
+}

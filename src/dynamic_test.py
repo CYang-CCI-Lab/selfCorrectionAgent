@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
 
 
-    for run in range(4, 10):
+    for run in range(10):
         # test data (common for both t14 and n03)
         test_file_path =  f"/home/yl3427/cylab/selfCorrectionAgent/result/t14_test_{run}.csv" # 700 reports
         test_data = pd.read_csv(test_file_path)[['Unnamed: 0', 'patient_filename', 't', 'text', 'n']]

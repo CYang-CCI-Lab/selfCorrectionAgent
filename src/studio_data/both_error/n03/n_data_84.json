@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-B6-A0IH.12C64846-1CB3-42E4-B307-54C7AD12F530"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that metastatic carcinoma is present in 25 out of 27 axillary lymph nodes. This corresponds to N3 stage according to the AJCC staging system (New Rule 13)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report mentions that there are 27 axillary lymph nodes examined, and 25 of them have metastatic carcinoma. This indicates that the patient has extensive metastasis in the axillary lymph nodes, which corresponds to N2 stage. The exact number of metastatic lymph nodes in each level is not provided, but the report mentions that the largest lymph node is located in level I and is completely replaced by adipose tissue. The N2 stage is assigned when there are 4 to 9 positive lymph nodes (any combination of axillary, internal mammary, or supraclavicular nodes) or when there are positive axillary nodes with clinically detected ipsilateral internal mammary nodes (N2a) or with clinically detected ipsilateral internal mammary and/or ipsilateral supraclavicular nodes (N2b). However, the report does not mention any clinically detected internal mammary or supraclavicular nodes, so the patient would be classified as N2a. But since the report does not provide information about internal mammary nodes, we can only predict N2 stage based on the number of positive axillary lymph nodes."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N3"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

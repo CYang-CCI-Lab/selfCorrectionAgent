@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that one out of fifteen nodes is positive for tumor, which corresponds to N1 according to Rule 12: N1 indicates metastases in 1 to 3 axillary lymph nodes (No/Total)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that one out of fifteen nodes is positive for tumor and shows extra capsular extension in the right axillary contents. This corresponds to a pathologic N1 stage (pN1). The substaging information, such as the number of positive nodes or the size of the metastasis, is not provided in the report."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

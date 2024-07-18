@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-AC-A2FK.1CF3FA64-EAE6-4A18-9B51-F5980A885371"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that three sentinel lymph nodes (B, C, and E) were positive for metastatic lobular carcinoma, with the largest deposit measuring 1.6 cm in greatest dimension. This information indicates that the N stage is at least N1a. Since there is no information suggesting that the metastases are in in-transit, satellite, or micrometastases, or in ipsilateral internal mammary lymph nodes in the absence of axillary lymph node metastases, the N stage is not higher than N1. Therefore, the N stage is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for this patient is N1 because there are 3 sentinel lymph nodes positive for metastatic lobular carcinoma, with the largest deposit measuring 1.6 cm in greatest dimension. The N stage is determined by the number of positive lymph nodes, and N1 corresponds to metastasis in 1 to 3 axillary lymph nodes."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N1"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

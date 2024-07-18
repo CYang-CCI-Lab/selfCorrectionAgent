@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The patient's pathology report indicates that there are metastases in 14 out of 23 examined lymph nodes, including two lymph nodes with micrometastases. This corresponds to N3a in the AJCC staging system. Additionally, the report mentions extracapsular extension in multiple lymph nodes. Therefore, the N stage for this patient is N3."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient's pathologic N stage is N3a. This is based on the following findings: \\n1. Metastatic carcinoma is present in one of one sentinel lymph node (1/1) with a largest metastatic focus greater than 2.0 cm and extracapsular extension. \\n2. Metastatic carcinoma is present in three of three non-sentinel lymph nodes (3/3) with largest metastatic foci of 9 mm, 4 mm, and 0.22 mm, and extracapsular extension. \\n3. A total of 14 lymph nodes have metastasis, including two with micrometastases. \\n4. Lymphovascular space invasion is identified in perinodal adipose tissue. \\n5. Extracapsular extension is present in both sentinel and non-sentinel lymph nodes."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

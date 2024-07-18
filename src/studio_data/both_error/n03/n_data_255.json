@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-BH-A1F2.FA781D93-C180-4453-BF95-B2D01B6CDB5C"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions 'six (6) out of nineteen (19) lymph nodes, positive for metastatic carcinoma, multiple foci of extranodal tumor extension are seen.' This corresponds to N2 as per the AJCC staging system, which indicates metastases in 4 to 9 axillary lymph nodes."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report mentions that six out of nineteen lymph nodes are positive for metastatic carcinoma. This puts the patient in N2 stage, which is defined as 'Metastasis in 4 to 9 axillary lymph nodes, or in clinically apparent ipsilateral internal mammary nodes in the absence of axillary lymph node metastasis.'. The mention of extranodal tumor extension also supports this staging."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

@@ -1,0 +1,132 @@
+{
+  "id": 133,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 3\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1220,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report does not provide information on the number of positive lymph nodes or the presence of metastatic carcinoma in the lymph nodes. Based on the given rules, N0 indicates no positive lymph nodes or no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes. The report only mentions that surgical margins are positive for carcinoma, but it does not provide enough information to determine the N stage. Therefore, the N stage is most likely N0."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The report mentions that lymphatic/vascular invasion is present, but no tumor is seen in dermal lymphatics. This suggests that cancer has spread to the lymphatic system, but it has not reached the skin. The absence of tumor in dermal lymphatics indicates that the cancer has not spread to the skin, which is a factor used to determine the N stage. Therefore, based on the information provided, the patient's N stage would be N1."
+        },
+        {
+          "author": "Answer",
+          "text": "N1"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "N0"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "N1"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-05T21:35:25.793610Z",
+    "updated_at": "2024-07-17T21:45:41.471392Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 4,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 6,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 164,
+        "endOffset": 201,
+        "text": "N0 indicates no positive lymph nodes ",
+        "paragraphlabels": [
+          "Rule 2: N0 indicates no positive lymph nodes."
+        ]
+      },
+      "id": "zD5U2MFo4y",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 204,
+        "endOffset": 276,
+        "text": "no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes",
+        "paragraphlabels": [
+          "Modified Rule 6: N0 indicates no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes."
+        ]
+      },
+      "id": "ADLYNXO1R0",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 205,
+        "endOffset": 276,
+        "text": "o metastatic carcinoma in sentinel lymph nodes and regional lymph nodes",
+        "paragraphlabels": [
+          "New Rule 10: N0 can indicate no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes."
+        ]
+      },
+      "id": "1HGzhIHPP2",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Incorrect ground truth"
+        ]
+      },
+      "id": "aZotg6L_e-",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T17:19:35.593165Z",
+  "updated_at": "2024-07-17T21:45:41.507535Z",
+  "draft_created_at": "2024-07-07T17:14:34.926010Z",
+  "lead_time": 443.212,
+  "import_id": null,
+  "last_action": null,
+  "project": 6,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

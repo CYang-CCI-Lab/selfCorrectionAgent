@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-BH-A1FD.9F838476-4DF1-44D6-989F-33A1D490424B"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions that the 'INFILTRATING DUCT AND INTRADUCTAL CARCINONA, POOR NUCLEAR GRADE, WITH FOCAL MUCINOUS FEATURES AND TUMOR. ASSOCIATED MICROCALCITICATIONS (2.0 CM)' was found during the left radical modified mastectomy procedure. The T stage is determined by the size of the largest tumor, which in this case is 2.0 cm. According to the rules provided, T2 tumors are more than 2 cm but not more than 5 cm. Therefore, the predicted T stage for this patient's cancer is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report mentions that the size of the tumor is 2.0 cm, which falls under the T2 category for breast cancer staging. The T stage is determined by the size of the tumor, with T1 being 2 cm or less, T2 being more than 2 cm but not more than 5 cm, T3 being more than 5 cm, and T4 being any size with direct extension to the chest wall or skin. Therefore, based on the information provided in the report, the patient's T stage is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

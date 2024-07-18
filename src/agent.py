@@ -224,14 +224,15 @@ class ConditionalMemoryAgent(MemoryAgent):
 
     return training_dataset
 
-  def test(self, testing_dataset: pd.DataFrame, num: int, temperature: float = 0.1) -> pd.DataFrame:
+  def test(self, testing_dataset: pd.DataFrame, num: int, external_memory = "", temperature: float = 0.1) -> pd.DataFrame:
     pbar = tqdm(total=testing_dataset.shape[0])
     parsing_error = 0
    
     for idx, row in testing_dataset.iterrows():
 
         report = row["text"]
-
+        if external_memory:
+            self.memory = external_memory
         prompt = self.prompt_template_dict["testing_prompt"].format(memory=self.memory, report=report)
         system_prompt = system_instruction+ "\n" + prompt
         messages = [{"role": "user", "content": system_prompt}]
@@ -285,6 +286,36 @@ class ConditionalMemoryAgent(MemoryAgent):
     pbar.close()
    
     return testing_dataset
+  
+  def zs_test(self, testing_dataset: pd.DataFrame, temperature: float = 0.1) -> pd.DataFrame:
+    pbar = tqdm(total=testing_dataset.shape[0])
+    parsing_error = 0
+   
+    for idx, row in testing_dataset.iterrows():
+
+        report = row["text"]
+      
+        prompt = self.prompt_template_dict["testing_prompt"].format(report=report)
+        system_prompt = system_instruction+ "\n" + prompt
+        messages = [{"role": "user", "content": system_prompt}]
+
+        json_output = self.get_schema_followed_response(messages, self.schema_dict["testing_schema"], temperature)
+
+        if not json_output:
+            parsing_error += 1
+            print(f"Error at index: {idx}")
+            testing_dataset.loc[idx, f"zs_{self.label}_is_parsed"] = False
+            continue
+        testing_dataset.loc[idx, f"zs_{self.label}_is_parsed"] = True
+
+        testing_dataset.loc[idx, f"zs_{self.label}_reasoning"] = json_output['reasoning']
+        testing_dataset.loc[idx, f"zs_{self.label}_ans_str"] = json_output['predictedStage']
+        
+        pbar.update(1)
+    pbar.close()
+
+    return testing_dataset
+  
   
   def clear_memory(self):
     self.memory = ""

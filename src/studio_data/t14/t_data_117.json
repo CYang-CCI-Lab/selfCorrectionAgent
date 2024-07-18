@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the size of the largest tumor as 2.1 cm, which falls within the range for T2 tumors (more than 2 cm but not more than 5 cm). Therefore, the pathologic T stage of the patient's cancer is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage of a cancer is determined by the size of the primary tumor. In this report, the size of the largest focus of invasion is given as 2.1 cm. According to the TNM staging system, a T2 stage is defined as a tumor with a size greater than 20 mm but not greater than 50 mm in greatest dimension. Therefore, based on the given information, the patient's cancer stage is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

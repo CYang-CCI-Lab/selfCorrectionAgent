@@ -1,0 +1,26 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the maximum dimension of the invasive component of the tumor, which is 2 cm. Based on the rules provided, T1 tumors are 2 cm or less in size. Therefore, the pathologic T stage of the patient's cancer is T1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage of a cancer is determined by the size of the primary tumor. In this report, the size of the invasive component of the tumor is stated as 2.0 cm in the 'FINAL DIAGNOSIS' section and 2.0 cm in the 'SIZE OF TUMOR' section of the 'UNUE INOPSIS' section. The T stage is therefore T2, as T1 is defined as a tumor 2.0 cm or less."
+            },
+            {
+                "author": "Answer",
+                "text": "T1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T1"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

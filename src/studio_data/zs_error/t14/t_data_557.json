@@ -1,0 +1,26 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that the largest tumor in the left breast measures 1.9 cm in largest dimension (invasive ductal carcinoma, histologic grade II-III/III, nuclear grade III/III). This falls within the size range for a T1 tumor (2 cm or less). The presence of ductal carcinoma in situ (DCIS) or the percentage of the tumor occupied by in situ component does not affect the T stage for invasive ductal carcinoma. Therefore, the T stage for this patient is T1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage of a cancer is determined by the size of the primary tumor. In this report, the left breast shows a firm to hard, fairly circumscribed, centrally placed mass, measuring 1.7 x 1.5 x 1.5 cm, approximately 1.0 cm from the deep margin. Therefore, the T stage for this cancer is T2 (tumor size > 2 cm and \u2264 5 cm)."
+            },
+            {
+                "author": "Answer",
+                "text": "T1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T1"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

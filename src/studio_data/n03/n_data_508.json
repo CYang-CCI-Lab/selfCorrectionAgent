@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, Sentinel Lymph Node #1 (SLN #1) has no tumor (0/1), while Sentinel Lymph Node #2 (SLN #2) has metastatic carcinoma in 2 out of 3 lymph nodes. Additionally, the axillary dissection shows metastatic carcinoma in 3 out of 17 lymph nodes. Based on these findings, the N stage is N2 (N2 indicates metastases in 4 to 9 axillary lymph nodes)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for a cancer patient is determined by the number of positive lymph nodes and the size of the largest metastasis. In this report, the sentinel lymph node #2 has metastatic carcinoma in two of the three lymph nodes, with the largest metastasis being 0.7 cm. Additionally, the axillary contents, right, levels 1 and 2, dissection shows metastatic carcinoma in 3 of the 17 lymph nodes, with the largest metastasis being 1.5 cm. Therefore, the patient's N stage is N2."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

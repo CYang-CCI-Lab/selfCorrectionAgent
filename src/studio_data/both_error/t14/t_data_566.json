@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-BH-A18G.7C92F144-4A84-4D9E-8A35-C059FD082150"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The pathology report provides a gross measurement of the tumor size, which is 2.7 cm. According to the rules provided, T1 tumors are 2 cm or less in size, T2 tumors are more than 2 cm but not more than 5 cm, T3 tumors are more than 5 cm, and T4 tumors are of any size with direct extension to the chest wall or skin. Since the tumor size is more than 2 cm but not more than 5 cm, the T stage is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage for cancer is determined by the size of the tumor. In this report, the size of the tumor is stated as 'SIZE OF TUMOR: Maximum dimension invasive component: 27 mm.' This converts to 2.7 cm. According to the TNM staging system, a T stage 2 cancer is defined as a tumor with a size of 2-5 cm. Therefore, the T stage for this patient's cancer is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

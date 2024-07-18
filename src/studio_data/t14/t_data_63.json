@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the tumor size as 2.5 cm, which falls within the range for T2 tumors (more than 2 cm but not more than 5 cm). The tumor is also described as a poorly differentiated invasive ductal carcinoma, which follows the same staging rules as invasive ductal carcinoma. The presence of ductal carcinoma in situ (DCIS) or the percentage of the tumor occupied by in situ component does not affect the T stage for invasive ductal carcinoma. Therefore, the T stage for this patient is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "According to the American Joint Committee on Cancer (AJCC) staging system for breast cancer, the T stage is determined by the size of the tumor and the extent of primary tumor invasion. In this report, it is stated that the tumor diameter is 2.5 cm and there is infiltration of the corial connective tissue of superficial adjacent skin, but no ulceration of the skin. These findings are consistent with a T2 stage (tumor size 2.0 to 5.0 cm). Therefore, the T stage from this report is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

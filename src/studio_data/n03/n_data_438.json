@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that 6 out of 30 assessed left axillary lymph nodes are positive for metastatic carcinoma, including multiple (2) matted lymph nodes. This corresponds to N2 according to the AJCC staging system (New Rule 14: N2 indicates metastases in 4 to 9 axillary lymph nodes)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for cancer is determined by the presence and extent of cancer in the lymph nodes. In this report, it is stated that multiple (6 out of 30) left axillary lymph nodes are positive for metastatic carcinoma, including multiple (2) matted lymph nodes. This information indicates that the cancer has spread to at least one lymph node and up to two lymph nodes are matted, which is consistent with a pathologic N2 stage. The N2 stage is defined as 'Metastasis in 4 to 9 axillary lymph nodes, or in clinically detected ipsilateral internal mammary nodes in the absence of axillary lymph node metastasis.' However, since this report specifically mentions axillary lymph node metastasis, the N2 stage is the appropriate classification."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

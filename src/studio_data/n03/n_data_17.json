@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, there is no evidence of metastatic carcinoma in the sentinel lymph nodes (A1, B1, C1, C2) or in the non-sentinel lymph nodes (F1-F3). The patient has 0/5 positive lymph nodes. Therefore, the N stage is N0."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The pathology report states that the sentinel lymph nodes (A, B, C) and the non-sentinel lymph node (F) were all negative for metastases (0/1, 0/1, 0/2, 0/1 respectively). Therefore, the patient's N stage is N0."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

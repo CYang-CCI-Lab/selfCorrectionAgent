@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates a diagnosis of 'pT1cN1a', where 'N1' means that metastases are found in 1 to 3 axillary lymph nodes. This corresponds to New Rule 12. Therefore, the N stage for this patient's cancer is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The 'pT1cN1a' portion of the tumor classification indicates that the cancer has invaded the breast tissue and there is metastasis to 1-3 axillary lymph nodes, which corresponds to a pathologic N stage of N1. The 'LOVORO' notation likely refers to the laterality (left or right) and the number of involved and examined lymph nodes, but it does not affect the N stage. The 'NOS' and 'G II' portions of the classification refer to the histologic grade and are not used in determining the N stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

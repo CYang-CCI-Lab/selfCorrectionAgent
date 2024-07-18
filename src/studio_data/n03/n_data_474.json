@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, sentinel node #1, which was hot and blue, had metastatic carcinoma (1/1) with a size of 0.8 cm and no extracapsular extension. Sentinel node #2, which was hot but not blue, had no malignancy (0/1). Therefore, the patient has metastases in 1 to 3 axillary lymph nodes, which corresponds to N1 according to the AJCC staging system (New Rule 12)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic carcinoma in one out of the two sentinel lymph nodes examined (N1). The size of the metastasis in the positive lymph node is 0.8 cm. There is no evidence of extracapsular extension. The other sentinel lymph node was negative for malignancy."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-B6-A0RP.889D6E80-A656-49FA-9DFA-1674EB3877F6"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that two out of fifteen left axillary lymph nodes are involved with metastatic carcinoma. According to the new rules provided, N2 indicates metastases in 4 to 9 axillary lymph nodes. Therefore, the N stage for this patient is N2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for a cancer patient is determined by the presence and extent of cancer involvement in the lymph nodes. In this pathology report, it is stated that two out of fifteen left axillary lymph nodes are involved with metastatic carcinoma. This corresponds to N2 (metastasis in 1-3 axillary lymph nodes) according to the TNM staging system for cancer."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

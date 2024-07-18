@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that the maximum invasive tumor size is grossly estimated to be approximately 5 cm. According to the rules provided, T1 tumors are 2 cm or less, T2 tumors are more than 2 cm but not more than 5 cm, T3 tumors are more than 5 cm, and T4 tumors are of any size with direct extension to the chest wall or skin. Therefore, the tumor size of approximately 5 cm falls into the T2 category."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that the maximum invasive tumor size is grossly estimated at approximately 5 cm. According to the TNM staging system for cancer, a T2 stage is defined as a tumor that is 2-5 cm in greatest dimension. Therefore, the T stage for this patient is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

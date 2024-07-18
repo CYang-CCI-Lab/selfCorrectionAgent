@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-E9-A1RF.50F3690C-2082-4590-A923-656C5F226FAE"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, 5 out of 10 examined lymph nodes were positive for metastases (Axillary 5/10). Based on the new rules provided, N1 indicates metastases in 1 to 3 axillary lymph nodes. Therefore, the N stage for this patient's cancer is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient's pathology report indicates that 5 out of 10 examined lymph nodes demonstrated metastases. This corresponds to an N1 stage in the TNM staging system for cancer. The N stage is determined based on the number of lymph nodes with metastases. In this case, N1 corresponds to metastases in 1 to 3 axillary lymph nodes or in internal mammary lymph nodes with or without axillary lymph node metastases. The report specifies that the metastases were found in axillary lymph nodes, so the N stage is N1."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N1"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

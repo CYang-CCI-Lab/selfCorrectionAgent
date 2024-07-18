@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the gross measurement of the invasive ductal carcinoma as 2.8 cm. Based on the rules provided, T2 tumors are more than 2 cm but not more than 5 cm. Therefore, the pathologic T stage of the patient's cancer is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage of a cancer is determined by the size of the primary tumor. In this pathology report, the size of the invasive ductal carcinoma is given as 2.8 cm (Breast Pathologic Parameters, 1. Invasive carcinoma, A. Gross measurement: 2.8cm). Therefore, the T stage for this patient's cancer is T2 (T1: tumor size \u2264 2 cm; T2: tumor size > 2 cm, \u2264 5 cm; T3: tumor size > 5 cm)."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

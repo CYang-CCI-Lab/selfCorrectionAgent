@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates a tumor classification of lobular carcinoma, NOS, G III, oT2N3aL1V1RX, with N3a suggesting metastases in 4 to 9 axillary lymph nodes. This corresponds to N3 based on New Rule 13 and New Rule 15."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The 'N' in TNM staging refers to the spread of cancer to nearby lymph nodes. In this report, the 'N3a' indicates that cancer has spread to 4 to 9 axillary lymph nodes or to infraclavicular (clavicle) lymph nodes. Therefore, the N stage for this patient is N3."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

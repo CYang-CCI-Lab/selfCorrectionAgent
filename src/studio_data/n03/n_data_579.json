@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "Based on the report, there is metastatic carcinoma present in 1 out of 16 lymph nodes (1/16) in the right axilla. This corresponds to N1 based on the AJCC staging system."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic carcinoma in one of one lymph node (1/1) in the right axilla, as per the pathology report of the sentinel lymph node excision (specimen A). Therefore, the N stage is N1."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

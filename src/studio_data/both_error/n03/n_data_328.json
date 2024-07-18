@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-A2-A0EW.2620E5E7-ED7D-4F04-A8AF-1499E9711E8A"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that there are 4 lymph nodes positive for carcinoma in the right axillary sentinel and non-sentinel nodes (specimen D and E). Therefore, based on the provided rules, the N stage is N2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for a cancer patient is determined by the involvement of lymph nodes. In this report, it is stated that there are four lymph nodes positive for tumor by H&E (two in the right sentinel node and one in the non-sentinel node in the right axilla) out of a total of four lymph nodes examined. Therefore, the N stage for this patient is N2."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

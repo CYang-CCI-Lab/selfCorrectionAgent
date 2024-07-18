@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that lymph node sampling was performed on the right breast and 2 out of 18 (2/18) lymph nodes were positive for metastatic breast carcinoma, with the largest tumor being 2.3 cm and no extranodal involvement. This corresponds to the N1 stage based on the AJCC staging system."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has invasive lobular carcinoma in the right breast with lymph node sampling positive for metastatic breast carcinoma in 2 out of 18 nodes, with the largest tumor being 2.3 cm. This corresponds to a pathologic N stage of N1."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

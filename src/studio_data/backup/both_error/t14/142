@@ -1,0 +1,104 @@
+{
+  "id": 142,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0day, 8\u00a0hours",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1229,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Patient filename",
+          "text": "TCGA-B6-A1KN.72996825-1FFA-4C51-8DB0-DA74BCB595EB"
+        },
+        {
+          "author": "Memory Reasoning",
+          "text": "The report provides the size of the invasive component of the tumor as 6.4 x 5.2 x 2.5 cm. According to the rules provided, a T3 tumor is defined as being more than 5 cm. In this case, the largest dimension of the tumor is 6.4 cm, which is greater than 5 cm, so the T stage is T3."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The size of the invasive component of the tumor is reported as 6.4 x 5.2 x 2.5 cm. According to the TNM staging system for cancer, a T2 stage is assigned when the tumor is greater than 2 cm but not greater than 5 cm in its greatest dimension. Therefore, the T stage for this patient's cancer is T2."
+        },
+        {
+          "author": "Answer",
+          "text": "T4"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T3"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-15T05:19:54.728626Z",
+    "updated_at": "2024-07-17T22:03:02.388441Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 2,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 7,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Memory: incorrect info-extract",
+          "ZS: incorrect info-extract",
+          "ZS: incorrect inference"
+        ]
+      },
+      "id": "fM_nO3iSAA",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "1",
+        "end": "1",
+        "startOffset": 91,
+        "endOffset": 170,
+        "text": "According to the rules provided, a T3 tumor is defined as being more than 5 cm.",
+        "paragraphlabels": [
+          "T3 tumors are more than 5 cm."
+        ]
+      },
+      "id": "avR-o16rPk",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-16T13:11:39.411545Z",
+  "updated_at": "2024-07-17T22:03:02.461404Z",
+  "draft_created_at": "2024-07-16T13:10:38.634066Z",
+  "lead_time": 1093.797,
+  "import_id": null,
+  "last_action": null,
+  "project": 7,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

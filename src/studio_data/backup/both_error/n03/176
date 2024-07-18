@@ -1,0 +1,85 @@
+{
+  "id": 176,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0day, 6\u00a0hours",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1290,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Patient filename",
+          "text": "TCGA-BH-A203.3EBBE51B-6D17-4A77-AAE1-E0424CEA56DB"
+        },
+        {
+          "author": "Memory Reasoning",
+          "text": "The report states that the patient underwent a right axillary lymph node dissection, and out of 39 nodes, 35 were positive for metastatic infiltrating ductal carcinoma. This information corresponds to the AJCC staging system's N2 category, which indicates metastases in 4 to 9 axillary lymph nodes. Therefore, the N stage for this patient is N2."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The report states that there were 35 out of 39 lymph nodes positive for metastatic infiltrating ductal carcinoma in the right axilla dissection. This indicates that the cancer has spread to multiple (more than 4) axillary lymph nodes, which corresponds to a pathologic N2 stage. The T2 stage is also mentioned in the report, indicating the tumor size is between 2-5 cm. The MX stage indicates that distant metastasis could not be assessed."
+        },
+        {
+          "author": "Answer",
+          "text": "N1"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "N2"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "N2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-15T05:22:44.796346Z",
+    "updated_at": "2024-07-17T23:02:19.114501Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 6,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 8,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Incorrect ground truth"
+        ]
+      },
+      "id": "x5SaO9sd1O",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-16T16:25:36.537966Z",
+  "updated_at": "2024-07-17T23:02:19.152244Z",
+  "draft_created_at": "2024-07-16T16:24:45.860265Z",
+  "lead_time": 133.09,
+  "import_id": null,
+  "last_action": null,
+  "project": 8,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, there are metastases in 4 to 9 axillary lymph nodes (part 6 states 'five of eleven lymph nodes positive for metastatic carcinoma'). Therefore, based on the AJCC staging system and the given rules, the N stage is N2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for cancer is determined by the presence and extent of cancer in the lymph nodes. In this report, it is stated that two lymph nodes were positive for metastatic carcinoma in the sentinel lymph node biopsy (Part 3) and five out of eleven lymph nodes were positive for metastatic carcinoma in the left axillary contents excision (Part 6), with three of those five nodes having extracapsular extension. This information indicates that the cancer has spread to multiple lymph nodes, but it has not spread to lymph nodes near the collarbone or to lymph nodes on the opposite side of the body. Therefore, the N stage for this patient is N2."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

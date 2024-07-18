@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, there are 4 lymph nodes examined in total, and 1 of them has metastatic carcinoma. This corresponds to N1 based on the AJCC staging system, as per New Rule 12: N1 indicates metastases in 1 to 3 axillary lymph nodes (No/Total). The report specifies that there is 1/4 positive lymph nodes, which matches this definition."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has 4 lymph nodes examined, with 2 sentinel nodes and 1 non-sentinel node positive for metastasis. This corresponds to a pathologic N1 stage. The largest metastasis is a macrometastasis, measuring 6 mm, and there is extracapsular extension present in one of the sentinel nodes. The patient does not meet the criteria for N2 or N3 stages as there are no more than 3 positive nodes and there is no evidence of matted nodes or in-transit metastasis."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

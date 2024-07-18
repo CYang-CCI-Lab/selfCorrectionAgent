@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that there are metastases in 18 out of 20 examined lymph nodes in the left axillary contents (B), and there is also metastatic carcinoma in the left supraclavicular lymph node (C). This information indicates that the cancer has spread to multiple lymph nodes, which corresponds to a more advanced N stage. Based on the AJCC staging system and the new rules provided, N3 indicates metastases in 4 or more axillary lymph nodes, or in in-transit, satellite, or micrometastases (N3mi) in 4 or more lymph nodes, or in ipsilateral internal mammary lymph nodes in the absence of axillary lymph node metastases. In this case, the patient has metastases in 18 out of 20 examined axillary lymph nodes, which satisfies the criteria for N3. Therefore, the predicted N stage for this patient is N3."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic carcinoma involving 18 out of 20 examined lymph nodes in the left axillary contents, with extensive extranodal extension and non-nodal metastases. Additionally, there is metastatic carcinoma in the left supraclavicular lymph node. These findings support a pathologic N stage of N3."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

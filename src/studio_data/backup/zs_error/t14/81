@@ -1,0 +1,81 @@
+{
+  "id": 81,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 3\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1164,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report states that the largest tumor size in the left breast is 6 cm, which is larger than the threshold for T3 tumors (more than 5 cm). Therefore, the pathologic T stage of the patient's cancer is T3."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage of breast cancer is determined by the size of the tumor. In this report, the tumor size is described as 'a 6.0 x 5.0 x 2.8 cm gray-white, ill-defined mass'. This means that the tumor is larger than 2 cm but not larger than 5 cm, which corresponds to T2 stage."
+        },
+        {
+          "author": "Answer",
+          "text": "T3"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T3"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-05T21:11:20.336868Z",
+    "updated_at": "2024-07-17T19:05:01.412170Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 15,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 3,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "ZS: incorrect inference"
+        ]
+      },
+      "id": "tFJDhCjFNY",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T14:33:29.850577Z",
+  "updated_at": "2024-07-17T19:05:01.452246Z",
+  "draft_created_at": null,
+  "lead_time": 29.128,
+  "import_id": null,
+  "last_action": null,
+  "project": 3,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

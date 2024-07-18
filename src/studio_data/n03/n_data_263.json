@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states 'Cancer metastases to axillary lymph nodes (19/22)'. This indicates that 19 out of 22 assessed lymph nodes have cancer metastases. According to the provided rules, this corresponds to N3 stage as per the AJCC staging system (New Rule 13)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that there are cancer metastases to axillary lymph nodes, with 19 out of 22 lymph nodes involved. This corresponds to a pathologic N3a stage. The specific N stage may vary depending on the T stage and the presence of additional factors such as extranodal extension, but based on the information provided, the N stage is N3."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

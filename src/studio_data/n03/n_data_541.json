@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions 'Metastases carcinomatosae in lymphonodis axillae (No. IV/XI) (NHG2, pT2, pN2a)'. This indicates that there are metastases in 4 to 9 axillary lymph nodes, which corresponds to N2 according to Rule 14 and New Rule 12. Therefore, the N stage for this patient is N2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report mentions 'Metastases carcinomatosae in lymphonodis axillae (No IV/XI)', which indicates that cancer has spread to 4-10 axillary lymph nodes. This corresponds to the N2 stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

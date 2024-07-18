@@ -1,0 +1,98 @@
+{
+  "id": 134,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 3\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1221,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "According to the pathology report, there are metastases in 1 to 3 axillary lymph nodes (2 out of 19 lymph nodes were positive for metastatic carcinoma). Therefore, based on New Rule 12, the N stage is N1."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The patient has metastatic carcinoma involving one out of one lymph node in sentinel node #1, and six out of nineteen lymph nodes positive for metastatic carcinoma in level II of the right axillary contents. This corresponds to a pathologic N stage of N2."
+        },
+        {
+          "author": "Answer",
+          "text": "N2"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "N1"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "N2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-05T21:35:25.807905Z",
+    "updated_at": "2024-07-17T21:47:42.744308Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 5,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 6,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 164,
+        "endOffset": 184,
+        "text": "based on New Rule 12",
+        "paragraphlabels": [
+          "New Rule 12: N1 indicates metastases in 1 to 3 axillary lymph nodes (No/Total)"
+        ]
+      },
+      "id": "Yt1MwszxvG",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Memory: incorrect info-extract"
+        ]
+      },
+      "id": "HIuWKUtzwy",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T17:20:56.262737Z",
+  "updated_at": "2024-07-17T21:47:42.781857Z",
+  "draft_created_at": "2024-07-07T17:20:20.122602Z",
+  "lead_time": 189.168,
+  "import_id": null,
+  "last_action": null,
+  "project": 6,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

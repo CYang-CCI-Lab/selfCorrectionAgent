@@ -1,0 +1,98 @@
+{
+  "id": 94,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 3\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1177,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report indicates that the largest focus of invasive carcinoma measures 1.2 cm in greatest dimension. Based on the rules provided, T1 tumors are 2 cm or less in size. Therefore, the pathologic T stage of the patient's cancer is T1."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The report indicates that the largest focus of invasive carcinoma measures 1.2 cm in greatest dimension, which falls within the T2 category (T2: Tumor size > 2 cm and \u2264 5 cm). Therefore, the T stage from this report is T2."
+        },
+        {
+          "author": "Answer",
+          "text": "T1"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T1"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-05T21:11:20.567055Z",
+    "updated_at": "2024-07-17T19:16:09.143942Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 28,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 3,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 105,
+        "endOffset": 169,
+        "text": "Based on the rules provided, T1 tumors are 2 cm or less in size.",
+        "paragraphlabels": [
+          "T1 tumors are 2 cm or less in size."
+        ]
+      },
+      "id": "0abWo9V7-m",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "ZS: incorrect inference"
+        ]
+      },
+      "id": "-QkYN0McOu",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T14:49:53.102884Z",
+  "updated_at": "2024-07-17T19:16:09.193574Z",
+  "draft_created_at": null,
+  "lead_time": 26.103,
+  "import_id": null,
+  "last_action": null,
+  "project": 3,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

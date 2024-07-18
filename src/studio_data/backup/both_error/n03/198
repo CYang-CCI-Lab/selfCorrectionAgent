@@ -1,0 +1,85 @@
+{
+  "id": 198,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0day, 6\u00a0hours",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1312,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Patient filename",
+          "text": "TCGA-BH-A18H.DF536409-601F-489B-9F8A-A2B372BF9999"
+        },
+        {
+          "author": "Memory Reasoning",
+          "text": "The N stage is determined by the number of positive lymph nodes. According to the report, the left axillary contents excision shows metastatic carcinoma involving two of twenty-four lymph nodes (2/24). Therefore, the N stage is N1."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The N stage is determined by the presence and extent of cancer in the lymph nodes. In this report, the right axillary sentinel lymph node biopsy showed no metastatic tumor (0/1), while the left axillary lymph node dissection revealed metastatic carcinoma in two of twenty-four lymph nodes (2/24). Therefore, the N stage is N1."
+        },
+        {
+          "author": "Answer",
+          "text": "N0"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "N1"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "N1"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-15T05:22:45.113502Z",
+    "updated_at": "2024-07-17T23:03:49.194772Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 28,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 8,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Incorrect ground truth"
+        ]
+      },
+      "id": "1hhdnSZwMO",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-16T17:02:01.753874Z",
+  "updated_at": "2024-07-17T23:03:49.240991Z",
+  "draft_created_at": null,
+  "lead_time": 56.376,
+  "import_id": null,
+  "last_action": null,
+  "project": 8,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

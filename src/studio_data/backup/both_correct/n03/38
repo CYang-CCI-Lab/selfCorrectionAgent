@@ -1,0 +1,90 @@
+{
+  "id": 38,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 567,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report states that 'Ten of fourteen lymph nodes are positive for metastatic carcinoma (10/14)'. This information aligns with New Rule 13, which states that N3 indicates metastases in 4 or more axillary lymph nodes. Therefore, the N stage for this patient's cancer is N3."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The report indicates that 10 out of 14 lymph nodes are positive for metastatic carcinoma (10/14). This corresponds to a pathologic N stage of N3, which is defined as metastasis in 10 or more axillary lymph nodes, or in infraclavicular (level III) lymph nodes. The number of positive lymph nodes is the determining factor for the N stage, regardless of other factors such as tumor size or substaging information."
+        },
+        {
+          "author": "Answer",
+          "text": "N3"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:18:58.886882Z",
+    "updated_at": "2024-07-07T10:07:42.513724Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 2,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 2,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 100,
+        "endOffset": 218,
+        "text": "This information aligns with New Rule 13, which states that N3 indicates metastases in 4 or more axillary lymph nodes.",
+        "paragraphlabels": [
+          "New Rule 13: N3 indicates metastases in 4 or more axillary lymph nodes, or in in-transit, satellite, or micrometastases (N3mi) in 4 or more lymph nodes, or in ipsilateral internal mammary lymph nodes in the absence of axillary lymph node metastases"
+        ]
+      },
+      "id": "d9TdlzSq9b",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Explicit"
+        ]
+      },
+      "id": "1lZUX-z0_M",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T10:07:42.456091Z",
+  "updated_at": "2024-07-07T10:07:42.456131Z",
+  "draft_created_at": "2024-07-07T10:07:31.738392Z",
+  "lead_time": 74.209,
+  "import_id": null,
+  "last_action": null,
+  "project": 2,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

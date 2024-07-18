@@ -1,0 +1,26 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the size of the largest tumor as 1.8 x 1.4 x 1.4 cm. According to the rules, T1 tumors are 2 cm or less in size. Therefore, the pathologic T stage of the patient's cancer is T1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that the patient has an invasive Nottingham grade III ductal carcinoma that forms a 1.8 x 1.4 x 1.4 cm mass (AJCC pT2). The T stage is based on the size of the tumor, and in this case, the tumor size is greater than 2 cm but not more than 5 cm, which corresponds to T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T1"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

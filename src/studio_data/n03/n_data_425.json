@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that 'Number of lymph nodes with macrometastases (>0.2 cm): 0', 'Number of lymph nodes with micrometastases (>0.2 mm to 0.2 cm and/or >200 cells): 0', and 'Number of lymph nodes with isolated tumor cells (<0.2 mm and <=200 cells): 0'. Based on the new rules 10 and 11, N0 can indicate no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes or that all assessed lymph nodes are negative for metastatic carcinoma. In this report, all 3 sentinel lymph nodes were assessed and found to be negative for metastatic carcinoma. Therefore, the N stage is N0."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report states that 'Number of lymph nodes with macrometastases (>0.2 cm): 0', 'Number of lymph nodes with micrometastases (>0.2 mm to 0.2 cm and/or >200 cells): 0', and 'Number of lymph nodes with isolated tumor cells (<0.2 mm and <=200 cells): 0'. Therefore, the patient's N stage is N0."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

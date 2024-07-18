@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-AO-A03L.FF7212E5-9A44-4659-B3B9-3EF2DB7A9E6D"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that the largest tumor size is 6.5 cm, which falls within the range for a T2 tumor (more than 2 cm but not more than 5 cm). Therefore, the T stage for this patient's cancer is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage of cancer is determined by the size of the tumor and whether it has invaded nearby tissue. In this report, the tumor is described as 'a product of modified radical mastectomy, breast measuring 16.0 x 11.5 x 5.0 cm with attached axillary tissue, measuring 7.9 x 7.0 x 2.0 cm with tags attached labeled one and two.' A 6.5 x 4.0 x 2.5 cm tumor is located in the central quadrant, about 1.5 cm beneath the overlying skin and 0.2 cm from the deep resection margin. Therefore, the tumor size is greater than 2 cm but not greater than 5 cm, which corresponds to a T2 stage. The T stage is not affected by the presence of metastasis in the sentinel lymph node or the number of positive lymph nodes."
+            },
+            {
+                "author": "Answer",
+                "text": "T3"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-D8-A1Y0.53ED4388-8CD2-4925-81A9-9C4792C83566"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions that the largest tumor size was 1.9 x 1.3 x 1.4 cm. According to the rules provided, T1 tumors are 2 cm or less in size, T2 tumors are more than 2 cm but not more than 5 cm, and T3 tumors are more than 5 cm. Since the largest tumor size is more than 2 cm but not more than 5 cm, the T stage is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The tumor size is 1.9 x 1.3 x 1.4 cm, which falls within the T2 category. T2 is defined as a tumor size of 2.0 to 5.0 cm. The report mentions that the tumor was found in the subareolar part, located 5.2 cm from the upper boundary and 2.8 cm from the base. The size of the tumor is provided in the macroscopic description section, and the report also mentions invasive ductal carcinoma, which is consistent with a T2 stage. Therefore, the T stage from this report is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

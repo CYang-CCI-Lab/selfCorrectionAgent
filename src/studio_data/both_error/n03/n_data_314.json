@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-A2-A4S3.351D8E38-6E04-4F54-8CB1-975AEB7DB552"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that there are metastatic carcinomas in 2 out of 7 axillary lymph nodes (N2) in the left breast. This is based on the findings in part B of the report, which states '2. Multiple invasive tumors are present measuring 4, 10, 12, 35 and 40 mm in greatest dimension. 3. Lymphatic invasion is present. 4. Metastatic carcinoma to 2 of 7 axillary lymph nodes.' This information corresponds to New Rule 14, which states that N2 indicates metastases in 4 to 9 axillary lymph nodes."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic carcinoma to 2 of 7 axillary lymph nodes, as stated in the pathology report (part B, section 4). This corresponds to an N2 stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

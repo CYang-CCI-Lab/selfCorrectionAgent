@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that there are metastases in 3 out of 29 lymph nodes (3/29) in the right axillary contents. According to the new rules provided, N2 indicates metastases in 4 to 9 axillary lymph nodes. Therefore, the N stage for this patient is N2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for this patient is N2, which is indicated in the 'Final Diagnosis' section of the report. It states 'Metastatic adenocarcinoma in three of twenty-nine lymph nodes (3/29) with extracapsular extension.' This means that the cancer has spread to 3 out of 29 lymph nodes, which falls under the N2 category. The report also mentions 'Metastatic adenocarcinoma in two of two lymph nodes (2/2) with extracapsular extension' in the 'Sentinel lymph node right axilla, excision' section, but this should be disregarded as it is a separate specimen and does not apply to the regional lymph nodes. The N stage is determined by the number of involved lymph nodes in the regional lymph node basin, which in this case is the axillary lymph nodes."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

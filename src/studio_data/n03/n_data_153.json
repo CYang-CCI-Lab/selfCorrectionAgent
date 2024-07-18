@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that multiple (3 out of 6) sentinel lymph nodes and multiple (2 out of 13) axillary lymph nodes are positive for metastatic carcinoma. This corresponds to N2 according to the AJCC staging system (New Rule 14 and New Rule 15). The report also mentions extranodal extension, which is consistent with N2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has 2 out of 13 right axillary lymph nodes positive for metastatic carcinoma, as stated in the report: 'Multiple (2 of 13) right axillary lymph nodes are positive for metastatic carcinoma [AJCC pN2]'. This corresponds to N2 in the AJCC staging system, which ignores substaging information."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions 'Metastases carcinomatosae in lymphonodis (No XI/XI) (NHG3, pT2, pN3a)' which indicates that there are metastases in 4 or more axillary lymph nodes, which corresponds to N3 stage as per the AJCC staging system (New Rule 13)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report mentions 'Metastases carcinomatosae in lymphonodis (No XI/XI)' which means that cancer metastases were found in 11 out of 11 axillary lymph nodes examined. This corresponds to an N3 stage in the TNM staging system. The report also mentions 'Infitratio telae perinodalis' and 'Emboliae carcinomatosae vasorum' which indicate perinodal spread and vascular invasion, further supporting a more advanced N stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

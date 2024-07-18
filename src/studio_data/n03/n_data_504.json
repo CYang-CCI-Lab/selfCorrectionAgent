@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, there were 3 sentinel lymph nodes excised and all were negative for malignancy on routine and immunohistochemical stains (specimen A and B). The final diagnosis also states 'pNO (sn)', which indicates no regional lymph node metastasis. Therefore, the N stage for this patient is N0."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The pathology report indicates that sentinel lymph nodes #1, #2, and #3 were all negative for malignancy on both routine and immunohistochemical stains (specimen A and B). Therefore, the patient's N stage is N0, as there is no evidence of cancer in the regional lymph nodes."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

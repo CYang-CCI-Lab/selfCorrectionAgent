@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-GM-A3XN.E9A88E5B-4F50-4683-9C65-56CFCB15405E"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions three invasive lobular carcinoma masses with maximum dimensions of 2.0 cm, 1.9 cm, and 1.1 cm. The largest of these masses is 2.0 cm, which falls under the T2 category of tumors that are more than 2 cm but not more than 5 cm. Therefore, the pathologic T stage of the patient's cancer is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has three invasive lobular carcinoma masses in the breast, with the largest one measuring 2.0 cm. This puts the tumor size in the T2 category (T2: Tumor size > 2.0 cm and \u2264 5.0 cm). The presence of perineural invasion, close margins, and invasive tumor within 0.1 cm from the medial margin do not affect the T stage. The T stage is based on the size of the primary tumor only."
+            },
+            {
+                "author": "Answer",
+                "text": "T1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, multiple (4) left axillary sentinel lymph nodes are negative for metastatic carcinoma (AJCC pNO (i-) (sn)). A single left axillary lymph node is also negative for tumor. Additionally, there is no mention of metastases in a specific number of lymph nodes. Based on New Rule 11 and Rule 8, the N stage for this patient is N0."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report states that multiple (4) left axillary sentinel lymph nodes are negative for metastatic carcinoma (AJCC pNO (i-) (sn)). Additionally, a single left axillary lymph node is negative for tumor. This indicates that there is no evidence of cancer in the lymph nodes, so the N stage is N0."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

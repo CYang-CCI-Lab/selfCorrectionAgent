@@ -1,0 +1,102 @@
+{
+  "id": 167,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0day, 7\u00a0hours",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1254,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Patient filename",
+          "text": "TCGA-BH-A0EA.28231C7B-64EE-49AC-B7AB-9BADDDDCC17C"
+        },
+        {
+          "author": "Memory Reasoning",
+          "text": "The report provides the size of the largest tumor, which measures 2.4 cm. Based on the rules provided, this falls within the T2 category of tumors that are more than 2 cm but not more than 5 cm. Therefore, the T stage for this patient's cancer is T2."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage of a cancer is determined by the size of the primary tumor. In this report, the size of the tumor is described as 'Maximum dimension invasive component: 2.4 cm'. This means that the tumor is larger than 2 cm but not larger than 5 cm, which corresponds to a T2 stage according to the TNM staging system for cancer."
+        },
+        {
+          "author": "Answer",
+          "text": "T1"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T2"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-15T05:19:55.196674Z",
+    "updated_at": "2024-07-17T23:00:23.741723Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 27,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 7,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Incorrect ground truth"
+        ]
+      },
+      "id": "tBIk9rKyR0",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "1",
+        "end": "1",
+        "startOffset": 74,
+        "endOffset": 193,
+        "text": "Based on the rules provided, this falls within the T2 category of tumors that are more than 2 cm but not more than 5 cm",
+        "paragraphlabels": [
+          "T2 tumors are more than 2 cm but not more than 5 cm."
+        ]
+      },
+      "id": "8ML_ZOnrGu",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-16T15:57:54.714338Z",
+  "updated_at": "2024-07-17T23:00:23.812207Z",
+  "draft_created_at": null,
+  "lead_time": 96.71199999999999,
+  "import_id": null,
+  "last_action": null,
+  "project": 7,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

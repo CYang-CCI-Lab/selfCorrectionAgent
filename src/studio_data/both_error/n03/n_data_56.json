@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-EW-A424.EE644ADF-639E-450A-92E6-2A6F1BAD561F"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, there was only one sentinel lymph node examined and it was negative for carcinoma (0/1). Therefore, based on the rules provided, the N stage for this patient is N0, as there are no positive lymph nodes."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report states that one sentinel lymph node was examined and it was negative for carcinoma (0/1). This indicates no metastasis in the sentinel lymph node, which corresponds to a pathologic N stage of N0."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N0"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

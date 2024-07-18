@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that 'Metastatic carcinoma identified in one of two sentinel lymph nodes' which corresponds to the N1 stage based on the AJCC staging system. This is further specified as pN1a in the pathologic tumor staging synopsis."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage is determined by the presence and extent of cancer in the lymph nodes. In this report, metastatic carcinoma was identified in one of two sentinel lymph nodes, and the metastatic focus measures 1.2 cm in diameter, comprising approximately 40% of the involved lymph node volume. Therefore, the N stage is N1."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

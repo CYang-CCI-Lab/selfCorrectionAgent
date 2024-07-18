@@ -1,0 +1,120 @@
+{
+  "id": 157,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0day, 8\u00a0hours",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1244,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Patient filename",
+          "text": "TCGA-OL-A5RU.7507AC79-4C8E-4393-92B9-BFA6BEB492D0"
+        },
+        {
+          "author": "Memory Reasoning",
+          "text": "The largest tumor size in the left breast is 1.9 cm, which falls under T1 based on the rules provided. However, the report mentions that the tumor directly extends to the chest wall or skin in the right breast, indicating a T4 stage. Since the T stage is determined by the largest tumor size, regardless of the type of carcinoma, and tumor size is used to determine the T stage even when the histological type is Medullary Adenocarcinoma, the T stage from this report is T4."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage for cancer is determined by the size of the tumor. For the left breast, the size of the tumor is given as 1.9 x 1.5 x 1.5 cm, which falls in the T2 category (tumor size 2.0-5.0 cm). For the right breast, the size of the tumor is given as 1.5 cm, which also falls in the T2 category. Therefore, the T stage for this patient is T2."
+        },
+        {
+          "author": "Answer",
+          "text": "T1"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T2"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-15T05:19:54.993837Z",
+    "updated_at": "2024-07-17T22:12:08.826757Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 17,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 7,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Memory: incorrect inference",
+          "ZS: incorrect inference"
+        ]
+      },
+      "id": "LlVd3dSY2B",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "1",
+        "end": "1",
+        "startOffset": 240,
+        "endOffset": 328,
+        "text": "the T stage is determined by the largest tumor size, regardless of the type of carcinoma",
+        "paragraphlabels": [
+          "The T stage is determined by the largest tumor size, regardless of the type of carcinoma (invasive ductal or invasive lobular)"
+        ]
+      },
+      "id": "hq4A4xWh6D",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "1",
+        "end": "1",
+        "startOffset": 334,
+        "endOffset": 437,
+        "text": "tumor size is used to determine the T stage even when the histological type is Medullary Adenocarcinoma",
+        "paragraphlabels": [
+          "Tumor size is used to determine the T stage, even when the histological type is Medullary Adenocarcinoma."
+        ]
+      },
+      "id": "j718eH6qbF",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-16T14:06:30.898933Z",
+  "updated_at": "2024-07-17T22:12:08.877227Z",
+  "draft_created_at": "2024-07-16T14:03:18.002113Z",
+  "lead_time": 825.7860000000001,
+  "import_id": null,
+  "last_action": null,
+  "project": 7,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

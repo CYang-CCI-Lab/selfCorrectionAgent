@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions 'Metastases carcinomatosae in lymphonodis axillae (NO IV/X)', which means that there are metastases in 4 to 9 axillary lymph nodes (N2). This is based on the AJCC staging system and the new rules provided."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report mentions 'Metastases carcinomatosae in lymphonodis axillae (NO IV/X)', which indicates that cancer has metastasized to 4-9 axillary lymph nodes. This corresponds to the N2 stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

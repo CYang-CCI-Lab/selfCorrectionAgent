@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that there is metastases in 1 to 3 axillary lymph nodes (1/2), which corresponds to N1 according to Rule 12. The exact number of lymph nodes with metastases is 1 out of a total of 6 sampled lymph nodes, as stated in the AJCC/UICC stage (pT2N1aMX)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has 1 out of 6 sampled lymph nodes with metastatic adenocarcinoma (1/6), which corresponds to N1 stage. The total number of positive lymph nodes is 1, and the largest metastasis diameter is 2.1 mm. There is no extranodal extension."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

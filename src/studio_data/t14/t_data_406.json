@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The pathology report provides a T stage of 2, and there is no indication of T3 or T4. The T stage is determined by the size of the largest tumor, and in this case, the report specifies that the patient has infiltrative ductal carcinoma in the right breast. The presence of ductal carcinoma in situ (DCIS) or the percentage of the tumor occupied by in situ component does not affect the T stage for invasive ductal carcinoma. Therefore, the T stage for this patient is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage for breast cancer is determined by the size of the tumor. A T2 stage indicates a tumor size between 2-5 cm. According to the pathology report, the tumor size is not specified any further than being a T2 stage. Therefore, the T stage for this patient's cancer is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

@@ -1,0 +1,107 @@
+{
+  "id": 33,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 28,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report provides the maximum dimension of the invasive component of the tumor, which is 1.1 cm. This is smaller than the 2 cm threshold for T2 tumors, so the tumor is not a T2, T3, or T4 tumor. The report does not indicate any direct extension to the chest wall or skin, so the tumor is not a T4 tumor. Therefore, the tumor is a T1 tumor. The specific T1 substage (T1a, T1b, T1c) is provided in the report as pT1c, so the T stage is T1c."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage for cancer is determined by the size of the tumor. In this report, it is mentioned that the size of the tumor is 1.1 cm in diameter. Therefore, the T stage for this patient is T1."
+        },
+        {
+          "author": "Answer",
+          "text": "T1"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:00:33.194152Z",
+    "updated_at": "2024-07-07T09:59:15.736137Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 27,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 20,
+        "endOffset": 80,
+        "text": "the maximum dimension of the invasive component of the tumor",
+        "paragraphlabels": [
+          "The maximum dimension of the invasive component of the tumor is used to determine the T stage."
+        ]
+      },
+      "id": "b_qVpmP8yb",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 197,
+        "endOffset": 304,
+        "text": "The report does not indicate any direct extension to the chest wall or skin, so the tumor is not a T4 tumor",
+        "paragraphlabels": [
+          "T4 tumors are of any size with direct extension to the chest wall or skin."
+        ]
+      },
+      "id": "SSXZBLG7Pz",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Implicit"
+        ]
+      },
+      "id": "oxe-HnC-xq",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T09:59:11.323173Z",
+  "updated_at": "2024-07-07T09:59:15.616689Z",
+  "draft_created_at": "2024-07-07T09:57:46.679287Z",
+  "lead_time": 127.27,
+  "import_id": null,
+  "last_action": null,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

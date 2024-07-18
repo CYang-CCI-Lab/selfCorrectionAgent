@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that there are metastases in 22 out of 33 lymph nodes (22/33) in the right axillary contents. This corresponds to N3 stage based on the AJCC staging system (New Rule 13)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for cancer staging is determined by the number of lymph nodes involved. In this report, the patient has metastatic carcinoma in 22 of 33 lymph nodes, with extranodal extension and the largest metastasis being 1.4 cm. This indicates that the patient's N stage is N3, as per the AJCC Cancer Staging Manual, 7th Edition."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

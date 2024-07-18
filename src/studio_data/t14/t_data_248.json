@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that the residual tumor size is 2.5 x 2.0 x 1.5 cm. Based on the rules provided, T2 tumors are more than 2 cm but not more than 5 cm. Therefore, the pathologic T stage of the patient's cancer is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient's pathology report indicates that the residual tumor size in the left breast lumpectomy is 2.5 x 2.0 x 1.5 cm (largest dimension is 2.5 cm). Based on the TNM staging system for cancer, a T2 stage is assigned when the tumor size is more than 2 cm and up to 5 cm. Therefore, the T stage for this patient is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

@@ -1,0 +1,85 @@
+{
+  "id": 199,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0day, 6\u00a0hours",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1313,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Patient filename",
+          "text": "TCGA-AO-A03L.FF7212E5-9A44-4659-B3B9-3EF2DB7A9E6D"
+        },
+        {
+          "author": "Memory Reasoning",
+          "text": "The report indicates that there is metastatic carcinoma in the sentinel lymph node (SLNB) and no metastases in the remaining level I and II axillary lymph nodes (Level I: 3/9; Level II: 0/7). This corresponds to N1 as per Rule 12: N1 indicates metastases in 1 to 3 axillary lymph nodes (No/Total)."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The patient was found to have metastatic carcinoma in the sentinel lymph node (level I) and a total of 3 out of 9 lymph nodes were positive in level I. No metastatic carcinoma was found in level II (0 out of 7 lymph nodes). Therefore, the N stage is N1 (N1mi, if there is no extranodal extension of carcinoma, or N1a, if there is extranodal extension of carcinoma). Since the report does not mention extranodal extension, I will assume N1mi."
+        },
+        {
+          "author": "Answer",
+          "text": "N2"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "N1"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "N1"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-15T05:22:45.122853Z",
+    "updated_at": "2024-07-17T23:03:56.330893Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 29,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 8,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Incorrect ground truth"
+        ]
+      },
+      "id": "6m6ZNnu00G",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-16T17:03:24.619801Z",
+  "updated_at": "2024-07-17T23:03:56.366511Z",
+  "draft_created_at": null,
+  "lead_time": 77.70400000000001,
+  "import_id": null,
+  "last_action": null,
+  "project": 8,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

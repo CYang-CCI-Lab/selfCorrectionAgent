@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions metastases in 3 sentinel lymph nodes (1/1, 1/1, 1/1) in the left axilla. Based on the AJCC staging system, N1 indicates metastases in 1 to 3 axillary lymph nodes. Therefore, the N stage for this patient is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic adenocarcinoma involving 3 out of 4 sentinel lymph nodes. According to the 8th edition of the AJCC cancer staging manual, N1 means metastasis in 1 to 3 axillary lymph nodes. The sizes of the metastases are not considered in this stage grouping."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that the patient has metastases in 1 out of 13 assessed lymph nodes (pN1a (1/13)). This corresponds to the N1 stage as per the AJCC staging system (New Rule 12)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The 'pN' category in the TNM staging system refers to the involvement of regional lymph nodes. In this report, the 'pN1a (1/13)' indicates that 1 out of the 13 examined lymph nodes had metastatic cancer. Therefore, the N stage for this patient is N1."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

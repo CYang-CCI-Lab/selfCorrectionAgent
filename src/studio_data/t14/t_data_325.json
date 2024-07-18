@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that the 'left breast mastectomy -. Invasive lobular carcinoma (7 CM.)', indicating that the size of the largest tumor is 7 cm. According to the rules provided, T3 tumors are more than 5 cm. Therefore, the pathologic T stage of the patient's cancer is T3."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage for cancer is based on the size of the primary tumor. In this report, the left breast mastectomy specimen revealed an invasive lobular carcinoma that measured 7 cm in greatest dimension. Therefore, the T stage for this patient is T3, as the tumor size is greater than 5 cm but not more than 10 cm."
+            },
+            {
+                "author": "Answer",
+                "text": "T3"
+            }
+        ]
+    }
+}

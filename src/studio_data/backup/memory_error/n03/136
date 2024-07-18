@@ -1,0 +1,115 @@
+{
+  "id": 136,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 3\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1223,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "Based on the pathology report, there were no positive lymph nodes found in the axillary dissection. The report mentions 'Twelve benign lymph nodes (0/12)' for the additional level II dissection and 'Three benign lymph nodes (0/3)' for the level II and III dissection. This indicates that none of the assessed lymph nodes had metastatic carcinoma. Therefore, the N stage for this patient is N0, as per New Rules 10 and 11."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The patient has a total of 15 lymph nodes examined, with 0 out of 12 positive in the first set of level 1 and low level 2 axillary contents, and 0 out of 3 positive in the second set of level 2 and level 3 axillary contents. However, there is extranodal tumor extension (>2 mm) in one or more lymph nodes. Therefore, the N stage is N2."
+        },
+        {
+          "author": "Answer",
+          "text": "N2"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "N0"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "N2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-05T21:35:25.834105Z",
+    "updated_at": "2024-07-17T21:49:50.565367Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 7,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 6,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 390,
+        "endOffset": 421,
+        "text": "N0, as per New Rules 10 and 11.",
+        "paragraphlabels": [
+          "New Rule 10: N0 can indicate no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes."
+        ]
+      },
+      "id": "kAbB8M3K4H",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 390,
+        "endOffset": 421,
+        "text": "N0, as per New Rules 10 and 11.",
+        "paragraphlabels": [
+          "New Rule 11: N0 can indicate that all assessed lymph nodes are negative for metastatic carcinoma."
+        ]
+      },
+      "id": "EVHELnbs8T",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Memory: incorrect info-extract"
+        ]
+      },
+      "id": "5cDTGBDZf2",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T17:28:23.541863Z",
+  "updated_at": "2024-07-17T21:49:50.606251Z",
+  "draft_created_at": "2024-07-07T17:24:12.657893Z",
+  "lead_time": 302.58900000000006,
+  "import_id": null,
+  "last_action": null,
+  "project": 6,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

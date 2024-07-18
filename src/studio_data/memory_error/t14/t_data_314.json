@@ -1,0 +1,26 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions the presence of multiple invasive tumors in the left breast, with the largest one measuring 40 mm in greatest dimension. This falls in the T3 category, which includes tumors larger than 5 cm. The presence of ductal carcinoma in situ (DCIS) or the percentage of the tumor occupied by in situ component does not affect the T stage for invasive ductal carcinoma. Therefore, the T stage for this patient is T3."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage of a cancer is determined by the size of the primary tumor. In this pathology report, the left breast was removed and several masses were found in the upper outer quadrant. The largest mass measured 4 cm in greatest dimension. Therefore, the T stage is T2 (tumor size 2-5 cm)."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T3"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

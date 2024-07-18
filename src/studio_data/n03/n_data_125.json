@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions that out of 25 lymph nodes, 2 had metastatic poorly differentiated ductal carcinoma of the breast. This corresponds to New Rule 12, N1, which indicates metastases in 1 to 3 axillary lymph nodes."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that 2 out of 25 (2/25) lymph nodes had metastatic poorly differentiated ductal carcinoma of the breast. This corresponds to a pathologic N1 stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

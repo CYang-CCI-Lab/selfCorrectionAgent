@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-D8-A1X8.5F1C3B85-5E5C-428B-8779-3A5878DCE1F2"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the size of the largest tumor, which is 2.7 x 1.4 x 2.8 cm. According to the rules provided, T2 tumors are more than 2 cm but not more than 5 cm. Therefore, the pathologic T stage of the patient's cancer is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The tumor size is reported as 2.7 x 1.4 x 2.8 cm. In T stage for breast cancer, the largest dimension of the tumor is considered. Therefore, the T stage for this patient is T2, as the largest dimension (2.8 cm) is greater than 2.0 cm but not more than 5.0 cm."
+            },
+            {
+                "author": "Answer",
+                "text": "T1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The patient's pathology report indicates that the largest tumor size in the left breast tissue is 3.4 cm, which falls within the T2 category of tumors that are more than 2 cm but not more than 5 cm. Therefore, the T stage for this patient is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage for cancer is determined by the size of the tumor. In this report, the left breast tissue was examined and it was found that the tumor measured 3.4 cm in its greatest dimension. Therefore, the T stage for this patient is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

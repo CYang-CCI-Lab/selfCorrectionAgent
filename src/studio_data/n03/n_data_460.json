@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that the patient has been diagnosed with moderately differentiated invasive ductal carcinoma and has tumor infiltration of the skin spindle with foci of ulceration. The tumor diameter is 5.0 cm and the dorsal resection margin is tumor-free. The pathologic tumor classification is NOS, G II, pT4bN3aLIVORO. According to the rules provided, N3 indicates metastases in 4 or more axillary lymph nodes, or in in-transit, satellite, or micrometastases (N3mi) in 4 or more lymph nodes, or in ipsilateral internal mammary lymph nodes in the absence of axillary lymph node metastases. The report specifies that the N stage is N3a, which corresponds to metastases in 4 or more axillary lymph nodes. Therefore, the N stage for this patient is N3."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The 'pT4b' in the tumor classification indicates that the tumor has directly invaded the chest wall or skin. The 'N3a' indicates that there are 4 or more metastatic axillary lymph nodes. Therefore, the N stage is N3."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

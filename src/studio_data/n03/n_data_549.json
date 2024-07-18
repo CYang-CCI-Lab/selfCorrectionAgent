@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, there is no tumor seen in any of the two sentinel lymph nodes (C. RIGHT AXILLARY SENTINEL LYMPH NODES, LYMPHADENECTOMY: NO TUMOR SEEN IN ANY OF TWO LYMPH NODES) and no tumor seen in any of the two additional lymph nodes (B. This is a portion of adipose tissue which measures 4 x 4 x 2 cm. Two soft, tan and. yellow lymph nodes are present measuring up to 1.5 cm. The following sections are. submitted: B1. one lymph node totally submitted. B2,3 -. one lymph node totally submitted) and two more lymph nodes (C. This is a portion of adipose tissue which measures 3 x 3 x 1 cm. Within this are three. RUN DATE: RUN TIME: Specimen Inquiry. RUN USER. SPEC #. GROSS DESCRIPTION: (Continued). lymph nodes measuring up to 1 cm. One of the lymph nodes measuring 7 mm in grossly. suspicious for tumor containing a firm area measuring 3 mm. A second lymph node measures. 6. mm and contains a 6 mm area suspicious for metastatic tumor. A third lymph node measures 8. mm and is soft. The following sections are submitted: C1. one suspicious lymph node totally submitted. C2. second suspicious lymph node totally submitted. C3. unremarkable lymph node totally submitted). Therefore, based on the rules provided, the N stage is N0, as there are no positive lymph nodes."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that the patient had a lumpectomy performed on the right breast, and lymph nodes were removed and examined. In both the sentinel lymph nodes and the axillary lymph nodes, no tumor was found (0/2 sentinel lymph nodes and 0/2 lymph nodes from the axillary contents had tumor). Therefore, the N stage for this patient is N0."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

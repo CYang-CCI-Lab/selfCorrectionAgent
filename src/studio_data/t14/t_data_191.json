@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the size of the tumor as 2.1 cm, which falls within the range for a T2 tumor (more than 2 cm but not more than 5 cm). Therefore, the T stage for this patient's cancer is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage of a cancer is determined by the size of the primary tumor. In this report, the size of the invasive micropapillary carcinoma in the right breast is given as 2.1 cm. According to the American Joint Committee on Cancer (AJCC) staging system, a T stage of T2 is assigned to tumors that are greater than 2 cm in size but not greater than 5 cm. Therefore, the T stage for this patient's cancer is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

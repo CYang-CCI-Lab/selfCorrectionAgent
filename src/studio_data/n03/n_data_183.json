@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that the patient has moderately differentiated invasive lobular carcinoma with a tumor diameter of 3.0 cm and is classified as pT2N3a(15/19)L1V0R0. This classification suggests that the tumor has metastasized to 15 out of 19 assessed lymph nodes, which corresponds to N3 stage according to Rule 13: N3 indicates metastases in 4 or more axillary lymph nodes, or in in-transit, satellite, or micrometastases (N3mi) in 4 or more lymph nodes, or in ipsilateral internal mammary lymph nodes in the absence of axillary lymph node metastases."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The 'N' in the tumor classification (pT2N3a(15/19)L1V0R0) refers to the lymph node involvement. The '3' indicates that the cancer has spread to 4-9 axillary lymph nodes or to the infraclavicular (clavicle) lymph nodes. Therefore, the N stage is N3."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

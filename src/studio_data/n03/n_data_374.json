@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, one out of three intramammary lymph nodes is positive for metastatic carcinoma. This corresponds to the N1 stage, as per the AJCC staging system (New Rule 12). The remaining 21 right axillary lymph nodes are negative for metastatic carcinoma. The N stage is determined by the number of positive lymph nodes, and in this case, it is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage is determined by the presence and extent of cancer in the lymph nodes. In this report, it is stated that 'A single (of 3) intramammary lymph node is positive for metastatic carcinoma forming a solid and cystic mass (6.5 x 5.0 x 4.7 cm) located in the lateral aspect of the breast. Extranodal extension is present.' This indicates that one out of the three lymph nodes examined contained cancer, and there was extranodal extension. Therefore, the N stage is N1, as per the AJCC 7th edition (2010) staging system."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

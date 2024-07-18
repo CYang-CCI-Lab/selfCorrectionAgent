@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, there are 12 lymph nodes assessed, and metastatic ductal adenocarcinoma is found in two of them (2/12). This corresponds to the N1 stage based on the AJCC staging system, as per New Rule 12: N1 indicates metastases in 1 to 3 axillary lymph nodes (No/Total)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that there were 12 lymph nodes examined, and metastatic ductal adenocarcinoma was found in two of them (2/12). This corresponds to an N1 stage. The largest node with tumor was 1 cm. in greatest dimension, and there was extracapsular extension to the fat. This information can be used for substaging, but for the N stage, only the number of positive nodes is considered."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

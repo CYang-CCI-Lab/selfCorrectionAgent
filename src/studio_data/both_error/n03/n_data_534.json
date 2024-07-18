@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-AO-A0JG.3671D46F-6D69-42DA-9830-24F67EB8B0B6"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states 'LEVEL 1: METASTATIC ADENOCARCINOMA TO FOUR OUT OF TEN LYMPH NODES. (4/10).' This indicates that the patient has metastases in 4 out of 10 lymph nodes at level 1. According to Rule 12, N1 indicates metastases in 1 to 3 axillary lymph nodes. However, the AJCC staging system considers metastases in 4 or more axillary lymph nodes as N2. Therefore, the N stage for this patient is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic adenocarcinoma in 4 out of 10 lymph nodes in level 1, with the largest metastatic focus measuring 2.5 cm and focal extranodal extension of carcinoma. There are no malignant cells found in level 2 or subcapsular nodes. Therefore, the N stage is N1 (N1mi, 4/10, LN mets 2.5 cm, focal extranodal extension)."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N1"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

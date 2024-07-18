@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that 'Axillary lymph nodes: Negative for tumor (0/4)'. This means that none of the 4 assessed lymph nodes contained metastatic carcinoma. According to New Rule 11, N0 can indicate that all assessed lymph nodes are negative for metastatic carcinoma. Therefore, the N stage for this patient's cancer is N0."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that four sentinel lymph nodes (1-4) were excised and examined, with no metastatic carcinoma found in any of them (0/4). Therefore, the pathologic N stage for this patient is N0."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

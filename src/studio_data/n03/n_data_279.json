@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions 'Metastases et micrometastases carcinomatosae in lymphonodis axillae (No XXV/XXVIII)'. This indicates that there are metastases in 25 out of 28 assessed axillary lymph nodes, which corresponds to N3 stage according to the provided rules."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for axillary lymph node metastasis is determined by the number of positive lymph nodes. In this report, it is mentioned that there are metastases and micrometastases in axillary lymph nodes (NHG2; pT2; pN3a). Further, the report mentions 'Metastases et micrometastases carcinomatosae in lymphonodis axillae (No XXV/XXVIII)', which means that out of 28 examined lymph nodes, 25 had cancer involvement. This places the patient in N3 stage, as N3 stage is defined as metastasis in 4 or more axillary lymph nodes or in infraclavicular (claviicular) lymph nodes."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

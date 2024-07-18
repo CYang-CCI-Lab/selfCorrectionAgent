@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, there is no evidence of metastasis in the left axillary sentinel lymph node (0/1). This is consistent with New Rule 11 and New Rule 10, which state that N0 can indicate no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes, or that all assessed lymph nodes are negative for metastatic carcinoma. Therefore, the N stage for this patient is N0."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report states 'There is no evidence of metastasis in one left axillary sentinel lymph node' (A.) which indicates that the cancer has not spread to the lymph nodes. The N stage is determined by the presence and extent of cancer in the lymph nodes. N0 means no cancer is found in the lymph nodes."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

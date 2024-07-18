@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that there are two invasive tumor masses in the lower inner quadrant, with the largest mass being 2.5 cm (Mass #1) and the second mass being 1.4 cm (Mass #2). The T stage is determined by the size of the largest tumor, so in this case, the T stage would be T2 as Mass #1 is more than 2 cm but not more than 5 cm."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has two invasive tumor masses in the lower inner quadrant, with the larger mass being 2.5 cm in greatest dimension (Mass #1) and the smaller mass being 1.4 cm in greatest dimension (Mass #2). The T stage for cancer is based on the size of the largest tumor. In this case, the largest tumor (Mass #1) is 2.5 cm, which falls under T2 (Tumor size 2.0 to 5.0 cm) according to the American Joint Committee on Cancer (AJCC) TNM staging system. Therefore, the T stage for this patient is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

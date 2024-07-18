@@ -1,0 +1,98 @@
+{
+  "id": 67,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 3\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1150,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report indicates that the patient has infiltrating ductal carcinoma in the left breast, and the largest tumor size is given as 2.0 cm. Based on the rules provided, T1 tumors are 2 cm or less in size. Therefore, the pathologic T stage of the patient's cancer is T1."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The report indicates that the patient has an 'infiltrating ductal carcinoma, 2.0 cm' located in the lower inner quadrant and extending to the lower outer quadrant. The T stage for breast cancer is primarily based on the size of the tumor. As the tumor size is 2.0 cm, which falls in the range of 2.0 to 5.0 cm, the T stage is T2. The other findings, such as the tumor coming close to the inner lower quadrant margin, the presence of microcalcification associated with the tumor, and ductal carcinoma in situ, do not affect the T stage. The HER2/neu gene amplification status and hormone receptor status also do not impact the T stage."
+        },
+        {
+          "author": "Answer",
+          "text": "T1"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T1"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-05T21:11:20.029361Z",
+    "updated_at": "2024-07-17T18:02:46.442117Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 1,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 3,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 139,
+        "endOffset": 202,
+        "text": "Based on the rules provided, T1 tumors are 2 cm or less in size",
+        "paragraphlabels": [
+          "T1 tumors are 2 cm or less in size."
+        ]
+      },
+      "id": "0E95Op7bha",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "ZS: ambiguous boundary value"
+        ]
+      },
+      "id": "_8vPgE8O0y",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T14:12:21.689360Z",
+  "updated_at": "2024-07-17T18:02:46.484322Z",
+  "draft_created_at": "2024-07-07T12:11:05.104474Z",
+  "lead_time": 245.17500000000004,
+  "import_id": null,
+  "last_action": null,
+  "project": 3,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that eight lymph nodes are positive for tumor in the right axilla. This corresponds to N2 according to the AJCC staging system. Specifically, N2a indicates metastases in 4 to 9 axillary lymph nodes. However, the report only mentions eight positive lymph nodes, so the patient's N stage would be N2a. The report also mentions extensive extracapsular extension and deposits larger than 2 mm, which are factors that would typically upstage the N stage, but the AJCC staging system does not provide separate substaging categories for these factors in the N2a category."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient's pathology report indicates that there are eight lymph nodes positive for tumor in the right axilla, with extensive extracapsular extension and deposits larger than 2 mm. This information supports the classification of N2 (metastasis in 4 to 9 axillary lymph nodes)."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

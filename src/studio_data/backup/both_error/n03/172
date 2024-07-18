@@ -1,0 +1,103 @@
+{
+  "id": 172,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0day, 6\u00a0hours",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1286,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Patient filename",
+          "text": "TCGA-4H-AAAK.8894688F-7167-48A1-BB1B-FC219B7675C2"
+        },
+        {
+          "author": "Memory Reasoning",
+          "text": "According to the report, 4 out of 14 axillary lymph nodes are positive for metastatic carcinoma. Based on the new rules provided, N1 indicates metastases in 1 to 3 axillary lymph nodes. Therefore, the N stage for this patient is N1."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The patient has 4 out of 14 axillary lymph nodes positive for metastatic carcinoma. According to the American Joint Committee on Cancer (AJCC) staging system, N1 indicates metastasis in 1-3 axillary lymph nodes or in clips from a sentinel node dissection. In this case, the patient has 4 positive nodes, but since the report does not mention any sentinel node procedure, we can assume that these are from the axillary lymph node dissection. Therefore, the N stage is N1."
+        },
+        {
+          "author": "Answer",
+          "text": "N2"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "N1"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "N1"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-15T05:22:44.749180Z",
+    "updated_at": "2024-07-17T23:10:54.524340Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 2,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 8,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Memory: incorrect inference",
+          "ZS: incorrect inference"
+        ]
+      },
+      "id": "1EQxQFcntM",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "1",
+        "end": "1",
+        "startOffset": 97,
+        "endOffset": 185,
+        "text": "Based on the new rules provided, N1 indicates metastases in 1 to 3 axillary lymph nodes.",
+        "paragraphlabels": [
+          "New Rule 12: N1 indicates metastases in 1 to 3 axillary lymph nodes (No/Total)"
+        ]
+      },
+      "id": "Zf5UJj4BMd",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-16T16:16:33.966129Z",
+  "updated_at": "2024-07-17T23:10:54.562698Z",
+  "draft_created_at": "2024-07-16T16:15:05.880458Z",
+  "lead_time": 203.453,
+  "import_id": null,
+  "last_action": null,
+  "project": 8,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, there are 25 lymph nodes examined in total, and metastases are found in 1 to 3 axillary lymph nodes (1/25). This corresponds to the N1 stage based on the AJCC staging system."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic ductal carcinoma in one out of three sentinel lymph nodes examined (1/3), which classifies the patient as N1 according to the 8th edition of the AJCC staging system for breast cancer. The total number of lymph nodes examined, including sentinel and non-sentinel nodes, is 25, with one macrometastasis (1/25). The size of the largest metastatic deposit is 0.5 cm. There is no extranodal extension identified."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

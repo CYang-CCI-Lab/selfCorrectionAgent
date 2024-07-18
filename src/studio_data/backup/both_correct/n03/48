@@ -1,0 +1,107 @@
+{
+  "id": 48,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 577,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "According to the pathology report, one sentinel lymph node was examined and it had no tumor seen (0/1). Additionally, there were no regional lymph node metastases identified histologically or by immunohistochemical staining for cytokeratin AE1/AE3. Therefore, based on the rules provided, the N stage for this patient is N0."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The report states '1. Sentinel lymph node, left axilla, excision: - One lymph node with no tumor seen (0/1). - Negative immunohistochemical staining for cytokeratin AE1/AE3.' This indicates that there is no evidence of cancer in the sentinel lymph node, which corresponds to an N0 stage. The absence of tumor in the regional lymph nodes is also confirmed by the pTNM staging at the end of the report."
+        },
+        {
+          "author": "Answer",
+          "text": "N0"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:18:59.082154Z",
+    "updated_at": "2024-07-07T10:38:13.395875Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 12,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 2,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 129,
+        "endOffset": 162,
+        "text": "no regional lymph node metastases",
+        "paragraphlabels": [
+          "Modified Rule 6: N0 indicates no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes."
+        ]
+      },
+      "id": "5gDA_ywlKE",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 129,
+        "endOffset": 163,
+        "text": "no regional lymph node metastases ",
+        "paragraphlabels": [
+          "New Rule 10: N0 can indicate no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes."
+        ]
+      },
+      "id": "cfiQ_QbhpO",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Explicit"
+        ]
+      },
+      "id": "GsH3YCFUdU",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T10:38:13.295958Z",
+  "updated_at": "2024-07-07T10:38:13.295997Z",
+  "draft_created_at": "2024-07-07T10:36:24.769300Z",
+  "lead_time": 253.285,
+  "import_id": null,
+  "last_action": null,
+  "project": 2,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

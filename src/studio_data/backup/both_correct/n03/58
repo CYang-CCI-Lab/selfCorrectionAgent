@@ -1,0 +1,90 @@
+{
+  "id": 58,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 587,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report states that 'Regional Lymph Nodes: pNO. - Specify: Number examined: 4. Number involved: 0.' This means that 4 lymph nodes were examined and none of them were found to have metastatic carcinoma. This matches with the new rule 11 which states that N0 can indicate that all assessed lymph nodes are negative for metastatic carcinoma. Therefore, the N stage is N0."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The report mentions that 4 lymph nodes were examined and none of them were found to have malignancy (0/4). This indicates that the cancer has not spread to the lymph nodes, which is consistent with N0."
+        },
+        {
+          "author": "Answer",
+          "text": "N0"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:18:59.288308Z",
+    "updated_at": "2024-07-07T11:57:54.453619Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 22,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 2,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 257,
+        "endOffset": 340,
+        "text": "N0 can indicate that all assessed lymph nodes are negative for metastatic carcinoma",
+        "paragraphlabels": [
+          "New Rule 11: N0 can indicate that all assessed lymph nodes are negative for metastatic carcinoma."
+        ]
+      },
+      "id": "crZ9GdAo84",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Explicit"
+        ]
+      },
+      "id": "bjL5QsAmHQ",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T11:57:54.384464Z",
+  "updated_at": "2024-07-07T11:57:54.384503Z",
+  "draft_created_at": null,
+  "lead_time": 21.502,
+  "import_id": null,
+  "last_action": null,
+  "project": 2,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

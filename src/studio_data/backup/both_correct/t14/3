@@ -1,0 +1,141 @@
+{
+  "id": 3,
+  "created_username": " cc3859@drexel.edu, 2",
+  "created_ago": "1\u00a0week, 4\u00a0days",
+  "completed_by": {
+    "id": 2,
+    "first_name": "",
+    "last_name": "",
+    "email": "cc3859@drexel.edu"
+  },
+  "task": {
+    "id": 4,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report provides the size of the largest tumor, which is 10.5 cm. Based on the rules provided, a T3 tumor is more than 5 cm. Therefore, the T stage for this patient's cancer is T3."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage for cancer is based on the size of the tumor. In this report, the tumor measures 10.5 cm in maximum dimension. According to the TNM staging system, a T3 designation is given to tumors that are larger than 5 cm but not more than 10 cm in size. Therefore, the T stage for this patient's cancer is T3."
+        },
+        {
+          "author": "Answer",
+          "text": "T3"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:00:32.780730Z",
+    "updated_at": "2024-07-07T08:18:22.771325Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 3,
+    "total_annotations": 2,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 0,
+        "endOffset": 49,
+        "text": "The report provides the size of the largest tumor",
+        "paragraphlabels": [
+          "The T stage is determined by the size of the largest tumor, ignoring any substaging information."
+        ]
+      },
+      "id": "IhuCmu1rsZ",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 69,
+        "endOffset": 127,
+        "text": "Based on the rules provided, a T3 tumor is more than 5 cm.",
+        "paragraphlabels": [
+          "T3 tumors are more than 5 cm."
+        ]
+      },
+      "id": "e5S6caxQR_",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "1",
+        "end": "1",
+        "startOffset": 0,
+        "endOffset": 57,
+        "text": "The T stage for cancer is based on the size of the tumor.",
+        "paragraphlabels": [
+          "Tumor size is used to determine the T stage, even when the histological type is Medullary Adenocarcinoma."
+        ]
+      },
+      "id": "iRa-76SLeG",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "1",
+        "end": "1",
+        "startOffset": 123,
+        "endOffset": 254,
+        "text": "According to the TNM staging system, a T3 designation is given to tumors that are larger than 5 cm but not more than 10 cm in size.",
+        "paragraphlabels": [
+          "T3 tumors are more than 5 cm."
+        ]
+      },
+      "id": "QQT5dlNPoY",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Explicit"
+        ]
+      },
+      "id": "ZEQohR71st",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-05T19:32:42.608452Z",
+  "updated_at": "2024-07-05T19:33:41.722505Z",
+  "draft_created_at": "2024-07-05T19:32:00.016217Z",
+  "lead_time": 113.25900000000001,
+  "import_id": null,
+  "last_action": null,
+  "project": 1,
+  "updated_by": 2,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

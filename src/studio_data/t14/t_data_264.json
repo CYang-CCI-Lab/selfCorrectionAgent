@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the size of the right breast tumor as 4 cm, which falls under the T2 category of tumors that are more than 2 cm but not more than 5 cm. The T stage is determined by the size of the largest tumor, and in this case, the right breast tumor is larger than the left breast tumor which measures 1.8 cm. Therefore, the T stage for this patient is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage for cancer is determined by the size of the tumor. In this report, the right breast cancer measures 4 cm in greatest dimension (pT2). Therefore, the T stage for this patient is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

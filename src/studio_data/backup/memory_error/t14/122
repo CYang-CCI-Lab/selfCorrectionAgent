@@ -1,0 +1,81 @@
+{
+  "id": 122,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 3\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1208,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report states that the largest dimension of the invasive lobular carcinoma cannot be accurately determined because of its diffuse nature, but based on gross examination it is estimated that the invasive carcinoma spans an area of about 4.5 cm. This indicates that the tumor is larger than 5 cm, which corresponds to a T3 stage. The T stage is determined by the size of the largest tumor, regardless of the type of carcinoma. The presence of metastasis in one axillary lymph node does not affect the T stage."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage for cancer is determined by the size of the tumor. In this report, the pathologic diagnosis of the left breast specimen indicates that the invasive lobular carcinoma spans an area of about 4.5 cm. Therefore, the T stage for this patient is T2, which corresponds to a tumor size between 2.1 and 5.0 cm."
+        },
+        {
+          "author": "Answer",
+          "text": "T2"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T3"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-05T21:31:56.262374Z",
+    "updated_at": "2024-07-17T20:33:37.300611Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 1,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 5,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Memory: incorrect inference"
+        ]
+      },
+      "id": "IuxfJ1nUkh",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T16:53:37.123187Z",
+  "updated_at": "2024-07-17T20:33:37.336678Z",
+  "draft_created_at": null,
+  "lead_time": 113.61500000000001,
+  "import_id": null,
+  "last_action": null,
+  "project": 5,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

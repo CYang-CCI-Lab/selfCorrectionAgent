@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions 'Metastases carcinomatosae in lymphonodo axillae (No I/VII)', which means that there is metastases in 1 out of 7 assessed axillary lymph nodes. According to the new rule 12, N1 indicates metastases in 1 to 3 axillary lymph nodes. Therefore, the N stage for this patient is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report mentions 'Metastases carcinomatosae in lymphonodo axillae (No I/VII)'. This indicates that cancer has spread to 1 out of 7 examined lymph nodes, which corresponds to pathologic N1 (pN1) stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

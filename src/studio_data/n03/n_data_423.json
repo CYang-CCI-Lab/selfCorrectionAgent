@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, a single intramammary lymph node present at the medial margin is positive for metastatic carcinoma, and a single (of 2) left axillary lymph node is also positive for metastatic carcinoma. This information corresponds to New Rule 12, which states that N1 indicates metastases in 1 to 3 axillary lymph nodes. Therefore, the N stage for this patient's cancer is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has a single intramammary lymph node positive for metastatic carcinoma (1.5 mm in maximum dimension) and a single left axillary sentinel lymph node positive for metastatic carcinoma. No information is provided about N2 or N3 stages, so we can't say for sure that the patient doesn't meet criteria for these stages, but based on the information provided, the patient's N stage is N1."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

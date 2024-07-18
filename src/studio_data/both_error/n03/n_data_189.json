@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-E9-A22E.7788E7FD-B5A3-4B22-83CA-EA3FB5E826FC"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, 4 out of 10 assessed lymph nodes are positive for metastasis (Axillary 4/10). Based on the new rules provided, N1 indicates metastases in 1 to 3 axillary lymph nodes. Therefore, the N stage for this patient's cancer is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has 4/10 positive lymph nodes in the axillary region, which indicates that the cancer has spread to level I or II lymph nodes. This corresponds to an N1 stage based on the TNM staging system for cancer."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N1"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that out of 12 assessed lymph nodes, 1 was positive for metastasis (Axillary 1/12). This corresponds to N1 based on New Rule 12: N1 indicates metastases in 1 to 3 axillary lymph nodes (No/Total)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that 1 out of 12 axillary lymph nodes were positive for metastasis (Axillary 1/12). This corresponds to a pathologic N1 stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

@@ -1,0 +1,115 @@
+{
+  "id": 76,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 3\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1159,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report provides the size of the larger focus of the invasive ductal carcinoma as 1.1 cm, which is less than the 2 cm threshold for T2 tumors. As tumor size is used to determine the T stage, regardless of the type of carcinoma, and the presence of ductal carcinoma in situ or the percentage of the tumor occupied by in situ component does not affect the T stage, the T stage for this patient is T1."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage for breast cancer is based on the size of the tumor. According to the report, the larger focus of the tumor is 1.1 cm in size. The T stage categories are as follows: T1 (tumor is 2 cm or less in size), T2 (tumor is more than 2 cm but not more than 5 cm in size), T3 (tumor is more than 5 cm in size), and T4 (tumor of any size that extends through the chest wall or skin). Based on the size of the larger focus of the tumor (1.1 cm), the T stage for this patient is T2."
+        },
+        {
+          "author": "Answer",
+          "text": "T1"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T1"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-05T21:11:20.234292Z",
+    "updated_at": "2024-07-17T19:01:53.346104Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 10,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 3,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 146,
+        "endOffset": 229,
+        "text": "As tumor size is used to determine the T stage, regardless of the type of carcinoma",
+        "paragraphlabels": [
+          "The T stage is determined by the largest tumor size, regardless of the type of carcinoma (invasive ductal or invasive lobular)"
+        ]
+      },
+      "id": "7O_ykQDgqz",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 235,
+        "endOffset": 364,
+        "text": "the presence of ductal carcinoma in situ or the percentage of the tumor occupied by in situ component does not affect the T stage",
+        "paragraphlabels": [
+          "The presence of ductal carcinoma in situ (DCIS) or the percentage of the tumor occupied by in situ component does not affect the T stage for invasive ductal carcinoma or invasive lobular carcinoma."
+        ]
+      },
+      "id": "YCQTYIWcYb",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "ZS: incorrect inference"
+        ]
+      },
+      "id": "WpSZo5UVh3",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T14:30:22.320823Z",
+  "updated_at": "2024-07-17T19:01:53.384780Z",
+  "draft_created_at": "2024-07-07T14:29:04.897928Z",
+  "lead_time": 126.178,
+  "import_id": null,
+  "last_action": null,
+  "project": 3,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

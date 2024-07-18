@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The patient has metastases in 1 sentinel lymph node (Rule 10 and New Rule 12 apply), making the N stage N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic carcinoma in 1 sentinel node (diagnosis A) following carcinoma of the right breast. This indicates that the cancer has spread to at least one axillary lymph node. The N stage for cancer that has spread to 1-3 axillary lymph nodes is N1, ignoring any substaging information."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, there are multiple (2) left axillary sentinel lymph nodes, each showing one cluster of cells visible on cytokeratin immunohistochemistry stain only, but not on H&E. The size of the micrometastasis is less than 0.2 mm. This information matches with New Rule 12, which states that N1 indicates metastases in 1 to 3 axillary lymph nodes (No/Total). Therefore, the N stage for this patient's cancer is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has infiltrating ductal carcinoma in the left breast with vascular invasion and negative surgical margins (AJCC pT2). In the left axillary sentinel lymph node excision, multiple sentinel lymph nodes showed one cluster of cells visible on cytokeratin immunohistochemistry stain only, with a micrometastasis size of less than 0.2 mm (blue dye present in both left axillary sentinel lymph nodes). However, multiple left axillary lymph nodes were negative for tumor. Based on the AJCC 8th edition, this patient's N stage is N1 (i+)."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

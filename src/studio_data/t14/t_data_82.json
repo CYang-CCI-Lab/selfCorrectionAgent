@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that the largest focus of invasion in the right breast lumpectomy specimen is 3.5 cm (specimen I, greatest dimension of largest focus of invasion over 0.1 cm: 3.5 cm). Based on the rules provided, T2 tumors are more than 2 cm but not more than 5 cm. Therefore, the pathologic T stage of the patient's cancer is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that the largest focus of invasion in the right breast lumpectomy specimen is 3.5 cm (I. Right breast lumpectomy (short stitch superior, long lateral ) fresh: - Invasive poorly differentiated ductal carcinoma, Nottingham grade 3 (3 + 3 + 3), 3.5 cm). Therefore, the T stage for this patient is T2, as T stage is based on the size of the primary tumor and ranges from T1 (tumor \u2264 2 cm in greatest dimension) to T4 (tumor of any size with direct extension to the chest wall or skin). In this case, the tumor is larger than 2 cm but not larger than 5 cm, which corresponds to T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

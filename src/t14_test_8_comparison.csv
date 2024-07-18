@@ -1,0 +1,7 @@
+,t_memory_result,t_memory_result,t_memory_result,t_memory_result,t_memory_result,t_memory_result,t_memory_result,t_zs_result,t_zs_result,t_zs_result,t_zs_result,t_zs_result,t_zs_result,t_zs_result
+,precision,recall,f1,support,macro_precision,macro_recall,macro_f1,precision,recall,f1,support,macro_precision,macro_recall,macro_f1
+T1,0.91,0.87,0.89,171.0,,,,0.93,0.75,0.83,171.0,,,
+T2,0.9,0.96,0.93,413.0,,,,0.84,0.97,0.9,413.0,,,
+T4,0.89,0.61,0.72,28.0,,,,0.9,0.64,0.75,28.0,,,
+T3,0.92,0.82,0.87,88.0,,,,0.95,0.69,0.8,88.0,,,
+overall,,,,700.0,0.91,0.81,0.85,,,,700.0,0.91,0.76,0.82

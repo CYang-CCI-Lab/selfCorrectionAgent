@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-S3-AA15.DD2B9E47-8C67-4599-B0B6-0D30DE727B55"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that the largest invasive carcinoma measures 1.1 cm, which falls within the range for T1c (>10 mm but <= 20 mm). Therefore, the T stage for this patient's cancer is T1c."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage of a cancer is determined by the size of the primary tumor. In this report, the largest focus of invasion over 0.1 cm is measured to be 1.1 cm. According to the TNM staging system, a T1c stage indicates that the tumor is greater than 10 mm but less than or equal to 20 mm in greatest dimension. Therefore, the T stage for this patient's cancer is T1c."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T1c"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T1c"
+            }
+        ]
+    }
+}

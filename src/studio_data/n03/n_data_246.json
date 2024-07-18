@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates a diagnosis of poorly differentiated invasive ductal carcinoma with a tumor diameter of 4 cm in the left breast, and the tumor classification is pT2N1aLOVORO. According to the AJCC staging system, the N stage is determined by the number of positive lymph nodes. In this case, the 'N1a' in the tumor classification indicates that there is metastases in 1 to 3 axillary lymph nodes. Therefore, the N stage for this patient is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The pathologic N stage for a cancer patient is determined by the presence and extent of cancer spread to the lymph nodes. In this report, the diagnosis is poorly differentiated invasive ductal carcinoma with a tumor diameter of 4 cm in the left breast. The concluding tumor classification is pT2N1aLOVORO. The 'N1' in N1a indicates that there is cancer in 1 to 3 axillary lymph nodes. Therefore, the pathologic N stage for this patient is N1."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

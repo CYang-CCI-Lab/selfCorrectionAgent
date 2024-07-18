@@ -1,0 +1,90 @@
+{
+  "id": 14,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 9,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report provides the size of the largest tumor as 2.5 x 2.0 x 1.5 cm. Based on the rules provided, T2 tumors are more than 2 cm but not more than 5 cm. Therefore, the T stage for this patient's cancer is T2."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The report mentions 'INFILTRATING MODERATELY DIFFERENTIATED DUCTAL CARCINOMA, SIZE 2.5 BY 2.0 BY 1.5 CX' in the right segmental mastectomy specimen. This indicates that the tumor size is greater than 2 cm but not more than 5 cm, which corresponds to T2 stage according to the TNM staging system for cancer."
+        },
+        {
+          "author": "Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:00:32.873402Z",
+    "updated_at": "2024-07-07T09:18:09.181383Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 8,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 73,
+        "endOffset": 154,
+        "text": "Based on the rules provided, T2 tumors are more than 2 cm but not more than 5 cm.",
+        "paragraphlabels": [
+          "T2 tumors are more than 2 cm but not more than 5 cm."
+        ]
+      },
+      "id": "FPAEIANzO3",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Explicit"
+        ]
+      },
+      "id": "fnEpK0b5pq",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T09:18:09.097185Z",
+  "updated_at": "2024-07-07T09:18:09.097225Z",
+  "draft_created_at": null,
+  "lead_time": 27.765,
+  "import_id": null,
+  "last_action": null,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

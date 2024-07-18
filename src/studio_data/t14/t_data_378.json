@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that the largest invasive carcinoma measures 2.8 cm in greatest dimension, which falls within the range for a T2 tumor (more than 2 cm but not more than 5 cm). Therefore, the pathologic T stage of the patient's cancer is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage for staging breast cancer is based on the size of the primary tumor. In this report, the largest focus of invasion measures 2.8 cm in greatest dimension. Therefore, the T stage for this patient is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

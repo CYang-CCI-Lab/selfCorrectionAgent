@@ -1,0 +1,124 @@
+{
+  "id": 63,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 592,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "According to the pathology report, 'Multiple (7) right axillary sentinel lymph nodes are negative for metastatic carcinoma [AJCC pNO (i-) (sn)]'. This indicates that there are no metastases in the assessed lymph nodes. Based on the new rules provided, N0 can indicate no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes (New Rule 10) or that all assessed lymph nodes are negative for metastatic carcinoma (New Rule 11). Therefore, the N stage for this patient is N0."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The report states that multiple (7) right axillary sentinel lymph nodes were excised and were negative for metastatic carcinoma (pNO). Therefore, the pathologic N stage for this patient's cancer is N0."
+        },
+        {
+          "author": "Answer",
+          "text": "N0"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:18:59.381817Z",
+    "updated_at": "2024-07-07T12:03:09.780935Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 27,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 2,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 219,
+        "endOffset": 354,
+        "text": "Based on the new rules provided, N0 can indicate no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes (New Rule 10)",
+        "paragraphlabels": [
+          "Modified Rule 6: N0 indicates no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes."
+        ]
+      },
+      "id": "dnX6yWB3Ai",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 219,
+        "endOffset": 354,
+        "text": "Based on the new rules provided, N0 can indicate no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes (New Rule 10)",
+        "paragraphlabels": [
+          "New Rule 10: N0 can indicate no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes."
+        ]
+      },
+      "id": "h21I0tEf-c",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 363,
+        "endOffset": 439,
+        "text": "all assessed lymph nodes are negative for metastatic carcinoma (New Rule 11)",
+        "paragraphlabels": [
+          "New Rule 11: N0 can indicate that all assessed lymph nodes are negative for metastatic carcinoma."
+        ]
+      },
+      "id": "ZOXgOa8rZG",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Explicit"
+        ]
+      },
+      "id": "7-_zx3hWLf",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T12:03:09.631652Z",
+  "updated_at": "2024-07-07T12:03:09.631690Z",
+  "draft_created_at": "2024-07-07T12:02:54.838367Z",
+  "lead_time": 73.87,
+  "import_id": null,
+  "last_action": null,
+  "project": 2,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

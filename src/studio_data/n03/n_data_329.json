@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that 'Multiple (27 of 35). attached axillary lymph nodes are positive for metastatic carcinoma [AJCC pN3]'. This indicates that the patient has metastases in 27 out of 35 assessed axillary lymph nodes, which corresponds to N3 stage according to Rule 13."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for cancer staging is determined by the number of lymph nodes involved. In this report, it is stated that 'Multiple (27 of 35) attached axillary lymph nodes are positive for metastatic carcinoma [AJCC pN3]'. This means that 27 out of 35 lymph nodes have metastatic carcinoma, which corresponds to N3."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

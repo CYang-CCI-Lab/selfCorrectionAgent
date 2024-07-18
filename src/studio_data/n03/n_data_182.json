@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, the patient has metastases carcinomatosae in lymphonodis axillae (NHG3, pT2, pN1a), which means that cancer metastases were found in axillary lymph nodes. Based on the AJCC staging system, N1 indicates metastases in 1 to 3 axillary lymph nodes. Therefore, the N stage for this patient is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report mentions 'Metastases carcinomatosae in lymphonodis (No III/XVIII)' which means that out of 18 examined lymph nodes, 3 had cancer metastases. This corresponds to an N1a stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

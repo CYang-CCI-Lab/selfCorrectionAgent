@@ -1,0 +1,158 @@
+{
+  "id": 9,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 4,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report provides the size of the largest tumor, which is 10.5 cm. Based on the rules provided, a T3 tumor is more than 5 cm. Therefore, the T stage for this patient's cancer is T3."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage for cancer is based on the size of the tumor. In this report, the tumor measures 10.5 cm in maximum dimension. According to the TNM staging system, a T3 designation is given to tumors that are larger than 5 cm but not more than 10 cm in size. Therefore, the T stage for this patient's cancer is T3."
+        },
+        {
+          "author": "Answer",
+          "text": "T3"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:00:32.780730Z",
+    "updated_at": "2024-07-07T08:18:22.771325Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 3,
+    "total_annotations": 2,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 20,
+        "endOffset": 49,
+        "text": "the size of the largest tumor",
+        "paragraphlabels": [
+          "Invasive ductal carcinoma staging is based on the largest tumor size."
+        ]
+      },
+      "id": "sl0YmCGI2W",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 20,
+        "endOffset": 49,
+        "text": "the size of the largest tumor",
+        "paragraphlabels": [
+          "The T stage is determined by the size of the largest tumor, ignoring any substaging information."
+        ]
+      },
+      "id": "eRqo51y2CC",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 20,
+        "endOffset": 49,
+        "text": "the size of the largest tumor",
+        "paragraphlabels": [
+          "Invasive lobular carcinoma staging follows the same rules as invasive ductal carcinoma, based on the largest tumor size."
+        ]
+      },
+      "id": "BC3Zyi1bVd",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 20,
+        "endOffset": 49,
+        "text": "the size of the largest tumor",
+        "paragraphlabels": [
+          "The T stage is determined by the largest tumor size, regardless of the type of carcinoma (invasive ductal or invasive lobular)"
+        ]
+      },
+      "id": "enA64PwvpY",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 69,
+        "endOffset": 127,
+        "text": "Based on the rules provided, a T3 tumor is more than 5 cm.",
+        "paragraphlabels": [
+          "T3 tumors are more than 5 cm."
+        ]
+      },
+      "id": "e5o6VPdw0i",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Explicit"
+        ]
+      },
+      "id": "YFAKrQbX_P",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T08:17:00.032471Z",
+  "updated_at": "2024-07-07T08:18:22.635220Z",
+  "draft_created_at": "2024-07-07T08:13:27.258547Z",
+  "lead_time": 371.572,
+  "import_id": null,
+  "last_action": null,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

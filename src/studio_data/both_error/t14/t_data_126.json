@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-GI-A2C8.4AABCBD1-DF12-45E1-9307-21D6CB0894A9"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that the 'Final size of invasive tumor: 2.4 cm.' Based on the rules provided, a T1 tumor is 2 cm or less, and a T2 tumor is more than 2 cm but not more than 5 cm. Since the tumor size is 2.4 cm, it falls into the T2 category. The fact that the tumor is an invasive ductal carcinoma and that there is no direct extension to the chest wall or skin also supports this classification. The presence of angiolymphatic invasion, involvement of the dermis of the skin and nipple, and the involvement of the pectoralis muscle do not affect the T stage."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage for cancer is determined by the size of the tumor. In this report, the final size of the invasive tumor is stated as 2.4 cm. According to the TNM staging system for cancer, T1 tumors are 2 cm or less in size, T2 tumors are more than 2 cm but not more than 5 cm in size, T3 tumors are more than 5 cm in size, and T4 tumors are of any size with direct extension to the chest wall or skin. Therefore, based on the information provided in this report, the patient's cancer would be classified as T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T4"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The patient has metastases in 1 out of 1 lymph node in sentinel node #2, level I, left axilla. This corresponds to N1 stage according to Rule 12: N1 indicates metastases in 1 to 3 axillary lymph nodes (No/Total)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has one positive sentinel lymph node out of the two sentinel lymph nodes examined in level I of the left axilla (1/2). This corresponds to an N1 stage. The other lymph nodes in levels I, II, and III were negative for metastatic carcinoma. The report also mentions that the lymph node status is 2/4, which supports the N1 stage, as 2 out of the 4 examined lymph nodes were positive."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

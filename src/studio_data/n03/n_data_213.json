@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions 'Number of positive lymph nodes: 3. Total number sampled: 19.' This indicates that the patient has metastases in 3 out of 19 lymph nodes, which corresponds to N1 stage according to the AJCC staging system."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic ductal carcinoma in three of nineteen lymph nodes (3/19), as stated in the pathology report. This indicates a pathologic N1 stage according to the TNM staging system for cancer."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

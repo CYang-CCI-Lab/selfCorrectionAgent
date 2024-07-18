@@ -1,0 +1,26 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that 2 out of 12 lymph nodes are positive for metastasis, and one of these is in the subclavicular region (which is considered a regional lymph node). Based on Rule 13, N3 indicates metastases in 4 or more axillary lymph nodes, or in in-transit, satellite, or micrometastases (N3mi) in 4 or more lymph nodes, or in ipsilateral internal mammary lymph nodes in the absence of axillary lymph node metastases. In this case, the presence of metastases in a regional lymph node (subclavicular) qualifies the N stage as N3."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has 2/12 positive lymph nodes (found in the subclavicular region), which indicates a pathologic N1 stage. The report does not mention extracapsular invasion, so we cannot consider that in the staging. The substaging information is not provided, so we cannot make a more specific N1 substage prediction."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N3"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

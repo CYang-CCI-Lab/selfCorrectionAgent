@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that two axillary lymph nodes were examined and no tumor was found in either of them (0/2). This includes one sentinel lymph node and one non-sentinel lymph node. Based on the rules provided, this corresponds to N0 (no positive lymph nodes)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that two axillary lymph nodes were examined, and no tumor was found in either of them (0/2). This would correspond to a pathologic N stage of N0."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

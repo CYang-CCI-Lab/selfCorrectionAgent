@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-A2-A1G4.5AD3B697-F097-496C-978B-F73BDA5394A7"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions the presence of an infiltrating lobular carcinoma in the left breast, lower inner quadrant with an estimated tumor dimension of 21 mm. According to the rules provided, T2 tumors are more than 2 cm but not more than 5 cm. The size of 21 mm falls within this range, so the predicted T stage is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report describes a 'palpable mass' in the right breast that measures 6 cm in greatest dimension, extending from the subareolar area in the upper outer quadrant and grossly extending to within 0.5 cm of the deep margin. This meets the criteria for a T2 stage tumor (T2: Tumor size > 2 cm and < 5 cm in greatest dimension)."
+            },
+            {
+                "author": "Answer",
+                "text": "T3"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

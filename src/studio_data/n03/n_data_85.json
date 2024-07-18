@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions 'Metastases carcinomatosae in lymphonodo (No I/XV)', which indicates that metastases are present in at least one axillary lymph node (No I) and a total of fifteen lymph nodes were assessed (XV). This corresponds to N1 stage based on the new rule 12: N1 indicates metastases in 1 to 3 axillary lymph nodes (No/Total)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates the presence of metastases in 1 out of 15 axillary lymph nodes (No I/XV), which corresponds to N1 stage. The substaging information (N1a) is not considered for this answer."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

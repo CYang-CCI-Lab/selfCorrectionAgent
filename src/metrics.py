@@ -81,6 +81,7 @@ def t14_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
         label_counts[label] = 0
 
     for true_label, prediction in zip(true_labels, predictions):
+        prediction = prediction.upper()
         label_counts[true_label] += 1
         if true_label in prediction:
             metrics[true_label]['tp'] += 1
@@ -135,11 +136,13 @@ def t14_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
     weighted_f1 = sum(results[label]['f1'] * label_counts[label] for label in metrics) / total_instances
 
     results['overall'] = {
-        'precision': round(total_precision, 2),
-        'recall': round(total_recall, 2),
-        'f1': round(total_f1, 2),
+        # 'precision': round(total_precision, 2),
+        # 'recall': round(total_recall, 2),
+        # 'f1': round(total_f1, 2),
+        'macro_precision': round(macro_precision, 2),
+        'macro_recall': round(macro_recall, 2),
         'macro_f1': round(macro_f1, 2),
-        'weighted_f1': round(weighted_f1, 2),
+        # 'weighted_f1': round(weighted_f1, 2),
         'support': total_instances
     }
     
@@ -164,6 +167,7 @@ def n03_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
         label_counts[label] = 0
 
     for true_label, prediction in zip(true_labels, predictions):
+        prediction = prediction.upper()
         label_counts[true_label] += 1
         if true_label in prediction:
             metrics[true_label]['tp'] += 1
@@ -218,11 +222,13 @@ def n03_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
     weighted_f1 = sum(results[label]['f1'] * label_counts[label] for label in metrics) / total_instances
 
     results['overall'] = {
-        'precision': round(total_precision, 2),
-        'recall': round(total_recall, 2),
-        'f1': round(total_f1, 2),
+        # 'precision': round(total_precision, 2),
+        # 'recall': round(total_recall, 2),
+        # 'f1': round(total_f1, 2),
+        'macro_precision': round(macro_precision, 2),
+        'macro_recall': round(macro_recall, 2),
         'macro_f1': round(macro_f1, 2),
-        'weighted_f1': round(weighted_f1, 2),
+        # 'weighted_f1': round(weighted_f1, 2),
         'support': total_instances
     }
     

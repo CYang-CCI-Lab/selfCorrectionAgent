@@ -1,0 +1,26 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that the largest tumor size in the left breast is 6 cm, which is larger than the threshold for T3 tumors (more than 5 cm). Therefore, the pathologic T stage of the patient's cancer is T3."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage of breast cancer is determined by the size of the tumor. In this report, the tumor size is described as 'a 6.0 x 5.0 x 2.8 cm gray-white, ill-defined mass'. This means that the tumor is larger than 2 cm but not larger than 5 cm, which corresponds to T2 stage."
+            },
+            {
+                "author": "Answer",
+                "text": "T3"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T3"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

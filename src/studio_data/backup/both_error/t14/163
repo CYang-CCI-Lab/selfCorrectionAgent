@@ -1,0 +1,105 @@
+{
+  "id": 163,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0day, 8\u00a0hours",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1250,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Patient filename",
+          "text": "TCGA-BH-A1FD.9F838476-4DF1-44D6-989F-33A1D490424B"
+        },
+        {
+          "author": "Memory Reasoning",
+          "text": "The report mentions that the 'INFILTRATING DUCT AND INTRADUCTAL CARCINONA, POOR NUCLEAR GRADE, WITH FOCAL MUCINOUS FEATURES AND TUMOR. ASSOCIATED MICROCALCITICATIONS (2.0 CM)' was found during the left radical modified mastectomy procedure. The T stage is determined by the size of the largest tumor, which in this case is 2.0 cm. According to the rules provided, T2 tumors are more than 2 cm but not more than 5 cm. Therefore, the predicted T stage for this patient's cancer is T2."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The report mentions that the size of the tumor is 2.0 cm, which falls under the T2 category for breast cancer staging. The T stage is determined by the size of the tumor, with T1 being 2 cm or less, T2 being more than 2 cm but not more than 5 cm, T3 being more than 5 cm, and T4 being any size with direct extension to the chest wall or skin. Therefore, based on the information provided in the report, the patient's T stage is T2."
+        },
+        {
+          "author": "Answer",
+          "text": "T1"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T2"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-15T05:19:55.107189Z",
+    "updated_at": "2024-07-17T22:57:42.668499Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 23,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 7,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Memory: incorrect inference",
+          "ZS: incorrect inference",
+          "Memory: ambiguous boundary value",
+          "ZS: ambiguous boundary value"
+        ]
+      },
+      "id": "XSjPoXSV48",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "1",
+        "end": "1",
+        "startOffset": 364,
+        "endOffset": 415,
+        "text": "T2 tumors are more than 2 cm but not more than 5 cm",
+        "paragraphlabels": [
+          "T2 tumors are more than 2 cm but not more than 5 cm."
+        ]
+      },
+      "id": "H02Ezu7BSB",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-16T14:22:52.170449Z",
+  "updated_at": "2024-07-17T22:57:42.721624Z",
+  "draft_created_at": "2024-07-16T14:22:45.849629Z",
+  "lead_time": 123.316,
+  "import_id": null,
+  "last_action": null,
+  "project": 7,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

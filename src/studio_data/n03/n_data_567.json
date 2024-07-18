@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states 'Lymph nodes: Sentinel lymph node only. Lymph node status: Negative 0/2.' This means that two sentinel lymph nodes were assessed and both were negative for metastases. Therefore, the N stage is N0."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The pathology report indicates that two sentinel lymph nodes were examined and both were negative for metastases (0/1). Therefore, the pathologic N stage for this patient is N0."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

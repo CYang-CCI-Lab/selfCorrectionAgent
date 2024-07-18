@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the size of the largest tumor, which is an invasive ductal carcinoma with lobular features and measures 3.2 cm in greatest dimension. This meets the criteria for a T2 tumor, which is more than 2 cm but not more than 5 cm. The presence of ductal carcinoma in situ or the percentage of the tumor occupied by in situ component does not affect the T stage for invasive ductal carcinoma. Therefore, the T stage for this patient is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The T stage of a cancer is determined by the size of the primary tumor. In this report, the size of the tumor in the right breast is given as 3.2 cm. According to the TNM staging system, a T stage of T2 corresponds to a tumor size of 2.1 to 5.0 cm. Therefore, the T stage for this patient's cancer is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

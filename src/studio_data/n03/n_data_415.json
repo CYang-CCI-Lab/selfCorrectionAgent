@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that 'Axillary lymph nodes: Total number with metastasis: 7. Total number examined: 10', which indicates that 7 out of 10 lymph nodes have metastases. According to Rule 12, N1 indicates metastases in 1 to 3 axillary lymph nodes, and according to Rule 14, N2 indicates metastases in 4 to 9 axillary lymph nodes. Since 7 lymph nodes have metastases, the N stage is N2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient's pathologic N stage (pN) is N2a. This is based on the report which states 'Axillary lymph nodes: Total number with metastasis: 7. Total number examined: 10 (1 from part A, 9 from part B below). Size of largest metastasis: 1.3 cm (A14, A15). Extracapsular extension: present and extends into fibrous septae of surrounding fibroadipose tissue.' This indicates that 7 out of 10 examined lymph nodes have metastasis, with the largest metastasis being 1.3 cm and extracapsular extension is present."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

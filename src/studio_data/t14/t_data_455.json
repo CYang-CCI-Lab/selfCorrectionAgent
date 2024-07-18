@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides a measurement of the largest tumor size, which is 3.2 cm (combined gross and microscopic measurement). According to the rules provided, T2 tumors are more than 2 cm but not more than 5 cm. Therefore, the pathologic T stage of the patient's cancer is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient's pathologic tumor stage (pT) can be determined based on the largest tumor size. From the pathology report, the combined gross and microscopic measurement of the invasive lobular carcinoma is 3.2 cm. Therefore, the T stage is T2 (tumor size 2.1 to 5.0 cm)."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

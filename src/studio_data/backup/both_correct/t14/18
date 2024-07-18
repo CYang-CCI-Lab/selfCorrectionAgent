@@ -1,0 +1,90 @@
+{
+  "id": 18,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 13,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report indicates that the tumor measures 13.6 cm in its largest dimension, which puts it in the T3 category based on the size criteria. However, the report also mentions that the tumor extends directly to the chest wall and skin (T4b), which takes precedence over the size criteria. Therefore, the T stage for this patient's cancer is T4."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage for cancer is determined by the size of the tumor and whether it has invaded the surrounding tissues. In this report, the tumor is described as 'a poorly differentiated infiltrative duct carcinoma with widespread angiolymphatic invasion.' The size of the tumor is given as 'a tumor mass directly beneath the nipple which is 13.5x 7 x 4 cm. in greatest overall dimension.' Additionally, the tumor is described as having 'focal extension of the tumor into epidermis without ulceration' and 'a satellite nodule which is 0.6 cm. in greatest dimension and is 1.5 cm. from the main tumor mass.' Based on this information, the tumor is larger than 5 cm and has invaded the skin and surrounding tissues, which classifies it as a T4 stage tumor."
+        },
+        {
+          "author": "Answer",
+          "text": "T4"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:00:32.950564Z",
+    "updated_at": "2024-07-07T09:25:51.933061Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 12,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Implicit"
+        ]
+      },
+      "id": "zSso5Y40Qx",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 179,
+        "endOffset": 286,
+        "text": "the tumor extends directly to the chest wall and skin (T4b), which takes precedence over the size criteria.",
+        "paragraphlabels": [
+          "T4 tumors are of any size with direct extension to the chest wall or skin."
+        ]
+      },
+      "id": "_nozCQ3Y8O",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T09:25:51.792253Z",
+  "updated_at": "2024-07-07T09:25:51.792300Z",
+  "draft_created_at": "2024-07-07T09:25:07.852190Z",
+  "lead_time": 90.775,
+  "import_id": null,
+  "last_action": null,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

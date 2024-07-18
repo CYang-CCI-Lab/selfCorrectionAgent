@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions 'Minute clusters of metastatic ductal carcinoma was found in serial section "
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report states that 'Minute clusters of metastatic ductal carcinoma was found in serial section "
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

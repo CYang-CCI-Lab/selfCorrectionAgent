@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the gross tumor size as 5.0 x 5.0 x 2.8 cm. According to the rules provided, T3 tumors are more than 5 cm, and this tumor is exactly 5 cm. T1 tumors are 2 cm or less, and T2 tumors are more than 2 cm but not more than 5 cm. Therefore, the tumor in this report is a T2 tumor."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report states that the gross tumor size is 5.0 x 5.0 x 2.8 cm. According to the TNM staging system for cancer, a T2 designation is given when the tumor is more than 2 cm but not more than 5 cm in size. Therefore, the T stage for this patient's cancer is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

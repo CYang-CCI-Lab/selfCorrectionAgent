@@ -1,0 +1,120 @@
+{
+  "id": 143,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0day, 8\u00a0hours",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1230,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Patient filename",
+          "text": "TCGA-GI-A2C8.4AABCBD1-DF12-45E1-9307-21D6CB0894A9"
+        },
+        {
+          "author": "Memory Reasoning",
+          "text": "The report states that the 'Final size of invasive tumor: 2.4 cm.' Based on the rules provided, a T1 tumor is 2 cm or less, and a T2 tumor is more than 2 cm but not more than 5 cm. Since the tumor size is 2.4 cm, it falls into the T2 category. The fact that the tumor is an invasive ductal carcinoma and that there is no direct extension to the chest wall or skin also supports this classification. The presence of angiolymphatic invasion, involvement of the dermis of the skin and nipple, and the involvement of the pectoralis muscle do not affect the T stage."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage for cancer is determined by the size of the tumor. In this report, the final size of the invasive tumor is stated as 2.4 cm. According to the TNM staging system for cancer, T1 tumors are 2 cm or less in size, T2 tumors are more than 2 cm but not more than 5 cm in size, T3 tumors are more than 5 cm in size, and T4 tumors are of any size with direct extension to the chest wall or skin. Therefore, based on the information provided in this report, the patient's cancer would be classified as T2."
+        },
+        {
+          "author": "Answer",
+          "text": "T4"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T2"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-15T05:19:54.737875Z",
+    "updated_at": "2024-07-17T22:04:05.384801Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 3,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 7,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Memory: incorrect info-extract",
+          "ZS: incorrect info-extract"
+        ]
+      },
+      "id": "pOsmIwZdd8",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "1",
+        "end": "1",
+        "startOffset": 67,
+        "endOffset": 122,
+        "text": "Based on the rules provided, a T1 tumor is 2 cm or less",
+        "paragraphlabels": [
+          "T1 tumors are 2 cm or less in size."
+        ]
+      },
+      "id": "JVJWn3H2S-",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "1",
+        "end": "1",
+        "startOffset": 130,
+        "endOffset": 180,
+        "text": "T2 tumor is more than 2 cm but not more than 5 cm.",
+        "paragraphlabels": [
+          "T2 tumors are more than 2 cm but not more than 5 cm."
+        ]
+      },
+      "id": "MTV8_Zy6mM",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-16T13:15:45.349701Z",
+  "updated_at": "2024-07-17T22:04:05.422924Z",
+  "draft_created_at": "2024-07-16T13:12:52.745818Z",
+  "lead_time": 370.837,
+  "import_id": null,
+  "last_action": null,
+  "project": 7,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

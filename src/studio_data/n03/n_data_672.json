@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, the left breast has one positive lymph node out of 12 assessed lymph nodes (1/12). Based on the AJCC staging system, this corresponds to N1. The report also mentions metastatic carcinoma in one of one lymph node in the right axilla (1/1), but it does not specify the total number of lymph nodes assessed in the right axilla. Therefore, we cannot determine the N stage for the right axilla. However, based on the left axilla information, the N stage for this report is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage is based on the number of positive lymph nodes. In the left breast, there is metastatic carcinoma in one of 12 lymph nodes (1/12), and in the right breast, there are metastatic carcinomas in two of three lymph nodes (2/3). The highest N stage between the two sides is used, so the N stage is N1."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

@@ -1,0 +1,124 @@
+{
+  "id": 23,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 18,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report provides a macroscopic description of the tumor size, which is measured to be 3.0 x 2.1 x 1.3 cm. Using the rules provided, a T1 tumor is 2 cm or less, a T2 tumor is more than 2 cm but not more than 5 cm, and a T3 tumor is more than 5 cm. Since the tumor size in this report is larger than 2 cm but not more than 5 cm, the T stage is T2."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage of cancer is determined by the size of the tumor and whether it has invaded nearby structures. In this report, the tumor size is described as 3.0 x 2.1 x 1.3 cm. The T stage is determined by the greatest dimension of the tumor. Therefore, the T stage for this patient is T2, as the greatest dimension of the tumor is more than 2 cm but not more than 5 cm (T2: 2.0 to 5.0 cm)."
+        },
+        {
+          "author": "Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:00:33.041317Z",
+    "updated_at": "2024-07-07T09:41:16.251733Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 17,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 109,
+        "endOffset": 161,
+        "text": "Using the rules provided, a T1 tumor is 2 cm or less",
+        "paragraphlabels": [
+          "T1 tumors are 2 cm or less in size."
+        ]
+      },
+      "id": "LSBuuQJyh2",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 165,
+        "endOffset": 214,
+        "text": "T2 tumor is more than 2 cm but not more than 5 cm",
+        "paragraphlabels": [
+          "T2 tumors are more than 2 cm but not more than 5 cm."
+        ]
+      },
+      "id": "4zuBUu6Tw1",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 222,
+        "endOffset": 248,
+        "text": "T3 tumor is more than 5 cm",
+        "paragraphlabels": [
+          "T3 tumors are more than 5 cm."
+        ]
+      },
+      "id": "-HPFtACSv1",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Explicit"
+        ]
+      },
+      "id": "Z2vQAP3M51",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T09:41:16.132522Z",
+  "updated_at": "2024-07-07T09:41:16.132563Z",
+  "draft_created_at": "2024-07-07T09:40:49.989565Z",
+  "lead_time": 55.021,
+  "import_id": null,
+  "last_action": null,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

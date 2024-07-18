@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that the right breast underwent a total mastectomy, and out of the four sentinel lymph nodes assessed, three were positive for metastatic carcinoma (>2.0 mm) [AJCC pN1(5n)]. This information supports the N1 stage. No other information in the report suggests a different N stage."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has infiltrating ductal carcinoma in the right breast with metastatic carcinoma found in 3 out of 4 sentinel lymph nodes (>2.0 mm) [AJCC pN1(5n)]. There is no evidence of extranodal extension. Multiple (18) right axillary lymph nodes were negative for tumor. The left breast had only ductal carcinoma in situ, which does not affect the N stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

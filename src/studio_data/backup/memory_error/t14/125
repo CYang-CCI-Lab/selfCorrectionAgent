@@ -1,0 +1,81 @@
+{
+  "id": 125,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 3\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1212,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report mentions the presence of multiple invasive tumors in the left breast, with the largest one measuring 40 mm in greatest dimension. This falls in the T3 category, which includes tumors larger than 5 cm. The presence of ductal carcinoma in situ (DCIS) or the percentage of the tumor occupied by in situ component does not affect the T stage for invasive ductal carcinoma. Therefore, the T stage for this patient is T3."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage of a cancer is determined by the size of the primary tumor. In this pathology report, the left breast was removed and several masses were found in the upper outer quadrant. The largest mass measured 4 cm in greatest dimension. Therefore, the T stage is T2 (tumor size 2-5 cm)."
+        },
+        {
+          "author": "Answer",
+          "text": "T2"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T3"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-05T21:31:56.366946Z",
+    "updated_at": "2024-07-17T20:39:12.209773Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 5,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 5,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Memory: incorrect inference"
+        ]
+      },
+      "id": "8ynJfdsalZ",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T16:58:35.545197Z",
+  "updated_at": "2024-07-17T20:39:12.289518Z",
+  "draft_created_at": null,
+  "lead_time": 157.315,
+  "import_id": null,
+  "last_action": null,
+  "project": 5,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

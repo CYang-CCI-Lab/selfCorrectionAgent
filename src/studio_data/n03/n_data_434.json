@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that there are metastases in 5 out of 18 lymph nodes in the first specimen (A) and metastases in 2 out of 2 lymph nodes in the second specimen (B). This brings the total number of positive lymph nodes to 7 out of 20. According to the AJCC staging system, this corresponds to N2 (N2 indicates metastases in 4 to 9 axillary lymph nodes)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The N stage for this patient is N2 because the report indicates that metastatic carcinoma is present in 5 out of 18 lymph nodes from the right breast with axillary contents levels 1,2 and in 2 out of 2 lymph nodes from the additional axillary contents, with extranodal extension. The T stage is T2 based on the tumor size of 3 cm. Therefore, the pathologic stage is pT2N2."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

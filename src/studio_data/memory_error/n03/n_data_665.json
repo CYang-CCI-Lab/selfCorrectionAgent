@@ -1,0 +1,26 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that there are 2 positive lymph nodes out of 13 examined in level I and no positive lymph nodes out of 4 examined in level II. However, the report also mentions that there is no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes (New Rule 10) and that all assessed lymph nodes are negative for metastatic carcinoma (New Rule 11). Therefore, the N stage for this patient is N0."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has 2 out of 13 positive lymph nodes in level I of the left axilla (2/13). This corresponds to N1 stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N0"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

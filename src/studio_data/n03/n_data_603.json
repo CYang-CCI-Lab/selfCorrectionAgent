@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, a single out of two sentinel lymph nodes is positive for micrometastasis (AJCC pN1mi(sn)). This corresponds to N1 as per the AJCC staging system (New Rule 12)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has 1 out of 2 sentinel lymph nodes positive for micrometastasis, with the largest metastasis measuring 1.0 mm. This meets the criteria for AJCC pN1mi(sn), which corresponds to a pathologic N1 stage. The substaging information (mi) can be ignored for this question."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that 2 out of 26 assessed left axillary lymph nodes were involved with tumor. This corresponds to N1 based on the AJCC staging system, as per Rule 12: N1 indicates metastases in 1 to 3 axillary lymph nodes (No/Total)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report indicates that two out of twenty-six (2/26) left axillary lymph nodes were involved with tumor. This corresponds to pathologic N1 stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

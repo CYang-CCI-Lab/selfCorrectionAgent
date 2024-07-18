@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the pathology report, two out of twenty-four assessed left axillary lymph nodes are positive for metastatic mammary carcinoma (AJCC pN2). This corresponds to N2 stage based on the new rules provided."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has 2 out of 24 examined left axillary lymph nodes positive for metastatic mammary carcinoma (AJCC pN2). This indicates that the cancer has spread to 2-9 axillary lymph nodes, which corresponds to N2 stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

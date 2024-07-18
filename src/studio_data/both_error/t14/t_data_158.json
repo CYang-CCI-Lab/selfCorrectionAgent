@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-B6-A0IQ.0ED7357E-662C-4D65-82ED-29739919068F"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the size of the tumor as 5.5 x 4 x 3.5 cm. Based on the rules provided, T1 tumors are 2 cm or less, T2 tumors are more than 2 cm but not more than 5 cm, T3 tumors are more than 5 cm, and T4 tumors are of any size with direct extension to the chest wall or skin. Since the tumor size is more than 2 cm but not more than 5 cm, the T stage is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The tumor size in this report is described as 5.5 x 4 x 3.5 cm, which makes it larger than 2 cm but not larger than 5 cm. This falls within the T2 category for T stage in cancer staging. The report also mentions that the tumor is 'within 1 mm of the deep margin', but this does not affect the T stage. The absence of lymphatic invasion is also not a factor in determining the T stage."
+            },
+            {
+                "author": "Answer",
+                "text": "T3"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

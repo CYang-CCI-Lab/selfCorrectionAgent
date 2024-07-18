@@ -1,0 +1,85 @@
+{
+  "id": 184,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0day, 6\u00a0hours",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1298,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Patient filename",
+          "text": "TCGA-BH-A1FR.B6E6765F-14BC-4D3D-9266-EF8065354070"
+        },
+        {
+          "author": "Memory Reasoning",
+          "text": "The report does not mention the number of positive lymph nodes or any metastases in the lymph nodes. Based on the given rules, N0 indicates no positive lymph nodes or no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes. Therefore, the N stage for this patient's cancer is N0."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The report mentions that 'surgical margins are negative for tumor', which means that there is no evidence of cancer cells in the surrounding lymph nodes or tissues. The N stage is determined based on the presence or absence of cancer cells in the lymph nodes. In this case, since there is no evidence of cancer cells in the lymph nodes, the N stage would be N0."
+        },
+        {
+          "author": "Answer",
+          "text": "N1"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "N0"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "N0"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-15T05:22:44.922600Z",
+    "updated_at": "2024-07-17T23:02:59.280294Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 14,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 8,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Incorrect ground truth"
+        ]
+      },
+      "id": "QuPNv49W8r",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-16T16:39:45.506699Z",
+  "updated_at": "2024-07-17T23:02:59.314981Z",
+  "draft_created_at": null,
+  "lead_time": 45.485,
+  "import_id": null,
+  "last_action": null,
+  "project": 8,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

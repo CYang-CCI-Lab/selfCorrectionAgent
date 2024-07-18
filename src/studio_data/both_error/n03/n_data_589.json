@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-E2-A154.8F8DCA87-B27A-429C-952A-186F8D4502AE"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, there is metastatic carcinoma in 1 out of 12 axillary lymph nodes (1/12), which corresponds to N1 stage based on the AJCC staging system (New Rule 12). The report also mentions that there is metastatic carcinoma in one of two intramammary lymph nodes (1/2), but this information is not used in determining the N stage for this case."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report mentions 'METASTATIC CARCINOMA TO ONE OF TWELVE AXILLARY LYMPH NODES (1/12), MEASURING 3.5-CM. WITH FOCAL EXTRANODAL EXTENSION' and 'METASTATIC CARCINOMA TO ONE OF TWO INTRAMAMMARY LYMPH NODES (1/2), MEASURING 0.8-CM. WITH FOCAL EXTRANODAL EXTENSION'. This indicates that there is metastasis in 1 out of 12 axillary lymph nodes and 1 out of 2 intramammary lymph nodes. Therefore, the N stage is N1."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "N1"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

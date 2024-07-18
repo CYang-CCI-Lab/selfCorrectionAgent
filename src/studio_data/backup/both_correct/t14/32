@@ -1,0 +1,90 @@
+{
+  "id": 32,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 27,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report mentions a 'well-circumscribed, firm, white mass measuring 2.5 x 1.7 x 1.5 cm' in slice #5 of the left breast mastectomy specimen. This is the largest tumor focus, with a maximum dimension of 2.5 cm. Based on the rules provided, this falls under T2 tumors, which are more than 2 cm but not more than 5 cm."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage for cancer is determined by the size of the primary tumor. In this report, the primary tumor is described as having a largest focus of invasion measuring 3mm and a separate mass of 2.5 cm. The largest focus of invasion is smaller than the size of the separate mass. The T stage is determined by the size of the larger tumor. Therefore, the T stage is T2 (tumor size 2.0-5.0 cm) according to the TNM staging system."
+        },
+        {
+          "author": "Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:00:33.180598Z",
+    "updated_at": "2024-07-07T09:56:05.886759Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 26,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 278,
+        "endOffset": 315,
+        "text": "more than 2 cm but not more than 5 cm",
+        "paragraphlabels": [
+          "T2 tumors are more than 2 cm but not more than 5 cm."
+        ]
+      },
+      "id": "utkDOWtrAM",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Explicit"
+        ]
+      },
+      "id": "rSQEPWOeKk",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T09:56:05.807719Z",
+  "updated_at": "2024-07-07T09:56:05.807757Z",
+  "draft_created_at": null,
+  "lead_time": 21.329,
+  "import_id": null,
+  "last_action": null,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

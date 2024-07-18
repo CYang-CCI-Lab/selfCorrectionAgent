@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states that the right sentinel lymph node is negative for tumor, and an immunohistochemical cytokeratin stain confirms this. Based on the new rules 10 and 11, N0 indicates no metastatic carcinoma in sentinel lymph nodes and regional lymph nodes or that all assessed lymph nodes are negative for metastatic carcinoma. Therefore, the N stage for this patient is N0."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report states that 'Lymph nodes, right sentinel, excision: Negative for tumor.' This means that no cancer cells were found in the sentinel lymph nodes that were removed and examined. In the TNM staging system for cancer, 'N0' indicates that there is no regional lymph node involvement. Therefore, the pathologic N stage for this patient is N0."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

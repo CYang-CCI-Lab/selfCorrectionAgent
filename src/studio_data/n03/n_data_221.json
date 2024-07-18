@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "According to the report, there is a single sentinel lymph node that is positive for tumor (AJCC pN1mi). Therefore, based on the new rules provided, the N stage for this patient's cancer is N1."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has one sentinel lymph node (AJCC pN1mi) that is positive for tumor, and multiple other left axillary lymph nodes (AJCC pNO) that are negative for tumor. This indicates a pathologic N stage of N1, based on the AJCC staging system."
+            },
+            {
+                "author": "Answer",
+                "text": "N1"
+            }
+        ]
+    }
+}

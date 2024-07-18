@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report indicates that there are metastases in 17 out of 20 lymph nodes from the left axillary lymph node dissection (Rule 12, 13). Additionally, there are metastases in 2 out of 2 lymph nodes from the left level 3 lymph node dissection and in 5 out of 5 lymph nodes from the lymph node dissection above the left brachial plexus (Rule 13). This information supports the prediction of N3 stage."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The patient has metastatic carcinoma present in 5 out of 5 left intramammary lymph nodes with extranodal extension, and in 17 out of 20 left axillary lymph nodes with the largest metastatic deposit being 2.9 cm in greatest linear dimension. Additionally, metastatic carcinoma is present in 2 out of 2 left level 3 lymph nodes with the largest metastatic deposit being 2.2 cm in greatest linear dimension, and in 5 out of 5 lymph nodes above left brachial plexus with the largest metastatic deposit being 1.8 cm in greatest linear dimension. This information supports the N3 stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N3"
+            }
+        ]
+    }
+}

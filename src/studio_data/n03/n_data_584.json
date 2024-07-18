@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report states 'Regional lymph nodes (pN): pNO' which means that no metastatic carcinoma was found in the regional lymph nodes. Therefore, the N stage is N0."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report states 'Twenty-two axillary lymph nodes, no tumor present.' This indicates that there is no evidence of cancer in the lymph nodes, which corresponds to an N0 stage."
+            },
+            {
+                "author": "Answer",
+                "text": "N0"
+            }
+        ]
+    }
+}

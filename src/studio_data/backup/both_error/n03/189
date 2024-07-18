@@ -1,0 +1,85 @@
+{
+  "id": 189,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0day, 6\u00a0hours",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1303,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Patient filename",
+          "text": "TCGA-AN-A0FW.03BD8920-CA01-4818-BBD7-925DDD3F6908"
+        },
+        {
+          "author": "Memory Reasoning",
+          "text": "According to the provided pathology report, the N stage is indicated as 1. This is explicitly stated in the report, so there is no need to apply the rules to infer the N stage. The report mentions 'N Stage: 1', which means the patient has metastases in 1 to 3 axillary lymph nodes."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The N stage is determined by the presence and extent of cancer involvement in the lymph nodes. According to the pathology report, the N Stage is 1, which indicates that there is cancer found in 1 to 3 axillary lymph nodes or in the inframammary nodes. This is stated in the report as 'N Stage: 1'."
+        },
+        {
+          "author": "Answer",
+          "text": "N2"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "N1"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "N1"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-15T05:22:45.018431Z",
+    "updated_at": "2024-07-17T23:03:15.514369Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 19,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 8,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "choices": [
+          "Incorrect ground truth"
+        ]
+      },
+      "id": "OWvJPeiOX7",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-16T16:46:50.845669Z",
+  "updated_at": "2024-07-17T23:03:15.582556Z",
+  "draft_created_at": null,
+  "lead_time": 35.282999999999994,
+  "import_id": null,
+  "last_action": null,
+  "project": 8,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

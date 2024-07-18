@@ -1,0 +1,18 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Memory Reasoning",
+                "text": "The report mentions 'METASTATIC CARCINOMA PRESENT IN FIVE OF TEN LYMPH NODES'. This corresponds to N2 as per the AJCC staging system (New Rule 14: N2 indicates metastases in 4 to 9 axillary lymph nodes)."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report mentions metastatic carcinoma present in five of ten lymph nodes, with the largest involved lymph node being 2.4 cm and extracapsular extension is present. This corresponds to pN2 (i+) based on the 8th edition of the AJCC Cancer Staging Manual, which defines N2 as 'Metastasis in 4 to 9 axillary lymph nodes, or in clinically detected ipsilateral internal mammary nodes in the absence of axillary nodal metastasis.' The 'i+' indicates extracapsular extension."
+            },
+            {
+                "author": "Answer",
+                "text": "N2"
+            }
+        ]
+    }
+}

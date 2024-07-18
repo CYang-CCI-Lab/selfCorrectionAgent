@@ -1,0 +1,30 @@
+{
+    "data": {
+        "humanMachineDialogue": [
+            {
+                "author": "Patient filename",
+                "text": "TCGA-E2-A154.8F8DCA87-B27A-429C-952A-186F8D4502AE"
+            },
+            {
+                "author": "Memory Reasoning",
+                "text": "The report provides the size of the largest invasive tumor as 2.5 cm, which falls within the range for T2 tumors (more than 2 cm but not more than 5 cm). Therefore, the pathologic T stage for this patient's cancer is T2."
+            },
+            {
+                "author": "ZS Reasoning",
+                "text": "The report mentions 'Invasive ductal carcinoma, SBR Grade 2, measuring 1.2-cm' in the left breast. The T stage for cancer is based on the size of the tumor. T1 is for tumors up to 2 cm, T2 is for tumors between 2-5 cm, T3 is for tumors larger than 5 cm, and T4 is for tumors of any size that invade the chest wall or skin. Therefore, based on the report, the patient's T stage is T2."
+            },
+            {
+                "author": "Answer",
+                "text": "T1"
+            },
+            {
+                "author": "Memory Answer",
+                "text": "T2"
+            },
+            {
+                "author": "ZS Answer",
+                "text": "T2"
+            }
+        ]
+    }
+}

@@ -1,0 +1,99 @@
+{
+  "id": 90,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 3\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 1173,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report indicates that the largest tumor in the left breast measures 1.9 cm in largest dimension (invasive ductal carcinoma, histologic grade II-III/III, nuclear grade III/III). This falls within the size range for a T1 tumor (2 cm or less). The presence of ductal carcinoma in situ (DCIS) or the percentage of the tumor occupied by in situ component does not affect the T stage for invasive ductal carcinoma. Therefore, the T stage for this patient is T1."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The T stage of a cancer is determined by the size of the primary tumor. In this report, the left breast shows a firm to hard, fairly circumscribed, centrally placed mass, measuring 1.7 x 1.5 x 1.5 cm, approximately 1.0 cm from the deep margin. Therefore, the T stage for this cancer is T2 (tumor size > 2 cm and \u2264 5 cm)."
+        },
+        {
+          "author": "Answer",
+          "text": "T1"
+        },
+        {
+          "author": "Memory Answer",
+          "text": "T1"
+        },
+        {
+          "author": "ZS Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-05T21:11:20.502966Z",
+    "updated_at": "2024-07-17T19:14:47.659603Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 24,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 3,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 245,
+        "endOffset": 412,
+        "text": "The presence of ductal carcinoma in situ (DCIS) or the percentage of the tumor occupied by in situ component does not affect the T stage for invasive ductal carcinoma.",
+        "paragraphlabels": [
+          "The presence of ductal carcinoma in situ (DCIS) or the percentage of the tumor occupied by in situ component does not affect the T stage for invasive ductal carcinoma or invasive lobular carcinoma."
+        ]
+      },
+      "id": "uGLsyLjYUS",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "ZS: incorrect info-extract",
+          "ZS: incorrect inference"
+        ]
+      },
+      "id": "bswcW8WA_f",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T14:47:22.419535Z",
+  "updated_at": "2024-07-17T19:14:47.737628Z",
+  "draft_created_at": "2024-07-07T14:47:21.381741Z",
+  "lead_time": 258.837,
+  "import_id": null,
+  "last_action": null,
+  "project": 3,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}

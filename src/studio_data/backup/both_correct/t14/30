@@ -1,0 +1,141 @@
+{
+  "id": 30,
+  "created_username": " yl3427@drexel.edu, 1",
+  "created_ago": "1\u00a0week, 2\u00a0days",
+  "completed_by": {
+    "id": 1,
+    "first_name": "",
+    "last_name": "",
+    "email": "yl3427@drexel.edu"
+  },
+  "task": {
+    "id": 25,
+    "data": {
+      "humanMachineDialogue": [
+        {
+          "author": "Memory Reasoning",
+          "text": "The report states that the size of the invasive component of the tumor is 3.0 cm, which is the greatest dimension. Based on the rules provided, T1 tumors are 2 cm or less in size, T2 tumors are more than 2 cm but not more than 5 cm, T3 tumors are more than 5 cm, and T4 tumors are of any size with direct extension to the chest wall or skin. Since the tumor size is more than 2 cm but not more than 5 cm, the T stage is T2."
+        },
+        {
+          "author": "ZS Reasoning",
+          "text": "The report indicates that the 'Size of Invasive Component: Greatest dimension: 3.0 cm' which corresponds to a pathologic T stage of T2. The T stage is based on the size of the primary tumor and in this case, the tumor is 3.0 cm in greatest dimension. The T stage does not include any information about substaging such as tumor extension to the chest wall or skin, which is why I have ignored that information in my prediction."
+        },
+        {
+          "author": "Answer",
+          "text": "T2"
+        }
+      ]
+    },
+    "meta": {},
+    "created_at": "2024-07-03T09:00:33.154171Z",
+    "updated_at": "2024-07-07T09:55:39.489996Z",
+    "is_labeled": true,
+    "overlap": 1,
+    "inner_id": 24,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 1,
+    "updated_by": 1,
+    "file_upload": null,
+    "comment_authors": []
+  },
+  "result": [
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 115,
+        "endOffset": 178,
+        "text": "Based on the rules provided, T1 tumors are 2 cm or less in size",
+        "paragraphlabels": [
+          "T1 tumors are 2 cm or less in size."
+        ]
+      },
+      "id": "tVvdARJ3gU",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 180,
+        "endOffset": 232,
+        "text": "T2 tumors are more than 2 cm but not more than 5 cm,",
+        "paragraphlabels": [
+          "T2 tumors are more than 2 cm but not more than 5 cm."
+        ]
+      },
+      "id": "ZXoXKIw4WR",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 233,
+        "endOffset": 261,
+        "text": "T3 tumors are more than 5 cm",
+        "paragraphlabels": [
+          "T3 tumors are more than 5 cm."
+        ]
+      },
+      "id": "DUQ-HpWQe1",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "start": "0",
+        "end": "0",
+        "startOffset": 267,
+        "endOffset": 340,
+        "text": "T4 tumors are of any size with direct extension to the chest wall or skin",
+        "paragraphlabels": [
+          "T4 tumors are of any size with direct extension to the chest wall or skin."
+        ]
+      },
+      "id": "yPWT1A8aMI",
+      "from_name": "entity_slot",
+      "to_name": "dialogue",
+      "type": "paragraphlabels",
+      "origin": "manual"
+    },
+    {
+      "value": {
+        "choices": [
+          "Explicit"
+        ]
+      },
+      "id": "IpmwDc6i4O",
+      "from_name": "intent",
+      "to_name": "dialogue",
+      "type": "choices",
+      "origin": "manual"
+    }
+  ],
+  "was_cancelled": false,
+  "ground_truth": false,
+  "created_at": "2024-07-07T09:53:55.641507Z",
+  "updated_at": "2024-07-07T09:55:39.415189Z",
+  "draft_created_at": "2024-07-07T09:53:30.333674Z",
+  "lead_time": 102.40299999999999,
+  "import_id": null,
+  "last_action": null,
+  "project": 1,
+  "updated_by": 1,
+  "parent_prediction": null,
+  "parent_annotation": null,
+  "last_created_by": null
+}
