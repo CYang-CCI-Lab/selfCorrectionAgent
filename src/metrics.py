@@ -4,7 +4,7 @@ from sklearn.metrics import confusion_matrix, classification_report, precision_r
 from sklearn.utils import resample
 from scipy import stats
 
-# add relaxed versions
+# old metrics
 def t14_performance_report(df, ans_col="ans_str"):
     df['Has_Valid_Prediction'] = df[ans_col].str.contains('T1|T2|T3|T4', case=False)
     coded_pred_list = []
@@ -31,7 +31,6 @@ def t14_performance_report(df, ans_col="ans_str"):
     print(classification_report(t_labels, coded_pred, target_names=target_names))
     precision, recall, f1, _ = precision_recall_fscore_support(t_labels, coded_pred, average='macro')
     return precision, recall, f1
-
 
 def n03_performance_report(df, ans_col="ans_str"):
     df['Has_Valid_Prediction'] = df[ans_col].str.contains('N0|N1|N2|N3', case=False)
@@ -61,14 +60,14 @@ def n03_performance_report(df, ans_col="ans_str"):
     precision, recall, f1, _ = precision_recall_fscore_support(n_labels, coded_pred, average='macro')
     return precision, recall, f1
 
-
+# new metrics
 def t14_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dict:
 
     # Check for valid inputs
     if len(true_labels) != len(predictions):
         raise ValueError("The length of true_labels and predictions must be the same.")
     
-    if any(pred is None or not isinstance(pred, str) for pred in predictions):
+    if any(not isinstance(pred, str) for pred in predictions):
         raise ValueError("All predictions must be non-null strings.")
     
     true_labels = true_labels.apply(lambda x: f'T{x+1}')
@@ -110,7 +109,8 @@ def t14_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
             'precision': round(precision, 2),
             'recall': round(recall, 2),
             'f1': round(f1, 2),
-            'support': support
+            'support': support,
+            'num_errors': fp + fn
         }
         
         total_tp += tp
@@ -143,7 +143,8 @@ def t14_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
         'macro_recall': round(macro_recall, 2),
         'macro_f1': round(macro_f1, 2),
         # 'weighted_f1': round(weighted_f1, 2),
-        'support': total_instances
+        'support': total_instances,
+        'num_errors': total_fp + total_fn
     }
     
     return results
@@ -154,7 +155,7 @@ def n03_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
     if len(true_labels) != len(predictions):
         raise ValueError("The length of true_labels and predictions must be the same.")
     
-    if any(pred is None or not isinstance(pred, str) for pred in predictions):
+    if any(not isinstance(pred, str) for pred in predictions):
         raise ValueError("All predictions must be non-null strings.")
     
     true_labels = true_labels.apply(lambda x: f'N{x}')
@@ -168,6 +169,8 @@ def n03_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
 
     for true_label, prediction in zip(true_labels, predictions):
         prediction = prediction.upper()
+        if prediction == "NO" or prediction == "NX":
+            prediction = "N0"
         label_counts[true_label] += 1
         if true_label in prediction:
             metrics[true_label]['tp'] += 1
@@ -196,7 +199,8 @@ def n03_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
             'precision': round(precision, 2),
             'recall': round(recall, 2),
             'f1': round(f1, 2),
-            'support': support
+            'support': support,
+            'num_errors': fp + fn
         }
         
         total_tp += tp
@@ -229,7 +233,8 @@ def n03_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
         'macro_recall': round(macro_recall, 2),
         'macro_f1': round(macro_f1, 2),
         # 'weighted_f1': round(weighted_f1, 2),
-        'support': total_instances
+        'support': total_instances,
+        'num_errors': total_fp + total_fn
     }
     
     return results

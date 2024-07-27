@@ -1,20 +1,26 @@
-from prompt import system_instruction
-import openai
-from openai import OpenAI
+import os
+from datetime import datetime
+from dotenv import load_dotenv, find_dotenv
+from typing import List, Dict, Union, Optional, Tuple
 import pandas as pd
 from tqdm import tqdm
 import time
-from datetime import datetime
 import json
-from typing import List, Dict, Union
 from fuzzywuzzy import fuzz
-import wandb
+from openai import OpenAI
+from prompt import system_instruction
+
+# # Optional: Uncomment if using langsmith tracing
+# if not load_dotenv(find_dotenv()):
+#     raise Exception("Failed to load .env file")
+# from langsmith import traceable
+# from langsmith.wrappers import wrap_openai
 
 class ChoiceAgent:
     """ the simplest agent, which is appropriate for zero-shot prompting
     """
     def __init__(self, client: OpenAI, model: str, 
-                 prompt_template: str, choices: dict, label: str) -> None:
+                 prompt_template: str, choices: List, label: str) -> None:
         self.client = client
         self.model = model
         self.prompt_template = prompt_template
@@ -44,7 +50,7 @@ class ChoiceAgent:
 
         return dataset
 
-class MemoryAgent:
+class ConditionalMemoryAgent:
     """ the implementation of memory agent, which learn memory from training set and
     utilize memory as contexts for testing set.
     """
@@ -74,32 +80,31 @@ class MemoryAgent:
         assert True == learning_schema_exist == testing_schema_exist, \
         "You should provide a dict with learning_schema and testing_schema as keys."
 
+    # @traceable(run_type="llm", name="get_schema_followed_response")
     def get_schema_followed_response(self, messages: list, schema:dict, temperature:float) -> Union[Dict, None]:
-        num_attempt = 2
-        for attempt in range(num_attempt):
-            try:
-                response = self.client.chat.completions.create(
-                    model=self.model,
-                    messages=messages,
-                    extra_body={"guided_json":schema},
-                    temperature = temperature
-                )
-                return json.loads(response.choices[0].message.content.replace("\\", "\\\\"))
-            except json.JSONDecodeError:
-                print("Error decoding JSON response")
+        try:
+            response = self.client.chat.completions.create(
+                model=self.model,
+                messages=messages,
+                extra_body={"guided_json":schema},
+                temperature = temperature
+            )
+            return json.loads(response.choices[0].message.content)
+        except json.JSONDecodeError:
+            print("Error decoding JSON response")
+            return None
+        except openai.APITimeoutError:
+            print("API Timeout Error")
+            return None
+        except Exception as e:
+                print(f"An error occurred: {e}")
                 return None
-            except openai.APITimeoutError:
-                if attempt < (num_attempt -1):
-                    wait_time = 2 * (attempt + 1)
-                    print(f"Request timed out. Retrying in {wait_time} seconds...")
-                    time.sleep(wait_time)
-                else:
-                    print("Max retries reached. Request faild.")
-                    return None
                 
-    def train(self, training_dataset: pd.DataFrame, temperature: float = 0.1) -> pd.DataFrame:
+    def train(self, training_dataset: pd.DataFrame, temperature: float = 0.1, threshold: float = 80) -> pd.DataFrame:
+        # only overide this function because the rest parts are the same
         pbar = tqdm(total=training_dataset.shape[0])
         parsing_error = 0
+        num_update = 0
         for idx, row in training_dataset.iterrows():
 
             report = row["text"]
@@ -117,29 +122,48 @@ class MemoryAgent:
             if not json_output:
                 parsing_error += 1
                 print(f"Error at index: {idx}")
-                training_dataset.loc[idx, f"mem_{self.label}_is_parsed"] = False
+                training_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = False
                 continue
-            training_dataset.loc[idx, f"mem_{self.label}_is_parsed"] = True
-            
-            self.memory = json_output['rules']
 
-            # training_dataset.loc[idx, f"mem_{self.label}_reasoning"] = json_output['reasoning']
-            training_dataset.loc[idx, f"mem_{self.label}_ans_str"] = json_output['predictedStage']
-            training_dataset.loc[idx, f"mem_{self.label}_memory"] =  "\n".join(self.memory)
-            training_dataset.loc[idx, f"mem_{self.label}_memory_len"] = len(self.memory)
+            training_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = True
+
+            if self.memory == "":
+                self.memory = json_output['rules']
+            else:
+                current_memory_str = "\n".join(self.memory)
+                new_memory_str = "\n".join(json_output['rules'])
+                training_dataset.loc[idx, f"cmem_{self.label}_edit_distance"] = fuzz.ratio(current_memory_str, new_memory_str)
+                if fuzz.ratio(current_memory_str, new_memory_str) >= threshold :
+                    self.memory = json_output['rules']
+                    num_update += 1
+                    training_dataset.loc[idx, f"cmem_{self.label}_is_updated"] = True
+                else:
+                    training_dataset.loc[idx, f"cmem_{self.label}_is_updated"] = False
+            
+            training_dataset.loc[idx, f"cmem_{self.label}_rules_str"] = "\n".join(json_output['rules'])
+            training_dataset.loc[idx, f"cmem_{self.label}_memory_str"] =  "\n".join(self.memory)
+            training_dataset.loc[idx, f"cmem_{self.label}_memory_len"] = len(self.memory)
+            training_dataset.loc[idx, f"cmem_{self.label}_memory_str_len"] = len("\n".join(self.memory))
+            
+            training_dataset.loc[idx, f"cmem_{self.label}_ans_str"] = json_output['predictedStage']
+            training_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
+
             pbar.update(1)
         pbar.close()
+        print(f"Number of memory updates: {num_update}")
         print(f"During training, number of parsing errors: {parsing_error}")
-     
+
         return training_dataset
-    
-    def test(self, testing_dataset: pd.DataFrame, temperature: float = 0.1) -> pd.DataFrame:
+
+    def test(self, testing_dataset: pd.DataFrame, external_memory = "", temperature: float = 0.1) -> pd.DataFrame:
         pbar = tqdm(total=testing_dataset.shape[0])
         parsing_error = 0
+    
         for idx, row in testing_dataset.iterrows():
 
             report = row["text"]
-
+            if external_memory:
+                self.memory = external_memory
             prompt = self.prompt_template_dict["testing_prompt"].format(memory=self.memory, report=report)
             system_prompt = system_instruction+ "\n" + prompt
             messages = [{"role": "user", "content": system_prompt}]
@@ -149,122 +173,57 @@ class MemoryAgent:
             if not json_output:
                 parsing_error += 1
                 print(f"Error at index: {idx}")
-                testing_dataset.loc[idx, f"mem_{self.label}_is_parsed"] = False
+                testing_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = False
                 continue
-            
-            testing_dataset.loc[idx, f"mem_{self.label}_is_parsed"] = True
-            testing_dataset.loc[idx, f"mem_{self.label}_reasoning"] = json_output['reasoning']
-            testing_dataset.loc[idx, f"mem_{self.label}_ans_str"] = json_output['predictedStage']
+            testing_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = True
+
+            testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
+            testing_dataset.loc[idx, f"cmem_{self.label}_ans_str"] = json_output['predictedStage']
             
             pbar.update(1)
         pbar.close()
         print(f"During testing, number of parsing errors: {parsing_error}")
-   
         return testing_dataset
     
+    #   @traceable(run_type="tool", name="dynamic_test")
+    def dynamic_test(self, testing_dataset: pd.DataFrame, memory_tup: List[tuple], temperature: float = 0.1) -> pd.DataFrame:
+        pbar = tqdm(total=testing_dataset.shape[0])
+        parsing_error = 0
+        for idx, row in testing_dataset.iterrows():
 
-class ConditionalMemoryAgent(MemoryAgent):
-  
-  def __init__(self, client: OpenAI, model: str, 
-                 prompt_template_dict: dict[str, str], schema_dict: dict, label: str) -> None:
-    # inherit all properties and methods from MemoryAgent
-    super().__init__(client, model, prompt_template_dict, schema_dict, label)
+            report = row["text"]
+
+            for num, memory in memory_tup:
+                prompt = self.prompt_template_dict["testing_prompt"].format(memory=memory, report=report)
+                system_prompt = system_instruction+ "\n" + prompt
+                messages = [{"role": "user", "content": system_prompt}]
+
+                json_output = self.get_schema_followed_response(messages, self.schema_dict["testing_schema"], temperature)
+
+                if not json_output:
+                    parsing_error += 1
+                    print(f"Error at index: {idx}")
+                    testing_dataset.loc[idx, f"cmem_{self.label}_{num}reports_is_parsed"] = False
+                    continue
+                
+                testing_dataset.loc[idx, f"cmem_{self.label}_{num}reports_is_parsed"] = True
+                testing_dataset.loc[idx, f"cmem_{self.label}_{num}reasoning"] = json_output['reasoning']
+                testing_dataset.loc[idx, f"cmem_{self.label}_{num}reports_ans_str"] = json_output['predictedStage']
+                
+            pbar.update(1)
+        pbar.close()
+        print(f"During dynamic testing, number of parsing errors: {parsing_error}")
+        return testing_dataset
     
-  def train(self, training_dataset: pd.DataFrame, num: int, temperature: float = 0.1, threshold: float = 80) -> pd.DataFrame:
-    # only overide this function because the rest parts are the same
-    pbar = tqdm(total=training_dataset.shape[0])
-    parsing_error = 0
-    num_update = 0
-    for idx, row in training_dataset.iterrows():
+    def zs_test(self, testing_dataset: pd.DataFrame, temperature: float = 0.1) -> pd.DataFrame:
+        pbar = tqdm(total=testing_dataset.shape[0])
+        parsing_error = 0
+    
+        for idx, row in testing_dataset.iterrows():
 
-        report = row["text"]
-
-        if self.memory == "":
-            prompt = self.prompt_template_dict["initialized_prompt"].format(report=report)
-        else:
-            prompt = self.prompt_template_dict["learning_prompt"].format(memory=self.memory, report=report)
+            report = row["text"]
         
-        system_prompt = system_instruction+ "\n" + prompt
-        messages = [{"role": "user", "content": system_prompt}]
-
-        json_output = self.get_schema_followed_response(messages, self.schema_dict["learning_schema"], temperature)
-
-        if not json_output:
-            parsing_error += 1
-            print(f"Error at index: {idx}")
-            training_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = False
-            continue
-
-        training_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = True
-
-        if self.memory == "":
-           self.memory = json_output['rules']
-        else:
-            current_memory_str = "\n".join(self.memory)
-            new_memory_str = "\n".join(json_output['rules'])
-            training_dataset.loc[idx, f"cmem_{self.label}_edit_distance"] = fuzz.ratio(current_memory_str, new_memory_str)
-            if fuzz.ratio(current_memory_str, new_memory_str) >= threshold :
-                self.memory = json_output['rules']
-                num_update += 1
-                training_dataset.loc[idx, f"cmem_{self.label}_is_updated"] = True
-            else:
-                training_dataset.loc[idx, f"cmem_{self.label}_is_updated"] = False
-        
-        training_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
-        training_dataset.loc[idx, f"cmem_{self.label}_rules_str"] = "\n".join(json_output['rules'])
-        training_dataset.loc[idx, f"cmem_{self.label}_ans_str"] = json_output['predictedStage']
-        training_dataset.loc[idx, f"cmem_{self.label}_memory_str"] =  "\n".join(self.memory)
-        training_dataset.loc[idx, f"cmem_{self.label}_memory_len"] = len(self.memory)
-        training_dataset.loc[idx, f"cmem_{self.label}_memory_str_len"] = len("\n".join(self.memory))
-        
-        pbar.update(1)
-    pbar.close()
-    print(f"Number of memory updates: {num_update}")
-    print(f"During training, number of parsing errors: {parsing_error}")
-
-    return training_dataset
-
-  def test(self, testing_dataset: pd.DataFrame, num: int, external_memory = "", temperature: float = 0.1) -> pd.DataFrame:
-    pbar = tqdm(total=testing_dataset.shape[0])
-    parsing_error = 0
-   
-    for idx, row in testing_dataset.iterrows():
-
-        report = row["text"]
-        if external_memory:
-            self.memory = external_memory
-        prompt = self.prompt_template_dict["testing_prompt"].format(memory=self.memory, report=report)
-        system_prompt = system_instruction+ "\n" + prompt
-        messages = [{"role": "user", "content": system_prompt}]
-
-        json_output = self.get_schema_followed_response(messages, self.schema_dict["testing_schema"], temperature)
-
-        if not json_output:
-            parsing_error += 1
-            print(f"Error at index: {idx}")
-            testing_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = False
-            continue
-        testing_dataset.loc[idx, f"cmem_{self.label}_is_parsed"] = True
-
-        testing_dataset.loc[idx, f"cmem_{self.label}_reasoning"] = json_output['reasoning']
-        testing_dataset.loc[idx, f"cmem_{self.label}_ans_str"] = json_output['predictedStage']
-        
-        pbar.update(1)
-    pbar.close()
-
-    return testing_dataset
-  
-
-  def dynamic_test(self, testing_dataset: pd.DataFrame, memory_tup: List[tuple], temperature: float = 0.1) -> pd.DataFrame:
-    pbar = tqdm(total=testing_dataset.shape[0])
-    parsing_error = 0
-    for idx, row in testing_dataset.iterrows():
-
-        report = row["text"]
-
-        pbar = tqdm(total=len(memory_tup))
-        for num, memory in memory_tup:
-            prompt = self.prompt_template_dict["testing_prompt"].format(memory=memory, report=report)
+            prompt = self.prompt_template_dict["testing_prompt"].format(report=report)
             system_prompt = system_instruction+ "\n" + prompt
             messages = [{"role": "user", "content": system_prompt}]
 
@@ -273,51 +232,46 @@ class ConditionalMemoryAgent(MemoryAgent):
             if not json_output:
                 parsing_error += 1
                 print(f"Error at index: {idx}")
-                testing_dataset.loc[idx, f"cmem_{self.label}_{num}reports_is_parsed"] = False
+                testing_dataset.loc[idx, f"zs_{self.label}_is_parsed"] = False
                 continue
+
+            testing_dataset.loc[idx, f"zs_{self.label}_is_parsed"] = True
+            testing_dataset.loc[idx, f"zs_{self.label}_ans_str"] = json_output['predictedStage']
             
-            testing_dataset.loc[idx, f"cmem_{self.label}_{num}reports_is_parsed"] = True
-            # testing_dataset.loc[idx, f"cmem_{self.label}_{num}reasoning"] = json_output['reasoning']
-            testing_dataset.loc[idx, f"cmem_{self.label}_{num}reports_ans_str"] = json_output['predictedStage']
             pbar.update(1)
         pbar.close()
-            
-        pbar.update(1)
-    pbar.close()
-   
-    return testing_dataset
-  
-  def zs_test(self, testing_dataset: pd.DataFrame, temperature: float = 0.1) -> pd.DataFrame:
-    pbar = tqdm(total=testing_dataset.shape[0])
-    parsing_error = 0
-   
-    for idx, row in testing_dataset.iterrows():
+        print(f"During zero-shot testing, number of parsing errors: {parsing_error}")
+        return testing_dataset
+    
+    def zscot_test(self, testing_dataset: pd.DataFrame, temperature: float = 0.1) -> pd.DataFrame:
+        pbar = tqdm(total=testing_dataset.shape[0])
+        parsing_error = 0
+    
+        for idx, row in testing_dataset.iterrows():
 
-        report = row["text"]
-      
-        prompt = self.prompt_template_dict["testing_prompt"].format(report=report)
-        system_prompt = system_instruction+ "\n" + prompt
-        messages = [{"role": "user", "content": system_prompt}]
-
-        json_output = self.get_schema_followed_response(messages, self.schema_dict["testing_schema"], temperature)
-
-        if not json_output:
-            parsing_error += 1
-            print(f"Error at index: {idx}")
-            testing_dataset.loc[idx, f"zs_{self.label}_is_parsed"] = False
-            continue
-        testing_dataset.loc[idx, f"zs_{self.label}_is_parsed"] = True
-
-        testing_dataset.loc[idx, f"zs_{self.label}_reasoning"] = json_output['reasoning']
-        testing_dataset.loc[idx, f"zs_{self.label}_ans_str"] = json_output['predictedStage']
+            report = row["text"]
         
-        pbar.update(1)
-    pbar.close()
+            prompt = self.prompt_template_dict["testing_prompt"].format(report=report)
+            system_prompt = system_instruction+ "\n" + prompt
+            messages = [{"role": "user", "content": system_prompt}]
 
-    return testing_dataset
-  
-  
-  def clear_memory(self):
-    self.memory = ""
-    print("Memory is cleared.")
-  
+            json_output = self.get_schema_followed_response(messages, self.schema_dict["testing_schema"], temperature)
+
+            if not json_output:
+                parsing_error += 1
+                print(f"Error at index: {idx}")
+                testing_dataset.loc[idx, f"zscot_{self.label}_is_parsed"] = False
+                continue
+            testing_dataset.loc[idx, f"zscot_{self.label}_is_parsed"] = True
+            testing_dataset.loc[idx, f"zscot_{self.label}_reasoning"] = json_output['reasoning']
+            testing_dataset.loc[idx, f"zscot_{self.label}_ans_str"] = json_output['predictedStage']
+            
+            pbar.update(1)
+        pbar.close()
+        print(f"During zero-shot cot testing, number of parsing errors: {parsing_error}")
+        return testing_dataset
+    
+    def clear_memory(self):
+        self.memory = ""
+        print("Memory is cleared.")
+    

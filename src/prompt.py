@@ -50,6 +50,16 @@ Please review this report and determine the pathologic T stage of the patient's 
 Here is the report:
 {report}
 
+What is the T stage from this report? Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
+"""
+
+zscot_predict_prompt_t14 = """You are provided with a pathology report for a cancer patient.
+
+Please review this report and determine the pathologic T stage of the patient's cancer.
+
+Here is the report:
+{report}
+
 What is your reasoning to support your T stage prediction? 
 
 What is the T stage from this report? Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
@@ -99,6 +109,16 @@ What is the N stage from this report? Ignore any substaging information. Please 
 """
 
 zs_predict_prompt_n03 = """You are provided with a pathology report for a cancer patient.
+
+Please review this report and determine the pathologic N stage of the patient's cancer.
+
+Here is the report:
+{report}
+
+What is the N stage from this report? Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
+"""
+
+zscot_predict_prompt_n03 = """You are provided with a pathology report for a cancer patient.
 
 Please review this report and determine the pathologic N stage of the patient's cancer.
 
