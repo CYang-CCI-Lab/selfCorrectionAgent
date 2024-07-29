@@ -169,8 +169,7 @@ def n03_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
 
     for true_label, prediction in zip(true_labels, predictions):
         prediction = prediction.upper()
-        if prediction == "NO" or prediction == "NX":
-            prediction = "N0"
+        prediction = prediction.replace("NO", "N0").replace("NX", "N0")
         label_counts[true_label] += 1
         if true_label in prediction:
             metrics[true_label]['tp'] += 1

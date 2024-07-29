@@ -21,13 +21,13 @@ class TrainingResponse(BaseModel):
     reasoning: str = Field(description="reasoning to support predicted cancer stage") 
     rules: List[str] = Field(description="list of rules") 
 
-# class TestingResponse(BaseModel):
-#     reasoning: str = Field(description="reasoning to support predicted cancer stage")
-#     predictedStage: str = Field(description="predicted cancer stage")
-
 class TestingResponse(BaseModel):
+    reasoning: str = Field(description="reasoning to support predicted cancer stage")
     predictedStage: str = Field(description="predicted cancer stage")
-    reasoning: str = Field(description="reasoning to support predicted cancer stage") 
+
+# class TestingResponse(BaseModel):
+#     predictedStage: str = Field(description="predicted cancer stage")
+#     reasoning: str = Field(description="reasoning to support predicted cancer stage") 
 
 
 class TestingResponseWithoutReasoning(BaseModel):
@@ -87,7 +87,7 @@ if __name__ == "__main__":
                                             label = "t")
     
         test_result = memory_agent_t14.dynamic_test(test_data, memory_tup)
-        test_result.to_csv(f"0718_t14_dynamic_test_{run}_outof_10runs.csv", index=False)
+        test_result.to_csv(f"0718_t14_dynamic_test_{run}_outof_10runs_reordered.csv", index=False)
 
         # n03 training data to extract memory
         train_file_path =  f"/home/yl3427/cylab/selfCorrectionAgent/result/n03_memory_dataset{run}.csv"
@@ -112,6 +112,6 @@ if __name__ == "__main__":
                                             label = "n")
         
         test_result = memory_agent_n03.dynamic_test(test_data, memory_tup)
-        test_result.to_csv(f"0718_n03_dynamic_test_{run}_outof_10runs.csv", index=False)    
+        test_result.to_csv(f"0718_n03_dynamic_test_{run}_outof_10runs_reordered.csv", index=False)    
 
         
