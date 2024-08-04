@@ -60,6 +60,7 @@ def n03_performance_report(df, ans_col="ans_str"):
     precision, recall, f1, _ = precision_recall_fscore_support(n_labels, coded_pred, average='macro')
     return precision, recall, f1
 
+
 # new metrics
 def t14_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dict:
 
@@ -106,9 +107,9 @@ def t14_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
         support = label_counts[label]
         
         results[label] = {
-            'precision': round(precision, 2),
-            'recall': round(recall, 2),
-            'f1': round(f1, 2),
+            'precision': round(precision, 3),
+            'recall': round(recall, 3),
+            'f1': round(f1, 3),
             'support': support,
             'num_errors': fp + fn
         }
@@ -136,13 +137,13 @@ def t14_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
     weighted_f1 = sum(results[label]['f1'] * label_counts[label] for label in metrics) / total_instances
 
     results['overall'] = {
-        # 'precision': round(total_precision, 2),
-        # 'recall': round(total_recall, 2),
-        # 'f1': round(total_f1, 2),
-        'macro_precision': round(macro_precision, 2),
-        'macro_recall': round(macro_recall, 2),
-        'macro_f1': round(macro_f1, 2),
-        # 'weighted_f1': round(weighted_f1, 2),
+        # 'precision': round(total_precision, 3),
+        # 'recall': round(total_recall, 3),
+        # 'f1': round(total_f1, 3),
+        'macro_precision': round(macro_precision, 3),
+        'macro_recall': round(macro_recall, 3),
+        'macro_f1': round(macro_f1, 3),
+        # 'weighted_f1': round(weighted_f1, 3),
         'support': total_instances,
         'num_errors': total_fp + total_fn
     }
@@ -169,7 +170,7 @@ def n03_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
 
     for true_label, prediction in zip(true_labels, predictions):
         prediction = prediction.upper()
-        prediction = prediction.replace("NO", "N0").replace("NX", "N0")
+        prediction = prediction.replace("NO", "N0").replace("NL", "N1")
         label_counts[true_label] += 1
         if true_label in prediction:
             metrics[true_label]['tp'] += 1
@@ -195,9 +196,9 @@ def n03_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
         support = label_counts[label]
         
         results[label] = {
-            'precision': round(precision, 2),
-            'recall': round(recall, 2),
-            'f1': round(f1, 2),
+            'precision': round(precision, 3),
+            'recall': round(recall, 3),
+            'f1': round(f1, 3),
             'support': support,
             'num_errors': fp + fn
         }
@@ -225,13 +226,13 @@ def n03_calculate_metrics(true_labels: pd.Series, predictions: pd.Series) -> dic
     weighted_f1 = sum(results[label]['f1'] * label_counts[label] for label in metrics) / total_instances
 
     results['overall'] = {
-        # 'precision': round(total_precision, 2),
-        # 'recall': round(total_recall, 2),
-        # 'f1': round(total_f1, 2),
-        'macro_precision': round(macro_precision, 2),
-        'macro_recall': round(macro_recall, 2),
-        'macro_f1': round(macro_f1, 2),
-        # 'weighted_f1': round(weighted_f1, 2),
+        # 'precision': round(total_precision, 3),
+        # 'recall': round(total_recall, 3),
+        # 'f1': round(total_f1, 3),
+        'macro_precision': round(macro_precision, 3),
+        'macro_recall': round(macro_recall, 3),
+        'macro_f1': round(macro_f1, 3),
+        # 'weighted_f1': round(weighted_f1, 3),
         'support': total_instances,
         'num_errors': total_fp + total_fn
     }
