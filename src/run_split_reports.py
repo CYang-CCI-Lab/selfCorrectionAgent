@@ -20,18 +20,18 @@ if __name__ == "__main__":
         t_train_index, t_test_index = split_reports(sorted_df)
 
         t_df_training_samples = sorted_df.iloc[t_train_index].drop(columns=["n"])
-        t_df_training_samples.to_csv(f"/home/yl3427/cylab/selfCorrectionAgent/result/t14_test_{i}.csv", index=False)
+        t_df_training_samples.to_csv(f"/home/yl3427/cylab/selfCorrectionAgent/result/t14_train_{i}.csv", index=False)
 
         t_df_testing_samples = sorted_df.iloc[t_test_index].drop(columns=["n"])
-        t_df_testing_samples.to_csv(f"/home/yl3427/cylab/selfCorrectionAgent/result/t14_train_{i}.csv", index=False)  
+        t_df_testing_samples.to_csv(f"/home/yl3427/cylab/selfCorrectionAgent/result/t14_test_{i}.csv", index=False)  
 
 
         # N03
         n_train_index, n_test_index = split_reports(sorted_df)
 
         n_df_training_samples = sorted_df.iloc[n_train_index].drop(columns=["t"])
-        n_df_training_samples.to_csv(f"/home/yl3427/cylab/selfCorrectionAgent/result/n03_test_{i}.csv", index=False)
+        n_df_training_samples.to_csv(f"/home/yl3427/cylab/selfCorrectionAgent/result/n03_train_{i}.csv", index=False)
 
         n_df_testing_samples = sorted_df.iloc[n_test_index].drop(columns=["t"])
-        n_df_testing_samples.to_csv(f"/home/yl3427/cylab/selfCorrectionAgent/result/n03_train_{i}.csv", index=False)
+        n_df_testing_samples.to_csv(f"/home/yl3427/cylab/selfCorrectionAgent/result/n03_test_{i}.csv", index=False)
     
