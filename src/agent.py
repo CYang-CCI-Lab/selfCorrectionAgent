@@ -231,3 +231,34 @@ class KEPATestAgent(ZSAgent):
         pbar.close()
         print(f"During dynamic testing, number of parsing errors: {parsing_error}")
         return testing_dataset
+    
+
+class PostHocVerificationAgent(ZSAgent):
+    def __init__(self, client: OpenAI, model: str) -> None:
+        super().__init__(client, model)
+
+    def verify(self, testing_dataset: pd.DataFrame, reasoning_column: str, prompt: str, schema: dict, label: str, temperature: float = 0.1) -> pd.DataFrame:
+        parsing_error = 0
+        pbar = tqdm(total=testing_dataset.shape[0])
+
+        for idx, row in testing_dataset.iterrows():
+            reasoning = row[reasoning_column]
+            system_prompt = system_instruction+ "\n" + prompt.format(reasoning=reasoning)
+            messages = [{"role": "user", "content": system_prompt}]
+
+            json_output = self.get_schema_followed_response(messages, schema, temperature)
+
+            if not json_output:
+                parsing_error += 1
+                print(f"Error at index: {idx}")
+                continue
+
+            testing_dataset.loc[idx, f"{label}_evaluation"] = json_output['evaluation']
+        
+            
+            pbar.update(1)
+
+        pbar.close()
+        print(f"During verifying, number of parsing errors: {parsing_error}")
+        return testing_dataset
+    

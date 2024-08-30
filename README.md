@@ -29,7 +29,7 @@ pip install flash-attn
 ```
 
 ```bash
-CUDA_VISIBLE_DEVICES="2,3,4,5" python -m vllm.entrypoints.openai.api_server \
+CUDA_VISIBLE_DEVICES="0,1,3,4" python -m vllm.entrypoints.openai.api_server \
 --model mistralai/Mixtral-8x7B-Instruct-v0.1 \
 --download-dir /path/to/cache/ \
 --tensor-parallel-size 4 \
