@@ -1,20 +1,19 @@
 import os
 import time
-import json
+import json 
 from datetime import datetime
-from dotenv import load_dotenv, find_dotenv
 from typing import List, Dict, Union, Optional, Tuple
 import pandas as pd
 from tqdm import tqdm
 from fuzzywuzzy import fuzz
 from openai import OpenAI
-from prompt import system_instruction
-
-# # Optional: Uncomment if using langsmith tracing
-# if not load_dotenv(find_dotenv()):
-#     raise Exception("Failed to load .env file")
-# from langsmith import traceable
-# from langsmith.wrappers import wrap_openai
+from prompt import *
+from pydantic import BaseModel, Field
+from enum import Enum
+from dotenv import load_dotenv
+from pathlib import Path
+env_path = Path.home()
+load_dotenv(dotenv_path=env_path / ".env")
 
 class ZSAgent:
     """
@@ -25,7 +24,6 @@ class ZSAgent:
         self.client = client
         self.model = model
 
-    # @traceable(run_type="llm", name="get_schema_followed_response")
     def get_schema_followed_response(self, messages: list, schema:dict, temperature:float) -> Union[Dict, None]:
         try:
             response = self.client.chat.completions.create(
@@ -45,8 +43,8 @@ class ZSAgent:
 
         for idx, row in testing_dataset.iterrows():
             report = row["text"]
-            system_prompt = system_instruction+ "\n" + prompt.format(report=report)
-            messages = [{"role": "user", "content": system_prompt}]
+            filled_prompt = system_instruction+ "\n" + prompt.format(report=report)
+            messages = [{"role": "user", "content": filled_prompt}]
 
             json_output = self.get_schema_followed_response(messages, schema, temperature)
 
@@ -78,8 +76,8 @@ class ZSCOTAgent(ZSAgent):
 
         for idx, row in testing_dataset.iterrows():
             report = row["text"]
-            system_prompt = system_instruction+ "\n" + prompt.format(report=report)
-            messages = [{"role": "user", "content": system_prompt}]
+            filled_prompt = system_instruction+ "\n" + prompt.format(report=report)
+            messages = [{"role": "user", "content": filled_prompt}]
 
             json_output = self.get_schema_followed_response(messages, schema, temperature)
 
@@ -181,8 +179,8 @@ class KEPATestAgent(ZSAgent):
 
         for idx, row in testing_dataset.iterrows():
             report = row["text"]
-            system_prompt = system_instruction+ "\n" + prompt.format(memory=memory, report=report)
-            messages = [{"role": "user", "content": system_prompt}]
+            filled_prompt = system_instruction+ "\n" + prompt.format(memory=memory, report=report)
+            messages = [{"role": "user", "content": filled_prompt}]
 
             json_output = self.get_schema_followed_response(messages, schema, temperature)
 
@@ -202,7 +200,6 @@ class KEPATestAgent(ZSAgent):
         print(f"During testing, number of parsing errors: {parsing_error}")
         return testing_dataset
     
-    #   @traceable(run_type="tool", name="dynamic_test")
     def dynamic_test(self, testing_dataset: pd.DataFrame, prompt: str, schema: dict, label: str, memory_tup: List[tuple], temperature: float = 0.1) -> pd.DataFrame:
         parsing_error = 0
         pbar = tqdm(total=testing_dataset.shape[0])
@@ -211,8 +208,8 @@ class KEPATestAgent(ZSAgent):
             report = row["text"]
 
             for num, memory in memory_tup:
-                system_prompt = system_instruction+ "\n" + prompt.format(memory=memory, report=report)
-                messages = [{"role": "user", "content": system_prompt}]
+                filled_prompt = system_instruction+ "\n" + prompt.format(memory=memory, report=report)
+                messages = [{"role": "user", "content": filled_prompt}]
 
                 json_output = self.get_schema_followed_response(messages, schema, temperature)
 
@@ -262,3 +259,64 @@ class PostHocVerificationAgent(ZSAgent):
         print(f"During verifying, number of parsing errors: {parsing_error}")
         return testing_dataset
     
+
+class StageEnum_T(str, Enum):
+    """TNM classification - T staging."""
+    T1 = 'T1'
+    T2 = 'T2'
+    T3 = 'T3'
+    T4 = 'T4'
+
+class StageEnum_N(str, Enum):
+    """TNM classification - N staging."""
+    N0 = 'N0'
+    N1 = 'N1'
+    N2 = 'N2'
+    N3 = 'N3'
+
+class Response_T(BaseModel):
+    reasoning: str = Field(description="Step-by-step explanation of how you interpreted the report to determine the T stage.")
+    stage: StageEnum_T = Field(description="The T stage determined from the report.")
+
+class Response_N(BaseModel):
+    reasoning: str = Field(description="Step-by-step explanation of how you interpreted the report to determine the N stage.")
+    stage: StageEnum_N = Field(description="The N stage determined from the report.")
+
+class GPTAgent:
+    def __init__(self, label: str) -> None:
+        self.client = OpenAI()
+        self.label = label
+
+    def get_response(self, prompt):
+        messages = [
+            {"role": "system", "content": system_instruction},
+            {"role": "user", "content": prompt}
+            ]
+
+        response = self.client.beta.chat.completions.parse(
+            model = "gpt-4o-2024-08-06",
+            messages=messages,
+            temperature = 0,
+            response_format = Response_T if self.label.lower() == 't' else Response_N
+        )
+
+        return response.choices[0].message.parsed
+
+    def test(self, testing_dataset: pd.DataFrame, memory: str) -> pd.DataFrame:
+        
+        parsing_error = 0
+        pbar = tqdm(total=testing_dataset.shape[0])
+
+        for idx, row in testing_dataset.iterrows():
+            report = row["text"]
+            structured_prompt = testing_predict_prompt_t14.format(memory=memory, report=report) if self.label.lower() == 't' else testing_predict_prompt_n03.format(memory=memory, report=report)
+            response = self.get_response(structured_prompt)
+
+            testing_dataset.loc[idx, f"gpt4o_{self.label}_reasoning"] = response.reasoning
+            testing_dataset.loc[idx, f"gpt4o_{self.label}_stage"] = response.stage
+            
+            pbar.update(1)
+        pbar.close()
+        print(f"During testing, number of parsing errors: {parsing_error}")
+        return testing_dataset
+
