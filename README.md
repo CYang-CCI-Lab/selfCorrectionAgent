@@ -37,6 +37,15 @@ CUDA_VISIBLE_DEVICES="0,1,3,4" python -m vllm.entrypoints.openai.api_server \
 --enforce-eager
 ```
 
+```bash
+CUDA_VISIBLE_DEVICES="2,3,4,5" python -m vllm.entrypoints.openai.api_server \
+--model m42-health/Llama3-Med42-70B \
+--download-dir /path/to/cache/ \
+--tensor-parallel-size 4 \
+--disable-custom-all-reduce \
+--guided-decoding-backend lm-format-enforcer
+```
+
 - `CUDA_VISIBLE_DEVICES`: Specifies the CUDA devices to use.
 - `--model`: Specifies the model to use.
 - `--download-dir`: Sets the directory to the local model.
