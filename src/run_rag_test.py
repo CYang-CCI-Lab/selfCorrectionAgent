@@ -9,7 +9,6 @@ if not load_dotenv(find_dotenv()):
     raise Exception("Failed to load .env file")
 from typing import Literal
 
-
 class Response_T(BaseModel):
     reasoning: str = Field(
         description="Step-by-step explanation of how you interpreted the report to determine the T stage."
@@ -32,12 +31,12 @@ with open("context.json", "r") as f:
 
 rag_raw_t14 = context["rag_raw_t14"]
 rag_raw_n03 = context["rag_raw_n03"]
-# ltm_zs_t14 = context["ltm_zs_t14"]
-# ltm_zs_n03 = context["ltm_zs_n03"]
-# ltm_rag1_t14 = context["ltm_rag1_t14"]
-# ltm_rag1_n03 = context["ltm_rag1_n03"]
-# ltm_rag2_t14 = context["ltm_rag2_t14"]
-# ltm_rag2_n03 = context["ltm_rag2_n03"]
+ltm_zs_t14 = context["ltm_zs_t14"]
+ltm_zs_n03 = context["ltm_zs_n03"]
+ltm_rag1_t14 = context["ltm_rag1_t14"]
+ltm_rag1_n03 = context["ltm_rag1_n03"]
+ltm_rag2_t14 = context["ltm_rag2_t14"]
+ltm_rag2_n03 = context["ltm_rag2_n03"]
 
 client = OpenAI(api_key="empty", base_url="http://localhost:8000/v1", timeout=120.0)
 
@@ -53,17 +52,17 @@ if __name__ == "__main__":
     t_schema = Response_T.model_json_schema()
 
     t_rag_agent = Agent(
-        client=client, model="m42-health/Llama3-Med42-70B", label="t", schema = t_schema, test_name="t14_rag_raw"
+        client=client, model="m42-health/Llama3-Med42-70B", label="t", schema = t_schema, test_name="t14_ltm_zs"
     )
 
     t_rag_result = t_rag_agent.test(
         testing_dataset=test_data,
-        prompt=prompt_template_med42.format(system_instruction=system_instruction, prompt=rag_t14),
-        context=rag_raw_t14,
+        prompt=prompt_template_med42.format(system_instruction=system_instruction, prompt=ltm_t14),
+        context=ltm_zs_t14,
     )
 
     t_rag_result.to_csv(
-        f"/home/yl3427/cylab/selfCorrectionAgent/result/1120_t14_rag_raw_med42_v2_800.csv",
+        f"/home/yl3427/cylab/selfCorrectionAgent/result/1128_t14_ltm_zs_med42_v2_800.csv",
         index=False,
     )
 
@@ -71,16 +70,16 @@ if __name__ == "__main__":
     n_schema = Response_N.model_json_schema()
 
     n_rag_agent = Agent(
-        client=client, model="m42-health/Llama3-Med42-70B", label="n", schema = n_schema, test_name="n03_rag_raw"
+        client=client, model="m42-health/Llama3-Med42-70B", label="n", schema = n_schema, test_name="n03_ltm_zs"
     )
 
     n_rag_result = n_rag_agent.test(
         testing_dataset=test_data,
-        prompt=prompt_template_med42.format(system_instruction=system_instruction, prompt=rag_n03),
-        context=rag_raw_n03,
+        prompt=prompt_template_med42.format(system_instruction=system_instruction, prompt=ltm_n03),
+        context=ltm_zs_n03,
     )
 
     n_rag_result.to_csv(
-        f"/home/yl3427/cylab/selfCorrectionAgent/result/1120_n03_rag_raw_med42_v2_800.csv",
+        f"/home/yl3427/cylab/selfCorrectionAgent/result/1128_n03_ltm_zs_med42_v2_800.csv",
         index=False,
     )
