@@ -1,145 +1,105 @@
+prompt_template_med42 = """
+<|system|>:{system_instruction}
+<|prompter|>:{prompt}
+<|assistant|>:
+"""
 system_instruction = (
     "You are an expert at interpreting pathology reports for cancer staging."
 )
 
-# initial_predict_prompt_t14 = """You are provided with a pathology report for a cancer patient.
-# Please review this report and determine the pathologic T stage of the patient's cancer.
+####### Zero-shot Prompt #######
+zs_t14 = """You are provided with a pathology report for a breast cancer patient.
 
-# Here is the report:
-# {report}
+Please review this report and determine the pathologic T stage of the patient's breast cancer based on the AJCC's TNM Staging System.
 
-# What is your reasoning to support your T stage prediction?
+Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
 
-# What is the T stage from this report? Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
+Here is the report:
+{report}
+"""
 
-# Please induce a list of rules as knowledge that help you predict the T stage for the next report. Ensure there is at least one rule for each T stage (T1, T2, T3, T4) in the list of rules. Ensure each rule is general and applicable to the specific cancer type and the AJCC's TNM Staging System, avoiding any report-specific information.
-# """
+zs_n03 = """You are provided with a pathology report for a breast cancer patient.
 
-# subsequent_predict_prompt_t14 = """You are provided with a pathology report for a cancer patient.
-# Here is a list of rules you have learned to correctly predict the T stage information:
-# {memory}
+Please review this report and determine the pathologic N stage of the patient's breast cancer based on the AJCC's TNM Staging System.
 
-# Please review this report and determine the pathologic T stage of the patient's cancer.
+Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
 
-# Here is the report:
-# {report}
+Here is the report:
+{report}
+"""
 
-# What is your reasoning to support your T stage prediction?
 
-# What is the T stage from this report? Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
+####### Zero-shot Chain of Thought Prompts #######
+zscot_t14 = """You are provided with a pathology report for a breast cancer patient.
 
-# What is your updated list of rules that help you predict the T stage for the next report? You can either modify the original rules or add new ones. Ensure there is at least one rule for each T stage (T1, T2, T3, T4) in the list of rules. Ensure each rule is general and applicable to the specific cancer type and the AJCC's TNM Staging System, avoiding any report-specific information.
-# """
+Please review this report and determine the pathologic T stage of the patient's breast cancer based on the AJCC's TNM Staging System.
 
-testing_predict_prompt_t14 = """You are provided with a pathology report for a cancer patient.
-Here is a list of rules you have learned to correctly predict the T stage information:
-{memory}
+As you analyze the report, explain step-by-step how you are interpreting the relevant information according to the AJCC guidelines and how it leads to the final decision regarding the T stage. Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
 
-Please review this report and determine the pathologic T stage of the patient's cancer.
+Here is the report:
+{report}
+"""
+
+zscot_n03 = """You are provided with a pathology report for a breast cancer patient.
+
+Please review this report and determine the pathologic N stage of the patient's breast cancer based on the AJCC's TNM Staging System.
+
+As you analyze the report, explain step-by-step how you are interpreting the relevant information according to the AJCC guidelines and how it leads to the final decision regarding the N stage. Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
+
+Here is the report:
+{report}
+"""
+
+####### Retrieval-Augmented Generation Prompts #######
+rag_t14 = """You are provided with a pathology report for a breast cancer patient and relevant chunks from the AJCC's TNM Staging System guidelines as context.
+
+Please review this report and determine the pathologic T stage of the patient's breast cancer, with the help of the context.
+
+As you analyze the report, explain step-by-step how you are interpreting the relevant information according to the AJCC guidelines and how it leads to the final decision regarding the T stage. Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
 
 Here is the report:
 {report}
 
-What is your reasoning to support your T stage prediction? 
-
-What is the T stage from this report? Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
-
+Here is the context from the AJCC guidelines:
+{context}
 """
 
-zs_predict_prompt_t14 = """You are provided with a pathology report for a cancer patient.
+rag_n03 = """You are provided with a pathology report for a breast cancer patient and relevant chunks from the AJCC's TNM Staging System guidelines as context.
 
-Please review this report and determine the pathologic T stage of the patient's cancer.
+Please review this report and determine the pathologic N stage of the patient's breast cancer, with the help of the context.
+
+As you analyze the report, explain step-by-step how you are interpreting the relevant information according to the AJCC guidelines and how it leads to the final decision regarding the N stage. Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
 
 Here is the report:
 {report}
 
-What is the T stage from this report? Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
-
+Here is the context from the AJCC guidelines:
+{context}
 """
 
-zscot_predict_prompt_t14 = """You are provided with a pathology report for a cancer patient.
+####### Long-term Memory Prompts #######
+ltm_t14 = """You are provided with a pathology report for a breast cancer patient and a list of rules for determining the T stage.
 
-Please review this report and determine the pathologic T stage of the patient's cancer.
+Please review this report and determine the pathologic T stage of the patient's breast cancer, with the help of the rules.
+
+As you analyze the report, explain step-by-step how you are interpreting the relevant information according to the rules and how it leads to the final decision regarding the T stage. Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
 
 Here is the report:
 {report}
 
-What is your reasoning to support your T stage prediction? 
-
-What is the T stage from this report? Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
-
+Here are the rules for determining the T stage:
+{context}
 """
 
-# initial_predict_prompt_n03 = """You are provided with a pathology report for a cancer patient.
-# Please review this report and determine the pathologic N stage of the patient's cancer.
+ltm_n03 = """You are provided with a pathology report for a breast cancer patient and a list of rules for determining the N stage.
 
-# Here is the report:
-# {report}
+Please review this report and determine the pathologic N stage of the patient's breast cancer, with the help of the rules.
 
-# What is your reasoning to support your N stage prediction?
-
-# What is the N stage from this report? Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
-
-# Please induce a list of rules as knowledge that help you predict the N stage for the next report. Ensure there is at least one rule for each N stage (N0, N1, N2, N3) in the list of rules. Ensure each rule is general and applicable to the specific cancer type and the AJCC's TNM Staging System, avoiding any report-specific information.
-# """
-
-# subsequent_predict_prompt_n03 = """You are provided with a pathology report for a cancer patient.
-# Here is a list of rules you have learned to correctly predict the N stage information:
-# {memory}
-
-# Please review this report and determine the pathologic N stage of the patient's cancer.
-
-# Here is the report:
-# {report}
-
-# What is your reasoning to support your N stage prediction?
-
-# What is the N stage from this report? Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
-
-# What is your updated list of rules that help you predict the N stage for the next report? You can either modify the original rules or add new ones. Ensure there is at least one rule for each N stage (N0, N1, N2, N3) in the list of rules. Ensure each rule is general and applicable to the specific cancer type and the AJCC's TNM Staging System, avoiding any report-specific information.   
-# """
-
-testing_predict_prompt_n03 = """You are provided with a pathology report for a cancer patient.
-Here is a list of rules you have learned to correctly predict the N stage information:
-{memory}
-
-Please review this report and determine the pathologic N stage of the patient's cancer.
+As you analyze the report, explain step-by-step how you are interpreting the relevant information according to the rules and how it leads to the final decision regarding the N stage. Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
 
 Here is the report:
 {report}
 
-What is your reasoning to support your N stage prediction?
-
-What is the N stage from this report? Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
-
-"""
-
-zs_predict_prompt_n03 = """You are provided with a pathology report for a cancer patient.
-
-Please review this report and determine the pathologic N stage of the patient's cancer.
-
-Here is the report:
-{report}
-
-What is the N stage from this report? Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
-
-"""
-
-zscot_predict_prompt_n03 = """You are provided with a pathology report for a cancer patient.
-
-Please review this report and determine the pathologic N stage of the patient's cancer.
-
-Here is the report:
-{report}
-
-What is your reasoning to support your N stage prediction?
-
-What is the N stage from this report? Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
-
-"""
-
-prompt_template = """
-<|system|>:{system_instruction}
-<|prompter|>:{prompt}
-<|assistant|>:
+Here are the rules for determining the N stage:
+{context}
 """
