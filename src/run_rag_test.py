@@ -52,17 +52,17 @@ if __name__ == "__main__":
     t_schema = Response_T.model_json_schema()
 
     t_rag_agent = Agent(
-        client=client, model="m42-health/Llama3-Med42-70B", label="t", schema = t_schema, test_name="t14_ltm_zs"
+        client=client, model="m42-health/Llama3-Med42-70B", label="t", schema = t_schema, test_name="t14_ltm_rag1"
     )
 
     t_rag_result = t_rag_agent.test(
         testing_dataset=test_data,
         prompt=prompt_template_med42.format(system_instruction=system_instruction, prompt=ltm_t14),
-        context=ltm_zs_t14,
+        context=ltm_rag1_t14,
     )
 
     t_rag_result.to_csv(
-        f"/home/yl3427/cylab/selfCorrectionAgent/result/1128_t14_ltm_zs_med42_v2_800.csv",
+        f"/home/yl3427/cylab/selfCorrectionAgent/result/1128_t14_ltm_rag1_med42_v2_800.csv",
         index=False,
     )
 
@@ -70,16 +70,16 @@ if __name__ == "__main__":
     n_schema = Response_N.model_json_schema()
 
     n_rag_agent = Agent(
-        client=client, model="m42-health/Llama3-Med42-70B", label="n", schema = n_schema, test_name="n03_ltm_zs"
+        client=client, model="m42-health/Llama3-Med42-70B", label="n", schema = n_schema, test_name="n03_ltm_rag1"
     )
 
     n_rag_result = n_rag_agent.test(
         testing_dataset=test_data,
         prompt=prompt_template_med42.format(system_instruction=system_instruction, prompt=ltm_n03),
-        context=ltm_zs_n03,
+        context=ltm_rag1_n03,
     )
 
     n_rag_result.to_csv(
-        f"/home/yl3427/cylab/selfCorrectionAgent/result/1128_n03_ltm_zs_med42_v2_800.csv",
+        f"/home/yl3427/cylab/selfCorrectionAgent/result/1128_n03_ltm_rag1_med42_v2_800.csv",
         index=False,
     )
