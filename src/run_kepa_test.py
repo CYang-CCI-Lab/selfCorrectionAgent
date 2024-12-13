@@ -15,11 +15,6 @@ from datetime import datetime
 from typing import List, Optional, Tuple, Literal
 
 
-# class TestingResponse(BaseModel):
-#     stage: str = Field(description="predicted cancer stage")
-#     reasoning: str = Field(description="reasoning to support predicted cancer stage")
-
-
 class Response_T(BaseModel):
     reasoning: str = Field(
         description="Step-by-step explanation of how you interpreted the report to determine the T stage."
@@ -42,7 +37,8 @@ if __name__ == "__main__":
     client = OpenAI(api_key="empty", base_url="http://localhost:8000/v1", timeout=120.0)
 
     #### T14
-    testing_schema = Response_T.model_json_schema()
+    t_schema = Response_T.model_json_schema()
+
     for run in [0, 1, 2, 3, 4, 5, 6, 8]:
 
         # extract memory for t14
@@ -60,25 +56,30 @@ if __name__ == "__main__":
         t_test_file_path = f"/home/yl3427/cylab/selfCorrectionAgent/result/t14_test_{run}.csv"  # 700 reports
         t_test_data = pd.read_csv(t_test_file_path)[["patient_filename", "t", "text"]]
 
-        kepa_test_agent_t14 = KEPATestAgent(
-            client=client, model="m42-health/Llama3-Med42-70B", label="t"
+        t_kewltm_agent = Agent(
+            client=client,
+            model="meta-llama/Llama-3.3-70B-Instruct",
+            label="t",
+            schema=t_schema,
+            test_name="t14_kewltm",
         )
 
-        t_test_result = kepa_test_agent_t14.test(
+        t_kewltm_result = t_kewltm_agent.test(
             testing_dataset=t_test_data,
-            prompt=prompt_template.format(
-                system_instruction=system_instruction, prompt=testing_predict_prompt_t14
-            ),
-            schema=testing_schema,
-            memory=t_memory,
+            prompt=ltm_t14,
+            context=t_memory,
         )
-        t_test_result.to_csv(
-            f"/home/yl3427/cylab/selfCorrectionAgent/result/1114_t14_med42_v2_test_{run}_outof_10runs.csv",
+        t_kewltm_result.to_csv(
+            f"/home/yl3427/cylab/selfCorrectionAgent/result/1208_t14_llama3_kewltm_{run}_outof_10runs.csv",
+            index=False,
+        )
+        t_kewltm_result.to_csv(
+            f"/home/yl3427/cylab/selfCorrectionAgent/result_backup/1208_t14_llama3_kewltm_{run}_outof_10runs.csv",
             index=False,
         )
 
     #### N03
-    testing_schema = Response_N.model_json_schema()
+    n_schema = Response_N.model_json_schema()
     for run in [0, 1, 3, 4, 5, 6, 7, 9]:
         # extract memory for n03
         n_train_file_path = (
@@ -98,19 +99,24 @@ if __name__ == "__main__":
         )
         n_test_data = pd.read_csv(n_test_file_path)[["patient_filename", "n", "text"]]
 
-        kepa_test_agent_n03 = KEPATestAgent(
-            client=client, model="m42-health/Llama3-Med42-70B", label="n"
+        n_kewltm_agent = Agent(
+            client=client,
+            model="meta-llama/Llama-3.3-70B-Instruct",
+            label="n",
+            schema=n_schema,
+            test_name="n03_kewltm",
         )
 
-        n_test_result = kepa_test_agent_n03.test(
+        n_kewltm_result = n_kewltm_agent.test(
             testing_dataset=n_test_data,
-            prompt=prompt_template.format(
-                system_instruction=system_instruction, prompt=testing_predict_prompt_n03
-            ),
-            schema=testing_schema,
-            memory=n_memory,
+            prompt=ltm_n03,
+            context=n_memory,
         )
-        n_test_result.to_csv(
-            f"/home/yl3427/cylab/selfCorrectionAgent/result/1114_n03_med42_v2_test_{run}_outof_10runs.csv",
+        n_kewltm_result.to_csv(
+            f"/home/yl3427/cylab/selfCorrectionAgent/result/1208_n03_llama3_kewltm_{run}_outof_10runs.csv",
+            index=False,
+        )
+        n_kewltm_result.to_csv(
+            f"/home/yl3427/cylab/selfCorrectionAgent/result_backup/1208_n03_llama3_kewltm_{run}_outof_10runs.csv",
             index=False,
         )

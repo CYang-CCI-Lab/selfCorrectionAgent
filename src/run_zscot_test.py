@@ -15,10 +15,6 @@ from datetime import datetime
 from typing import List, Optional, Tuple, Literal
 
 
-# class TestingResponse(BaseModel):
-#     predictedStage: str = Field(description="predicted cancer stage")
-#     reasoning: str = Field(description="reasoning to support predicted cancer stage")
-
 
 class Response_T(BaseModel):
     reasoning: str = Field(
@@ -48,34 +44,49 @@ if __name__ == "__main__":
     test_data = brca_report[["patient_filename", "t", "text", "n"]]
 
     #### T14
-    testing_schema = Response_T.model_json_schema()
+    t_schema = Response_T.model_json_schema()
 
-    zscot_agent_t14 = ZSCOTAgent(
-        client=client, model="m42-health/Llama3-Med42-70B", label="t"
+    t_zscot_agent = Agent(
+        client=client, 
+        model="meta-llama/Llama-3.3-70B-Instruct", 
+        label="t",
+        schema=t_schema,
+        test_name="t14_zscot"
     )
 
-    t_zscot_test_result = zscot_agent_t14.test(
+    t_zscot_result = t_zscot_agent.test(
         testing_dataset=test_data,
-        prompt=zscot_predict_prompt_t14,
-        schema=testing_schema,
+        prompt=zscot_t14
     )
-    t_zscot_test_result.to_csv(
-        f"/home/yl3427/cylab/selfCorrectionAgent/result/1118_t14_med42_v2_test_800.csv",
+    t_zscot_result.to_csv(
+        f"/home/yl3427/cylab/selfCorrectionAgent/result/1210_t14_llama3_zscot.csv",
+        index=False,
+    )
+    t_zscot_result.to_csv(
+        f"/home/yl3427/cylab/selfCorrectionAgent/result_backup/1210_t14_llama3_zscot.csv",
         index=False,
     )
 
     #### N03
-    testing_schema = Response_N.model_json_schema()
+    n_schema = Response_N.model_json_schema()
 
-    zscot_agent_n03 = ZSCOTAgent(
-        client=client, model="m42-health/Llama3-Med42-70B", label="n"
+    n_zscot_agent = Agent(
+        client=client, 
+        model="meta-llama/Llama-3.3-70B-Instruct", 
+        label="n",
+        schema=n_schema,
+        test_name="n03_zscot"
     )
-    n_zscot_test_result = zscot_agent_n03.test(
+
+    n_zscot_result = n_zscot_agent.test(
         testing_dataset=test_data,
-        prompt=zscot_predict_prompt_n03,
-        schema=testing_schema,
+        prompt=zscot_n03
     )
-    n_zscot_test_result.to_csv(
-        f"/home/yl3427/cylab/selfCorrectionAgent/result/1118_n03_med42_v2_test_800.csv",
+    n_zscot_result.to_csv(
+        f"/home/yl3427/cylab/selfCorrectionAgent/result/1210_n03_llama3_zscot.csv",
+        index=False,
+    )
+    n_zscot_result.to_csv(
+        f"/home/yl3427/cylab/selfCorrectionAgent/result_backup/1210_n03_llama3_zscot.csv",
         index=False,
     )

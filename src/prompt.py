@@ -3,9 +3,7 @@ prompt_template_med42 = """
 <|prompter|>:{prompt}
 <|assistant|>:
 """
-system_instruction = (
-    "You are an expert at interpreting pathology reports for cancer staging."
-)
+system_instruction = "You are an expert in determining the {label} stage of {cancer_type} cancer following the AJCC TNM classification system."
 
 ####### Zero-shot Prompt #######
 zs_t14 = """You are provided with a pathology report for a breast cancer patient.
@@ -102,4 +100,21 @@ Here is the report:
 
 Here are the rules for determining the N stage:
 {context}
+"""
+
+feedback_t14 = """
+Below is the reasoning you provided and your predicted T stage:
+
+Your reasoning: 
+{model_reasoning}
+
+Your predicted T stage: {model_predicted_stage}
+
+The ground truth T stage for this case is: {actual_ground_truth_T_stage}
+
+Please:
+1. Identify where and why your reasoning did not align with the ground truth.
+2. Highlight which parts of your thought process or interpretation of the AJCC criteria led you astray.
+3. Explain the key differences between your initial reasoning and what the correct reasoning should have been.
+
 """
