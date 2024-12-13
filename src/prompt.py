@@ -3,118 +3,60 @@ prompt_template_med42 = """
 <|prompter|>:{prompt}
 <|assistant|>:
 """
-system_instruction = "You are an expert in determining the {label} stage of {cancer_type} cancer following the AJCC TNM classification system."
+system_instruction = "You are an expert in determining the T stage of breast cancer following the AJCC TNM classification system."
 
-####### Zero-shot Prompt #######
-zs_t14 = """You are provided with a pathology report for a breast cancer patient.
 
-Please review this report and determine the pathologic T stage of the patient's breast cancer based on the AJCC's TNM Staging System.
-
-Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
-
-Here is the report:
+prompt_zscot_t14 = """Here is the pathology report:
 {report}
-"""
 
-zs_n03 = """You are provided with a pathology report for a breast cancer patient.
-
-Please review this report and determine the pathologic N stage of the patient's breast cancer based on the AJCC's TNM Staging System.
-
-Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
-
-Here is the report:
-{report}
+Please:
+1. Explain your reasoning step-by-step as you determine the T stage.
+2. Provide your predicted T stage. Choose from T1, T2, T3, T4.
 """
 
 
-####### Zero-shot Chain of Thought Prompts #######
-zscot_t14 = """You are provided with a pathology report for a breast cancer patient.
+prompt_rule_extraction_t14 = """Your previous reasoning and predicted T stage are:
+- Reasoning: {model_reasoning}
+- Your Predicted T stage: {model_predicted_stage}
 
-Please review this report and determine the pathologic T stage of the patient's breast cancer based on the AJCC's TNM Staging System.
+The actual ground truth T stage for this report is: {ground_truth_T_stage}.
 
-As you analyze the report, explain step-by-step how you are interpreting the relevant information according to the AJCC guidelines and how it leads to the final decision regarding the T stage. Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
+Please:
+1. Identify where your reasoning diverged from the correct reasoning that leads to the ground truth.
+2. Explain what key criteria or guidelines should have been applied differently.
+3. Based on this analysis, induce several general rules that would help correctly identify the T stage in a similar scenario next time. 
+   - These rules should be general and not tied to this specific patient's report.
+   - They should clearly relate to accepted AJCC criteria.
+   - Provide at least one or two rules that directly address the error.
 
-Here is the report:
-{report}
 """
 
-zscot_n03 = """You are provided with a pathology report for a breast cancer patient.
+prompt_rule_refinement_t14 = """Below is a large set of rules accumulated from analyzing pathology reports. These rules were created iteratively and may include redundancies, overly specific guidance, or conflicting points.
 
-Please review this report and determine the pathologic N stage of the patient's breast cancer based on the AJCC's TNM Staging System.
+Your task:
+1. Review and consolidate the entire rule set into a smaller, cleaner, and more authoritative list of rules for determining T stages in breast cancer according to AJCC TNM guidelines.
+2. Remove any redundant or contradictory rules.
+3. Ensure each stage (T1, T2, T3, T4) is clearly defined with proper criteria.
+4. Avoid rules that rely on case-specific details; keep them general and guideline-based.
+5. The final set of rules should be logically organized, easy to follow, and helpful for future classification tasks.
 
-As you analyze the report, explain step-by-step how you are interpreting the relevant information according to the AJCC guidelines and how it leads to the final decision regarding the N stage. Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
+Here is the accumulated rule set:
 
-Here is the report:
-{report}
+{all_accumulated_rules}
+
 """
 
-####### Retrieval-Augmented Generation Prompts #######
-rag_t14 = """You are provided with a pathology report for a breast cancer patient and relevant chunks from the AJCC's TNM Staging System guidelines as context.
 
-Please review this report and determine the pathologic T stage of the patient's breast cancer, with the help of the context.
-
-As you analyze the report, explain step-by-step how you are interpreting the relevant information according to the AJCC guidelines and how it leads to the final decision regarding the T stage. Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
-
-Here is the report:
-{report}
-
-Here is the context from the AJCC guidelines:
-{context}
-"""
-
-rag_n03 = """You are provided with a pathology report for a breast cancer patient and relevant chunks from the AJCC's TNM Staging System guidelines as context.
-
-Please review this report and determine the pathologic N stage of the patient's breast cancer, with the help of the context.
-
-As you analyze the report, explain step-by-step how you are interpreting the relevant information according to the AJCC guidelines and how it leads to the final decision regarding the N stage. Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
-
-Here is the report:
-{report}
-
-Here is the context from the AJCC guidelines:
-{context}
-"""
-
-####### Long-term Memory Prompts #######
-ltm_t14 = """You are provided with a pathology report for a breast cancer patient and a list of rules for determining the T stage.
-
+prompt_test_with_rules_t14 = """You are provided with a pathology report for a breast cancer patient and a list of rules for determining the T stage.
 Please review this report and determine the pathologic T stage of the patient's breast cancer, with the help of the rules.
-
-As you analyze the report, explain step-by-step how you are interpreting the relevant information according to the rules and how it leads to the final decision regarding the T stage. Ignore any substaging information. Please select from the following four options: T1, T2, T3, T4.
-
-Here is the report:
-{report}
 
 Here are the rules for determining the T stage:
 {context}
-"""
 
-ltm_n03 = """You are provided with a pathology report for a breast cancer patient and a list of rules for determining the N stage.
-
-Please review this report and determine the pathologic N stage of the patient's breast cancer, with the help of the rules.
-
-As you analyze the report, explain step-by-step how you are interpreting the relevant information according to the rules and how it leads to the final decision regarding the N stage. Ignore any substaging information. Please select from the following four options: N0, N1, N2, N3.
-
-Here is the report:
+Here is the pathology report:
 {report}
 
-Here are the rules for determining the N stage:
-{context}
-"""
-
-feedback_t14 = """
-Below is the reasoning you provided and your predicted T stage:
-
-Your reasoning: 
-{model_reasoning}
-
-Your predicted T stage: {model_predicted_stage}
-
-The ground truth T stage for this case is: {actual_ground_truth_T_stage}
-
 Please:
-1. Identify where and why your reasoning did not align with the ground truth.
-2. Highlight which parts of your thought process or interpretation of the AJCC criteria led you astray.
-3. Explain the key differences between your initial reasoning and what the correct reasoning should have been.
-
+1. Explain your reasoning step-by-step as you determine the T stage.
+2. Provide your predicted T stage, choosing from T1, T2, T3, T4.
 """

@@ -1,0 +1,8 @@
+Determine the T stage based on the size of the largest single invasive tumor focus, considering both gross and microscopic measurements if provided.
+Apply the AJCC TNM criteria strictly: T1 (≤2 cm), T2 (>2 cm but ≤5 cm), T3 (>5 cm), and T4 (any size with direct extension to the chest wall or skin).
+For multifocal or multicentric tumors, determine the T stage based on the size of the largest individual focus, not the cumulative size of all foci.
+Carefully evaluate the tumor's relationship to the skin and chest wall, as direct extension to these structures can classify a tumor as T4, regardless of size.
+Always refer to the latest AJCC TNM staging manual for the most current criteria and guidelines, as updates can impact staging classifications.
+When determining the T stage, prioritize the size of the tumor as the primary factor unless specific criteria for T4 are met, such as skin ulceration, chest wall fixation, or extensive skin involvement.
+Ensure accurate measurement and documentation of the tumor size in three dimensions (length, width, and depth) to determine the T stage according to the AJCC TNM system.
+Distinguish between the size of the invasive component and the overall tumor size, which may include in situ components or multiple separate tumors, as only the invasive component size is used for T staging.

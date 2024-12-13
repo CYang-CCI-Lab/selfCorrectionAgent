@@ -26,12 +26,12 @@ class Agent:
         self.schema = schema
         self.test_name = test_name
 
-    def get_schema_followed_response(self, messages: list) -> Union[Dict, None]:
+    def get_schema_followed_response(self, messages: list, schema: dict) -> Union[Dict, None]:
         try:
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=messages,
-                extra_body={"guided_json": self.schema},
+                extra_body={"guided_json": schema},
                 temperature=0.1,
             )
             return json.loads(response.choices[0].message.content)
@@ -43,22 +43,22 @@ class Agent:
         self,
         training_dataset: pd.DataFrame,
     ):
+        rules = []
         parsing_error = 0
         pbar = tqdm(total=training_dataset.shape[0])
 
         for idx, row in training_dataset.iterrows():
             report = row["text"]
-            if self.label == "t":
-                filled_prompt = rag_t14.format(report=report)
-            else:
-                filled_prompt = rag_n03.format(report=report)
+            label = f"T{row[self.label]+1}"
 
+            filled_prompt = prompt_zscot_t14.format(report=report)
+     
             messages = [
                 {"role": "system", "content": system_instruction},
                 {"role": "user", "content": filled_prompt},
             ]
 
-            json_output = self.get_schema_followed_response(messages)
+            json_output = self.get_schema_followed_response(messages, self.schema['1'])
 
             if not json_output:
                 parsing_error += 1
@@ -75,45 +75,43 @@ class Agent:
             training_dataset.loc[idx, f"{self.test_name}_{self.label}_pred"] = (
                 json_output["stage"]
             )
-            if f"T{training_dataset.loc[idx, self.label]+1}" != json_output["stage"]:
-                feedback_prompt
-                training_dataset.loc[idx, f"{self.test_name}_{self.label}_correct"] = True
-            response = response.choices[0].message.content
-            messages.append({"role": "assistant", "content": response})
-            training_dataset.loc[idx, f"generated_assess"] = response
 
-            if ltm:
-                filled_prompt = ltm_cot2_test.format(
-                    disease=self.disease,
-                    list_of_rules=ltm,
-                    subjective_section=subj,
-                    objective_section=obj,
-                )
-                column_prefix = f"{self.disease}_with_ltm"
-            else:
-                filled_prompt = without_ltm_cot2_test.format(
-                    disease=self.disease, subjective_section=subj, objective_section=obj
-                )
-                column_prefix = f"{self.disease}_without_ltm"
+            if label != json_output["stage"]:
+                print(f"Incorrect prediction at index: {idx}")
+                print("Now, extracting rules...")
+                training_dataset.loc[idx, f"{self.test_name}_{self.label}_feedback"] = True
+                messages.append({"role": "assistant", "content": str(json_output)})
+                messages.append({"role": "user", "content": prompt_rule_extraction_t14.format(model_reasoning=json_output["reasoning"], model_predicted_stage=json_output["stage"], ground_truth_T_stage=label)})
 
-            messages.append({"role": "user", "content": filled_prompt})
-
-            response = self.get_response(messages, schema)
-
-            if not response:
-                parsing_error += 1
-                print(f"Error at index: {idx}")
-                training_dataset.loc[idx, f"{column_prefix}_is_parsed"] = False
-                continue
-
-            training_dataset.loc[idx, f"{column_prefix}_is_parsed"] = True
-            training_dataset.loc[idx, f"{column_prefix}_answer"] = response["answer"]
+                while True:
+                    response = self.get_schema_followed_response(messages, self.schema['2'])
+                    if response:
+                        analysis = response["error_analysis"]
+                        rules += response["rules"]
+                        training_dataset.loc[idx, f"{self.test_name}_{self.label}_error_analysis"] = analysis
+                        training_dataset.loc[idx, f"{self.test_name}_{self.label}_rules"] = str(rules)
+                        break        
 
             pbar.update(1)
         pbar.close()
         print(f"Total parsing errors: {parsing_error}")
-        return training_dataset
 
+        print(f"The number of rules generated: {len(rules)}"s)
+        print(f"Now, refining the rules...")
+        messages = [
+                {"role": "system", "content": system_instruction},
+                {"role": "user", "content": prompt_rule_refinement_t14.format(all_accumulated_rules=rules)},
+            ]
+     
+        while True:
+            response = self.get_schema_followed_response(messages, self.schema['3'])
+            if response:
+                refined_rules = response["refined_rules"]
+                print(f"The number of refined rules: {len(refined_rules)}")
+                break
+         
+
+        return training_dataset, rules, refined_rules
 
     def test(
         self,
@@ -136,7 +134,7 @@ class Agent:
                 {"role": "user", "content": filled_prompt},
             ]
 
-            json_output = self.get_schema_followed_response(messages)
+            json_output = self.get_schema_followed_response(messages, self.schema)
 
             if not json_output:
                 parsing_error += 1
@@ -159,3 +157,4 @@ class Agent:
         pbar.close()
         print(f"Total number of parsing errors: {parsing_error}")
         return testing_dataset
+
