@@ -1,0 +1,10 @@
+1. Consider the largest contiguous tumor dimension reported in the pathology findings for determining the T stage.
+2. Use the following size thresholds to assign T stages:
+   - T1: 2 cm or smaller in greatest dimension
+   - T2: Larger than 2 cm but not larger than 5 cm in greatest dimension
+   - T3: Larger than 5 cm in greatest dimension
+3. Direct extension into the chest wall or skin upgrades the T stage to T3.
+4. Satellite lesions, when present, should be included in the total tumor size calculation.
+5. When the specimen is a representative fragment of a larger lesion, consider the possibility that the actual tumor size may be larger than the specimen.
+6. Extensive vascular invasion alone does not upgrade the T stage, but it should be reported in the pathology report as it is an indicator of aggressive disease.
+7. Always double-check the tumor size and compare it to the AJCC TNM classification system guidelines to ensure accurate T stage determination.

@@ -44,6 +44,15 @@ CUDA_VISIBLE_DEVICES="2,3,4,5" python -m vllm.entrypoints.openai.api_server \
 --disable-custom-all-reduce
 ```
 
+```bash
+CUDA_VISIBLE_DEVICES="2,3,4,5" python -m vllm.entrypoints.openai.api_server \
+--model meta-llama/Llama-3.3-70B-Instruct \
+--download-dir $MODEL_PATH \
+--tensor-parallel-size 4 \
+--disable-custom-all-reduce\
+--max-model-len 32768
+```
+
 - `CUDA_VISIBLE_DEVICES`: Specifies the CUDA devices to use.
 - `--model`: Specifies the model to use.
 - `--download-dir`: Sets the directory to the local model.

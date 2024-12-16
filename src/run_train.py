@@ -58,30 +58,33 @@ if __name__ == "__main__":
 
     train_agent = Agent(
         client=client,
-        model="meta-llama/Llama-3.3-70B-Instruct",
+        model="mistralai/Mixtral-8x7B-Instruct-v0.1",
         label="t",
         schema=schema_set,
         test_name="t14_train"
     )
 
     result_training_data, rules, refined_rules = train_agent.train(training_data)
-    result_training_data.to_csv("/home/yl3427/cylab/selfCorrectionAgent/result/1213_training_data.csv", index=False)
-    with open("/home/yl3427/cylab/selfCorrectionAgent/result/1213_rules.txt", "w") as f:
+    result_training_data.to_csv("/home/yl3427/cylab/selfCorrectionAgent/result/1214_training_data_mixtral.csv", index=False)
+    with open("/home/yl3427/cylab/selfCorrectionAgent/result/1214_rules_mixtral.txt", "w") as f:
         f.write("\n".join(rules))
-    with open("/home/yl3427/cylab/selfCorrectionAgent/result/1213_refined_rules.txt", "w") as f:
+    with open("/home/yl3427/cylab/selfCorrectionAgent/result/1214_refined_rules_mixtral.txt", "w") as f:
         f.write("\n".join(refined_rules))
+
+    # with open("/home/yl3427/cylab/selfCorrectionAgent/result/1214_refined_rules_mixtral.txt", "r") as f:
+    #     refined_rules = f.read().split("\n")
 
     test_agent = Agent(
         client=client,
-        model="meta-llama/Llama-3.3-70B-Instruct",
+        model="mistralai/Mixtral-8x7B-Instruct-v0.1",
         label="t",
         schema=schema_set['1'],
         test_name="t14_test"
     )
 
-    result_test_data = test_agent.test(test_data, prompt_test_with_rules_t14, "\n".join(refined_rules))
-    result_test_data.to_csv("/home/yl3427/cylab/selfCorrectionAgent/result/1213_test_data_with_refined_ltm.csv", index=False)
+    result_test_data = test_agent.test(test_data, prompt_test_with_rules_t14, context="\n".join(refined_rules))
+    result_test_data.to_csv("/home/yl3427/cylab/selfCorrectionAgent/result/1214_test_data_with_refined_ltm_mixtral.csv", index=False)
 
     result_test_data_base = test_agent.test(test_data, prompt_zscot_t14)
-    result_test_data_base.to_csv("/home/yl3427/cylab/selfCorrectionAgent/result/1213_test_data_base.csv", index=False)
+    result_test_data_base.to_csv("/home/yl3427/cylab/selfCorrectionAgent/result/1214_test_data_base_mixtral.csv", index=False)
 

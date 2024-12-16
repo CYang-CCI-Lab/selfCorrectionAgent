@@ -96,7 +96,7 @@ class Agent:
         pbar.close()
         print(f"Total parsing errors: {parsing_error}")
 
-        print(f"The number of rules generated: {len(rules)}"s)
+        print(f"The number of rules generated: {len(rules)}")
         print(f"Now, refining the rules...")
         messages = [
                 {"role": "system", "content": system_instruction},
@@ -106,6 +106,7 @@ class Agent:
         while True:
             response = self.get_schema_followed_response(messages, self.schema['3'])
             if response:
+                print(response)
                 refined_rules = response["refined_rules"]
                 print(f"The number of refined rules: {len(refined_rules)}")
                 break
@@ -125,9 +126,9 @@ class Agent:
         for idx, row in testing_dataset.iterrows():
             report = row["text"]
             if context:
-                filled_prompt = prompt.format(report=report, context=context)
+                filled_prompt = prompt_test_with_rules_t14.format(report=report, context=context)
             else:
-                filled_prompt = prompt.format(report=report)
+                filled_prompt = prompt_zscot_t14.format(report=report)
 
             messages = [
                 {"role": "system", "content": system_instruction},
