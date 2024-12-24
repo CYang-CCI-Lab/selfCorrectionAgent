@@ -1,0 +1,124 @@
+Generating base rules...
+Base rules acquired: ['T1: Tumor is 2 cm or less in greatest dimension.', 'T2: Tumor is more than 2 cm but not more than 5 cm in greatest dimension.', 'T3: Tumor is more than 5 cm in greatest dimension.', 'T4: Tumor is any size with direct extension to the chest wall and/or to the skin (ulceration or skin nodules).']
+Memory refinement triggered at row 4.
+Memory refinement triggered at row 5.
+Memory refinement triggered at row 14.
+Memory refinement triggered at row 18.
+Memory refinement triggered at row 31.
+Memory refinement triggered at row 58.
+Memory refinement triggered at row 66.
+Memory refinement triggered at row 85.
+Memory refinement triggered at row 92.
+Memory refinement triggered at row 95.
+Memory refinement triggered at row 96.
+Memory refinement triggered at row 106.
+Memory refinement triggered at row 113.
+Memory refinement triggered at row 120.
+Memory refinement triggered at row 121.
+Memory refinement triggered at row 141.
+Memory refinement triggered at row 165.
+Memory refinement triggered at row 179.
+Memory refinement triggered at row 180.
+Memory refinement triggered at row 184.
+Memory refinement triggered at row 196.
+Memory refinement triggered at row 206.
+Memory refinement triggered at row 242.
+Memory refinement triggered at row 265.
+Memory refinement triggered at row 329.
+Memory refinement triggered at row 330.
+Memory refinement triggered at row 339.
+Memory refinement triggered at row 348.
+Memory refinement triggered at row 350.
+Memory refinement triggered at row 376.
+Memory refinement triggered at row 377.
+Memory refinement triggered at row 391.
+Memory refinement triggered at row 411.
+Memory refinement triggered at row 420.
+Memory refinement triggered at row 455.
+Memory refinement triggered at row 457.
+Memory refinement triggered at row 459.
+Memory refinement triggered at row 462.
+Memory refinement triggered at row 463.
+Memory refinement triggered at row 467.
+Memory refinement triggered at row 469.
+Memory refinement triggered at row 473.
+Memory refinement triggered at row 481.
+Memory refinement triggered at row 484.
+Memory refinement triggered at row 488.
+Memory refinement triggered at row 490.
+Memory refinement triggered at row 495.
+Memory refinement triggered at row 496.
+Memory refinement triggered at row 502.
+Memory refinement triggered at row 503.
+Memory refinement triggered at row 507.
+Memory refinement triggered at row 511.
+Memory refinement triggered at row 519.
+Memory refinement triggered at row 521.
+Memory refinement triggered at row 547.
+Memory refinement triggered at row 571.
+Memory refinement triggered at row 603.
+Memory refinement triggered at row 604.
+Memory refinement triggered at row 608.
+Memory refinement triggered at row 610.
+Memory refinement triggered at row 611.
+Memory refinement triggered at row 638.
+Memory refinement triggered at row 640.
+Memory refinement triggered at row 645.
+Memory refinement triggered at row 646.
+Memory refinement triggered at row 656.
+Memory refinement triggered at row 669.
+Memory refinement triggered at row 685.
+Memory refinement triggered at row 691.
+Memory refinement triggered at row 692.
+Memory refinement triggered at row 694.
+Memory refinement triggered at row 715.
+Memory refinement triggered at row 716.
+Memory refinement triggered at row 720.
+Memory refinement triggered at row 730.
+Memory refinement triggered at row 733.
+Memory refinement triggered at row 744.
+Memory refinement triggered at row 757.
+Memory refinement triggered at row 764.
+Memory refinement triggered at row 768.
+Memory refinement triggered at row 808.
+Memory refinement triggered at row 813.
+Memory refinement triggered at row 815.
+Memory refinement triggered at row 856.
+Memory refinement triggered at row 868.
+Memory refinement triggered at row 887.
+Memory refinement triggered at row 889.
+Memory refinement triggered at row 919.
+Memory refinement triggered at row 923.
+Memory refinement triggered at row 931.
+Memory refinement triggered at row 949.
+Memory refinement triggered at row 955.
+Memory refinement triggered at row 956.
+Memory refinement triggered at row 972.
+Memory refinement triggered at row 992.
+Memory refinement triggered at row 994.
+Memory refinement triggered at row 996.
+Memory refinement triggered at row 998.
+Memory refinement triggered at row 1009.
+Memory refinement triggered at row 1010.
+Memory refinement triggered at row 1011.
+Memory refinement triggered at row 1012.
+Memory refinement triggered at row 1018.
+Memory refinement triggered at row 1020.
+
+Total parsing errors: 0
+Total memory creation events: 104
+Memory creation intervals: [1, 9, 4, 13, 27, 8, 19, 7, 3, 1, 10, 7, 7, 1, 20, 24, 14, 1, 4, 12, 10, 36, 23, 64, 1, 9, 9, 2, 26, 1, 14, 20, 9, 35, 2, 2, 3, 1, 4, 2, 4, 8, 3, 4, 2, 5, 1, 6, 1, 4, 4, 8, 2, 26, 24, 32, 1, 4, 2, 1, 27, 2, 5, 1, 10, 13, 16, 6, 1, 2, 21, 1, 4, 10, 3, 11, 13, 7, 4, 40, 5, 2, 41, 12, 19, 2, 30, 4, 8, 18, 6, 1, 16, 20, 2, 2, 2, 11, 1, 1, 1, 6, 2]
+                                       patient_filename  ...                                       final_memory
+0     TCGA-3C-AALI.84E6A935-1A49-4BC1-9669-3DEA161CF6FC  ...  [When a tumor size is close to a threshold bet...
+1     TCGA-3C-AALJ.265E5A9A-64FD-4B86-89BC-5E89F253C118  ...  [When a tumor size is close to a threshold bet...
+3     TCGA-4H-AAAK.8894688F-7167-48A1-BB1B-FC219B7675C2  ...  [When a tumor size is close to a threshold bet...
+4     TCGA-5L-AAT0.F9B6971F-23C0-465F-BFEC-778BF228A1AE  ...  [When a tumor size is close to a threshold bet...
+5     TCGA-5L-AAT1.B5CA42BB-9514-42C6-9FB0-C8889C1DC51A  ...  [When a tumor size is close to a threshold bet...
+...                                                 ...  ...                                                ...
+1023  TCGA-UU-A93S.821ED144-DF12-4E49-ADC7-27FA5E422B83  ...  [When a tumor size is close to a threshold bet...
+1024  TCGA-V7-A7HQ.82B46073-10CE-4D05-9421-6308E3FAD1AD  ...  [When a tumor size is close to a threshold bet...
+1028  TCGA-XX-A89A.5D85E578-64B4-4238-922E-802B8ED87800  ...  [When a tumor size is close to a threshold bet...
+1029  TCGA-Z7-A8R5.7726F7AA-88A8-4DD6-B322-6FC68893E0D2  ...  [When a tumor size is close to a threshold bet...
+1030  TCGA-Z7-A8R6.9A5C8EDF-9243-4F55-9036-A400CF3F4CC1  ...  [When a tumor size is close to a threshold bet...
+
+[800 rows x 13 columns]

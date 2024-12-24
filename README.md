@@ -11,7 +11,7 @@ To run the model, we host a vllm server using the `Mixtral-8x7B-Instruct-v0.1` m
 
 - recommend to create a new conda environment
 - pip install the packages:
-    
+
 ```bash
 # (Recommended) Create a new conda environment.
 conda create -n myenv python=3.9 -y
@@ -49,7 +49,7 @@ CUDA_VISIBLE_DEVICES="2,3,4,5" python -m vllm.entrypoints.openai.api_server \
 --model meta-llama/Llama-3.3-70B-Instruct \
 --download-dir $MODEL_PATH \
 --tensor-parallel-size 4 \
---disable-custom-all-reduce\
+--disable-custom-all-reduce \
 --max-model-len 32768
 ```
 

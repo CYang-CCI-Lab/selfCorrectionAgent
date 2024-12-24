@@ -1,0 +1,164 @@
+Generating base rules...
+Base rules acquired: ['T1: Tumor is 2 cm or less in greatest dimension.', 'T2: Tumor is more than 2 cm but not more than 5 cm in greatest dimension.', 'T3: Tumor is more than 5 cm in greatest dimension.', 'T4: Tumor is any size with direct extension to the chest wall and/or to the skin (ulceration or skin nodules).']
+Memory refinement triggered at row 4.
+Memory refinement triggered at row 5.
+Memory refinement triggered at row 11.
+Memory refinement triggered at row 14.
+Memory refinement triggered at row 31.
+Memory refinement triggered at row 58.
+Memory refinement triggered at row 66.
+Memory refinement triggered at row 85.
+Memory refinement triggered at row 95.
+Memory refinement triggered at row 96.
+Memory refinement triggered at row 106.
+Memory refinement triggered at row 113.
+Memory refinement triggered at row 120.
+Memory refinement triggered at row 141.
+Memory refinement triggered at row 165.
+Memory refinement triggered at row 179.
+Memory refinement triggered at row 180.
+Memory refinement triggered at row 184.
+Memory refinement triggered at row 196.
+Memory refinement triggered at row 206.
+Memory refinement triggered at row 218.
+Memory refinement triggered at row 242.
+Memory refinement triggered at row 244.
+Memory refinement triggered at row 265.
+Memory refinement triggered at row 329.
+Memory refinement triggered at row 330.
+Memory refinement triggered at row 339.
+Memory refinement triggered at row 350.
+Memory refinement triggered at row 356.
+Memory refinement triggered at row 376.
+Memory refinement triggered at row 377.
+Memory refinement triggered at row 391.
+Memory refinement triggered at row 411.
+Memory refinement triggered at row 420.
+Memory refinement triggered at row 422.
+Memory refinement triggered at row 423.
+Memory refinement triggered at row 449.
+An error occurred: Request timed out.
+Refinement failed at row 449, keeping old memory items.
+Memory refinement triggered at row 455.
+An error occurred: Request timed out.
+Refinement failed at row 455, keeping old memory items.
+Memory refinement triggered at row 459.
+An error occurred: Request timed out.
+Refinement failed at row 459, keeping old memory items.
+Memory refinement triggered at row 462.
+An error occurred: Request timed out.
+Refinement failed at row 462, keeping old memory items.
+Memory refinement triggered at row 463.
+An error occurred: Request timed out.
+Refinement failed at row 463, keeping old memory items.
+Memory refinement triggered at row 467.
+Memory refinement triggered at row 469.
+Memory refinement triggered at row 473.
+Memory refinement triggered at row 478.
+Memory refinement triggered at row 481.
+Memory refinement triggered at row 484.
+Memory refinement triggered at row 495.
+Memory refinement triggered at row 496.
+Memory refinement triggered at row 506.
+Memory refinement triggered at row 507.
+An error occurred: Request timed out.
+Memory refinement triggered at row 519.
+An error occurred: Request timed out.
+Refinement failed at row 519, keeping old memory items.
+Memory refinement triggered at row 523.
+An error occurred: Request timed out.
+Refinement failed at row 523, keeping old memory items.
+An error occurred: Request timed out.
+Memory refinement triggered at row 547.
+An error occurred: Request timed out.
+Refinement failed at row 547, keeping old memory items.
+An error occurred: Request timed out.
+Memory refinement triggered at row 571.
+An error occurred: Request timed out.
+Refinement failed at row 571, keeping old memory items.
+Memory refinement triggered at row 603.
+An error occurred: Request timed out.
+Refinement failed at row 603, keeping old memory items.
+Memory refinement triggered at row 604.
+An error occurred: Request timed out.
+Refinement failed at row 604, keeping old memory items.
+Memory refinement triggered at row 608.
+An error occurred: Request timed out.
+Refinement failed at row 608, keeping old memory items.
+Memory refinement triggered at row 610.
+An error occurred: Request timed out.
+Refinement failed at row 610, keeping old memory items.
+Memory refinement triggered at row 614.
+An error occurred: Request timed out.
+Refinement failed at row 614, keeping old memory items.
+Memory refinement triggered at row 619.
+An error occurred: Request timed out.
+Refinement failed at row 619, keeping old memory items.
+An error occurred: Request timed out.
+Memory refinement triggered at row 633.
+Memory refinement triggered at row 636.
+Memory refinement triggered at row 638.
+Memory refinement triggered at row 640.
+Memory refinement triggered at row 645.
+Memory refinement triggered at row 646.
+Memory refinement triggered at row 656.
+Memory refinement triggered at row 679.
+Memory refinement triggered at row 685.
+Memory refinement triggered at row 691.
+Memory refinement triggered at row 692.
+Memory refinement triggered at row 700.
+Memory refinement triggered at row 704.
+Memory refinement triggered at row 715.
+Memory refinement triggered at row 716.
+Memory refinement triggered at row 720.
+Memory refinement triggered at row 730.
+Memory refinement triggered at row 744.
+Memory refinement triggered at row 746.
+Memory refinement triggered at row 757.
+Memory refinement triggered at row 764.
+Memory refinement triggered at row 768.
+Memory refinement triggered at row 808.
+Memory refinement triggered at row 815.
+Memory refinement triggered at row 837.
+Memory refinement triggered at row 856.
+Memory refinement triggered at row 868.
+Memory refinement triggered at row 887.
+Memory refinement triggered at row 889.
+Memory refinement triggered at row 919.
+Memory refinement triggered at row 923.
+Memory refinement triggered at row 931.
+Memory refinement triggered at row 949.
+Memory refinement triggered at row 950.
+Memory refinement triggered at row 955.
+Memory refinement triggered at row 956.
+Memory refinement triggered at row 988.
+Memory refinement triggered at row 991.
+Memory refinement triggered at row 992.
+Memory refinement triggered at row 994.
+Memory refinement triggered at row 996.
+Memory refinement triggered at row 998.
+Memory refinement triggered at row 1005.
+Memory refinement triggered at row 1009.
+Memory refinement triggered at row 1010.
+Memory refinement triggered at row 1011.
+Memory refinement triggered at row 1012.
+Memory refinement triggered at row 1018.
+Memory refinement triggered at row 1020.
+
+Total parsing errors: 0
+Total memory creation events: 110
+Memory creation intervals: [1, 6, 3, 17, 27, 8, 19, 10, 1, 10, 7, 7, 21, 24, 14, 1, 4, 12, 10, 12, 24, 2, 21, 64, 1, 9, 11, 6, 20, 1, 14, 20, 9, 2, 1, 26, 6, 4, 3, 1, 4, 2, 4, 5, 3, 3, 11, 1, 10, 1, 12, 4, 24, 24, 32, 1, 4, 2, 4, 5, 14, 3, 2, 2, 5, 1, 10, 23, 6, 6, 1, 8, 4, 11, 1, 4, 10, 14, 2, 11, 7, 4, 40, 7, 22, 19, 12, 19, 2, 30, 4, 8, 18, 1, 5, 1, 32, 3, 1, 2, 2, 2, 7, 4, 1, 1, 1, 6, 2]
+                                       patient_filename  ...                                       final_memory
+0     TCGA-3C-AALI.84E6A935-1A49-4BC1-9669-3DEA161CF6FC  ...  [When both microscopic and macroscopic measure...
+1     TCGA-3C-AALJ.265E5A9A-64FD-4B86-89BC-5E89F253C118  ...  [When both microscopic and macroscopic measure...
+3     TCGA-4H-AAAK.8894688F-7167-48A1-BB1B-FC219B7675C2  ...  [When both microscopic and macroscopic measure...
+4     TCGA-5L-AAT0.F9B6971F-23C0-465F-BFEC-778BF228A1AE  ...  [When both microscopic and macroscopic measure...
+5     TCGA-5L-AAT1.B5CA42BB-9514-42C6-9FB0-C8889C1DC51A  ...  [When both microscopic and macroscopic measure...
+...                                                 ...  ...                                                ...
+1023  TCGA-UU-A93S.821ED144-DF12-4E49-ADC7-27FA5E422B83  ...  [When both microscopic and macroscopic measure...
+1024  TCGA-V7-A7HQ.82B46073-10CE-4D05-9421-6308E3FAD1AD  ...  [When both microscopic and macroscopic measure...
+1028  TCGA-XX-A89A.5D85E578-64B4-4238-922E-802B8ED87800  ...  [When both microscopic and macroscopic measure...
+1029  TCGA-Z7-A8R5.7726F7AA-88A8-4DD6-B322-6FC68893E0D2  ...  [When both microscopic and macroscopic measure...
+1030  TCGA-Z7-A8R6.9A5C8EDF-9243-4F55-9036-A400CF3F4CC1  ...  [When both microscopic and macroscopic measure...
+
+[800 rows x 13 columns]

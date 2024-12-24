@@ -1,0 +1,173 @@
+Generating base rules...
+Base rules acquired: ['T stage for breast cancer is based on primary tumor size and/or invasion', 'T1: Tumor ≤ 2 cm in greatest dimension', 'T2: Tumor > 2 cm but ≤ 5 cm in greatest dimension', 'T3: Tumor > 5 cm in greatest dimension or with direct extension to the chest wall or skin', 'T4: Tumor of any size with direct extension to the chest wall and/or skin involvement AND/OR inflammatory carcinoma']
+Memory refinement triggered at row 4.
+Memory refinement triggered at row 5.
+Memory refinement triggered at row 10.
+Memory refinement triggered at row 14.
+Memory refinement triggered at row 31.
+Memory refinement triggered at row 58.
+Memory refinement triggered at row 66.
+Memory refinement triggered at row 71.
+Memory refinement triggered at row 83.
+Memory refinement triggered at row 92.
+Memory refinement triggered at row 95.
+Memory refinement triggered at row 106.
+Memory refinement triggered at row 109.
+Memory refinement triggered at row 113.
+Memory refinement triggered at row 121.
+Memory refinement triggered at row 139.
+An error occurred: Request timed out.
+Error parsing JSON at row 143
+Memory refinement triggered at row 154.
+Memory refinement triggered at row 159.
+Memory refinement triggered at row 175.
+Memory refinement triggered at row 176.
+Memory refinement triggered at row 179.
+Memory refinement triggered at row 182.
+Memory refinement triggered at row 184.
+Memory refinement triggered at row 188.
+Memory refinement triggered at row 196.
+Memory refinement triggered at row 200.
+Memory refinement triggered at row 244.
+Memory refinement triggered at row 254.
+Memory refinement triggered at row 258.
+Memory refinement triggered at row 264.
+Memory refinement triggered at row 286.
+Memory refinement triggered at row 303.
+Refinement failed at row 303, keeping old memory items.
+Memory refinement triggered at row 305.
+Memory refinement triggered at row 329.
+Memory refinement triggered at row 334.
+Memory refinement triggered at row 336.
+Memory refinement triggered at row 338.
+Memory refinement triggered at row 344.
+Memory refinement triggered at row 350.
+Memory refinement triggered at row 357.
+Memory refinement triggered at row 366.
+Refinement failed at row 366, keeping old memory items.
+Memory refinement triggered at row 377.
+Memory refinement triggered at row 397.
+Memory refinement triggered at row 411.
+Memory refinement triggered at row 420.
+Memory refinement triggered at row 424.
+Memory refinement triggered at row 454.
+Memory refinement triggered at row 457.
+Memory refinement triggered at row 458.
+Memory refinement triggered at row 459.
+Refinement failed at row 459, keeping old memory items.
+Memory refinement triggered at row 462.
+Memory refinement triggered at row 463.
+Refinement failed at row 463, keeping old memory items.
+Memory refinement triggered at row 469.
+Memory refinement triggered at row 470.
+Memory refinement triggered at row 473.
+Memory refinement triggered at row 481.
+Memory refinement triggered at row 484.
+Memory refinement triggered at row 485.
+Memory refinement triggered at row 494.
+Memory refinement triggered at row 495.
+Memory refinement triggered at row 496.
+Memory refinement triggered at row 497.
+Memory refinement triggered at row 498.
+Refinement failed at row 498, keeping old memory items.
+Memory refinement triggered at row 499.
+Memory refinement triggered at row 502.
+Memory refinement triggered at row 506.
+Memory refinement triggered at row 507.
+An error occurred: Request timed out.
+Error parsing JSON at row 512
+Memory refinement triggered at row 519.
+Memory refinement triggered at row 523.
+An error occurred: Request timed out.
+An error occurred: Request timed out.
+Error parsing JSON at row 539
+Memory refinement triggered at row 546.
+Memory refinement triggered at row 559.
+Memory refinement triggered at row 564.
+Memory refinement triggered at row 571.
+Memory refinement triggered at row 598.
+Memory refinement triggered at row 603.
+Memory refinement triggered at row 604.
+Memory refinement triggered at row 605.
+Memory refinement triggered at row 607.
+Refinement failed at row 607, keeping old memory items.
+Memory refinement triggered at row 610.
+Refinement failed at row 610, keeping old memory items.
+Memory refinement triggered at row 613.
+Refinement failed at row 613, keeping old memory items.
+Memory refinement triggered at row 614.
+Memory refinement triggered at row 617.
+Memory refinement triggered at row 619.
+Memory refinement triggered at row 625.
+Refinement failed at row 625, keeping old memory items.
+Memory refinement triggered at row 626.
+Refinement failed at row 626, keeping old memory items.
+Memory refinement triggered at row 627.
+Memory refinement triggered at row 629.
+Memory refinement triggered at row 630.
+Refinement failed at row 630, keeping old memory items.
+Memory refinement triggered at row 631.
+Memory refinement triggered at row 638.
+Memory refinement triggered at row 639.
+Memory refinement triggered at row 640.
+Memory refinement triggered at row 646.
+Memory refinement triggered at row 653.
+Memory refinement triggered at row 662.
+Memory refinement triggered at row 679.
+Memory refinement triggered at row 681.
+Memory refinement triggered at row 688.
+Memory refinement triggered at row 694.
+Memory refinement triggered at row 710.
+Memory refinement triggered at row 715.
+Memory refinement triggered at row 716.
+Memory refinement triggered at row 729.
+An error occurred: Request timed out.
+Memory refinement triggered at row 736.
+Memory refinement triggered at row 770.
+Memory refinement triggered at row 789.
+Memory refinement triggered at row 804.
+Memory refinement triggered at row 809.
+Memory refinement triggered at row 812.
+Memory refinement triggered at row 829.
+Memory refinement triggered at row 837.
+Memory refinement triggered at row 838.
+An error occurred: Request timed out.
+Memory refinement triggered at row 882.
+Memory refinement triggered at row 887.
+Memory refinement triggered at row 889.
+Memory refinement triggered at row 891.
+Memory refinement triggered at row 903.
+Memory refinement triggered at row 930.
+Memory refinement triggered at row 946.
+Memory refinement triggered at row 950.
+Refinement failed at row 950, keeping old memory items.
+Memory refinement triggered at row 951.
+Memory refinement triggered at row 956.
+Memory refinement triggered at row 970.
+Memory refinement triggered at row 981.
+Memory refinement triggered at row 998.
+Memory refinement triggered at row 1009.
+Memory refinement triggered at row 1010.
+Memory refinement triggered at row 1011.
+Memory refinement triggered at row 1012.
+Memory refinement triggered at row 1018.
+Memory refinement triggered at row 1020.
+Memory refinement triggered at row 1030.
+
+Total parsing errors: 3
+Total memory creation events: 132
+Memory creation intervals: [1, 5, 4, 17, 27, 8, 5, 12, 9, 3, 11, 3, 4, 8, 18, 15, 5, 16, 1, 3, 3, 2, 4, 8, 4, 44, 10, 4, 6, 22, 17, 2, 24, 5, 2, 2, 6, 6, 7, 9, 11, 20, 14, 9, 4, 30, 3, 1, 1, 3, 1, 6, 1, 3, 8, 3, 1, 9, 1, 1, 1, 1, 1, 3, 4, 1, 12, 4, 23, 13, 5, 7, 27, 5, 1, 1, 2, 3, 3, 1, 3, 2, 6, 1, 1, 2, 1, 1, 7, 1, 1, 6, 7, 9, 17, 2, 7, 6, 16, 5, 1, 13, 7, 34, 19, 15, 5, 3, 17, 8, 1, 44, 5, 2, 2, 12, 27, 16, 4, 1, 5, 14, 11, 17, 11, 1, 1, 1, 6, 2, 10]
+                                       patient_filename  ...                                       final_memory
+0     TCGA-3C-AALI.84E6A935-1A49-4BC1-9669-3DEA161CF6FC  ...  [For multifocal breast cancer, consider skin/c...
+1     TCGA-3C-AALJ.265E5A9A-64FD-4B86-89BC-5E89F253C118  ...  [For multifocal breast cancer, consider skin/c...
+3     TCGA-4H-AAAK.8894688F-7167-48A1-BB1B-FC219B7675C2  ...  [For multifocal breast cancer, consider skin/c...
+4     TCGA-5L-AAT0.F9B6971F-23C0-465F-BFEC-778BF228A1AE  ...  [For multifocal breast cancer, consider skin/c...
+5     TCGA-5L-AAT1.B5CA42BB-9514-42C6-9FB0-C8889C1DC51A  ...  [For multifocal breast cancer, consider skin/c...
+...                                                 ...  ...                                                ...
+1023  TCGA-UU-A93S.821ED144-DF12-4E49-ADC7-27FA5E422B83  ...  [For multifocal breast cancer, consider skin/c...
+1024  TCGA-V7-A7HQ.82B46073-10CE-4D05-9421-6308E3FAD1AD  ...  [For multifocal breast cancer, consider skin/c...
+1028  TCGA-XX-A89A.5D85E578-64B4-4238-922E-802B8ED87800  ...  [For multifocal breast cancer, consider skin/c...
+1029  TCGA-Z7-A8R5.7726F7AA-88A8-4DD6-B322-6FC68893E0D2  ...  [For multifocal breast cancer, consider skin/c...
+1030  TCGA-Z7-A8R6.9A5C8EDF-9243-4F55-9036-A400CF3F4CC1  ...  [For multifocal breast cancer, consider skin/c...
+
+[800 rows x 13 columns]

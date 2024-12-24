@@ -1,0 +1,128 @@
+Generating base rules...
+Base rules acquired: ['T1: Tumor is 2 cm or less in greatest dimension.', 'T2: Tumor is more than 2 cm but not more than 5 cm in greatest dimension.', 'T3: Tumor is more than 5 cm in greatest dimension.', 'T4: Tumor is any size with direct extension to the chest wall and/or to the skin (ulceration or skin nodules).']
+Memory refinement triggered at row 4.
+Memory refinement triggered at row 5.
+Memory refinement triggered at row 11.
+Memory refinement triggered at row 14.
+Memory refinement triggered at row 31.
+Memory refinement triggered at row 58.
+Memory refinement triggered at row 66.
+Memory refinement triggered at row 85.
+Memory refinement triggered at row 95.
+Memory refinement triggered at row 96.
+Memory refinement triggered at row 106.
+Memory refinement triggered at row 113.
+Memory refinement triggered at row 120.
+Memory refinement triggered at row 141.
+Memory refinement triggered at row 165.
+Memory refinement triggered at row 179.
+Memory refinement triggered at row 180.
+Memory refinement triggered at row 184.
+Memory refinement triggered at row 188.
+Memory refinement triggered at row 196.
+Memory refinement triggered at row 206.
+Memory refinement triggered at row 224.
+Memory refinement triggered at row 242.
+Memory refinement triggered at row 263.
+Memory refinement triggered at row 265.
+Memory refinement triggered at row 329.
+Memory refinement triggered at row 330.
+Memory refinement triggered at row 350.
+Memory refinement triggered at row 376.
+Memory refinement triggered at row 391.
+Memory refinement triggered at row 397.
+Memory refinement triggered at row 411.
+Memory refinement triggered at row 420.
+Memory refinement triggered at row 449.
+Memory refinement triggered at row 455.
+Memory refinement triggered at row 459.
+Memory refinement triggered at row 462.
+Memory refinement triggered at row 463.
+Memory refinement triggered at row 467.
+Memory refinement triggered at row 469.
+Memory refinement triggered at row 473.
+Memory refinement triggered at row 478.
+Memory refinement triggered at row 481.
+Memory refinement triggered at row 484.
+Memory refinement triggered at row 495.
+Memory refinement triggered at row 496.
+Memory refinement triggered at row 498.
+Memory refinement triggered at row 506.
+Memory refinement triggered at row 507.
+Memory refinement triggered at row 511.
+Memory refinement triggered at row 519.
+Memory refinement triggered at row 521.
+Memory refinement triggered at row 523.
+Memory refinement triggered at row 547.
+Memory refinement triggered at row 571.
+Memory refinement triggered at row 574.
+Memory refinement triggered at row 581.
+Memory refinement triggered at row 603.
+Memory refinement triggered at row 604.
+Memory refinement triggered at row 608.
+Memory refinement triggered at row 610.
+Memory refinement triggered at row 611.
+Memory refinement triggered at row 619.
+Memory refinement triggered at row 638.
+Memory refinement triggered at row 640.
+Memory refinement triggered at row 645.
+Memory refinement triggered at row 646.
+Memory refinement triggered at row 656.
+Memory refinement triggered at row 665.
+Memory refinement triggered at row 685.
+Memory refinement triggered at row 687.
+Memory refinement triggered at row 691.
+Memory refinement triggered at row 692.
+Memory refinement triggered at row 694.
+Memory refinement triggered at row 695.
+Memory refinement triggered at row 700.
+Memory refinement triggered at row 715.
+Memory refinement triggered at row 716.
+Memory refinement triggered at row 720.
+Memory refinement triggered at row 730.
+Memory refinement triggered at row 744.
+Memory refinement triggered at row 746.
+Memory refinement triggered at row 757.
+Memory refinement triggered at row 764.
+Memory refinement triggered at row 808.
+Memory refinement triggered at row 812.
+Memory refinement triggered at row 856.
+Memory refinement triggered at row 887.
+Memory refinement triggered at row 889.
+Memory refinement triggered at row 919.
+Memory refinement triggered at row 923.
+Memory refinement triggered at row 930.
+Memory refinement triggered at row 931.
+Memory refinement triggered at row 937.
+Memory refinement triggered at row 949.
+Memory refinement triggered at row 950.
+Memory refinement triggered at row 955.
+Memory refinement triggered at row 956.
+Memory refinement triggered at row 972.
+Memory refinement triggered at row 992.
+Memory refinement triggered at row 994.
+Memory refinement triggered at row 998.
+Memory refinement triggered at row 1009.
+Memory refinement triggered at row 1010.
+Memory refinement triggered at row 1011.
+Memory refinement triggered at row 1012.
+Memory refinement triggered at row 1018.
+Memory refinement triggered at row 1020.
+
+Total parsing errors: 0
+Total memory creation events: 108
+Memory creation intervals: [1, 6, 3, 17, 27, 8, 19, 10, 1, 10, 7, 7, 21, 24, 14, 1, 4, 4, 8, 10, 18, 18, 21, 2, 64, 1, 20, 26, 15, 6, 14, 9, 29, 6, 4, 3, 1, 4, 2, 4, 5, 3, 3, 11, 1, 2, 8, 1, 4, 8, 2, 2, 24, 24, 3, 7, 22, 1, 4, 2, 1, 8, 19, 2, 5, 1, 10, 9, 20, 2, 4, 1, 2, 1, 5, 15, 1, 4, 10, 14, 2, 11, 7, 44, 4, 44, 31, 2, 30, 4, 7, 1, 6, 12, 1, 5, 1, 16, 20, 2, 4, 11, 1, 1, 1, 6, 2]
+                                       patient_filename  ...                                       final_memory
+0     TCGA-3C-AALI.84E6A935-1A49-4BC1-9669-3DEA161CF6FC  ...  [Involvement of skeletal muscle does not autom...
+1     TCGA-3C-AALJ.265E5A9A-64FD-4B86-89BC-5E89F253C118  ...  [Involvement of skeletal muscle does not autom...
+3     TCGA-4H-AAAK.8894688F-7167-48A1-BB1B-FC219B7675C2  ...  [Involvement of skeletal muscle does not autom...
+4     TCGA-5L-AAT0.F9B6971F-23C0-465F-BFEC-778BF228A1AE  ...  [Involvement of skeletal muscle does not autom...
+5     TCGA-5L-AAT1.B5CA42BB-9514-42C6-9FB0-C8889C1DC51A  ...  [Involvement of skeletal muscle does not autom...
+...                                                 ...  ...                                                ...
+1023  TCGA-UU-A93S.821ED144-DF12-4E49-ADC7-27FA5E422B83  ...  [Involvement of skeletal muscle does not autom...
+1024  TCGA-V7-A7HQ.82B46073-10CE-4D05-9421-6308E3FAD1AD  ...  [Involvement of skeletal muscle does not autom...
+1028  TCGA-XX-A89A.5D85E578-64B4-4238-922E-802B8ED87800  ...  [Involvement of skeletal muscle does not autom...
+1029  TCGA-Z7-A8R5.7726F7AA-88A8-4DD6-B322-6FC68893E0D2  ...  [Involvement of skeletal muscle does not autom...
+1030  TCGA-Z7-A8R6.9A5C8EDF-9243-4F55-9036-A400CF3F4CC1  ...  [Involvement of skeletal muscle does not autom...
+
+[800 rows x 13 columns]

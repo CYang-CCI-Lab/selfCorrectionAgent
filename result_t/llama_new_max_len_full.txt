@@ -1,0 +1,160 @@
+Generating base rules...
+Base rules acquired: ['T1: Tumor is 2 cm or less in greatest dimension.', 'T2: Tumor is more than 2 cm but not more than 5 cm in greatest dimension.', 'T3: Tumor is more than 5 cm in greatest dimension.', 'T4: Tumor is any size with direct extension to the chest wall and/or to the skin (ulceration or skin nodules).']
+Memory refinement triggered at row 1.
+Memory refinement triggered at row 4.
+Memory refinement triggered at row 9.
+Memory refinement triggered at row 14.
+Memory refinement triggered at row 18.
+Memory refinement triggered at row 31.
+Memory refinement triggered at row 41.
+Memory refinement triggered at row 42.
+Memory refinement triggered at row 43.
+Memory refinement triggered at row 47.
+Memory refinement triggered at row 60.
+Memory refinement triggered at row 73.
+Memory refinement triggered at row 79.
+Memory refinement triggered at row 81.
+Memory refinement triggered at row 83.
+Memory refinement triggered at row 84.
+Memory refinement triggered at row 88.
+Memory refinement triggered at row 91.
+Memory refinement triggered at row 92.
+Memory refinement triggered at row 102.
+Memory refinement triggered at row 105.
+Memory refinement triggered at row 109.
+Memory refinement triggered at row 110.
+Memory refinement triggered at row 118.
+Memory refinement triggered at row 132.
+Memory refinement triggered at row 133.
+Memory refinement triggered at row 134.
+Memory refinement triggered at row 163.
+Memory refinement triggered at row 188.
+Memory refinement triggered at row 192.
+Memory refinement triggered at row 195.
+Memory refinement triggered at row 198.
+Memory refinement triggered at row 217.
+Memory refinement triggered at row 231.
+Memory refinement triggered at row 245.
+Memory refinement triggered at row 248.
+Memory refinement triggered at row 251.
+Memory refinement triggered at row 291.
+Memory refinement triggered at row 308.
+Memory refinement triggered at row 327.
+Memory refinement triggered at row 328.
+Memory refinement triggered at row 335.
+Memory refinement triggered at row 338.
+Memory refinement triggered at row 349.
+Memory refinement triggered at row 352.
+Memory refinement triggered at row 367.
+Memory refinement triggered at row 373.
+Memory refinement triggered at row 374.
+Memory refinement triggered at row 379.
+Memory refinement triggered at row 381.
+Memory refinement triggered at row 383.
+Memory refinement triggered at row 405.
+Memory refinement triggered at row 406.
+Memory refinement triggered at row 414.
+Memory refinement triggered at row 420.
+Memory refinement triggered at row 433.
+Memory refinement triggered at row 440.
+Memory refinement triggered at row 441.
+Memory refinement triggered at row 455.
+Memory refinement triggered at row 456.
+Memory refinement triggered at row 465.
+Memory refinement triggered at row 481.
+Memory refinement triggered at row 506.
+Memory refinement triggered at row 519.
+Memory refinement triggered at row 521.
+Memory refinement triggered at row 525.
+Memory refinement triggered at row 529.
+Memory refinement triggered at row 536.
+Memory refinement triggered at row 550.
+Memory refinement triggered at row 572.
+Memory refinement triggered at row 574.
+Memory refinement triggered at row 575.
+Memory refinement triggered at row 578.
+Memory refinement triggered at row 579.
+Memory refinement triggered at row 592.
+Memory refinement triggered at row 607.
+Memory refinement triggered at row 613.
+Memory refinement triggered at row 615.
+Memory refinement triggered at row 616.
+Memory refinement triggered at row 623.
+Memory refinement triggered at row 627.
+Memory refinement triggered at row 636.
+Memory refinement triggered at row 645.
+Memory refinement triggered at row 662.
+Memory refinement triggered at row 665.
+Memory refinement triggered at row 674.
+Memory refinement triggered at row 682.
+Memory refinement triggered at row 694.
+Memory refinement triggered at row 696.
+Memory refinement triggered at row 701.
+Memory refinement triggered at row 716.
+Memory refinement triggered at row 720.
+Memory refinement triggered at row 724.
+Memory refinement triggered at row 726.
+Memory refinement triggered at row 727.
+Memory refinement triggered at row 731.
+Memory refinement triggered at row 746.
+Memory refinement triggered at row 749.
+Memory refinement triggered at row 753.
+Memory refinement triggered at row 760.
+Memory refinement triggered at row 764.
+Memory refinement triggered at row 768.
+Memory refinement triggered at row 771.
+Memory refinement triggered at row 782.
+Memory refinement triggered at row 787.
+Memory refinement triggered at row 794.
+Memory refinement triggered at row 817.
+Memory refinement triggered at row 820.
+Memory refinement triggered at row 831.
+Memory refinement triggered at row 836.
+Memory refinement triggered at row 848.
+Memory refinement triggered at row 850.
+Memory refinement triggered at row 869.
+Memory refinement triggered at row 870.
+Memory refinement triggered at row 873.
+Memory refinement triggered at row 874.
+Memory refinement triggered at row 877.
+Memory refinement triggered at row 879.
+Memory refinement triggered at row 884.
+Memory refinement triggered at row 892.
+Memory refinement triggered at row 898.
+Memory refinement triggered at row 902.
+Memory refinement triggered at row 903.
+Memory refinement triggered at row 920.
+Memory refinement triggered at row 921.
+Memory refinement triggered at row 923.
+Memory refinement triggered at row 928.
+Memory refinement triggered at row 931.
+Memory refinement triggered at row 937.
+Memory refinement triggered at row 961.
+Memory refinement triggered at row 963.
+Memory refinement triggered at row 964.
+Memory refinement triggered at row 981.
+Memory refinement triggered at row 989.
+Memory refinement triggered at row 999.
+Memory refinement triggered at row 1002.
+Memory refinement triggered at row 1003.
+Memory refinement triggered at row 1011.
+Memory refinement triggered at row 1018.
+Memory refinement triggered at row 1025.
+
+Total parsing errors: 0
+Total memory creation events: 140
+Memory creation intervals: [3, 5, 5, 4, 13, 10, 1, 1, 4, 13, 13, 6, 2, 2, 1, 4, 3, 1, 10, 3, 4, 1, 8, 14, 1, 1, 29, 25, 4, 3, 3, 19, 14, 14, 3, 3, 40, 17, 19, 1, 7, 3, 11, 3, 15, 6, 1, 5, 2, 2, 22, 1, 8, 6, 13, 7, 1, 14, 1, 9, 16, 25, 13, 2, 4, 4, 7, 14, 22, 2, 1, 3, 1, 13, 15, 6, 2, 1, 7, 4, 9, 9, 17, 3, 9, 8, 12, 2, 5, 15, 4, 4, 2, 1, 4, 15, 3, 4, 7, 4, 4, 3, 11, 5, 7, 23, 3, 11, 5, 12, 2, 19, 1, 3, 1, 3, 2, 5, 8, 6, 4, 1, 17, 1, 2, 5, 3, 6, 24, 2, 1, 17, 8, 10, 3, 1, 8, 7, 7]
+                                       patient_filename  ...                                       final_memory
+0     TCGA-A2-A0T2.0DCD80E1-173E-4A1B-BDD8-74C7D12C1313  ...  [When both microscopic and gross measurements ...
+1     TCGA-A2-A1G6.02B4C31E-38F0-4AF3-8DAD-527D5F27C11A  ...  [When both microscopic and gross measurements ...
+2     TCGA-BH-A201.6AE92F6F-E29D-43B6-AF1E-F15720C1AAE8  ...  [When both microscopic and gross measurements ...
+3     TCGA-E2-A14V.DC8FD7C7-A908-4B90-860F-04984244167C  ...  [When both microscopic and gross measurements ...
+4     TCGA-EW-A1J5.D92CABBE-8D7E-41E5-B702-9ED07E94E5C4  ...  [When both microscopic and gross measurements ...
+...                                                 ...  ...                                                ...
+1026  TCGA-AR-A1AN.DA251274-7966-4F48-A02F-393ABBDAB4E9  ...  [When both microscopic and gross measurements ...
+1027  TCGA-D8-A1X9.E69CF3E3-4799-4892-87E9-4291B14A1B9C  ...  [When both microscopic and gross measurements ...
+1028  TCGA-A2-A3Y0.0FEAEEBA-A72C-4207-AC21-6AF5B5ED1AFC  ...  [When both microscopic and gross measurements ...
+1029  TCGA-BH-A0E9.8FDACA3D-C172-4198-9BBB-8F9E5A5FF0D6  ...  [When both microscopic and gross measurements ...
+1030  TCGA-AC-A3W5.CA0CD57E-DA92-463E-A004-D554825A22D6  ...  [When both microscopic and gross measurements ...
+
+[1031 rows x 13 columns]
