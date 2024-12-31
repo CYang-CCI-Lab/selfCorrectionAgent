@@ -1,0 +1,21 @@
+Generating base rules...
+Base rules acquired: ['N0: No regional lymph node metastasis.', 'N1: Metastasis to movable ipsilateral Level I or II axillary lymph nodes.', 'N2: Metastasis to ipsilateral Level I or II axillary lymph nodes that are clinically fixed or in clinically detected internal mammary nodes in the absence of clinically evident axillary lymph node metastasis.', 'N3: Metastasis to ipsilateral infraclavicular (Level III axillary) lymph node(s) with or without Level I or II axillary lymph node involvement, or in clinically detected ipsilateral internal mammary lymph node(s) with clinically evident axillary lymph node metastasis, or metastasis to ipsilateral supraclavicular lymph node(s).']
+Memory refinement triggered at row 3.
+Memory refinement triggered at row 31.
+Memory refinement triggered at row 38.
+Memory refinement triggered at row 58.
+Memory refinement triggered at row 61.
+Memory refinement triggered at row 67.
+Memory refinement triggered at row 82.
+Memory refinement triggered at row 83.
+Memory refinement triggered at row 85.
+Memory refinement triggered at row 87.
+Memory refinement triggered at row 96.
+Memory refinement triggered at row 106.
+Memory refinement triggered at row 107.
+Memory refinement triggered at row 115.
+Memory refinement triggered at row 120.
+Memory refinement triggered at row 163.
+Memory refinement triggered at row 193.
+Memory refinement triggered at row 205.
+Memory refinement triggered at row 216.
