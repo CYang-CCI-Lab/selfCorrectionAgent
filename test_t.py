@@ -8,14 +8,34 @@ from pydantic import BaseModel, Field
 from openai import OpenAI
 import copy
 
-system_instruction = "You are an expert in determining the T stage of breast cancer following the AJCC (7th edition) TNM classification system."
-prompt_generate_rules = """
-Please articulate the T staging rules for breast cancer, focusing only on T1, T2, T3, and T4.
-Ignore any sub-stages (e.g., T1a, T1b).
-Return your answer as a list of short statements that align strictly with official AJCC 7th edition guidelines.
+# ----------------------------------------------------------------------
+# System instruction & Prompts
+# ----------------------------------------------------------------------
+
+system_instruction = "You are an expert in determining the T stage of {cancer_type} cancer following the AJCC Cancer Staging Manual (7th edition)."
+
+# Prompt that asks model to create rules from its own memory (LLM-based)
+prompt_generate_llm_rules = """
+Please articulate the T staging rules for {cancer_type} cancer, focusing only on T1, T2, T3, and T4.
+Ignore any sub-stages.
+Return your answer as a list of short statements that align strictly with the AJCC Cancer Staging Manual (7th edition).
 """
+
+# Prompt that asks model to create rules from a RAG-based excerpt
+prompt_generate_rag_rules = """
+You are provided with an excerpt from the AJCC Cancer Staging Manual (7th edition) for {cancer_type} cancer, focusing on T stage classification.
+
+Excerpt:
+{rag_context}
+
+Please:
+1. Summarize the guidelines for T1, T2, T3, and T4 (no sub-stages) in bullet form.
+2. Return your final summary as a list of short statements that align strictly with the excerpt.
+"""
+
+# Zero-shot test
 prompt_test_zero_shot = """
-You are provided with a pathology report of a breast cancer patient.
+You are provided with a pathology report of a {cancer_type} cancer patient.
 
 Pathology report:
 {report}
@@ -25,22 +45,9 @@ Please:
 2. Provide your final predicted T stage (T1, T2, T3, or T4).
 """
 
-prompt_test_rag = """
-You are provided with relevant context retrieved from the AJCC Cancer Staging Manual (7th edition) for breast cancer and a pathology report for a breast cancer patient.
-
-Excerpt from AJCC Manual:
-{rag_context}
-
-Pathology report:
-{report}
-
-Please:
-1. Explain your reasoning step by step, integrating this AJCC excerpt.
-2. Provide your final predicted T stage (T1, T2, T3, or T4).
-"""
-
+# Memory-only test
 prompt_test_memory_only = """
-You are provided with a set of memory items (lessons learned from past mistakes or borderline cases) and a pathology report for a breast cancer patient.
+You are provided with a set of memory items (lessons learned from past mistakes or borderline cases) and a pathology report for a {cancer_type} cancer patient.
 
 Memory items:
 {all_memory}
@@ -49,28 +56,67 @@ Pathology report:
 {report}
 
 Please:
-1. Explain your reasoning step by step. 
+1. Explain your reasoning step by step.
    - Use the memory items to address any subtle or borderline issues.
-   - If a memory item conflicts with AJCC guidelines, note the conflict and favor AJCC.
+   - If a memory item conflicts with the AJCC Cancer Staging Manual (7th edition), note the conflict and favor the AJCC Cancer Staging Manual (7th edition).
 2. Provide your final predicted T stage (T1, T2, T3, or T4).
 """
 
-# for the first report, or for baseline testing
+# Rules-only (used for both LLM-based or RAG-based rules)
 prompt_test_with_base_rules = """
-You are provided with the official AJCC T staging rules for breast cancer (T1, T2, T3, T4) and a pathology report for a breast cancer patient.
+You are provided with official T staging rules for {cancer_type} cancer (T1, T2, T3, T4), derived from the AJCC Cancer Staging Manual (7th edition), 
+and a pathology report for a {cancer_type} cancer patient.
 
-AJCC T staging rules:
+AJCC T staging rules (7th edition):
 {base_rules}
 
 Pathology report:
 {report}
 
 Please:
-1. Explain your reasoning step by step, strictly applying the AJCC rules.
+1. Explain your reasoning step by step, strictly applying these AJCC 7th edition rules.
 2. Provide your final predicted T stage (T1, T2, T3, or T4).
 """
 
-# if the model's prediction is wrong, do memory creation
+# Rules + memory (used for both LLM-based or RAG-based rules)
+prompt_test_with_rules_and_memory = """
+You are provided with official T staging rules for {cancer_type} cancer (T1, T2, T3, T4), derived from the AJCC Cancer Staging Manual (7th edition), 
+a memory of lessons learned from past mistakes, and a pathology report.
+
+AJCC T staging rules (7th edition):
+{base_rules}
+
+Memory items:
+{all_memory}
+
+Pathology report:
+{report}
+
+Please:
+1. Combine these AJCC 7th edition rules and the memory items to determine the T stage.
+   - The official AJCC Cancer Staging Manual (7th edition) has priority, but use memory items for subtle or borderline aspects.
+   - If any memory item conflicts with the AJCC 7th edition rules, ignore or adjust it in favor of those rules.
+2. Explain your reasoning step by step.
+3. Provide your final predicted T stage (T1, T2, T3, or T4).
+"""
+
+# RAG-only (excerpt-only)
+prompt_test_rag = """
+You are provided with relevant context retrieved from the AJCC Cancer Staging Manual (7th edition) for {cancer_type} cancer (T1, T2, T3, T4),
+and a pathology report for a {cancer_type} cancer patient.
+
+Excerpt from AJCC Cancer Staging Manual (7th edition):
+{rag_context}
+
+Pathology report:
+{report}
+
+Please:
+1. Explain your reasoning step by step, integrating this AJCC 7th edition excerpt.
+2. Provide your final predicted T stage (T1, T2, T3, or T4).
+"""
+
+# Memory creation
 prompt_memory_creation = """
 Your previous reasoning and predicted T stage are:
 - Reasoning: {model_reasoning}
@@ -78,82 +124,52 @@ Your previous reasoning and predicted T stage are:
 
 However, the actual ground truth T stage is: {ground_truth_stage}.
 
-Below are the AJCC rules:
+Below are the AJCC rules (7th edition):
 {base_rules}
 
 Please do the following:
 
-1. Check your reasoning against the AJCC rules and the ground truth. 
+1. Check your reasoning against the AJCC 7th edition rules and the ground truth.
    - Identify any point where your reasoning might diverge from these rules or from the ground truth.
 
-2A. If you believe the ground truth is correct (or you see no compelling reason to doubt it):
+2A. If you believe the ground truth is correct (or see no compelling reason to doubt it):
    - Create your memory with a concise lesson learned, clarifying how to correctly handle a similar scenario in the future.
-   - Ensure your lesson does NOT conflict with official AJCC guidelines (no unverified or contradictory heuristics).
+   - Ensure your lesson does NOT conflict with the AJCC Cancer Staging Manual (7th edition).
+   - No unverified or contradictory heuristics allowed.
 
-2B. If you believe the ground truth is incorrect (i.e., it clearly contradicts the AJCC rules):
+2B. If you believe the ground truth is incorrect (i.e., it clearly contradicts the AJCC 7th edition rules):
    - Return an empty string.
 """
 
-
-# if the memory becomes too large or unwieldy
-
+# Memory refinement
 prompt_memory_refinement = """
 Your current memory (accumulated lessons) is shown below:
 {all_accumulated_memory}
 
-Below are the official AJCC T staging rules:
+Below are the official AJCC T staging rules (7th edition):
 {base_rules}
 
 Please refine your memory by:
-1. Removing any duplications or contradictions with the AJCC rules.
+1. Removing any duplications or contradictions with these AJCC 7th edition rules.
 2. Keeping only additional insights or clarifications that address common pitfalls or borderline cases (i.e., those not explicitly clarified by AJCC).
 3. Returning the cleaned-up memory as a concise set of bullet points or short statements.
-
 """
 
-
-prompt_test_with_rules_and_memory = """
-You are provided with the official AJCC T staging rules for breast cancer (T1, T2, T3, T4), a memory of lessons learned from past mistakes, and a pathology report.
-
-AJCC T staging rules:
-{base_rules}
-
-Memory items:
-{all_memory}
-
-Pathology report:
-{report}
-
-
-Please:
-1. Combine the AJCC rules and the memory items to determine the T stage.
-   - The official AJCC rules have priority, but use memory items for subtle or borderline aspects.
-   - If any memory item conflicts with AJCC guidelines, ignore or adjust it.
-2. Explain your reasoning step by step.
-3. Provide your final predicted T stage (T1, T2, T3, or T4).
-"""
-
-
-# ------------------------------------------------------
-# Pydantic models (minimal changes from your examples)
-# ------------------------------------------------------
+# ----------------------------------------------------------------------
+# Pydantic models
+# ----------------------------------------------------------------------
 
 class ResponseRules(BaseModel):
     rules: List[str] = Field(
-        description="T staging rules (T1, T2, T3, T4) for breast cancer."
+        description="T staging rules (T1, T2, T3, T4) as a list of short statements."
     )
+
 class ResponseStage(BaseModel):
     reasoning: str = Field(
-        description=(
-            "A step-by-step explanation of how the model arrived at the predicted "
-            "T stage, explicitly referencing numeric cutoffs or criteria."
-        )
+        description="A step-by-step explanation for how the model arrived at the predicted T stage."
     )
     stage: Literal["T1", "T2", "T3", "T4"] = Field(
-        description=(
-            "The T stage determined from the report. Must be one of 'T1', 'T2', 'T3', or 'T4'. "
-            "No additional sub-stages or variations allowed."
-        )
+        description="The final predicted T stage (T1, T2, T3, or T4)."
     )
 
 class ResponseMemoryCreation(BaseModel):
@@ -166,12 +182,8 @@ class ResponseMemoryCreation(BaseModel):
 
 class ResponseMemoryRefinement(BaseModel):
     refined_memory: List[str] = Field(
-        description=(
-            "A cleaner, more authoritative set of memory items after removing redundancies, "
-            "contradictions, or confusion, without duplicating the base AJCC rules."
-        )
+        description="A cleaner set of memory items."
     )
-
 
 schema_set = {
     "rule_generation": ResponseRules.model_json_schema(),
@@ -181,31 +193,51 @@ schema_set = {
 }
 
 
+# ----------------------------------------------------------------------
+# Agent
+# ----------------------------------------------------------------------
 class Agent:
     def __init__(
-        self, 
-        client: OpenAI, 
-        model: str, 
-        label: str, 
-        test_name: str
-    ) -> None:
+        self,
+        client: OpenAI,
+        model: str,
+        cancer_type: str,
+        label: str,
+        test_name: str,
+        context_file: str = "context.json"
+    ):
         self.client = client
         self.model = model
-        self.label = label
-        self.test_name = test_name
-        self.all_memory: List[str] = []
-        self.base_rules: List[str] = []
-        self.rag_context = self.get_rag_context()
+        self.cancer_type = cancer_type
 
-    def get_rag_context(self) -> str:
-        with open("context.json", "r") as f:
-            context = json.load(f)
-        context = context["rag_raw_t14"]
-        return context
-    
+        if "t" in label.lower():
+            self.label = "t"
+        elif "n" in label.lower():
+            self.label = "n"
+        self.test_name = test_name
+        self.context_file = context_file
+
+        # We'll store two sets of rules:
+        self.llm_rules: List[str] = []  # LLM-based
+        self.rag_rules: List[str] = []  # RAG-based
+
+        self.all_memory_from_llm_rules: List[str] = []
+        self.all_memory_from_rag_rules: List[str] = []
+
+        # We'll load the raw RAG excerpt from file
+        self.rag_context = self.load_rag_context()
+
+    def load_rag_context(self) -> str:
+        with open(self.context_file, "r") as f:
+            data = json.load(f)
+        if self.label == "t":
+            return data["rag_raw_t14"]
+        elif self.label == "n":
+            return data["rag_raw_n03"]
+
     def get_schema_followed_response(
-        self, 
-        messages: List[Dict], 
+        self,
+        messages: List[Dict],
         schema: dict
     ) -> Optional[dict]:
         try:
@@ -217,244 +249,360 @@ class Agent:
             )
             return json.loads(response.choices[0].message.content)
         except Exception as e:
-            print(f"An error occurred: {e}")
+            print(f"Error: {e}")
             return None
 
     def run_experiment(
         self,
         dataset: pd.DataFrame,
-        memory_threshold: int = 1,   # e.g., refine if we have more than {threshold} memory items
-        max_memory_item_length: int = 1  # e.g., refine if any item is over {length} characters
+        memory_threshold: int = 1,
+        max_memory_item_length: int = 1
     ) -> pd.DataFrame:
+        """
+        We run 7 total methods:
+          1) Zero-shot
+          2) LLM-based rules-only
+          3) RAG-based rules-only
+          4) Memory-only
+          5) RAG-only (excerpt-only)
+          6) LLM-based rules + memory
+          7) RAG-based rules + memory
+        """
+
+        # ---------------------------------------------------------
+        # 1) Generate LLM-based rules (via prompt_generate_llm_rules)
+        # ---------------------------------------------------------
+        print("Generating LLM-based rules...")
+        messages_llm_rules = [
+            {"role": "system", "content": system_instruction.format(cancer_type=self.cancer_type)},
+            {"role": "user", "content": prompt_generate_llm_rules.format(cancer_type=self.cancer_type)}
+        ]
+        llm_rules_response = self.get_schema_followed_response(messages_llm_rules, schema_set["rule_generation"])
+        if llm_rules_response:
+            self.llm_rules = llm_rules_response["rules"]  # from ResponseRules
+        else:
+            print("Error: Could not generate LLM-based rules.")
+            return dataset
+
+        print("LLM-based rules:", self.llm_rules)
+
+        # ---------------------------------------------------------
+        # 2) Generate RAG-based rules (via prompt_generate_rag_rules)
+        # ---------------------------------------------------------
+        print("Generating RAG-based rules...")
+        rag_prompt_filled = prompt_generate_rag_rules.format(rag_context=self.rag_context, cancer_type=self.cancer_type)
+        messages_rag_rules = [
+            {"role": "system", "content": system_instruction.format(cancer_type=self.cancer_type)},
+            {"role": "user", "content": rag_prompt_filled}
+        ]
+        rag_rules_response = self.get_schema_followed_response(messages_rag_rules, schema_set["rule_generation"])
+        if rag_rules_response:
+            self.rag_rules = rag_rules_response["rules"]  # from ResponseRules
+        else:
+            print("Error: Could not generate RAG-based rules.")
+            return dataset
+
+        print("RAG-based rules:", self.rag_rules)
+
+        # Prepare columns
+        dataset["current_memory_from_llm"] = None
+        dataset["current_memory_from_llm"] = dataset["current_memory_from_llm"].astype(object)
+        dataset["current_memory_from_rag"] = None
+        dataset["current_memory_from_rag"] = dataset["current_memory_from_rag"].astype(object)
 
         parsing_error = 0
-        memory_creation_indices = []  # to store row indices where memory creation happened
-
-        # Get the rules for T staging
-        print("Generating base rules...")
-        messages = [
-            {"role": "system", "content": system_instruction},
-            {"role": "user", "content": prompt_generate_rules}
-        ]
-        rules_output = self.get_schema_followed_response(messages, schema_set["rule_generation"])
-        if rules_output:
-            self.base_rules = rules_output["rules"]
-        else:
-            print("Error getting base rules.")
-            return dataset
-        
-        print("Base rules acquired:", self.base_rules)
-        
-        dataset["current_memory"] = None
-        dataset["current_memory"] = dataset["current_memory"].astype(object)
 
         pbar = tqdm(total=dataset.shape[0])
         for idx, row in dataset.iterrows():
             report = row["text"]
-            true_label = f"T{row[self.label]+1}"
-            dataset.at[idx, "current_memory"] = copy.deepcopy(self.all_memory)  # store memory at each step
+            if self.label == "t":
+                true_label = f"T{row[self.label]+1}"  # e.g. T1, T2, T3, T4
+            elif self.label == "n":
+                true_label = f"N{row[self.label]}"  # e.g. N0, N1, N2, N3
 
-            # ----------------------------------------------
-            #  Baseline #1: Zero-shot
-            # ----------------------------------------------
-            zero_shot_prompt = prompt_test_zero_shot.format(report=report)
-            messages_zs = [
-                {"role": "system", "content": system_instruction},
-                {"role": "user", "content": zero_shot_prompt}
+            # Store memory at this row
+            dataset.at[idx, "current_memory_from_llm"] = copy.deepcopy(self.all_memory_from_llm_rules)
+            dataset.at[idx, "current_memory_from_rag"] = copy.deepcopy(self.all_memory_from_rag_rules)
+
+            # -------------------------------------------------
+            # Baseline #1: Zero-shot
+            # -------------------------------------------------
+            zs_prompt = prompt_test_zero_shot.format(report=report, cancer_type=self.cancer_type)
+            msgs_zs = [
+                {"role": "system", "content": system_instruction.format(cancer_type=self.cancer_type)},
+                {"role": "user", "content": zs_prompt}
             ]
-            zs_response = self.get_schema_followed_response(messages_zs, schema_set["stage_prediction"])
-            if zs_response:
-                dataset.loc[idx, f"{self.test_name}_pred_zs"] = zs_response["stage"]
-                dataset.loc[idx, f"{self.test_name}_reasoning_zs"] = zs_response["reasoning"]
+            zs_resp = self.get_schema_followed_response(msgs_zs, schema_set["stage_prediction"])
+            if zs_resp:
+                dataset.loc[idx, f"{self.test_name}_pred_zs"] = zs_resp["stage"]
+                dataset.loc[idx, f"{self.test_name}_reasoning_zs"] = zs_resp["reasoning"]
 
-            # ---------------------------------------------
-            #  Baseline #2: Rules-only
-            # ---------------------------------------------
-            rules_only_prompt = prompt_test_with_base_rules.format(
-                report=report, 
-                base_rules="\n".join(self.base_rules)
+            # -------------------------------------------------
+            # Baseline #2-1: LLM-based rules-only
+            # -------------------------------------------------
+            llm_rules_str = "\n".join(self.llm_rules)
+            llm_rules_prompt = prompt_test_with_base_rules.format(
+                report=report,
+                base_rules=llm_rules_str,
+                cancer_type=self.cancer_type
             )
-            messages_rules = [
-                {"role": "system", "content": system_instruction},
-                {"role": "user", "content": rules_only_prompt}
+            msgs_llm_rulesonly = [
+                {"role": "system", "content": system_instruction.format(cancer_type=self.cancer_type)},
+                {"role": "user", "content": llm_rules_prompt}
             ]
-            rules_response = self.get_schema_followed_response(messages_rules, schema_set["stage_prediction"])
-            if rules_response:
-                dataset.loc[idx, f"{self.test_name}_pred_rules"] = rules_response["stage"]
-                dataset.loc[idx, f"{self.test_name}_reasoning_rules"] = rules_response["reasoning"]
+            llm_rulesonly_resp = self.get_schema_followed_response(msgs_llm_rulesonly, schema_set["stage_prediction"])
+            if llm_rulesonly_resp:
+                dataset.loc[idx, f"{self.test_name}_pred_llm_rulesonly"] = llm_rulesonly_resp["stage"]
+                dataset.loc[idx, f"{self.test_name}_reasoning_llm_rulesonly"] = llm_rulesonly_resp["reasoning"]
 
-            # ---------------------------------------------
-            #  Baseline #3: Memory-only
-            # ---------------------------------------------
-            memory_context = "\n".join(self.all_memory) if self.all_memory else "No prior memory available."
-            memory_only_prompt = prompt_test_memory_only.format(
-                report=report, 
-                all_memory=memory_context
+            # -------------------------------------------------
+            # Baseline #2-2: RAG-based rules-only
+            # -------------------------------------------------
+            rag_rules_str = "\n".join(self.rag_rules)
+            rag_rules_prompt = prompt_test_with_base_rules.format(
+                report=report,
+                base_rules=rag_rules_str,
+                cancer_type=self.cancer_type
             )
-            messages_mem = [
-                {"role": "system", "content": system_instruction},
-                {"role": "user", "content": memory_only_prompt}
+            msgs_rag_rulesonly = [
+                {"role": "system", "content": system_instruction.format(cancer_type=self.cancer_type)},
+                {"role": "user", "content": rag_rules_prompt}
             ]
-            mem_response = self.get_schema_followed_response(messages_mem, schema_set["stage_prediction"])
-            if mem_response:
-                dataset.loc[idx, f"{self.test_name}_pred_memory_only"] = mem_response["stage"]
-                dataset.loc[idx, f"{self.test_name}_reasoning_memory_only"] = mem_response["reasoning"]
+            rag_rulesonly_resp = self.get_schema_followed_response(msgs_rag_rulesonly, schema_set["stage_prediction"])
+            if rag_rulesonly_resp:
+                dataset.loc[idx, f"{self.test_name}_pred_rag_rulesonly"] = rag_rulesonly_resp["stage"]
+                dataset.loc[idx, f"{self.test_name}_reasoning_rag_rulesonly"] = rag_rulesonly_resp["reasoning"]
 
-            # ---------------------------------------------
-            #  Baseline #4: RAG 
-            # ---------------------------------------------
-            rag_prompt = prompt_test_rag.format(
-                rag_context=self.rag_context, 
-                report=report
+            # -------------------------------------------------
+            # Baseline #3-1: Memory-only (from LLM-based rules)
+            # -------------------------------------------------
+            memory_text = "\n".join(self.all_memory_from_llm_rules) if self.all_memory_from_llm_rules else "No prior memory."
+            memonly_prompt = prompt_test_memory_only.format(
+                report=report,
+                all_memory=memory_text,
+                cancer_type=self.cancer_type
             )
-            messages_rag = [
-                {"role": "system", "content": system_instruction},
-                {"role": "user", "content": rag_prompt}
+            msgs_memonly = [
+                {"role": "system", "content": system_instruction.format(cancer_type=self.cancer_type)},
+                {"role": "user", "content": memonly_prompt}
             ]
-            rag_response = self.get_schema_followed_response(messages_rag, schema_set["stage_prediction"])
-            if rag_response:
-                dataset.loc[idx, f"{self.test_name}_pred_rag"] = rag_response["stage"]
-                dataset.loc[idx, f"{self.test_name}_reasoning_rag"] = rag_response["reasoning"]
+            memonly_resp = self.get_schema_followed_response(msgs_memonly, schema_set["stage_prediction"])
+            if memonly_resp:
+                dataset.loc[idx, f"{self.test_name}_pred_memonly"] = memonly_resp["stage"]
+                dataset.loc[idx, f"{self.test_name}_reasoning_memonly"] = memonly_resp["reasoning"]
 
-            # ---------------------------------------------
-            #  Main approach: rules + memory
-            # ---------------------------------------------
-            # If no memory yet, we revert to rules-only prompt
-            if not self.all_memory:
-                filled_prompt = prompt_test_with_base_rules.format(report=report, base_rules="\n".join(self.base_rules))
-            else:
-                filled_prompt = prompt_test_with_rules_and_memory.format(
-                    report=report, base_rules="\n".join(self.base_rules), all_memory="\n".join(self.all_memory)
+            # -------------------------------------------------
+            # Baseline #3-2: Memory-only (from RAG-based rules)
+            # -------------------------------------------------
+            memory_text2 = "\n".join(self.all_memory_from_rag_rules) if self.all_memory_from_rag_rules else "No prior memory."
+            memonly_prompt2 = prompt_test_memory_only.format(
+                report=report,
+                all_memory=memory_text2,
+                cancer_type=self.cancer_type
+            )
+            msgs_memonly2 = [
+                {"role": "system", "content": system_instruction.format(cancer_type=self.cancer_type)},
+                {"role": "user", "content": memonly_prompt2}
+            ]
+            memonly_resp2 = self.get_schema_followed_response(msgs_memonly2, schema_set["stage_prediction"])
+            if memonly_resp2:
+                dataset.loc[idx, f"{self.test_name}_pred_memonly2"] = memonly_resp2["stage"]
+                dataset.loc[idx, f"{self.test_name}_reasoning_memonly2"] = memonly_resp2["reasoning"]
+
+            # -------------------------------------------------
+            # Baseline #4: RAG-only (excerpt-only)
+            # -------------------------------------------------
+            rag_only_prompt = prompt_test_rag.format(
+                rag_context=self.rag_context,
+                report=report,
+                cancer_type=self.cancer_type
+            )
+            msgs_rag_only = [
+                {"role": "system", "content": system_instruction.format(cancer_type=self.cancer_type)},
+                {"role": "user", "content": rag_only_prompt}
+            ]
+            rag_only_resp = self.get_schema_followed_response(msgs_rag_only, schema_set["stage_prediction"])
+            if rag_only_resp:
+                dataset.loc[idx, f"{self.test_name}_pred_rag_only"] = rag_only_resp["stage"]
+                dataset.loc[idx, f"{self.test_name}_reasoning_rag_only"] = rag_only_resp["reasoning"]
+
+            # -------------------------------------------------
+            # Main #1: LLM-based rules + memory
+            # -------------------------------------------------
+            if not self.all_memory_from_llm_rules:
+                llm_mem_prompt = prompt_test_with_base_rules.format(
+                    report=report,
+                    base_rules=llm_rules_str,
+                    cancer_type=self.cancer_type
                 )
-
-            messages = [
-                {"role": "system", "content": system_instruction},
-                {"role": "user", "content": filled_prompt}
+            else:
+                llm_mem_prompt = prompt_test_with_rules_and_memory.format(
+                    report=report,
+                    base_rules=llm_rules_str,
+                    all_memory="\n".join(self.all_memory_from_llm_rules),
+                    cancer_type=self.cancer_type
+                )
+            msgs_llm_mem = [
+                {"role": "system", "content": system_instruction.format(cancer_type=self.cancer_type)},
+                {"role": "user", "content": llm_mem_prompt}
             ]
-
-            # Get response
-            json_output = self.get_schema_followed_response(messages, schema_set["stage_prediction"])
-            if not json_output:
+            llm_mem_resp = self.get_schema_followed_response(msgs_llm_mem, schema_set["stage_prediction"])
+            if not llm_mem_resp:
                 parsing_error += 1
-                print(f"Error parsing JSON at row {idx}")
-                dataset.loc[idx, f"{self.test_name}_parsed"] = False
+                print(f"Error at row {idx} (LLM-based rules + memory).")
                 pbar.update(1)
                 continue
 
-            # Record model's reasoning & stage
-            model_reasoning = json_output["reasoning"]
-            model_predicted_stage = json_output["stage"]
-            dataset.loc[idx, f"{self.test_name}_parsed"] = True
-            dataset.loc[idx, f"{self.test_name}_reasoning"] = model_reasoning
-            dataset.loc[idx, f"{self.test_name}_pred"] = model_predicted_stage
+            dataset.loc[idx, f"{self.test_name}_pred_llm_mem"] = llm_mem_resp["stage"]
+            dataset.loc[idx, f"{self.test_name}_reasoning_llm_mem"] = llm_mem_resp["reasoning"]
 
-            # Check correctness
-            if model_predicted_stage != true_label:
-                # Trigger memory creation
-                memory_creation_indices.append(idx)
-                # Provide the model's output to the conversation
-                messages.append({"role": "assistant", "content": str(json_output)})
+            # Memory creation if mismatch
+            if llm_mem_resp["stage"] != true_label:
+                msgs_llm_mem.append({"role": "assistant", "content": str(llm_mem_resp)})
 
-                # Now build memory creation prompt
                 creation_prompt = prompt_memory_creation.format(
-                    model_reasoning=model_reasoning,
-                    model_predicted_stage=model_predicted_stage,
+                    model_reasoning=llm_mem_resp["reasoning"],
+                    model_predicted_stage=llm_mem_resp["stage"],
                     ground_truth_stage=true_label,
-                    base_rules="\n".join(self.base_rules)
+                    base_rules=llm_rules_str
                 )
-                messages.append({"role": "user", "content": creation_prompt})
+                msgs_llm_mem.append({"role": "user", "content": creation_prompt})
+                mem_creation_resp = self.get_schema_followed_response(msgs_llm_mem, schema_set["memory_creation"])
+                if mem_creation_resp:
+                    new_mem = mem_creation_resp["memory"].strip()
+                    if new_mem:
+                        self.all_memory_from_llm_rules.append(new_mem)
 
-                memory_output = self.get_schema_followed_response(
-                    messages, schema_set["memory_creation"]
-                )
-                if memory_output: 
-                    memory_text = memory_output["memory"].strip()
-                    if memory_text:
-                        self.all_memory.append(memory_text)
-                    # Check if we need to refine memory
+                    # Possibly refine
                     needs_refinement = (
-                        len(self.all_memory) >= memory_threshold
-                        or any(len(item) >= max_memory_item_length for item in self.all_memory)
+                        len(self.all_memory_from_llm_rules) >= memory_threshold
+                        or any(len(item) >= max_memory_item_length for item in self.all_memory_from_llm_rules)
                     )
                     if needs_refinement:
-                        print(f"Memory refinement triggered at row {idx}.")
-                        self.refine_memory(dataset, idx)
+                        print(f"Memory refinement triggered at row {idx} (LLM-based rules + memory).")
+                        print(f"Before refinement, length of memory: {len(self.all_memory_from_llm_rules)}")
+                        self.refine_memory(dataset, idx, llm_rules_str, self.all_memory_from_llm_rules)
+                        print(f"After refinement, length of memory: {len(self.all_memory_from_llm_rules)}")
+
+            # -------------------------------------------------
+            # Main #2: RAG-based rules + memory
+            # -------------------------------------------------
+            if not self.all_memory_from_rag_rules:
+                rag_mem_prompt = prompt_test_with_base_rules.format(
+                    report=report,
+                    base_rules=rag_rules_str,
+                    cancer_type=self.cancer_type
+                )
+            else:
+                rag_mem_prompt = prompt_test_with_rules_and_memory.format(
+                    report=report,
+                    base_rules=rag_rules_str,
+                    all_memory="\n".join(self.all_memory_from_rag_rules),
+                    cancer_type=self.cancer_type
+                )
+            msgs_rag_mem = [
+                {"role": "system", "content": system_instruction.format(cancer_type=self.cancer_type)},
+                {"role": "user", "content": rag_mem_prompt}
+            ]
+            rag_mem_resp = self.get_schema_followed_response(msgs_rag_mem, schema_set["stage_prediction"])
+            if not rag_mem_resp:
+                parsing_error += 1
+                print(f"Error at row {idx} (RAG-based rules + memory).")
+                pbar.update(1)
+                continue
+
+            dataset.loc[idx, f"{self.test_name}_pred_rag_mem"] = rag_mem_resp["stage"]
+            dataset.loc[idx, f"{self.test_name}_reasoning_rag_mem"] = rag_mem_resp["reasoning"]
+
+            # Memory creation if mismatch
+            if rag_mem_resp["stage"] != true_label:
+                msgs_rag_mem.append({"role": "assistant", "content": str(rag_mem_resp)})
+
+                creation_prompt2 = prompt_memory_creation.format(
+                    model_reasoning=rag_mem_resp["reasoning"],
+                    model_predicted_stage=rag_mem_resp["stage"],
+                    ground_truth_stage=true_label,
+                    base_rules=rag_rules_str
+                )
+                msgs_rag_mem.append({"role": "user", "content": creation_prompt2})
+                mem_creation_resp2 = self.get_schema_followed_response(msgs_rag_mem, schema_set["memory_creation"])
+                if mem_creation_resp2:
+                    new_mem2 = mem_creation_resp2["memory"].strip()
+                    if new_mem2:
+                        self.all_memory_from_rag_rules.append(new_mem2)
+
+                    # Possibly refine
+                    needs_refinement = (
+                        len(self.all_memory_from_rag_rules) >= memory_threshold
+                        or any(len(item) >= max_memory_item_length for item in self.all_memory_from_rag_rules)
+                    )
+                    if needs_refinement:
+                        print(f"Memory refinement triggered at row {idx} (RAG-based rules + memory).")
+                        print(f"Before refinement, length of memory: {len(self.all_memory_from_rag_rules)}")
+                        self.refine_memory(dataset, idx, rag_rules_str, self.all_memory_from_rag_rules)
+                        print(f"After refinement, length of memory: {len(self.all_memory_from_rag_rules)}")
 
             pbar.update(1)
+
         pbar.close()
+        print(f"Total parsing errors: {parsing_error}")
 
-        print(f"\nTotal parsing errors: {parsing_error}")
-        print(f"Total memory creation events: {len(memory_creation_indices)}")
-
-        # For convenience, store the rules and final memory.
-        dataset["base_rules"] = [self.base_rules] * len(dataset)
-        dataset["final_memory"] = [self.all_memory] * len(dataset)
-
-        # If you want to measure intervals:
-        # memory_creation_indices might look like [5, 12, 25, 40, ...]
-        # intervals are differences between consecutive indices
-        memory_intervals = [
-            j - i for i, j in zip(memory_creation_indices[:-1], memory_creation_indices[1:])
-        ]
-        print("Memory creation intervals:", memory_intervals)
+        # Save final memory + rules
+        dataset["llm_rules"] = [self.llm_rules] * len(dataset)
+        dataset["rag_rules"] = [self.rag_rules] * len(dataset)
+        dataset["final_memory_from_llm"] = [self.all_memory_from_llm_rules] * len(dataset)
+        dataset["final_memory_from_rag"] = [self.all_memory_from_rag_rules] * len(dataset)
 
         return dataset
 
-    def refine_memory(self, dataset: pd.DataFrame, idx: int):
+    def refine_memory(self, dataset: pd.DataFrame, idx: int, base_rules_str: str, all_memory: List[str]):
         """
-        Calls the memory refinement prompt to shorten or reorganize the memory 
-        if it becomes too large or unwieldy.
+        Memory refinement: pass the same rules used for the approach that triggered refinement.
         """
-        messages = [
-            {"role": "system", "content": system_instruction},
-            {"role": "user", "content": prompt_memory_refinement.format(
-                base_rules="\n".join(self.base_rules), all_accumulated_memory="\n".join(self.all_memory)
-            )}
+        msgs_ref = [
+            {"role": "system", "content": system_instruction.format(cancer_type=self.cancer_type)},
+            {
+                "role": "user",
+                "content": prompt_memory_refinement.format(
+                    all_accumulated_memory="\n".join(all_memory),
+                    base_rules=base_rules_str
+                )
+            }
         ]
-        refine_output = self.get_schema_followed_response(messages, schema_set["memory_refinement"])
-        if refine_output and refine_output["refined_memory"]:
-            refined = refine_output["refined_memory"]
-            # Overwrite the all_memory list in-place
-            self.all_memory.clear()
-            self.all_memory.extend(refined)
-            # Store this info in your dataset if you wish
-            dataset.loc[idx, f"{self.test_name}_refine_memory_count"] = len(refined)
+        ref_resp = self.get_schema_followed_response(msgs_ref, schema_set["memory_refinement"])
+        if ref_resp and ref_resp["refined_memory"]:
+            all_memory.clear()
+            all_memory.extend(ref_resp["refined_memory"])
         else:
             print(f"Refinement failed at row {idx}, keeping old memory items.")
 
 
-
+# ------------------------------------------------------------------------
+# Example usage
+# ------------------------------------------------------------------------
 if __name__ == "__main__":
-    # Initialize your OpenAI client
     client = OpenAI(api_key="dummy_key", base_url="http://localhost:8000/v1", timeout=120.0)
-    
-    # Load the dataset
-    brca_report = pd.read_csv("/secure/shared_data/rag_tnm_results/summary/5_folds_summary/brca_df.csv")
-    # We'll use the T-stage columns here. 
-    df_base = brca_report[["patient_filename", "t", "text"]]
 
-    # Instantiate your agent once
+    lung_report = pd.read_csv("/secure/shared_data/rag_tnm_results/summary/5_folds_summary/luad_df.csv")
+    df_base = lung_report[["patient_filename", "t", "text"]]
+
     agent = Agent(
         client=client,
         model="meta-llama/Llama-3.3-70B-Instruct",
+        cancer_type="lung",
         label="t",
-        test_name="ltm_test"
+        test_name="experiment_t_stage",
+        context_file="context_lung.json"
     )
 
-    # Run the experiment multiple times with different shuffles
-    num_runs = 1  # or however many you need
+    num_runs = 5
     for run_idx in range(num_runs):
-        # Shuffle with a new random seed each time
-        # (Or you could use run_idx as the seed if you want reproducibility)
         random_seed = random.randint(0, 999999)
-        print(f"Starting run {run_idx} with seed {random_seed}")  
+        print(f"Starting run {run_idx} with random seed {random_seed}...")
         df_shuffled = df_base.sample(frac=1, random_state=random_seed).reset_index(drop=True)
 
-        # Run the combined experiment
         result_df = agent.run_experiment(df_shuffled)
 
-        # Save to CSV with a run index in the file name
-        output_filename = f"results_t_stage_run_{run_idx}.csv"
+        output_filename = f"results_t_stage_run_{run_idx}_lung.csv"
         result_df.to_csv(output_filename, index=False)
-
-        print(f"Finished run {run_idx} - results saved to {output_filename}")
+        print(f"Finished run {run_idx}. Results saved to {output_filename}")

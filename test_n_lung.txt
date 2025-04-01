@@ -1,0 +1,1090 @@
+Starting run 0 with random seed 541343...
+Generating LLM-based rules...
+LLM-based rules: ['N0: No regional lymph nodes metastasis.', 'N1: Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes.', 'N2: Metastasis in ipsilateral mediastinal and/or subcarinal lymph nodes.', 'N3: Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph nodes.']
+Generating RAG-based rules...
+RAG-based rules: ['N0: No regional lymph node metastases', 'N1: Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes and intrapulmonary nodes, including involvement by direct extension', 'N2: Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s)', 'N3: Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph node(s)']
+Memory refinement triggered at row 3 (LLM-based rules + memory).
+Before refinement, length of memory: 1
+After refinement, length of memory: 3
+Memory refinement triggered at row 7 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 7 (RAG-based rules + memory).
+Before refinement, length of memory: 1
+After refinement, length of memory: 2
+Memory refinement triggered at row 10 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 18 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 2
+Memory refinement triggered at row 26 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 26 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 39 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 39 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 59 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 63 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 63 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 79 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 93 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 93 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 95 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 97 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 97 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 155 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 176 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 176 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 181 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 184 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 5
+Memory refinement triggered at row 205 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 205 (RAG-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 4
+Memory refinement triggered at row 212 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 214 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 214 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 225 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 229 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 229 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 237 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 251 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 251 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 254 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 254 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 263 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 281 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 281 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 302 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 302 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 328 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 346 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 346 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 352 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 352 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 354 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 371 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 371 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 376 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 377 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 377 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 400 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 1
+Memory refinement triggered at row 413 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 413 (RAG-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 2
+Memory refinement triggered at row 422 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 422 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 443 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 5
+Memory refinement triggered at row 443 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 452 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 4
+Memory refinement triggered at row 453 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 5
+Memory refinement triggered at row 453 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 462 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 474 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 5
+Memory refinement triggered at row 474 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Total parsing errors: 0
+Finished run 0. Results saved to results_n_stage_run_0_lung.csv
+Starting run 1 with random seed 49736...
+Generating LLM-based rules...
+LLM-based rules: ['N0: No regional lymph nodes metastasis.', 'N1: Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes.', 'N2: Metastasis in ipsilateral mediastinal and/or subcarinal lymph nodes.', 'N3: Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph nodes.']
+Generating RAG-based rules...
+RAG-based rules: ['N0: No regional lymph node metastases', 'N1: Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes and intrapulmonary nodes, including involvement by direct extension', 'N2: Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s)', 'N3: Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph node(s)']
+Memory refinement triggered at row 15 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 6
+Memory refinement triggered at row 15 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 4
+Memory refinement triggered at row 19 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 6
+Memory refinement triggered at row 19 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 2
+Memory refinement triggered at row 26 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 6
+Memory refinement triggered at row 26 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 31 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 7
+Memory refinement triggered at row 47 (LLM-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 5
+Memory refinement triggered at row 47 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 57 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 6
+Memory refinement triggered at row 57 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 61 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 79 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 8
+Memory refinement triggered at row 79 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 5
+Memory refinement triggered at row 95 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 9
+Memory refinement triggered at row 95 (RAG-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 11
+Memory refinement triggered at row 106 (LLM-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 14
+Memory refinement triggered at row 106 (RAG-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 17
+Error: Request timed out.
+Memory refinement triggered at row 141 (LLM-based rules + memory).
+Before refinement, length of memory: 15
+After refinement, length of memory: 14
+Memory refinement triggered at row 141 (RAG-based rules + memory).
+Before refinement, length of memory: 18
+After refinement, length of memory: 7
+Memory refinement triggered at row 144 (LLM-based rules + memory).
+Before refinement, length of memory: 15
+After refinement, length of memory: 9
+Memory refinement triggered at row 144 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 3
+Memory refinement triggered at row 146 (LLM-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 6
+Memory refinement triggered at row 151 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 161 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 5
+Memory refinement triggered at row 179 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 4
+Memory refinement triggered at row 186 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 226 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 226 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 233 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 233 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 243 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 243 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 248 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 248 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 261 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 261 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 263 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 263 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 266 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 273 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 282 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 299 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 302 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 304 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 304 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 305 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 327 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 341 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 355 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 365 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 380 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 391 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 391 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 394 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 394 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 411 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 411 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 413 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 5
+Memory refinement triggered at row 413 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 428 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 435 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 5
+Total parsing errors: 0
+Finished run 1. Results saved to results_n_stage_run_1_lung.csv
+Starting run 2 with random seed 126507...
+Generating LLM-based rules...
+LLM-based rules: ['N0: No regional lymph nodes metastasis.', 'N1: Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes.', 'N2: Metastasis in ipsilateral mediastinal and/or subcarinal lymph nodes.', 'N3: Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph nodes.']
+Generating RAG-based rules...
+RAG-based rules: ['N0: No regional lymph node metastases', 'N1: Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes and intrapulmonary nodes, including involvement by direct extension', 'N2: Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s)', 'N3: Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph node(s)']
+Memory refinement triggered at row 4 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 5
+Memory refinement triggered at row 4 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 6
+Memory refinement triggered at row 11 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 6
+Memory refinement triggered at row 11 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 7
+Memory refinement triggered at row 14 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 7
+Memory refinement triggered at row 50 (LLM-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 5
+Memory refinement triggered at row 70 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 4
+Memory refinement triggered at row 70 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 8
+Memory refinement triggered at row 71 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 9
+Memory refinement triggered at row 81 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 81 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 10
+Memory refinement triggered at row 83 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 11
+Memory refinement triggered at row 86 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 86 (RAG-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 12
+Memory refinement triggered at row 99 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 5
+Memory refinement triggered at row 99 (RAG-based rules + memory).
+Before refinement, length of memory: 13
+After refinement, length of memory: 13
+Memory refinement triggered at row 120 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 3
+Memory refinement triggered at row 126 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 126 (RAG-based rules + memory).
+Before refinement, length of memory: 14
+After refinement, length of memory: 14
+Error: Unterminated string starting at: line 1 column 16 (char 15)
+Error at row 159 (RAG-based rules + memory).
+Memory refinement triggered at row 163 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 163 (RAG-based rules + memory).
+Before refinement, length of memory: 15
+After refinement, length of memory: 15
+Error: Request timed out.
+Error at row 164 (RAG-based rules + memory).
+Memory refinement triggered at row 175 (RAG-based rules + memory).
+Before refinement, length of memory: 16
+After refinement, length of memory: 16
+Error: Request timed out.
+Memory refinement triggered at row 187 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Error: Request timed out.
+Error at row 206 (RAG-based rules + memory).
+Memory refinement triggered at row 210 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 210 (RAG-based rules + memory).
+Before refinement, length of memory: 17
+Error: Request timed out.
+Refinement failed at row 210, keeping old memory items.
+After refinement, length of memory: 17
+Error: Request timed out.
+Error at row 224 (RAG-based rules + memory).
+Memory refinement triggered at row 226 (RAG-based rules + memory).
+Before refinement, length of memory: 18
+Error: Request timed out.
+Refinement failed at row 226, keeping old memory items.
+After refinement, length of memory: 18
+Error: Request timed out.
+Error at row 228 (RAG-based rules + memory).
+Memory refinement triggered at row 231 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 231 (RAG-based rules + memory).
+Before refinement, length of memory: 19
+Error: Request timed out.
+Refinement failed at row 231, keeping old memory items.
+After refinement, length of memory: 19
+Memory refinement triggered at row 246 (RAG-based rules + memory).
+Before refinement, length of memory: 20
+Error: Request timed out.
+Refinement failed at row 246, keeping old memory items.
+After refinement, length of memory: 20
+Error: Request timed out.
+Error at row 256 (RAG-based rules + memory).
+Error: Request timed out.
+Memory refinement triggered at row 262 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 262 (RAG-based rules + memory).
+Before refinement, length of memory: 21
+Error: Request timed out.
+Refinement failed at row 262, keeping old memory items.
+After refinement, length of memory: 21
+Error: Request timed out.
+Error at row 282 (RAG-based rules + memory).
+Memory refinement triggered at row 285 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 285 (RAG-based rules + memory).
+Before refinement, length of memory: 22
+Error: Request timed out.
+Refinement failed at row 285, keeping old memory items.
+After refinement, length of memory: 22
+Error: Request timed out.
+Error: Request timed out.
+Error at row 287 (RAG-based rules + memory).
+Error: Request timed out.
+Error: Request timed out.
+Error at row 294 (RAG-based rules + memory).
+Error: Request timed out.
+Error: Request timed out.
+Error at row 297 (RAG-based rules + memory).
+Error: Request timed out.
+Error at row 304 (RAG-based rules + memory).
+Error: Request timed out.
+Error: Request timed out.
+Error at row 306 (RAG-based rules + memory).
+Memory refinement triggered at row 308 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 308 (RAG-based rules + memory).
+Before refinement, length of memory: 23
+Error: Request timed out.
+Refinement failed at row 308, keeping old memory items.
+After refinement, length of memory: 23
+Error: Request timed out.
+Memory refinement triggered at row 311 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 5
+Memory refinement triggered at row 318 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 5
+Memory refinement triggered at row 318 (RAG-based rules + memory).
+Before refinement, length of memory: 24
+Error: Request timed out.
+Refinement failed at row 318, keeping old memory items.
+After refinement, length of memory: 24
+Error: Request timed out.
+Memory refinement triggered at row 328 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 6
+Error: Request timed out.
+Error at row 328 (RAG-based rules + memory).
+Error: Request timed out.
+Error: Request timed out.
+Error at row 336 (RAG-based rules + memory).
+Error: Request timed out.
+Error: Request timed out.
+Error at row 339 (RAG-based rules + memory).
+Error: Request timed out.
+Error at row 341 (RAG-based rules + memory).
+Error: Request timed out.
+Error at row 349 (RAG-based rules + memory).
+Memory refinement triggered at row 352 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 5
+Memory refinement triggered at row 352 (RAG-based rules + memory).
+Before refinement, length of memory: 25
+After refinement, length of memory: 6
+Memory refinement triggered at row 366 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 2
+Memory refinement triggered at row 366 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 3
+Memory refinement triggered at row 368 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 368 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 371 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 378 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 396 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 396 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 415 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 417 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 417 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 421 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 422 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 5
+Memory refinement triggered at row 430 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 430 (RAG-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 6
+Memory refinement triggered at row 452 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 453 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 473 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 6
+Total parsing errors: 17
+Finished run 2. Results saved to results_n_stage_run_2_lung.csv
+Starting run 3 with random seed 663323...
+Generating LLM-based rules...
+LLM-based rules: ['N0: No regional lymph nodes metastasis.', 'N1: Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes.', 'N2: Metastasis in ipsilateral mediastinal and/or subcarinal lymph nodes.', 'N3: Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph nodes.']
+Generating RAG-based rules...
+RAG-based rules: ['N0: No regional lymph node metastases', 'N1: Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes and intrapulmonary nodes, including involvement by direct extension', 'N2: Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s)', 'N3: Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph node(s)']
+Memory refinement triggered at row 3 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 8 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 8 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 5
+Memory refinement triggered at row 18 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 18 (RAG-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 4
+Memory refinement triggered at row 21 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 21 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 5
+Memory refinement triggered at row 27 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 27 (RAG-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 5
+Memory refinement triggered at row 40 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 40 (RAG-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 5
+Memory refinement triggered at row 62 (RAG-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 4
+Memory refinement triggered at row 109 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 125 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 125 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 128 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 128 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 129 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 129 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 131 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 131 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 151 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 151 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 154 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 154 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 156 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 156 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 2
+Memory refinement triggered at row 161 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 161 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 178 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 184 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 208 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 233 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 250 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 250 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 261 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 261 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 262 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 262 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 276 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 276 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 282 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 282 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 286 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 286 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 287 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 287 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 298 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 299 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 301 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 303 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 304 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 304 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 319 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 320 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 332 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 340 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 340 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 342 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 342 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 362 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 373 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 2
+Memory refinement triggered at row 381 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 381 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 383 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 384 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 384 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 396 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 403 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 403 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 409 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 412 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 415 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 420 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 420 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 449 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 449 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Total parsing errors: 0
+Finished run 3. Results saved to results_n_stage_run_3_lung.csv
+Starting run 4 with random seed 870913...
+Generating LLM-based rules...
+LLM-based rules: ['N0: No regional lymph nodes metastasis.', 'N1: Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes.', 'N2: Metastasis in ipsilateral mediastinal and/or subcarinal lymph nodes.', 'N3: Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph nodes.']
+Generating RAG-based rules...
+RAG-based rules: ['N0: No regional lymph node metastases', 'N1: Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes and intrapulmonary nodes, including involvement by direct extension', 'N2: Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s)', 'N3: Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph node(s)']
+Memory refinement triggered at row 15 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 15 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 22 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 22 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 41 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 41 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 44 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 50 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 57 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 57 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 63 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 73 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 78 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 93 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 93 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 98 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 98 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 104 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 104 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 106 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 108 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 109 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 109 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Memory refinement triggered at row 113 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 113 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 125 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 125 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 153 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 3
+Error: Unterminated string starting at: line 1 column 16 (char 15)
+Memory refinement triggered at row 208 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 208 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 213 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 213 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 5
+Memory refinement triggered at row 215 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 215 (RAG-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 6
+Memory refinement triggered at row 223 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 223 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 6
+Memory refinement triggered at row 237 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 7
+Memory refinement triggered at row 247 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 247 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 8
+Memory refinement triggered at row 265 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 265 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 9
+Memory refinement triggered at row 283 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 5
+Memory refinement triggered at row 286 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 5
+Memory refinement triggered at row 286 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 6
+Memory refinement triggered at row 298 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 5
+Memory refinement triggered at row 298 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 4
+Memory refinement triggered at row 302 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 5
+Memory refinement triggered at row 360 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 6
+Memory refinement triggered at row 360 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 3
+Memory refinement triggered at row 366 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 6
+Memory refinement triggered at row 366 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Memory refinement triggered at row 379 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 5
+Memory refinement triggered at row 385 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 6
+Memory refinement triggered at row 385 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 5
+Memory refinement triggered at row 398 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 8
+Memory refinement triggered at row 398 (RAG-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 5
+Memory refinement triggered at row 416 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 9
+Memory refinement triggered at row 426 (RAG-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 6
+Memory refinement triggered at row 443 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 7
+Memory refinement triggered at row 445 (LLM-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 10
+Memory refinement triggered at row 445 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 6
+Memory refinement triggered at row 459 (LLM-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 11
+Memory refinement triggered at row 459 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 6
+Memory refinement triggered at row 462 (LLM-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 6
+Memory refinement triggered at row 462 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 4
+Memory refinement triggered at row 469 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 476 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 5
+Memory refinement triggered at row 476 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Total parsing errors: 0
+Finished run 4. Results saved to results_n_stage_run_4_lung.csv

@@ -53,6 +53,15 @@ CUDA_VISIBLE_DEVICES="2,3,4,5" python -m vllm.entrypoints.openai.api_server \
 --max-model-len 32768
 ```
 
+```bash
+CUDA_VISIBLE_DEVICES="2,3,4,5" vllm serve meta-llama/Llama-3.3-70B-Instruct --download-dir $MODEL_PATH --tensor-parallel-size 4 --max-model-len 32768 --enable-auto-tool-choice --tool-call-parser llama3_json --chat-template /home/yl3427/tool_chat_template_llama3.2_json.jinja
+```
+
+```bash
+CUDA_VISIBLE_DEVICES="2,3,4,5" vllm serve mistralai/Mixtral-8x7B-Instruct-v0.1 --download-dir $MODEL_PATH --tensor-parallel-size 4
+
+```
+
 - `CUDA_VISIBLE_DEVICES`: Specifies the CUDA devices to use.
 - `--model`: Specifies the model to use.
 - `--download-dir`: Sets the directory to the local model.
