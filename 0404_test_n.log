@@ -1,0 +1,100 @@
+Starting run 0 with random seed 441864...
+Generating LLM-based rules...
+LLM-based rules: ['N0: No regional lymph node metastasis.', 'N1: Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes, including direct extension.', 'N2: Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s).', 'N3: Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph node(s).']
+Generating RAG-based rules...
+RAG-based rules: ['N0: No regional lymph node metastases', 'N1: Metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes and intrapulmonary nodes, including involvement by direct extension', 'N2: Metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s)}', 'N3: Metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph node(s)']
+  0%|          | 0/477 [00:00<?, ?it/s]  0%|          | 1/477 [01:02<8:15:01, 62.40s/it]  0%|          | 2/477 [01:41<6:23:44, 48.47s/it]  1%|          | 3/477 [02:21<5:55:02, 44.94s/it]  1%|          | 4/477 [03:30<7:09:22, 54.47s/it]Standard json.loads failed: Invalid control character at: line 1 column 242 (char 241)
+  1%|          | 5/477 [12:40<30:31:43, 232.85s/it]Standard json.loads failed: Invalid control character at: line 1 column 546 (char 545)
+  1%|▏         | 6/477 [13:24<22:04:29, 168.72s/it]  1%|▏         | 7/477 [14:50<18:29:04, 141.58s/it]Standard json.loads failed: Invalid control character at: line 1 column 306 (char 305)
+  2%|▏         | 8/477 [15:35<14:26:28, 110.85s/it]  2%|▏         | 9/477 [24:35<31:52:00, 245.13s/it]Standard json.loads failed: Invalid control character at: line 1 column 42 (char 41)
+  2%|▏         | 10/477 [25:36<24:24:41, 188.18s/it]Standard json.loads failed: Invalid control character at: line 8 column 103 (char 114)
+Standard json.loads failed: Invalid control character at: line 1 column 21 (char 20)
+  2%|▏         | 11/477 [26:18<18:35:26, 143.62s/it]  3%|▎         | 12/477 [27:00<14:31:56, 112.51s/it]  3%|▎         | 13/477 [27:45<11:53:18, 92.24s/it] Memory refinement triggered at row 3 (LLM-based rules + memory).
+Before refinement, length of memory: 1
+After refinement, length of memory: 2
+Memory refinement triggered at row 4 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 3
+Memory refinement triggered at row 4 (RAG-based rules + memory).
+Before refinement, length of memory: 1
+After refinement, length of memory: 2
+Memory refinement triggered at row 8 (RAG-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 1
+Traceback (most recent call last):
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpx/_transports/default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpx/_transports/default.py", line 236, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 216, in handle_request
+    raise exc from None
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpcore/_sync/connection_pool.py", line 196, in handle_request
+    response = connection.handle_request(
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    return self._connection.handle_request(request)
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 143, in handle_request
+    raise exc
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 113, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 186, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpcore/_sync/http11.py", line 224, in _receive_event
+    data = self._network_stream.read(
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpcore/_backends/sync.py", line 126, in read
+    return self._sock.recv(max_bytes)
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ReadTimeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/openai/_base_client.py", line 1003, in _request
+    response = self._client.send(
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpx/_client.py", line 926, in send
+    response = self._send_handling_auth(
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpx/_client.py", line 954, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpx/_client.py", line 991, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpx/_client.py", line 1027, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpx/_transports/default.py", line 236, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/contextlib.py", line 137, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/httpx/_transports/default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ReadTimeout: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/yl3427/cylab/selfCorrectionAgent/test_n.py", line 603, in <module>
+    result_df = agent.run_experiment(df_shuffled)
+  File "/home/yl3427/cylab/selfCorrectionAgent/test_n.py", line 352, in run_experiment
+    llm_rulesonly_resp = self.get_schema_followed_response(msgs_llm_rulesonly, schema_set["stage_prediction"])
+  File "/home/yl3427/cylab/selfCorrectionAgent/test_n.py", line 245, in get_schema_followed_response
+    response = self.client.chat.completions.create(
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/openai/_utils/_utils.py", line 279, in wrapper
+    return func(*args, **kwargs)
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/openai/resources/chat/completions/completions.py", line 879, in create
+    return self._post(
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/openai/_base_client.py", line 1290, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/openai/_base_client.py", line 967, in request
+    return self._request(
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/openai/_base_client.py", line 1012, in _request
+    return self._retry_request(
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/openai/_base_client.py", line 1105, in _retry_request
+    return self._request(
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/openai/_base_client.py", line 1012, in _request
+    return self._retry_request(
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/openai/_base_client.py", line 1105, in _retry_request
+    return self._request(
+  File "/home/yl3427/miniconda3/envs/vllm_env/lib/python3.9/site-packages/openai/_base_client.py", line 1022, in _request
+    raise APITimeoutError(request=request) from err
+openai.APITimeoutError: Request timed out.
+  3%|▎         | 13/477 [51:51<30:50:39, 239.31s/it]

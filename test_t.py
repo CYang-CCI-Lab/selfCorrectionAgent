@@ -7,6 +7,7 @@ from tqdm import tqdm
 from pydantic import BaseModel, Field
 from openai import OpenAI
 import copy
+from util import safe_json_load
 
 # ----------------------------------------------------------------------
 # System instruction & Prompts
@@ -247,10 +248,11 @@ class Agent:
                 extra_body={"guided_json": schema},
                 temperature=0.1
             )
-            return json.loads(response.choices[0].message.content)
         except Exception as e:
-            print(f"Error: {e}")
+            print(f"Error during API call: {e}")
             return None
+        return safe_json_load(response.choices[0].message.content)
+
 
     def run_experiment(
         self,
@@ -277,7 +279,7 @@ class Agent:
             {"role": "system", "content": system_instruction.format(cancer_type=self.cancer_type)},
             {"role": "user", "content": prompt_generate_llm_rules.format(cancer_type=self.cancer_type)}
         ]
-        llm_rules_response = self.get_schema_followed_response(messages_llm_rules, schema_set["rule_generation"])
+        llm_rules_response = self.get_schema_followed_response(messages_llm_rules, schema = schema_set["rule_generation"])
         if llm_rules_response:
             self.llm_rules = llm_rules_response["rules"]  # from ResponseRules
         else:
@@ -336,6 +338,7 @@ class Agent:
             if zs_resp:
                 dataset.loc[idx, f"{self.test_name}_pred_zs"] = zs_resp["stage"]
                 dataset.loc[idx, f"{self.test_name}_reasoning_zs"] = zs_resp["reasoning"]
+        
 
             # -------------------------------------------------
             # Baseline #2-1: LLM-based rules-only
@@ -581,18 +584,46 @@ class Agent:
 # Example usage
 # ------------------------------------------------------------------------
 if __name__ == "__main__":
-    client = OpenAI(api_key="dummy_key", base_url="http://localhost:8000/v1", timeout=120.0)
-
+    client = OpenAI(api_key="dummy_key", base_url="http://localhost:8000/v1")
+    print(client.models.list().data[0].id)
     lung_report = pd.read_csv("/secure/shared_data/rag_tnm_results/summary/5_folds_summary/luad_df.csv")
     df_base = lung_report[["patient_filename", "t", "text"]]
 
     agent = Agent(
         client=client,
-        model="meta-llama/Llama-3.3-70B-Instruct",
+        model=client.models.list().data[0].id,
         cancer_type="lung",
         label="t",
         test_name="experiment_t_stage",
         context_file="context_lung.json"
+    )
+
+    num_runs = 5
+    for run_idx in range(3, num_runs):
+        random_seed = random.randint(0, 999999)
+        print(f"Starting run {run_idx} with random seed {random_seed}...")
+        df_shuffled = df_base.sample(frac=1, random_state=random_seed).reset_index(drop=True)
+
+        result_df = agent.run_experiment(df_shuffled)
+
+        output_filename = f"results_t_stage_run_{run_idx}_lung_mixtral.csv"
+        result_df.to_csv(output_filename, index=False)
+        print(f"Finished run {run_idx}. Results saved to {output_filename}")
+
+
+#####
+    client = OpenAI(api_key="dummy_key", base_url="http://localhost:8000/v1")
+    print(client.models.list().data[0].id)
+    brca_report = pd.read_csv("/secure/shared_data/rag_tnm_results/summary/5_folds_summary/brca_df.csv")
+    df_base = brca_report[["patient_filename", "t", "text"]]
+
+    agent = Agent(
+        client=client,
+        model=client.models.list().data[0].id,
+        cancer_type="brca",
+        label="t",
+        test_name="experiment_t_stage",
+        context_file="context.json"
     )
 
     num_runs = 5
@@ -603,6 +634,6 @@ if __name__ == "__main__":
 
         result_df = agent.run_experiment(df_shuffled)
 
-        output_filename = f"results_t_stage_run_{run_idx}_lung.csv"
+        output_filename = f"results_t_stage_run_{run_idx}_brca_mixtral.csv"
         result_df.to_csv(output_filename, index=False)
         print(f"Finished run {run_idx}. Results saved to {output_filename}")

@@ -1,0 +1,1533 @@
+mistralai/Mixtral-8x7B-Instruct-v0.1
+Starting run 0 with random seed 564848...
+Generating LLM-based rules...
+LLM-based rules: ['T1: Tumor ≤ 3 cm in greatest dimension, surrounded by lung or visceral pleura, without bronchoscopic evidence of invasion more proximal than the lobar bronchus (i.e., not in the main bronchus).', 'T2: Tumor > 3 cm but ≤ 7 cm in greatest dimension or tumor with any of the following: involves main bronchus, 2 cm or more distal to the carina; invades the visceral pleura; associated with atelectasis or obstructive pneumonitis that extends to the hilar region but does not involve the entire lung. T2 tumors may also be classified as T2a (> 3 cm but ≤ 5 cm) or T2b (> 5 cm but ≤ 7 cm).', 'T3: Tumor of any size that directly invades any of the following: chest wall (including superior sulcus tumors), diaphragm, mediastinal pleura, parietal pericardium; or tumor in the main bronchus < 2 cm distal to the carina but without involvement of the carina; or associated separate tumor nodule(s) in the same lobe as the primary mass; or satellite tumor nodule(s) in a different ipsilateral lobe. T3 tumors also include tumors with atelectasis or obstructive pneumonitis of the entire lung. T3 tumors may not invade the mediastinum or involve the heart, great vessels, trachea, esophagus, vertebral body, or carina. T3 tumors may also be classified as T3a (satellite tumor nodule(s) in a different ipsilateral lobe) or T3b (all other T3 conditions).', 'T4: Tumor of any size that invades any of the following: mediastinum, heart, great vessels, trachea, esophagus, vertebral body, carina; or tumor with a malignant pleural or pericardial effusion, or tumor that invades and perforates the visceral pleura (pleural dissemination). T4 tumors may not be assigned a T4a or T4b designation.']
+Generating RAG-based rules...
+RAG-based rules: ['% T category is defined by the size and extent of the primary tumor.\n', 'T1: Tumor 3 cm or less, surrounded by lung or visceral pleura, without bronchoscopic evidence of invasion proximal to the lobar bronchus.\n', 'T2: Tumor more than 3 cm but 7 cm or less, or involves main bronchus, invades visceral pleura, or is associated with atelectasis or obstructive pneumonitis.\n', 'T3: Tumor more than 7 cm, directly invades parietal pleura, chest wall, diaphragm, phrenic nerve, mediastinal pleura, or parietal pericardium, or tumor in the main bronchus without involvement of the carina.\n', 'T4: Tumor of any size that invades mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina, or separate tumor nodule(s) in a different ipsilateral lobe.']
+Error: Invalid control character at: line 1 column 420 (char 419)
+Memory refinement triggered at row 0 (LLM-based rules + memory).
+Before refinement, length of memory: 1
+After refinement, length of memory: 9
+Error: Invalid control character at: line 1 column 29 (char 28)
+Error: Invalid control character at: line 1 column 1481 (char 1480)
+Memory refinement triggered at row 4 (RAG-based rules + memory).
+Before refinement, length of memory: 1
+After refinement, length of memory: 7
+Error: Invalid control character at: line 1 column 393 (char 392)
+Error at row 6 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 40 (char 39)
+Error: Invalid control character at: line 1 column 211 (char 210)
+Error at row 10 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 40 (char 39)
+Memory refinement triggered at row 12 (LLM-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 11
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 13 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 793 (char 821)
+Error at row 14 (LLM-based rules + memory).
+Memory refinement triggered at row 15 (LLM-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 11
+Error: Invalid control character at: line 2 column 1144 (char 1183)
+Error at row 15 (RAG-based rules + memory).
+Memory refinement triggered at row 16 (LLM-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 14
+Memory refinement triggered at row 16 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 7
+Error: Invalid control character at: line 1 column 247 (char 246)
+Error: Invalid control character at: line 1 column 199 (char 198)
+Error: Invalid control character at: line 1 column 41 (char 40)
+Error: Invalid control character at: line 1 column 442 (char 441)
+Error at row 27 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 30 (char 29)
+Error: Invalid control character at: line 1 column 179 (char 178)
+Error: Invalid control character at: line 1 column 67 (char 66)
+Error at row 29 (RAG-based rules + memory).
+Error: Invalid control character at: line 2 column 1105 (char 1144)
+Error at row 32 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 237 (char 236)
+Error at row 35 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 1203 (char 1242)
+Error at row 36 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 29 (char 28)
+Memory refinement triggered at row 41 (LLM-based rules + memory).
+Before refinement, length of memory: 15
+After refinement, length of memory: 12
+Memory refinement triggered at row 41 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 1
+Error: Invalid control character at: line 1 column 269 (char 268)
+Error at row 42 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 287 (char 286)
+Memory refinement triggered at row 44 (LLM-based rules + memory).
+Before refinement, length of memory: 13
+After refinement, length of memory: 12
+Memory refinement triggered at row 44 (RAG-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 7
+Error: Invalid control character at: line 1 column 487 (char 486)
+Error: Invalid control character at: line 3 column 464 (char 474)
+Memory refinement triggered at row 47 (LLM-based rules + memory).
+Before refinement, length of memory: 13
+After refinement, length of memory: 7
+Error: Request timed out.
+Error at row 47 (RAG-based rules + memory).
+Error: Invalid control character at: line 2 column 138 (char 177)
+Error: Invalid control character at: line 2 column 1052 (char 1091)
+Error at row 48 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 1948 (char 1947)
+Error: Invalid control character at: line 1 column 289 (char 288)
+Error at row 53 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 54 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 55 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 215 (char 214)
+Memory refinement triggered at row 57 (LLM-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 8
+Memory refinement triggered at row 57 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 7
+Error: Invalid control character at: line 11 column 173 (char 184)
+Error: Invalid control character at: line 1 column 177 (char 176)
+Error: Invalid control character at: line 1 column 36 (char 35)
+Error: Invalid control character at: line 5 column 260 (char 298)
+Error: Invalid control character at: line 1 column 52 (char 51)
+Error: Invalid control character at: line 1 column 289 (char 288)
+Error at row 62 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 872 (char 900)
+Error at row 63 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 52 (char 51)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 64 (LLM-based rules + memory).
+Memory refinement triggered at row 65 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 11
+Error: Invalid control character at: line 1 column 149 (char 148)
+Error at row 65 (RAG-based rules + memory).
+Memory refinement triggered at row 66 (LLM-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 11
+Memory refinement triggered at row 68 (LLM-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 7
+Memory refinement triggered at row 68 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 1
+Memory refinement triggered at row 70 (LLM-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 7
+Memory refinement triggered at row 71 (LLM-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 8
+Memory refinement triggered at row 71 (RAG-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 9
+Error: Invalid control character at: line 12 column 172 (char 211)
+Error: Invalid control character at: line 1 column 1206 (char 1205)
+Error: Invalid control character at: line 1 column 30 (char 29)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 76 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 228 (char 227)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 78 (LLM-based rules + memory).
+Error: Invalid control character at: line 3 column 333 (char 358)
+Memory refinement triggered at row 79 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 7
+Memory refinement triggered at row 79 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 6
+Error: Invalid control character at: line 1 column 930 (char 929)
+Memory refinement triggered at row 83 (LLM-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 8
+Memory refinement triggered at row 83 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 6
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 84 (LLM-based rules + memory).
+Error: Request timed out.
+Error: Invalid control character at: line 8 column 332 (char 343)
+Error: Invalid control character at: line 1 column 270 (char 269)
+Memory refinement triggered at row 89 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 9
+Memory refinement triggered at row 89 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 3
+Error: Invalid control character at: line 1 column 241 (char 240)
+Error: Request timed out.
+Error at row 92 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 1278 (char 1277)
+Error at row 94 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 321 (char 320)
+Error at row 95 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 53 (char 52)
+Error at row 96 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 377 (char 376)
+Error at row 100 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 52 (char 51)
+Error: Invalid control character at: line 1 column 230 (char 229)
+Error: Invalid control character at: line 1 column 263 (char 262)
+Error: Invalid control character at: line 1 column 168 (char 167)
+Error: Invalid control character at: line 1 column 270 (char 269)
+Memory refinement triggered at row 106 (LLM-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 10
+Memory refinement triggered at row 106 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 4
+Error: Invalid control character at: line 1 column 54 (char 53)
+Error: Invalid control character at: line 1 column 146 (char 145)
+Memory refinement triggered at row 111 (LLM-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 4
+Memory refinement triggered at row 111 (RAG-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 6
+Error: Invalid control character at: line 1 column 277 (char 276)
+Error at row 112 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 453 (char 452)
+Error: Invalid control character at: line 1 column 516 (char 515)
+Error: Invalid control character at: line 8 column 862 (char 873)
+Memory refinement triggered at row 117 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 8
+Error: Invalid control character at: line 8 column 322 (char 333)
+Error: Invalid control character at: line 2 column 1042 (char 1081)
+Error at row 118 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 52 (char 51)
+Error: Invalid control character at: line 2 column 215 (char 243)
+Error: Invalid control character at: line 8 column 470 (char 481)
+Error: Invalid control character at: line 1 column 2304 (char 2303)
+Error: Invalid control character at: line 1 column 41 (char 40)
+Error at row 123 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 416 (char 451)
+Error: Invalid control character at: line 1 column 77 (char 76)
+Error: Invalid control character at: line 1 column 317 (char 316)
+Memory refinement triggered at row 131 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 9
+Error: Invalid control character at: line 1 column 47 (char 46)
+Error at row 134 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 261 (char 300)
+Error: Invalid control character at: line 2 column 84 (char 124)
+Error: Invalid control character at: line 1 column 147 (char 146)
+Error at row 135 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 556 (char 555)
+Error: Invalid control character at: line 1 column 173 (char 172)
+Error at row 140 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 63 (char 62)
+Memory refinement triggered at row 142 (LLM-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 14
+Memory refinement triggered at row 142 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 7
+Error: Invalid control character at: line 8 column 458 (char 469)
+Error: Invalid control character at: line 1 column 340 (char 339)
+Error at row 148 (RAG-based rules + memory).
+Memory refinement triggered at row 149 (LLM-based rules + memory).
+Before refinement, length of memory: 15
+After refinement, length of memory: 13
+Error: Request timed out.
+Error at row 156 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 236 (char 235)
+Error: Invalid control character at: line 8 column 175 (char 186)
+Memory refinement triggered at row 157 (LLM-based rules + memory).
+Before refinement, length of memory: 14
+After refinement, length of memory: 10
+Memory refinement triggered at row 157 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 8
+Error: Invalid control character at: line 1 column 497 (char 496)
+Error: Invalid control character at: line 1 column 41 (char 40)
+Error: Invalid control character at: line 1 column 445 (char 444)
+Error at row 160 (LLM-based rules + memory).
+Error: Invalid control character at: line 12 column 190 (char 226)
+Error: Invalid control character at: line 1 column 321 (char 320)
+Error at row 164 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 40 (char 39)
+Error: Invalid control character at: line 1 column 39 (char 38)
+Error: Invalid control character at: line 2 column 525 (char 564)
+Error at row 167 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 993 (char 992)
+Error: Invalid control character at: line 1 column 690 (char 689)
+Memory refinement triggered at row 173 (LLM-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 14
+Memory refinement triggered at row 173 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 8
+Error: Invalid control character at: line 1 column 39 (char 38)
+Error: Invalid control character at: line 1 column 713 (char 712)
+Error: Invalid control character at: line 1 column 199 (char 198)
+Error: Invalid control character at: line 1 column 39 (char 38)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 176 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 30 (char 29)
+Memory refinement triggered at row 177 (LLM-based rules + memory).
+Before refinement, length of memory: 15
+After refinement, length of memory: 17
+Memory refinement triggered at row 177 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 9
+Memory refinement triggered at row 182 (LLM-based rules + memory).
+Before refinement, length of memory: 18
+After refinement, length of memory: 9
+Memory refinement triggered at row 183 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 9
+Error: Invalid control character at: line 8 column 236 (char 247)
+Error: Invalid control character at: line 1 column 758 (char 757)
+Memory refinement triggered at row 187 (LLM-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 2
+Memory refinement triggered at row 187 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 8
+Error: Invalid control character at: line 1 column 212 (char 211)
+Memory refinement triggered at row 188 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 6
+Memory refinement triggered at row 188 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 8
+Error: Invalid control character at: line 1 column 19 (char 18)
+Error: Invalid control character at: line 1 column 298 (char 297)
+Memory refinement triggered at row 191 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 8
+Error: Request timed out.
+Error at row 194 (RAG-based rules + memory).
+Memory refinement triggered at row 196 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 8
+Error: Invalid control character at: line 1 column 1475 (char 1474)
+Error: Invalid control character at: line 1 column 67 (char 66)
+Error: Invalid control character at: line 1 column 44 (char 43)
+Error: Invalid control character at: line 2 column 570 (char 609)
+Error at row 200 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 29 (char 28)
+Error: Invalid control character at: line 1 column 352 (char 351)
+Error at row 203 (LLM-based rules + memory).
+Memory refinement triggered at row 204 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 10
+Error: Request timed out.
+Error at row 206 (RAG-based rules + memory).
+Error: Request timed out.
+Error at row 207 (RAG-based rules + memory).
+Memory refinement triggered at row 208 (LLM-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 13
+Memory refinement triggered at row 208 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 9
+Memory refinement triggered at row 210 (LLM-based rules + memory).
+Before refinement, length of memory: 14
+After refinement, length of memory: 11
+Memory refinement triggered at row 210 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 10
+Error: Invalid control character at: line 2 column 174 (char 212)
+Error at row 211 (LLM-based rules + memory).
+Memory refinement triggered at row 213 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 7
+Memory refinement triggered at row 214 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 6
+Error: Invalid control character at: line 1 column 178 (char 177)
+Error at row 215 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 218 (LLM-based rules + memory).
+Error: Invalid control character at: line 8 column 509 (char 520)
+Error: Invalid control character at: line 1 column 580 (char 579)
+Error at row 219 (RAG-based rules + memory).
+Error: Invalid control character at: line 8 column 235 (char 246)
+Memory refinement triggered at row 220 (LLM-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 15
+Memory refinement triggered at row 220 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 5
+Error: Invalid control character at: line 1 column 233 (char 232)
+Error: Invalid control character at: line 8 column 263 (char 274)
+Memory refinement triggered at row 227 (LLM-based rules + memory).
+Before refinement, length of memory: 16
+After refinement, length of memory: 15
+Error: Invalid control character at: line 10 column 664 (char 675)
+Error: Invalid control character at: line 1 column 516 (char 515)
+Error at row 229 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 217 (char 245)
+Error at row 230 (RAG-based rules + memory).
+Memory refinement triggered at row 232 (LLM-based rules + memory).
+Before refinement, length of memory: 16
+After refinement, length of memory: 13
+Memory refinement triggered at row 232 (RAG-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 6
+Error: Invalid control character at: line 1 column 432 (char 431)
+Error: Invalid control character at: line 2 column 916 (char 955)
+Error at row 233 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 1870 (char 1869)
+Error at row 236 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 1313 (char 1312)
+Error: Invalid control character at: line 1 column 353 (char 352)
+Error: Invalid control character at: line 1 column 140 (char 139)
+Error: Request timed out.
+Error: Invalid control character at: line 1 column 273 (char 272)
+Error at row 245 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 858 (char 857)
+Error: Invalid control character at: line 2 column 312 (char 340)
+Error: Invalid control character at: line 1 column 39 (char 38)
+Memory refinement triggered at row 250 (LLM-based rules + memory).
+Before refinement, length of memory: 14
+After refinement, length of memory: 14
+Error: Invalid control character at: line 2 column 815 (char 854)
+Error at row 250 (RAG-based rules + memory).
+Error: Request timed out.
+Error at row 251 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 718 (char 717)
+Error: Invalid control character at: line 1 column 19 (char 18)
+Error: Invalid control character at: line 2 column 1836 (char 1875)
+Error at row 257 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 1220 (char 1219)
+Error: Invalid control character at: line 2 column 181 (char 209)
+Error at row 259 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 1095 (char 1094)
+Error: Invalid control character at: line 1 column 433 (char 432)
+Error at row 264 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 20 (char 19)
+Error: Invalid control character at: line 1 column 36 (char 35)
+Error: Request timed out.
+Error at row 267 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 2338 (char 2337)
+Error: Invalid control character at: line 1 column 20 (char 19)
+Error: Invalid control character at: line 10 column 585 (char 624)
+Error: Invalid control character at: line 12 column 147 (char 183)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 280 (RAG-based rules + memory).
+Error: Invalid control character at: line 8 column 321 (char 332)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 282 (LLM-based rules + memory).
+Memory refinement triggered at row 286 (LLM-based rules + memory).
+Before refinement, length of memory: 15
+After refinement, length of memory: 2
+Error: Invalid control character at: line 2 column 378 (char 406)
+Error: Invalid control character at: line 1 column 211 (char 210)
+Error at row 289 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 1166 (char 1165)
+Memory refinement triggered at row 290 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 1
+Error: Invalid control character at: line 2 column 455 (char 483)
+Memory refinement triggered at row 291 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 291 (RAG-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 1
+Error: Invalid control character at: line 2 column 1084 (char 1123)
+Error at row 292 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 243 (char 296)
+Error at row 293 (LLM-based rules + memory).
+Error: Invalid control character at: line 8 column 197 (char 208)
+Error: Invalid control character at: line 1 column 838 (char 837)
+Error: Invalid control character at: line 2 column 812 (char 850)
+Error at row 295 (LLM-based rules + memory).
+Memory refinement triggered at row 296 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Error: Invalid control character at: line 1 column 254 (char 253)
+Error: Invalid control character at: line 1 column 29 (char 28)
+Memory refinement triggered at row 308 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 11
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 308 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 309 (LLM-based rules + memory).
+Error: Request timed out.
+Error: Invalid control character at: line 8 column 196 (char 207)
+Error: Invalid control character at: line 1 column 204 (char 203)
+Error at row 311 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 1298 (char 1337)
+Error at row 312 (RAG-based rules + memory).
+Memory refinement triggered at row 313 (LLM-based rules + memory).
+Before refinement, length of memory: 12
+Error: Invalid control character at: line 4 column 278 (char 288)
+Refinement failed at row 313, keeping old memory items.
+After refinement, length of memory: 12
+Memory refinement triggered at row 313 (RAG-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 11
+Error: Invalid control character at: line 8 column 253 (char 264)
+Error: Invalid control character at: line 1 column 728 (char 727)
+Error: Request timed out.
+Error at row 315 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 746 (char 745)
+Error: Invalid control character at: line 1 column 39 (char 38)
+Error: Invalid control character at: line 2 column 333 (char 359)
+Error: Request timed out.
+Memory refinement triggered at row 320 (RAG-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 12
+Memory refinement triggered at row 321 (RAG-based rules + memory).
+Before refinement, length of memory: 13
+After refinement, length of memory: 13
+Error: Invalid control character at: line 1 column 36 (char 35)
+Error: Invalid control character at: line 8 column 328 (char 339)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 324 (RAG-based rules + memory).
+Error: Invalid control character at: line 10 column 400 (char 411)
+Error: Invalid control character at: line 1 column 117 (char 116)
+Error at row 325 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 326 (RAG-based rules + memory).
+Error: Request timed out.
+Error: Invalid control character at: line 1 column 475 (char 474)
+Error at row 329 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 330 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 486 (char 514)
+Memory refinement triggered at row 333 (LLM-based rules + memory).
+Before refinement, length of memory: 13
+After refinement, length of memory: 10
+Memory refinement triggered at row 333 (RAG-based rules + memory).
+Before refinement, length of memory: 14
+After refinement, length of memory: 11
+Error: Invalid control character at: line 1 column 1072 (char 1071)
+Memory refinement triggered at row 335 (RAG-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 12
+Error: Invalid control character at: line 1 column 770 (char 769)
+Error: Invalid control character at: line 8 column 336 (char 347)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 343 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 421 (char 420)
+Error: Invalid control character at: line 1 column 197 (char 196)
+Error: Invalid control character at: line 1 column 209 (char 208)
+Error: Invalid control character at: line 1 column 93 (char 92)
+Error: Invalid control character at: line 1 column 39 (char 38)
+Error: Invalid control character at: line 8 column 273 (char 284)
+Error: Invalid control character at: line 11 column 126 (char 137)
+Error: Request timed out.
+Error: Request timed out.
+Memory refinement triggered at row 353 (RAG-based rules + memory).
+Before refinement, length of memory: 13
+After refinement, length of memory: 12
+Error: Invalid control character at: line 1 column 54 (char 53)
+Error: Invalid control character at: line 1 column 39 (char 38)
+Memory refinement triggered at row 356 (LLM-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 8
+Error: Invalid control character at: line 1 column 250 (char 249)
+Error at row 356 (RAG-based rules + memory).
+Error: Invalid control character at: line 13 column 139 (char 178)
+Error: Invalid control character at: line 14 column 315 (char 356)
+Memory refinement triggered at row 361 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 8
+Memory refinement triggered at row 362 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 8
+Error: Request timed out.
+Error at row 362 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 363 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 364 (RAG-based rules + memory).
+Memory refinement triggered at row 365 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 9
+Memory refinement triggered at row 365 (RAG-based rules + memory).
+Before refinement, length of memory: 13
+After refinement, length of memory: 12
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 366 (LLM-based rules + memory).
+Memory refinement triggered at row 367 (LLM-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 9
+Memory refinement triggered at row 367 (RAG-based rules + memory).
+Before refinement, length of memory: 13
+After refinement, length of memory: 11
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 369 (RAG-based rules + memory).
+Memory refinement triggered at row 370 (RAG-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 12
+Memory refinement triggered at row 374 (LLM-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 1
+Error: Invalid control character at: line 2 column 1489 (char 1528)
+Error at row 376 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 947 (char 946)
+Error: Invalid control character at: line 1 column 360 (char 359)
+Error at row 378 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 230 (char 229)
+Error: Invalid control character at: line 1 column 450 (char 449)
+Error: Invalid control character at: line 1 column 335 (char 334)
+Memory refinement triggered at row 384 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 4
+Memory refinement triggered at row 384 (RAG-based rules + memory).
+Before refinement, length of memory: 13
+After refinement, length of memory: 12
+Error: Invalid control character at: line 1 column 198 (char 197)
+Error at row 387 (RAG-based rules + memory).
+Error: Invalid control character at: line 2 column 455 (char 490)
+Error: Invalid control character at: line 8 column 403 (char 414)
+Error: Invalid control character at: line 5 column 269 (char 279)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 394 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 39 (char 38)
+Error: Invalid control character at: line 1 column 810 (char 809)
+Error: Invalid control character at: line 2 column 832 (char 871)
+Error at row 397 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 678 (char 717)
+Error at row 398 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 207 (char 206)
+Error at row 399 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 29 (char 28)
+Error: Invalid control character at: line 1 column 450 (char 449)
+Error at row 401 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 436 (char 471)
+Error: Invalid control character at: line 1 column 20 (char 19)
+Memory refinement triggered at row 403 (RAG-based rules + memory).
+Before refinement, length of memory: 13
+After refinement, length of memory: 13
+Memory refinement triggered at row 404 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 404 (RAG-based rules + memory).
+Before refinement, length of memory: 14
+After refinement, length of memory: 15
+Error: Invalid control character at: line 1 column 39 (char 38)
+Memory refinement triggered at row 406 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 8
+Memory refinement triggered at row 406 (RAG-based rules + memory).
+Before refinement, length of memory: 16
+Error: Request timed out.
+Refinement failed at row 406, keeping old memory items.
+After refinement, length of memory: 16
+Memory refinement triggered at row 411 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 1
+Error: Invalid control character at: line 2 column 101 (char 136)
+Memory refinement triggered at row 412 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 1
+Error: Invalid control character at: line 10 column 226 (char 237)
+Error: Invalid control character at: line 2 column 562 (char 597)
+Error at row 413 (LLM-based rules + memory).
+Error: Invalid control character at: line 10 column 353 (char 364)
+Error: Invalid control character at: line 1 column 98 (char 97)
+Error at row 415 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 371 (char 370)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 416 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 419 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 282 (char 281)
+Memory refinement triggered at row 421 (RAG-based rules + memory).
+Before refinement, length of memory: 17
+After refinement, length of memory: 7
+Error: Invalid control character at: line 1 column 148 (char 147)
+Error at row 422 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 259 (char 258)
+Error: Invalid control character at: line 1 column 165 (char 164)
+Memory refinement triggered at row 426 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 1
+Memory refinement triggered at row 426 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 6
+Error: Invalid control character at: line 1 column 323 (char 322)
+Error: Invalid control character at: line 1 column 461 (char 460)
+Error at row 427 (LLM-based rules + memory).
+Error: Invalid control character at: line 11 column 167 (char 178)
+Error: Invalid control character at: line 1 column 36 (char 35)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 429 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 53 (char 52)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 432 (RAG-based rules + memory).
+Error: Request timed out.
+Error at row 433 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 1071 (char 1070)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 436 (LLM-based rules + memory).
+Memory refinement triggered at row 437 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 8
+Memory refinement triggered at row 437 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 6
+Error: Invalid control character at: line 1 column 278 (char 277)
+Memory refinement triggered at row 440 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 1
+Memory refinement triggered at row 440 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 7
+Memory refinement triggered at row 441 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 6
+Memory refinement triggered at row 441 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 10
+Error: Invalid control character at: line 1 column 121 (char 120)
+Error at row 442 (LLM-based rules + memory).
+Memory refinement triggered at row 443 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 9
+Memory refinement triggered at row 446 (LLM-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 12
+Memory refinement triggered at row 446 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 10
+Memory refinement triggered at row 447 (LLM-based rules + memory).
+Before refinement, length of memory: 13
+After refinement, length of memory: 16
+Memory refinement triggered at row 447 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 10
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 451 (LLM-based rules + memory).
+Memory refinement triggered at row 452 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 11
+Error: Invalid control character at: line 1 column 269 (char 268)
+Error at row 454 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 455 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 101 (char 100)
+Error at row 456 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 344 (char 343)
+Error at row 457 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 19 (char 18)
+Memory refinement triggered at row 459 (LLM-based rules + memory).
+Before refinement, length of memory: 17
+After refinement, length of memory: 10
+Memory refinement triggered at row 459 (RAG-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 12
+Error: Invalid control character at: line 3 column 384 (char 417)
+Error: Invalid control character at: line 8 column 413 (char 424)
+Memory refinement triggered at row 461 (RAG-based rules + memory).
+Before refinement, length of memory: 13
+After refinement, length of memory: 8
+Error: Invalid control character at: line 2 column 15 (char 50)
+Error: Invalid control character at: line 1 column 755 (char 754)
+Error: Request timed out.
+Memory refinement triggered at row 465 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 8
+Error: Invalid control character at: line 12 column 206 (char 242)
+Error: Invalid control character at: line 1 column 47 (char 46)
+Error at row 470 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 131 (char 130)
+Error at row 473 (RAG-based rules + memory).
+Error: Invalid control character at: line 8 column 156 (char 167)
+Error: Invalid control character at: line 1 column 735 (char 734)
+Error: Invalid control character at: line 2 column 124 (char 153)
+Error at row 476 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 48 (char 47)
+Error at row 477 (LLM-based rules + memory).
+Memory refinement triggered at row 479 (LLM-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 12
+Memory refinement triggered at row 479 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 8
+Total parsing errors: 111
+Finished run 0. Results saved to results_t_stage_run_0_lung_mixtral.csv
+Starting run 1 with random seed 376930...
+Generating LLM-based rules...
+Error: Invalid control character at: line 1 column 1258 (char 1257)
+Error: Could not generate LLM-based rules.
+Finished run 1. Results saved to results_t_stage_run_1_lung_mixtral.csv
+Starting run 2 with random seed 796315...
+Generating LLM-based rules...
+LLM-based rules: ['T is the size of the primary tumor and/or its direct extension', 'T1: The tumor is ≤ 3 cm in greatest dimension, surrounded by lung or visceral pleura, without bronchoscopic evidence of invasion more proximal than the lobar bronchus (i.e., not in the main bronchus)', 'T2: One of the following', '- The tumor is > 3 cm in greatest dimension, or', '- The tumor invades the main bronchus, 2 cm or more distal to the carina', '- The tumor invades the visceral pleura, associated with a pleural effusion, or', '- There are separate tumor nodules in the same lobe', 'T3: One of the following', '- The tumor directly invades any of the following: parietal pleura, chest wall, phrenic nerve, mediastinal pleura, parietal pericardium; or', '- The tumor is in the main bronchus, < 2 cm distal to the carina but without involvement of the carina; or', '- There is atelectasis or obstructive pneumonitis that extends to the hilar region but does not involve the entire lung', 'T4: One of the following', '- The tumor invades the mediastinum, heart, great vessels, trachea, esophagus, vertebral body, carina; or', '- There is a separate tumor nodule(s) in a different ipsilateral lobe than the primary tumor; or', '- Tumor with direct extension into the diaphragm, mediastinum, or through the chest wall, including the superior sulcus tumor']
+Generating RAG-based rules...
+RAG-based rules: ['% T category is defined by the size and extent of the primary tumor.\n', 'T1: Tumor 3 cm or less, surrounded by lung or visceral pleura, without bronchoscopic evidence of invasion proximal to the lobar bronchus.\n', 'T2: Tumor more than 3 cm but 7 cm or less, or with specific features (involves main bronchus, invades visceral pleura, associated with atelectasis or obstructive pneumonitis).\n', 'T3: Tumor more than 7 cm, or directly invades parietal pleura, chest wall, diaphragm, phrenic nerve, mediastinal pleura, or parietal pericardium, or tumor in the main bronchus without carina involvement.\n', 'T4: Tumor of any size that invades mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina, or separate tumor nodule(s) in a different ipsilateral lobe.']
+Memory refinement triggered at row 0 (LLM-based rules + memory).
+Before refinement, length of memory: 13
+After refinement, length of memory: 13
+Error: Invalid control character at: line 1 column 39 (char 38)
+Memory refinement triggered at row 5 (LLM-based rules + memory).
+Before refinement, length of memory: 14
+After refinement, length of memory: 11
+Error: Invalid control character at: line 1 column 514 (char 513)
+Error at row 5 (RAG-based rules + memory).
+Memory refinement triggered at row 7 (LLM-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 1
+Error: Invalid control character at: line 8 column 231 (char 242)
+Error: Invalid control character at: line 1 column 29 (char 28)
+Memory refinement triggered at row 9 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 11
+Error: Invalid control character at: line 1 column 225 (char 224)
+Error: Invalid control character at: line 1 column 127 (char 126)
+Error at row 12 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 39 (char 38)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 13 (LLM-based rules + memory).
+Error: Invalid control character at: line 8 column 251 (char 262)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 14 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 518 (char 517)
+Memory refinement triggered at row 16 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 8
+Memory refinement triggered at row 18 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 9
+Error: Invalid control character at: line 2 column 561 (char 600)
+Error: Invalid control character at: line 1 column 1266 (char 1265)
+Error: Invalid control character at: line 1 column 126 (char 125)
+Error at row 20 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 455 (char 490)
+Error: Request timed out.
+Error: Invalid control character at: line 1 column 282 (char 281)
+Error at row 24 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 246 (char 245)
+Error at row 28 (LLM-based rules + memory).
+Memory refinement triggered at row 32 (LLM-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 9
+Error: Invalid control character at: line 1 column 29 (char 28)
+Error: Invalid control character at: line 1 column 2036 (char 2035)
+Memory refinement triggered at row 33 (LLM-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 8
+Memory refinement triggered at row 35 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 11
+Memory refinement triggered at row 35 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 10
+Error: Invalid control character at: line 2 column 923 (char 962)
+Error at row 36 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 286 (char 285)
+Error at row 38 (LLM-based rules + memory).
+Error: Invalid control character at: line 10 column 338 (char 349)
+Error: Invalid control character at: line 2 column 683 (char 722)
+Error at row 41 (LLM-based rules + memory).
+Memory refinement triggered at row 46 (LLM-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 10
+Error: Invalid control character at: line 2 column 896 (char 935)
+Error at row 46 (RAG-based rules + memory).
+Error: Invalid control character at: line 2 column 1266 (char 1305)
+Error at row 49 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 50 (LLM-based rules + memory).
+Memory refinement triggered at row 54 (LLM-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 8
+Error: Request timed out.
+Error: Invalid control character at: line 1 column 39 (char 38)
+Error: Request timed out.
+Error: Invalid control character at: line 1 column 556 (char 555)
+Error: Invalid control character at: line 1 column 177 (char 176)
+Error at row 59 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 546 (char 585)
+Error: Invalid control character at: line 1 column 484 (char 483)
+Error at row 60 (LLM-based rules + memory).
+Error: Invalid control character at: line 8 column 264 (char 275)
+Error: Invalid control character at: line 1 column 323 (char 322)
+Error at row 63 (RAG-based rules + memory).
+Error: Invalid control character at: line 2 column 513 (char 552)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 66 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 312 (char 340)
+Error: Invalid control character at: line 1 column 242 (char 241)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 67 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 215 (char 243)
+Error: Invalid control character at: line 1 column 596 (char 595)
+Error at row 74 (LLM-based rules + memory).
+Memory refinement triggered at row 76 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 9
+Error: Invalid control character at: line 1 column 426 (char 425)
+Memory refinement triggered at row 77 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 8
+Memory refinement triggered at row 77 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 9
+Error: Invalid control character at: line 1 column 29 (char 28)
+Error: Request timed out.
+Error at row 79 (RAG-based rules + memory).
+Error: Invalid control character at: line 2 column 1161 (char 1200)
+Error at row 80 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 192 (char 191)
+Error: Invalid control character at: line 2 column 946 (char 984)
+Error at row 81 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 540 (char 539)
+Error at row 82 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 714 (char 713)
+Error: Invalid control character at: line 1 column 880 (char 879)
+Error: Invalid control character at: line 2 column 533 (char 561)
+Error: Invalid control character at: line 1 column 604 (char 603)
+Error at row 88 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 930 (char 929)
+Memory refinement triggered at row 89 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 8
+Memory refinement triggered at row 89 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 6
+Error: Request timed out.
+Memory refinement triggered at row 91 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 9
+Memory refinement triggered at row 91 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 1
+Error: Invalid control character at: line 1 column 39 (char 38)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 94 (LLM-based rules + memory).
+Error: Invalid control character at: line 8 column 395 (char 406)
+Error: Request timed out.
+Memory refinement triggered at row 95 (LLM-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 10
+Error: Invalid control character at: line 1 column 131 (char 130)
+Error at row 95 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 453 (char 452)
+Error at row 96 (LLM-based rules + memory).
+Memory refinement triggered at row 99 (LLM-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 3
+Memory refinement triggered at row 99 (RAG-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 8
+Error: Invalid control character at: line 1 column 800 (char 799)
+Error at row 102 (RAG-based rules + memory).
+Memory refinement triggered at row 103 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 7
+Memory refinement triggered at row 103 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+Error: Invalid control character at: line 2 column 217 (char 249)
+Refinement failed at row 103, keeping old memory items.
+After refinement, length of memory: 9
+Error: Invalid control character at: line 2 column 215 (char 243)
+Error: Invalid control character at: line 1 column 475 (char 474)
+Error at row 107 (RAG-based rules + memory).
+Memory refinement triggered at row 109 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 3
+Error: Invalid control character at: line 1 column 47 (char 46)
+Error at row 111 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 291 (char 290)
+Error at row 114 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 69 (char 68)
+Error at row 115 (LLM-based rules + memory).
+Error: Request timed out.
+Error: Invalid control character at: line 1 column 360 (char 359)
+Error at row 118 (RAG-based rules + memory).
+Error: Invalid control character at: line 5 column 527 (char 538)
+Memory refinement triggered at row 119 (LLM-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 11
+Memory refinement triggered at row 119 (RAG-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 1
+Error: Invalid control character at: line 12 column 214 (char 253)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 124 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 101 (char 100)
+Error: Invalid control character at: line 1 column 821 (char 820)
+Memory refinement triggered at row 126 (RAG-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 7
+Error: Invalid control character at: line 1 column 532 (char 531)
+Error at row 127 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 388 (char 387)
+Error at row 128 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 236 (char 275)
+Error at row 129 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 312 (char 340)
+Error: Invalid control character at: line 1 column 20 (char 19)
+Error: Invalid control character at: line 1 column 383 (char 382)
+Error at row 130 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 139 (char 138)
+Error at row 131 (LLM-based rules + memory).
+Error: Invalid control character at: line 8 column 308 (char 319)
+Error: Invalid control character at: line 8 column 339 (char 350)
+Memory refinement triggered at row 136 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 10
+Error: Invalid control character at: line 1 column 54 (char 53)
+Error: Request timed out.
+Error: Invalid control character at: line 1 column 300 (char 299)
+Error: Invalid control character at: line 1 column 216 (char 215)
+Error at row 139 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 234 (char 263)
+Error at row 140 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 372 (char 371)
+Error: Invalid control character at: line 1 column 322 (char 321)
+Error: Invalid control character at: line 2 column 197 (char 236)
+Error: Invalid control character at: line 1 column 349 (char 348)
+Error at row 144 (RAG-based rules + memory).
+Error: Invalid control character at: line 2 column 769 (char 797)
+Error: Invalid control character at: line 1 column 510 (char 509)
+Error at row 146 (LLM-based rules + memory).
+Error: Invalid control character at: line 8 column 325 (char 336)
+Error: Invalid control character at: line 1 column 789 (char 788)
+Error at row 147 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 264 (char 263)
+Error at row 148 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 274 (char 273)
+Memory refinement triggered at row 149 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 11
+Error: Invalid control character at: line 14 column 97 (char 138)
+Memory refinement triggered at row 150 (LLM-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 8
+Error: Invalid control character at: line 1 column 69 (char 68)
+Error at row 150 (RAG-based rules + memory).
+Error: Invalid control character at: line 8 column 164 (char 175)
+Memory refinement triggered at row 155 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 1
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 155 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 403 (char 402)
+Error at row 156 (RAG-based rules + memory).
+Memory refinement triggered at row 157 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 1
+Memory refinement triggered at row 157 (RAG-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 10
+Error: Invalid control character at: line 1 column 67 (char 66)
+Error: Invalid control character at: line 1 column 563 (char 562)
+Error at row 158 (RAG-based rules + memory).
+Memory refinement triggered at row 159 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 8
+Memory refinement triggered at row 159 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 10
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 162 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 1197 (char 1196)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 164 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 165 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 405 (char 433)
+Error at row 167 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 343 (char 342)
+Error at row 171 (LLM-based rules + memory).
+Error: Invalid control character at: line 4 column 729 (char 740)
+Error: Invalid control character at: line 1 column 229 (char 228)
+Error: Invalid control character at: line 10 column 203 (char 214)
+Error: Invalid control character at: line 10 column 274 (char 285)
+Error: Invalid control character at: line 1 column 36 (char 35)
+Error: Invalid control character at: line 1 column 215 (char 214)
+Error: Invalid control character at: line 8 column 131 (char 142)
+Error: Invalid control character at: line 8 column 355 (char 366)
+Error: Invalid control character at: line 1 column 30 (char 29)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 188 (LLM-based rules + memory).
+Memory refinement triggered at row 189 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 10
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 191 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 253 (char 252)
+Error: Invalid control character at: line 1 column 536 (char 535)
+Error at row 192 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 347 (char 346)
+Error: Invalid control character at: line 1 column 189 (char 188)
+Error at row 193 (RAG-based rules + memory).
+Error: Invalid control character at: line 2 column 728 (char 767)
+Error at row 194 (LLM-based rules + memory).
+Error: Invalid control character at: line 5 column 260 (char 298)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 197 (RAG-based rules + memory).
+Error: Invalid control character at: line 11 column 187 (char 198)
+Error: Invalid control character at: line 1 column 36 (char 35)
+Memory refinement triggered at row 202 (LLM-based rules + memory).
+Before refinement, length of memory: 9
+After refinement, length of memory: 1
+Memory refinement triggered at row 202 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 9
+Error: Invalid control character at: line 1 column 224 (char 223)
+Memory refinement triggered at row 204 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 10
+Error: Invalid control character at: line 8 column 434 (char 445)
+Error: Invalid control character at: line 1 column 36 (char 35)
+Memory refinement triggered at row 206 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 11
+Error: Invalid control character at: line 3 column 513 (char 523)
+Memory refinement triggered at row 208 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 5
+Error: Request timed out.
+Error: Invalid control character at: line 1 column 902 (char 901)
+Error: Invalid control character at: line 1 column 179 (char 178)
+Error at row 215 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 327 (char 326)
+Error at row 216 (RAG-based rules + memory).
+Error: Invalid control character at: line 8 column 203 (char 214)
+Error: Invalid control character at: line 1 column 176 (char 175)
+Error at row 220 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 67 (char 66)
+Error: Invalid control character at: line 1 column 274 (char 273)
+Error at row 221 (RAG-based rules + memory).
+Error: Request timed out.
+Error: Invalid control character at: line 2 column 101 (char 136)
+Error: Invalid control character at: line 1 column 261 (char 260)
+Error at row 225 (LLM-based rules + memory).
+Error: Invalid control character at: line 8 column 308 (char 319)
+Error: Invalid control character at: line 2 column 455 (char 483)
+Memory refinement triggered at row 228 (LLM-based rules + memory).
+Before refinement, length of memory: 6
+After refinement, length of memory: 6
+Memory refinement triggered at row 228 (RAG-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 1
+Error: Invalid control character at: line 1 column 575 (char 574)
+Memory refinement triggered at row 230 (RAG-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 11
+Error: Invalid control character at: line 1 column 758 (char 757)
+Memory refinement triggered at row 235 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+Error: Invalid control character at: line 4 column 195 (char 239)
+Refinement failed at row 235, keeping old memory items.
+After refinement, length of memory: 7
+Memory refinement triggered at row 235 (RAG-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 10
+Memory refinement triggered at row 237 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+Error: Request timed out.
+Refinement failed at row 237, keeping old memory items.
+After refinement, length of memory: 11
+Error: Invalid control character at: line 1 column 53 (char 52)
+Error: Invalid control character at: line 1 column 160 (char 159)
+Error at row 239 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 20 (char 19)
+Error: Invalid control character at: line 8 column 357 (char 368)
+Error: Invalid control character at: line 1 column 667 (char 666)
+Error at row 241 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 374 (char 373)
+Error at row 242 (LLM-based rules + memory).
+Error: Request timed out.
+Error: Invalid control character at: line 2 column 372 (char 411)
+Error: Invalid control character at: line 1 column 41 (char 40)
+Error: Invalid control character at: line 8 column 553 (char 564)
+Error: Invalid control character at: line 2 column 296 (char 335)
+Memory refinement triggered at row 249 (LLM-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 6
+Memory refinement triggered at row 249 (RAG-based rules + memory).
+Before refinement, length of memory: 12
+After refinement, length of memory: 7
+Error: Invalid control character at: line 1 column 136 (char 135)
+Memory refinement triggered at row 252 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 6
+Error: Invalid control character at: line 2 column 3685 (char 3724)
+Error at row 256 (LLM-based rules + memory).
+Memory refinement triggered at row 258 (LLM-based rules + memory).
+Before refinement, length of memory: 7
+After refinement, length of memory: 4
+Memory refinement triggered at row 258 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+Error: Invalid control character at: line 2 column 121 (char 153)
+Refinement failed at row 258, keeping old memory items.
+After refinement, length of memory: 7
+Error: Invalid control character at: line 1 column 576 (char 575)
+Error at row 259 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 642 (char 681)
+Error at row 260 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 806 (char 805)
+Error at row 261 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 415 (char 414)
+Error: Invalid control character at: line 1 column 47 (char 46)
+Error at row 264 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 155 (char 154)
+Error at row 266 (LLM-based rules + memory).
+Memory refinement triggered at row 268 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 268 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 6
+Error: Invalid control character at: line 1 column 312 (char 311)
+Error at row 269 (RAG-based rules + memory).
+Error: Invalid control character at: line 2 column 1092 (char 1131)
+Error at row 270 (LLM-based rules + memory).
+Error: Request timed out.
+Memory refinement triggered at row 272 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 272 (RAG-based rules + memory).
+Before refinement, length of memory: 7
+Error: Invalid control character at: line 2 column 121 (char 153)
+Refinement failed at row 272, keeping old memory items.
+After refinement, length of memory: 7
+Error: Invalid control character at: line 1 column 168 (char 167)
+Error: Invalid control character at: line 2 column 107 (char 146)
+Error: Invalid control character at: line 1 column 1002 (char 1001)
+Error: Invalid control character at: line 1 column 40 (char 39)
+Error: Invalid control character at: line 1 column 39 (char 38)
+Memory refinement triggered at row 285 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Error: Invalid control character at: line 1 column 279 (char 278)
+Error at row 285 (RAG-based rules + memory).
+Memory refinement triggered at row 286 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+Error: Request timed out.
+Refinement failed at row 286, keeping old memory items.
+After refinement, length of memory: 8
+Error: Invalid control character at: line 2 column 400 (char 428)
+Memory refinement triggered at row 287 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Error: Invalid control character at: line 1 column 276 (char 275)
+Error at row 287 (RAG-based rules + memory).
+Error: Invalid control character at: line 2 column 843 (char 882)
+Error at row 290 (RAG-based rules + memory).
+Error: Invalid control character at: line 10 column 552 (char 563)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 291 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 279 (char 278)
+Error: Invalid control character at: line 1 column 428 (char 427)
+Error at row 292 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 185 (char 228)
+Error at row 294 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 295 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 47 (char 46)
+Error at row 299 (RAG-based rules + memory).
+Memory refinement triggered at row 301 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Error: Invalid control character at: line 10 column 157 (char 168)
+Error: Invalid control character at: line 1 column 150 (char 149)
+Error at row 306 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 410 (char 409)
+Error: Invalid control character at: line 1 column 129 (char 128)
+Error at row 310 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 1043 (char 1042)
+Error: Invalid control character at: line 12 column 186 (char 225)
+Error at row 317 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 103 (char 134)
+Error at row 318 (LLM-based rules + memory).
+Memory refinement triggered at row 320 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+Error: Request timed out.
+Refinement failed at row 320, keeping old memory items.
+After refinement, length of memory: 9
+Error: Invalid control character at: line 1 column 357 (char 356)
+Error at row 322 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 299 (char 298)
+Error: Invalid control character at: line 1 column 136 (char 135)
+Error at row 324 (RAG-based rules + memory).
+Error: Invalid control character at: line 2 column 1293 (char 1332)
+Error at row 325 (RAG-based rules + memory).
+Memory refinement triggered at row 328 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 4
+Memory refinement triggered at row 328 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 8
+Error: Invalid control character at: line 1 column 1499 (char 1498)
+Error: Invalid control character at: line 1 column 308 (char 307)
+Error at row 330 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 131 (char 130)
+Error at row 331 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 36 (char 35)
+Error: Invalid control character at: line 2 column 1477 (char 1516)
+Error at row 335 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 151 (char 150)
+Error at row 336 (LLM-based rules + memory).
+Error: Invalid control character at: line 10 column 197 (char 208)
+Memory refinement triggered at row 342 (LLM-based rules + memory).
+Before refinement, length of memory: 5
+After refinement, length of memory: 1
+Error: Invalid control character at: line 1 column 109 (char 108)
+Error at row 343 (LLM-based rules + memory).
+Memory refinement triggered at row 344 (RAG-based rules + memory).
+Before refinement, length of memory: 9
+Error: Request timed out.
+Refinement failed at row 344, keeping old memory items.
+After refinement, length of memory: 9
+Error: Invalid control character at: line 2 column 996 (char 1034)
+Error at row 345 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 347 (LLM-based rules + memory).
+Error: Invalid control character at: line 8 column 221 (char 232)
+Error: Invalid control character at: line 1 column 265 (char 264)
+Error: Invalid control character at: line 1 column 41 (char 40)
+Error at row 356 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 358 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 1116 (char 1115)
+Memory refinement triggered at row 362 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+Error: Invalid control character at: line 5 column 101 (char 233)
+Refinement failed at row 362, keeping old memory items.
+After refinement, length of memory: 2
+Memory refinement triggered at row 362 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 7
+Error: Invalid control character at: line 1 column 408 (char 407)
+Error at row 363 (LLM-based rules + memory).
+Error: Invalid control character at: line 12 column 164 (char 175)
+Memory refinement triggered at row 364 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+Error: Request timed out.
+Refinement failed at row 364, keeping old memory items.
+After refinement, length of memory: 3
+Memory refinement triggered at row 364 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 7
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 365 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 1454 (char 1453)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 366 (LLM-based rules + memory).
+Error: Invalid control character at: line 2 column 68 (char 107)
+Error: Invalid control character at: line 1 column 122 (char 121)
+Memory refinement triggered at row 367 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 1
+Memory refinement triggered at row 367 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 9
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 369 (RAG-based rules + memory).
+Error: Invalid control character at: line 2 column 915 (char 954)
+Error at row 370 (LLM-based rules + memory).
+Memory refinement triggered at row 371 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 2
+Memory refinement triggered at row 371 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 7
+Error: Invalid control character at: line 1 column 608 (char 607)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 373 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 52 (char 51)
+Error: Invalid control character at: line 1 column 36 (char 35)
+Memory refinement triggered at row 378 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 1
+Error: Invalid control character at: line 1 column 34 (char 33)
+Error at row 379 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 159 (char 158)
+Error at row 380 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 1610 (char 1609)
+Error: Invalid control character at: line 1 column 132 (char 131)
+Error at row 384 (RAG-based rules + memory).
+Error: Request timed out.
+Error: Invalid control character at: line 1 column 325 (char 324)
+Error at row 386 (RAG-based rules + memory).
+Error: Invalid control character at: line 8 column 303 (char 314)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 387 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 326 (char 325)
+Error at row 389 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 47 (char 46)
+Error at row 393 (RAG-based rules + memory).
+Memory refinement triggered at row 395 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 2
+Memory refinement triggered at row 395 (RAG-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 1
+Error: Invalid control character at: line 1 column 270 (char 269)
+Memory refinement triggered at row 397 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 2
+Memory refinement triggered at row 397 (RAG-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 1
+Memory refinement triggered at row 398 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+After refinement, length of memory: 7
+Memory refinement triggered at row 398 (RAG-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 9
+Error: Invalid control character at: line 1 column 591 (char 590)
+Error: Invalid control character at: line 1 column 39 (char 38)
+Memory refinement triggered at row 401 (LLM-based rules + memory).
+Before refinement, length of memory: 8
+After refinement, length of memory: 15
+Error: Invalid control character at: line 2 column 1883 (char 1921)
+Error at row 401 (RAG-based rules + memory).
+Error: Invalid control character at: line 8 column 393 (char 404)
+Error: Invalid control character at: line 1 column 39 (char 38)
+Error: Invalid control character at: line 1 column 207 (char 206)
+Error: Invalid control character at: line 1 column 2406 (char 2405)
+Error: Invalid control character at: line 1 column 393 (char 392)
+Error: Invalid control character at: line 1 column 289 (char 288)
+Error at row 405 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 52 (char 51)
+Error: Invalid control character at: line 8 column 171 (char 182)
+Error: Invalid control character at: line 1 column 40 (char 39)
+Error: Invalid control character at: line 8 column 225 (char 236)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 411 (RAG-based rules + memory).
+Error: Invalid control character at: line 11 column 291 (char 302)
+Error: Invalid control character at: line 1 column 52 (char 51)
+Memory refinement triggered at row 417 (LLM-based rules + memory).
+Before refinement, length of memory: 16
+After refinement, length of memory: 1
+Error: Invalid control character at: line 1 column 97 (char 96)
+Error at row 417 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 67 (char 66)
+Error at row 418 (LLM-based rules + memory).
+Error: Request timed out.
+Error: Invalid control character at: line 1 column 898 (char 897)
+Error: Invalid control character at: line 1 column 235 (char 234)
+Error: Invalid control character at: line 1 column 52 (char 51)
+Error: Invalid control character at: line 1 column 47 (char 46)
+Error at row 424 (RAG-based rules + memory).
+Memory refinement triggered at row 427 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+Error: Request timed out.
+Refinement failed at row 427, keeping old memory items.
+After refinement, length of memory: 10
+Error: Invalid control character at: line 2 column 477 (char 505)
+Error: Invalid control character at: line 1 column 283 (char 282)
+Memory refinement triggered at row 432 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+After refinement, length of memory: 2
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 436 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 437 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 1898 (char 1897)
+Memory refinement triggered at row 438 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+Error: Invalid control character at: line 13 column 3567 (char 3600)
+Refinement failed at row 438, keeping old memory items.
+After refinement, length of memory: 3
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 438 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 68 (char 67)
+Error at row 439 (LLM-based rules + memory).
+Error: Invalid control character at: line 8 column 284 (char 295)
+Error: Invalid control character at: line 2 column 210 (char 237)
+Error at row 440 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 1501 (char 1500)
+Error: Invalid control character at: line 1 column 755 (char 754)
+Error: Invalid control character at: line 8 column 309 (char 320)
+Error: Invalid control character at: line 1 column 581 (char 580)
+Error: Invalid control character at: line 1 column 254 (char 253)
+Error at row 446 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 301 (char 300)
+Error: Request timed out.
+Error: Request timed out.
+Error at row 448 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 284 (char 283)
+Memory refinement triggered at row 450 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 1
+Memory refinement triggered at row 450 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+After refinement, length of memory: 9
+Error: Invalid control character at: line 1 column 2455 (char 2454)
+Memory refinement triggered at row 451 (LLM-based rules + memory).
+Before refinement, length of memory: 2
+Error: Invalid control character at: line 5 column 319 (char 362)
+Refinement failed at row 451, keeping old memory items.
+After refinement, length of memory: 2
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 451 (RAG-based rules + memory).
+Error: Request timed out.
+Error: Invalid control character at: line 1 column 146 (char 145)
+Error at row 452 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 263 (char 262)
+Error: Invalid control character at: line 1 column 235 (char 234)
+Error: Invalid control character at: line 1 column 39 (char 38)
+Error: Invalid control character at: line 1 column 101 (char 100)
+Memory refinement triggered at row 455 (LLM-based rules + memory).
+Before refinement, length of memory: 3
+Error: Invalid control character at: line 5 column 393 (char 426)
+Refinement failed at row 455, keeping old memory items.
+After refinement, length of memory: 3
+Memory refinement triggered at row 456 (LLM-based rules + memory).
+Before refinement, length of memory: 4
+After refinement, length of memory: 20
+Error: Invalid control character at: line 1 column 219 (char 218)
+Error at row 456 (RAG-based rules + memory).
+Error: Invalid control character at: line 9 column 223 (char 249)
+Error: Invalid control character at: line 1 column 291 (char 290)
+Error at row 459 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 294 (char 293)
+Error at row 460 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 211 (char 210)
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 464 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 140 (char 139)
+Error at row 465 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 39 (char 38)
+Error: Invalid control character at: line 1 column 496 (char 495)
+Error at row 468 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 196 (char 195)
+Error: Invalid control character at: line 1 column 386 (char 385)
+Error: Invalid control character at: line 8 column 250 (char 261)
+Error: Invalid control character at: line 1 column 69 (char 68)
+Error at row 477 (RAG-based rules + memory).
+Memory refinement triggered at row 478 (RAG-based rules + memory).
+Before refinement, length of memory: 10
+After refinement, length of memory: 10
+Error: Invalid control character at: line 1 column 215 (char 214)
+Error: Invalid control character at: line 1 column 585 (char 584)
+Error at row 480 (LLM-based rules + memory).
+Memory refinement triggered at row 482 (LLM-based rules + memory).
+Before refinement, length of memory: 21
+After refinement, length of memory: 19
+Memory refinement triggered at row 482 (RAG-based rules + memory).
+Before refinement, length of memory: 11
+Error: Request timed out.
+Refinement failed at row 482, keeping old memory items.
+After refinement, length of memory: 11
+Error: Invalid control character at: line 1 column 67 (char 66)
+Error at row 483 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 612 (char 611)
+Error at row 484 (LLM-based rules + memory).
+Error: Invalid control character at: line 1 column 378 (char 377)
+Total parsing errors: 138
+Finished run 2. Results saved to results_t_stage_run_2_lung_mixtral.csv
+Starting run 3 with random seed 892707...
+Generating LLM-based rules...
+LLM-based rules: ['T is the size of the primary tumor and/or its direct extension', 'T1: The tumor is ≤ 3 cm in greatest dimension, surrounded by lung or visceral pleura, without bronchoscopic evidence of invasion more proximal than the lobar bronchus (i.e., not in the main bronchus)', 'T2: One of the following', '- The tumor is > 3 cm in greatest dimension, or', '- The tumor invades the main bronchus, 2 cm or more distal to the carina', '- The tumor invades the visceral pleura, associated with a pleural effusion, or', '- There are separate tumor nodules in the same lobe', 'T3: One of the following', '- The tumor directly invades any of the following: parietal pleura, chest wall, phrenic nerve, mediastinal pleura, parietal pericardium; or', '- The tumor is in the main bronchus, < 2 cm distal to the carina but without involvement of the carina; or', '- There is atelectasis or obstructive pneumonitis that extends to the hilar region but does not involve the entire lung', 'T4: One of the following', '- The tumor invades the mediastinum, heart, great vessels, trachea, esophagus, vertebral body, carina; or', '- There is a separate tumor nodule(s) in a different ipsilateral lobe than the primary tumor; or', '- Tumor with direct extension into the diaphragm, mediastinum, or through the chest wall, including the superior sulcus tumor']
+Generating RAG-based rules...
+RAG-based rules: ['% T category is defined by the size and extent of the primary tumor.\n', 'T1: Tumor 3 cm or less, surrounded by lung or visceral pleura, without bronchoscopic evidence of invasion proximal to the lobar bronchus.\n', 'T2: Tumor more than 3 cm but 7 cm or less, or involves main bronchus, invades visceral pleura, or associated with atelectasis or obstructive pneumonitis.\n', 'T3: Tumor more than 7 cm, directly invades parietal pleura, chest wall, diaphragm, phrenic nerve, mediastinal pleura, or tumor in the main bronchus without involvement of the carina.\n', 'T4: Tumor of any size that invades mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina, or separate tumor nodule(s) in a different ipsilateral lobe.']
+Error: Invalid control character at: line 11 column 121 (char 132)
+Error: Invalid control character at: line 1 column 414 (char 413)
+Error at row 1 (RAG-based rules + memory).
+Error: Invalid control character at: line 1 column 42 (char 41)
+Error at row 2 (RAG-based rules + memory).
+Error: Invalid control character at: line 2 column 1264 (char 1292)
+Error at row 3 (RAG-based rules + memory).
