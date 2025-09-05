@@ -264,8 +264,8 @@ class Agent:
         We run 7 total methods:
           1) Zero-shot
           2) LLM-based rules-only
-          3) RAG-based rules-only
-          4) Memory-only
+          3) RAG-based rules-only (=KEwRAG)
+          4) Memory-only (=KEwLTM)
           5) RAG-only (excerpt-only)
           6) LLM-based rules + memory
           7) RAG-based rules + memory
