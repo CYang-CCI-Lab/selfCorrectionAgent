@@ -9,14 +9,13 @@ LOGGER_NAME = "kew_methods"
 
 
 def get_logger(name: str = LOGGER_NAME) -> logging.Logger:
-    """Return a named logger without configuring handlers."""
+    """Return a named logger."""
     return logging.getLogger(name)
 
 
 def setup_logging(log_file: Optional[str], level: str = "INFO", name: str = LOGGER_NAME) -> logging.Logger:
     """
-    Configure a named logger with console and optional file handlers.
-    Safe to call multiple times; existing handlers are replaced.
+    Safe to call multiple times.
     """
     logger = logging.getLogger(name)
     lvl = getattr(logging, level.upper(), logging.INFO)

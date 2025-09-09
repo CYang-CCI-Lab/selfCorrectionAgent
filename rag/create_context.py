@@ -1,12 +1,10 @@
 # conda activate /secure/shared_data/rag_embedding_model/nvembed
-# Standard library
 import json
 import logging
 import os
 import re
 from typing import Any, Dict, List
 
-# Third-party
 import chromadb
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -33,7 +31,7 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s",
     datefmt="%Y-%m-%d %H:%M:%S",
     handlers=[
-        # logging.FileHandler('log/0410_MA_3_probs_parallel_static.log', mode='w'), 
+        # logging.FileHandler('log/0909.log', mode='w'), 
         logging.StreamHandler()  
     ]
 )
@@ -42,16 +40,12 @@ logger = logging.getLogger(__name__)
 # Environment Setup
 # ------------------
 def setup_environment() -> None:
-    """
-    Loads environment variables and configures CUDA usage.
-    """
     env_path = find_dotenv()
     if not env_path:
         env_path = "/home/yl3427/.env"  # fallback path
     if not load_dotenv(env_path):
         raise Exception("Failed to load .env file")
 
-    # Adjust GPU environment as needed
     os.environ['PYTORCH_CUDA_ALLOC_CONF'] = 'expandable_segments:True'
     os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
     logger.info("Environment setup complete.")
@@ -94,9 +88,7 @@ def create_documents(
         )
         documents.append(document)
 
-    """
-    Splits clinical text into smaller chunks using a tokenizer-based splitter.
-    """
+
     text_splitter = RecursiveCharacterTextSplitter.from_huggingface_tokenizer(
         separators=["\n\n", "\n", '(?<=[.?"\s])\s+'],
         tokenizer=tokenizer,
@@ -126,16 +118,13 @@ def embed_docs_in_chroma(
     collection,
     max_length: int = 1024
 ) -> None:
-    """
-    Embeds documents into the Chroma collection.
-    """
+
     pbar = tqdm(total=len(docs), desc="Embedding Documents")
     for doc in docs:
         doc_text = doc.page_content
         doc_meta = doc.metadata
         doc_id = str(doc.metadata["start_index"])
         
-        # Log each doc ID as we process it
         logger.info(f"Embedding doc_id={doc_id}...")
 
         with torch.no_grad():
@@ -163,12 +152,6 @@ def embed_docs_in_chroma(
 # Main Embedding Flow
 # --------------------
 def main():
-    """
-    1) Setup environment
-    2) Create documents from PDF
-    3) Connect to Chroma
-    4) Embed docs into Chroma
-    """
     setup_environment()
 
     # 1) Paths

@@ -15,6 +15,7 @@ from pydantic import BaseModel, Field
 
 
 import pandas as pd
+import numpy as np
 from tqdm import tqdm
 
 # Optional fuzzy similarity for KEwLTM update gating
@@ -94,27 +95,27 @@ def macro_prf(y_true: List[int], y_pred: List[int], num_classes: int) -> Tuple[f
 # JSON Schemas via Pydantic
 # ---------------------------
 
-class _ResponseRules(BaseModel):  # type: ignore[misc]
+class _ResponseRules(BaseModel):  
     rules: List[str] = Field(description="A list of short, explicit rules.")
 
 
-class _ResponseStageT(BaseModel):  # type: ignore[misc]
+class _ResponseStageT(BaseModel): 
     reasoning: str = Field(description="Step-by-step reasoning.")
     stage: str = Field(description="Predicted T stage among {T1, T2, T3, T4}.")
 
 
-class _ResponseStageN(BaseModel):  # type: ignore[misc]
+class _ResponseStageN(BaseModel):
     reasoning: str = Field(description="Step-by-step reasoning.")
     stage: str = Field(description="Predicted N stage among {N0, N1, N2, N3}.")
 
 
-class _ResponseElicitT(BaseModel):  # type: ignore[misc]
+class _ResponseElicitT(BaseModel): 
     reasoning: str = Field(description="Reasoning for the current report.")
     predicted_stage: str = Field(description="Predicted T stage among {T1, T2, T3, T4}.")
     rules: List[str] = Field(description="Updated rules as a list of short statements.")
 
 
-class _ResponseElicitN(BaseModel):  # type: ignore[misc]
+class _ResponseElicitN(BaseModel):  
     reasoning: str = Field(description="Reasoning for the current report.")
     predicted_stage: str = Field(description="Predicted N stage among {N0, N1, N2, N3}.")
     rules: List[str] = Field(description="Updated rules as a list of short statements.")
@@ -122,18 +123,18 @@ class _ResponseElicitN(BaseModel):  # type: ignore[misc]
 
 def stage_schema(task: str) -> dict:
     if task == "t":
-        return _ResponseStageT.model_json_schema()  # type: ignore[attr-defined]
-    return _ResponseStageN.model_json_schema()      # type: ignore[attr-defined]
+        return _ResponseStageT.model_json_schema()
+    return _ResponseStageN.model_json_schema()     
 
 
 def elicit_schema(task: str) -> dict:
     if task == "t":
-        return _ResponseElicitT.model_json_schema()  # type: ignore[attr-defined]
-    return _ResponseElicitN.model_json_schema()      # type: ignore[attr-defined]
+        return _ResponseElicitT.model_json_schema() 
+    return _ResponseElicitN.model_json_schema()     
 
 
 def rules_schema() -> dict:
-    return _ResponseRules.model_json_schema()  # type: ignore[attr-defined]
+    return _ResponseRules.model_json_schema()
 
 
 # ---------------------------
@@ -704,12 +705,8 @@ def main() -> None:
     setup_logging(args.log_file, args.log_level)
 
     # Seed
-    random.seed(args.seed)
-    try:
-        import numpy as np  # type: ignore
-        np.random.seed(args.seed)
-    except Exception:
-        pass
+    np.random.seed(args.seed)
+
 
     cfg = RunConfig(
         model=args.model,
@@ -731,7 +728,6 @@ def main() -> None:
     if args.method == "kewltm":
         df = df.sample(frac=1.0, random_state=cfg.seed).reset_index(drop=True)
 
-    # Runner
     if args.method == "zscot":
         runner = ZSCOT(llm, cfg)
         out = runner.run(df)

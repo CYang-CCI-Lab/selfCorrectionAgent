@@ -98,26 +98,6 @@ All methods use the same OpenAI‑compatible client (`OpenAI(api_key="dummy_key"
 
 The driver script loops over every `*_T14N03.csv` under `per_cancer_type/`, runs any subset of methods for both tasks present (T and/or N), and writes one CSV and one log file per run. It also writes a **manifest**.
 
-Open the file and check the `CONFIG` block at the top. The defaults are:
-
-```python
-CONFIG = {
-    "DATA_ROOT": "/home/yl3427/cylab/selfCorrectionAgent",
-    "PER_CANCER_DIR": "per_cancer_type",
-    "CONTEXT_DIR": "rag/context",
-    "OUT_DIR": "runs2",
-    "MODEL": "mistralai/Mixtral-8x7B-Instruct-v0.1",
-    "METHODS": ["kewltm", "zscot", "rag", "kewrag"],
-    "ONLY": [],         # e.g., ["BRCA"]
-    "SKIP": [],         # e.g., ["KIRC"]
-    "SEED": 42,
-    "TRAIN_FRACTION": 0.05,       # KEwLTM only (≈5% of task-labeled rows)
-    "FORCE_TRAIN_SIZE": None,     # set to an int to override the fraction (e.g., 40)
-    "EDIT_THRESHOLD": 80,
-    "LOG_LEVEL": "INFO",
-}
-```
-
 Run it as:
 
 ```bash

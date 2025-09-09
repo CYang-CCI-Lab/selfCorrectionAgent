@@ -1,15 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-run_experiments_hardcoded.py
-
-Batch runner that uses hard-coded configuration (edit the CONFIG section below)
-to run ZSCOT, RAG, KEwRAG, and/or KEwLTM across per-cancer CSVs with matching
-context JSON files. No command-line arguments required.
-
-It imports the classes and helpers you already have in kew_methods.py and utils.py.
-"""
-
 from __future__ import annotations
 
 import csv
@@ -19,52 +7,30 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
-# Import your existing modules (assumed to be on PYTHONPATH or same folder)
 import kew_methods as km
 from utils import setup_logging, get_logger
 
 logger = get_logger()
 
 # ======================================================================================
-# CONFIG — EDIT THESE VALUES
+# CONFIG
 # ======================================================================================
 CONFIG = {
-    # Root of your project (folder that contains per_cancer_type/ and rag/context/)
     "DATA_ROOT": "/home/yl3427/cylab/selfCorrectionAgent",
-
-    # Subfolders relative to DATA_ROOT
     "PER_CANCER_DIR": "per_cancer_type",
     "CONTEXT_DIR": "rag/context",
-
-    # Where to write CSV results and logs
     "OUT_DIR": "runs",
-
-    # Model to use. If you leave this as None, the script will query the first model id
-    # from your vLLM/OpenAI-compatible server at http://localhost:8000/v1
     "MODEL":"mistralai/Mixtral-8x7B-Instruct-v0.1",  
-
-    # Which methods to run (any subset). Valid options: zscot, rag, kewrag, kewltm
     "METHODS": ["kewltm", "zscot", "rag", "kewrag"], # "rag", "kewrag", "kewltm"
-
-    # Limit to only these TCGA codes (or set to [] to include all)
-    "ONLY": [],  # e.g., ["BRCA", "LUAD"]
-
-    # Skip these TCGA codes
-    "SKIP": [],  # e.g., ["KIRC"]
-
-    # Global RNG seed
+    "ONLY": [],  # ["BRCA", "LUAD"]
+    "SKIP": [],  # ["KIRC"]
     "SEED": 42,
 
-    # === Dynamic train-size control for KEwLTM ===
-    # Use ~5% of the number of rows available for the task (T14 or N03) in each cancer type.
     # If you want to force a fixed integer instead, set FORCE_TRAIN_SIZE to a positive int.
     "TRAIN_FRACTION": 0.05,     # 0.05 -> 5% (matches 40/800 in your BRCA setup)
     "FORCE_TRAIN_SIZE": None,   # e.g., set to 40 to override dynamic sizing
 
-    # KEwLTM similarity gate
     "EDIT_THRESHOLD": 80,
-
-    # Log level for per-run logs: DEBUG, INFO, WARNING, ERROR, CRITICAL
     "LOG_LEVEL": "INFO",
 }
 # ======================================================================================
@@ -124,22 +90,12 @@ def has_column(csv_path: Path, colname: str) -> bool:
 
 
 def discover_model_id() -> str:
-    """
-    Use the same OpenAI-compatible settings as in kew_methods.LLMClient to read
-    the first available model id so it matches the assertion inside LLMClient.
-    """
     from openai import OpenAI
     client = OpenAI(api_key="dummy_key", base_url="http://localhost:8000/v1")
     return client.models.list().data[0].id
 
 
 def effective_task_rows(df, task: str) -> int:
-    """
-    Count rows that have a label for the task, if available.
-    Falls back to total rows if the label column is absent.
-    This does not filter the dataset used for induction; it is
-    used only to choose a reasonable train_size proportionally.
-    """
     if task == "t" and "T14" in df.columns:
         return int(df["T14"].notna().sum())
     if task == "n" and "N03" in df.columns:
@@ -148,10 +104,6 @@ def effective_task_rows(df, task: str) -> int:
 
 
 def choose_dynamic_train_size(df, task: str) -> int:
-    """
-    Compute train_size as approximately TRAIN_FRACTION of the number of rows
-    available for the task. Always at least 1 and at most len(df).
-    """
     if isinstance(CONFIG.get("FORCE_TRAIN_SIZE"), int) and CONFIG["FORCE_TRAIN_SIZE"] > 0:
         return min(CONFIG["FORCE_TRAIN_SIZE"], len(df))
 
@@ -175,10 +127,7 @@ def run_one_method(
     log_file: Path,
     log_level: str,
 ) -> None:
-    """
-    Run a single (method, task) on one dataset and save results to out_csv.
-    Reconfigures the shared logger to write into log_file for this run.
-    """
+
     setup_logging(str(log_file), log_level)  # reconfigure shared logger
     logger.info("=== RUN START === method=%s task=%s dataset=%s model=%s", method, task, dataset, model)
 
@@ -201,16 +150,13 @@ def run_one_method(
             original_rows - filtered_rows, gt_col
         )
 
-    # For KEwLTM, compute a dynamic train size based on the *task* rows
     if method == "kewltm":
         train_size = choose_dynamic_train_size(df, task)
         logger.info("[KEwLTM] Dynamic train_size=%d (fraction=%.3f)", train_size, CONFIG["TRAIN_FRACTION"])
-        # Shuffle so the first `train_size` rows form the memory set
         df = df.sample(frac=1.0, random_state=seed).reset_index(drop=True)
     else:
         train_size = 0  # unused
 
-    # Build config
     cfg = km.RunConfig(
         model=model,
         task=task,
@@ -222,10 +168,9 @@ def run_one_method(
         edit_threshold=edit_threshold,
         output_csv=str(out_csv),
     )
-    # LLM client
+
     llm = km.LLMClient(model=cfg.model, temperature=cfg.temperature)
 
-    # Runner selection
     if method == "zscot":
         runner = km.ZSCOT(llm, cfg)
         out = runner.run(df)
@@ -252,23 +197,19 @@ def run_one_method(
 
 
 def run_all() -> None:
-    # Resolve paths
     root = Path(CONFIG["DATA_ROOT"]).resolve()
     per_cancer_dir = (root / CONFIG["PER_CANCER_DIR"]).resolve()
     context_dir = (root / CONFIG["CONTEXT_DIR"]).resolve()
     out_dir = (root / CONFIG["OUT_DIR"]).resolve()
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Determine model id (if not specified)
     model_id = CONFIG["MODEL"] or discover_model_id()
 
-    # Validate methods
     methods = [m.lower() for m in CONFIG["METHODS"]]
     for m in methods:
         if m not in SUPPORTED_METHODS:
             raise ValueError(f"Unsupported method: {m} (choose from {sorted(SUPPORTED_METHODS)})")
-
-    # Find datasets
+        
     csvs = find_per_cancer_csvs(per_cancer_dir)
     if not csvs:
         raise FileNotFoundError(f"No *_T14N03.csv files found in {per_cancer_dir}")
@@ -312,14 +253,11 @@ def run_all() -> None:
                 print(f"[skip] {csv_path.name} has neither T14 nor N03.")
                 continue
 
-            # Context availability for RAG methods
             ctx_for_methods = context_json if context_json.exists() else None
 
-            # Load once for computing dynamic train size per task
             df_for_counts = km.read_dataset(str(csv_path))
 
             for task in tasks:
-                # Compute anticipated dynamic train size (only meaningful for KEwLTM)
                 anticipated_train = choose_dynamic_train_size(df_for_counts, task)
 
                 for method in methods:
@@ -351,7 +289,6 @@ def run_all() -> None:
                             log_level=CONFIG["LOG_LEVEL"],
                         )
                     except Exception as e:
-                        # Reconfigure to print to console as well
                         setup_logging(None, CONFIG["LOG_LEVEL"])
                         logger.exception("Run failed for %s %s on %s: %s", method, task, csv_path.name, e)
 
