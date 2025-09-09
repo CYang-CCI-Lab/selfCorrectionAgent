@@ -1,0 +1,9 @@
+2025-09-08 05:23:36,916 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs2/CHOL_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_052336.log
+2025-09-08 05:23:36,916 | INFO | === RUN START === method=kewltm task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/CHOL_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-08 05:23:36,922 | INFO | Filtered dataset: Removed 1 rows with missing 'N03' labels.
+2025-09-08 05:23:36,922 | INFO | [KEwLTM] Dynamic train_size=5 (fraction=0.100)
+2025-09-08 05:23:36,947 | INFO | [KEwLTM] Inducing memory from 5 reports (threshold=80)...
+2025-09-08 05:24:12,483 | INFO | [KEwLTM] Final memory length: 1
+2025-09-08 05:24:12,484 | INFO | [KEwLTM] Macro P=0.250 R=0.250 F1=0.250
+2025-09-08 05:24:12,487 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs2/CHOL_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_052336.csv
+2025-09-08 05:24:12,487 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs2/CHOL_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_052336.csv

@@ -1,0 +1,6 @@
+2025-09-08 05:11:00,508 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs2/CESC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_051100.log
+2025-09-08 05:11:00,508 | INFO | === RUN START === method=kewrag task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/CESC_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-08 05:11:00,528 | INFO | Filtered dataset: Removed 1 rows with missing 'T14' labels.
+2025-09-08 05:11:00,552 | INFO | [KEwRAG] Generating rules from RAG excerpt...
+2025-09-08 05:12:11,070 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs2/CESC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_051100.csv
+2025-09-08 05:12:11,070 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs2/CESC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_051100.csv

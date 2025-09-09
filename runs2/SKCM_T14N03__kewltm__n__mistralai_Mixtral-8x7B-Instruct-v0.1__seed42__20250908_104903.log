@@ -1,0 +1,23 @@
+2025-09-08 10:49:03,505 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs2/SKCM_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_104903.log
+2025-09-08 10:49:03,505 | INFO | === RUN START === method=kewltm task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/SKCM_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-08 10:49:03,512 | INFO | [KEwLTM] Dynamic train_size=5 (fraction=0.100)
+2025-09-08 10:49:03,538 | INFO | [KEwLTM] Inducing memory from 5 reports (threshold=80)...
+2025-09-08 10:59:21,788 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 5 column 32355 (char 32372)
+2025-09-08 10:59:21,789 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-08 10:59:21,858 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-08 10:59:21,859 | INFO | Attempting to parse with json5 as fallback.
+2025-09-08 10:59:22,532 | ERROR | json5 fallback failed: <string>:5 Unexpected end of input at column 32355
+2025-09-08 10:59:22,532 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-08 10:59:22,532 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 5 column 32355 (char 32372)
+2025-09-08 10:59:22,532 | INFO | Attempting to parse with jsom as fallback.
+2025-09-08 10:59:22,550 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 5, column 1.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-08 10:59:22,550 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-08 10:59:22,586 | INFO | json_repair successfully parsed the JSON.
+2025-09-08 10:59:38,825 | INFO | [KEwLTM] Final memory length: 5
+2025-09-08 10:59:38,826 | INFO | [KEwLTM] Macro P=0.500 R=0.292 F1=0.367
+2025-09-08 10:59:38,828 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs2/SKCM_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_104903.csv
+2025-09-08 10:59:38,829 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs2/SKCM_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_104903.csv

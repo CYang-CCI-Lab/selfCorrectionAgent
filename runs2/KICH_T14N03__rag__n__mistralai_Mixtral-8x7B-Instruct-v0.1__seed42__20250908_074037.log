@@ -1,0 +1,5 @@
+2025-09-08 07:40:37,668 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs2/KICH_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_074037.log
+2025-09-08 07:40:37,668 | INFO | === RUN START === method=rag task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/KICH_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-08 07:40:37,680 | INFO | Filtered dataset: Removed 3 rows with missing 'N03' labels.
+2025-09-08 07:41:19,384 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs2/KICH_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_074037.csv
+2025-09-08 07:41:19,385 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs2/KICH_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_074037.csv

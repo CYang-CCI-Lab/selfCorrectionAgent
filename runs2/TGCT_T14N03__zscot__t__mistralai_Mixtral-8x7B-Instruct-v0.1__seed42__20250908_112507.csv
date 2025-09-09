@@ -1,0 +1,132 @@
+type,case_submitter_id,patient_filename,ajcc_pathologic_t,T14,ajcc_pathologic_n,N03,text,zscot_reasoning,zscot_stage
+TGCT,TCGA-2G-AAEW,TCGA-2G-AAEW.02452377-4D36-4145-8492-B12046B855FC,T1,0.0,N0,0.0,Summary pathology report. Right orchidectomy; seminoma; diameter 6 cm; lymphatic invasion present; invasion of rete. testis. = date of orchidectomy): pathologist.,"The T stage for Testicular Germ Cell Tumors is determined by the size of the tumor, invasion of surrounding structures, and involvement of the spermatic cord and scrotum, as outlined in the AJCC Cancer Staging Manual (7th edition). Based on the pathology report, we have the following findings: 
+1. The tumor size is 6 cm in diameter.
+2. Lymphatic invasion is present.
+3. Invasion of the rete testis is present.
+
+Now, let's evaluate the T stage:
+
+T1: No invasion of the spermatic cord or scrotum.
+T2: Invasion of the spermatic cord with or without lymphovascular invasion.
+T3: Invasion of the scrotum with or without lymphovascular invasion.
+T4: Invasion of the surrounding structures such as the skin or muscle of the chest wall.
+
+Based on the pathology report, there is no mention of invasion of the spermatic cord, scrotum, or surrounding structures. However, there is lymphatic invasion and invasion of the rete testis. This information is insufficient to determine a T4 stage. Therefore, we can only determine the T stage up to T2.
+
+Since lymphatic invasion is present and there is invasion of the rete testis, the T stage is at least T2. However, without information on spermatic cord invasion, we cannot definitively say if the T stage is T2 or higher.
+
+In conclusion, the T stage for this Testicular Germ Cell Tumors patient is at least T2, but it could be T3 or T4 if there is invasion of the spermatic cord or surrounding structures, respectively.",T2+
+TGCT,TCGA-2G-AAEX,TCGA-2G-AAEX.1487775D-C02B-44EA-BDEC-C261A6914391,T1,0.0,N0,0.0,Summary pathology report. Left orchidectomy; seminoma; diameter 7 cm; no angio-invasion present; no invasion of rete. testis. = date of orchidectomy): pathologist.,"The T stage for Testicular Germ Cell Tumors is determined by the size of the tumor, whether it has invaded the surrounding structures, and if there is evidence of metastasis. According to the AJCC Cancer Staging Manual (7th edition), the T stage for this patient is determined as follows: 
+
+T1: Tumor is limited to the testis and epididymis without exceeding 5 cm in greatest dimension, without any invasion of the tunica albuginea or the tunica vaginalis. 
+T2: Tumor is limited to the testis and epididymis with greatest dimension more than 5 cm or with invasion of the tunica albuginea, with or without involvement of the tunica vaginalis. 
+T3: Tumor invades the spermatic cord with or without vascular invasion and without extension into the scrotum. 
+T4: Tumor extends into the scrotum with or without vascular invasion.
+
+Based on the pathology report, the tumor is a seminoma with a diameter of 7 cm, no angio-invasion present, and no invasion of the rete testis. This means that the tumor is larger than 5 cm, but there is no evidence of invasion of the tunica albuginea, tunica vaginalis, spermatic cord, or scrotum. Therefore, the T stage for this patient is:
+
+T2: Tumor is limited to the testis and epididymis with greatest dimension more than 5 cm or with invasion of the tunica albuginea, with or without involvement of the tunica vaginalis.
+
+",T2
+TGCT,TCGA-2G-AAF1,TCGA-2G-AAF1.F4794A61-3289-4AC9-B32D-2A31BEBE9A0A,T1,0.0,N0,0.0,Summary pathology report. Removal of abdominal testis on the right side; seminoma; diameter 6.5 cm; tumor confined to. testis in available slides; angio-invasion present; invasion in rete testis present. = date of orchidectomy): pathologist.,"The T stage for Testicular Germ Cell Tumors is determined by the extent of the primary tumor (T). The AJCC Cancer Staging Manual (7th edition) outlines the following T stages: 
+
+T1: Tumor limited to the testis and epididymis without any of the following: invasion of the tunica vaginalis, lymphovascular invasion, or tumor extension through the tunica albuginea 
+T2: Tumor extends through the tunica albuginea with involvement of the spermatic cord 
+T3: Tumor invades the scrotum with or without spermatic cord involvement 
+T4: Tumor invades the local extra-testicular structures (e.g., muscle, fascia, or skin) other than the scrotum
+
+Based on the pathology report, the following findings are present:
+- Tumor size: 6.5 cm
+- Tumor confined to the testis
+- Angio-invasion present
+- Invasion in rete testis present
+
+The tumor is confined to the testis, but there is evidence of angio-invasion and invasion in the rete testis. Angio-invasion is defined as the presence of tumor cells within the endothelial-lined spaces of blood or lymphatic vessels. Invasion of the rete testis is defined as the presence of tumor cells within the rete testis, which is a network of tubules located in the mediastinum testis. Neither of these findings upstages the T stage, as they are not explicitly mentioned in the T stage criteria.
+
+Therefore, based on the given pathology report, the T stage for this Testicular Germ Cell Tumors patient is:
+
+T2: Tumor extends through the tunica albuginea with involvement of the spermatic cord
+",T2
+TGCT,TCGA-2G-AAF4,TCGA-2G-AAF4.955880AE-A0DE-4971-9F81-4A5862152D91,T1,0.0,N0,0.0,Summary pathology report. Right orchidectomy; seminoma; diameter 6 cm; tumor confined to testis in available slides;. angio-invasion present; invasion in rete testis present. = date of orchidectomy): pathologist.,"The T stage for Testicular Germ Cell Tumors is determined by the extent of the primary tumor (T). The AJCC Cancer Staging Manual (7th edition) outlines the following T stages: 
+
+T1: Tumor limited to the testis and epididymis without any of the following: invasion of the tunica vaginalis, tumor extension into the scrotum, or spermatic cord 
+T2: Tumor extends into the spermatic cord or tunica vaginalis with or without rete testis invasion 
+T3: Tumor invades the scrotum with or without spermatic cord or tunica vaginalis invasion 
+T4: Tumor invades the local extra-testicular structures (e.g., vas deferens, epididymis, spermatic cord, tunica vaginalis, scrotum) 
+
+Based on the pathology report, the tumor is a seminoma with a diameter of 6 cm and is confined to the testis. However, there is angio-invasion present, which is the invasion of blood vessels, and invasion in the rete testis, which is a network of tubules that collect sperm from the testis. 
+
+The tumor is confined to the testis, but there is angio-invasion and invasion in the rete testis. Therefore, the T stage would be T2, as the tumor extends into the spermatic cord or tunica vaginalis with rete testis invasion. 
+
+The final predicted T stage is T2.",T2
+TGCT,TCGA-2G-AAF6,TCGA-2G-AAF6.5892E026-307B-4A38-972F-92DF6ACF0A90,T1,0.0,N0,0.0,Summary pathology report. Right orchidectomy; seminoma; diameter 6 cm; tumor confined to testis in available slides; no. angio-invasion; no invasion in rete testis. = date of orchidectomy): pathologist.,"The T stage for Testicular Germ Cell Tumors is determined by the extent of the primary tumor (T). The AJCC Cancer Staging Manual (7th edition) outlines the following T stages: 
+
+T1: Tumor limited to the testis and epididymis without any of the following: invasion into the tunica vaginalis, lymphovascular invasion, or tumor extension through the tunica albuginea to the surface of the testis.
+T2: Tumor extends into the tunica vaginalis and/or has lymphovascular invasion or tumor extension through the tunica albuginea with involvement of the tunica vaginalis.
+T3: Tumor invades the spermatic cord with or without vascular invasion.
+T4: Tumor invades the scrotum with or without vascular invasion.
+
+In this case, the pathology report indicates that the tumor is a seminoma with a diameter of 6 cm, confined to the testis, and no angio-invasion or invasion in the rete testis. Therefore, the tumor is limited to the testis and epididymis without any of the following: invasion into the tunica vaginalis, lymphovascular invasion, or tumor extension through the tunica albuginea to the surface of the testis.
+
+Therefore, based on the information provided in the pathology report, the T stage for this Testicular Germ Cell Tumors patient is T1.",T1
+TGCT,TCGA-2G-AAF8,TCGA-2G-AAF8.0174DE5A-8AFD-4FBB-8509-19BD0F2B3FFD,T1,0.0,N0,0.0,Summary pathology report. Left orchidectomy; seminoma; diameter 3.5 cm; tumor confined to testis in available slides; no. angio-invasion; no invasion in rete testis. = date of orchidectomy): pathologist.,"The T stage for Testicular Germ Cell Tumors is determined by the extent of the primary tumor (T). The AJCC Cancer Staging Manual (7th edition) outlines the following T stages: 
+
+T1: Tumor limited to the testis and epididymis without any of the following: invasion of the tunica vaginalis, tumor extension into the spermatic cord, or tumor extension into the scrotum. 
+T2: Tumor extends into the spermatic cord with or without invasion of the tunica vaginalis but without tumor extension into the scrotum. 
+T3: Tumor extends into the scrotum with or without invasion of the spermatic cord or the tunica vaginalis. 
+T4: Tumor invades the skin of the scrotum. 
+
+Based on the pathology report, the tumor is a seminoma with a diameter of 3.5 cm and is confined to the testis. There is no angio-invasion or invasion in the rete testis. Therefore, the tumor does not meet the criteria for T2, T3, or T4 stages. Since the tumor is limited to the testis and epididymis without any invasion of the tunica vaginalis or extension into the spermatic cord or scrotum, it is consistent with the T1 stage. 
+
+Therefore, the final predicted T stage is T1.",T1
+TGCT,TCGA-2G-AAFE,TCGA-2G-AAFE.414A04CE-E608-48CB-86B6-BF901F888D28,T2,1.0,N1,1.0,Summary pathology report. Left orchidectomy; seminoma; diameter 4 cm; tumor confined to testis in available slides;. angio-invasion present; no invasion in rete testis. = date of orchidectomy): pathologist.,"The T stage for Testicular Germ Cell Tumors is determined by the extent of the primary tumor (T). The AJCC Cancer Staging Manual (7th edition) outlines the following T stages: 
+
+T1: Tumor limited to the testis and epididymis without any of the following: invasion of the tunica vaginalis, tumor extension into the spermatic cord, or metastasis to the regional lymph nodes.
+T2: Tumor extends into the spermatic cord with or without invasion of the tunica vaginalis, but without metastasis to the regional lymph nodes.
+T3: Tumor invades the scrotum with or without metastasis to the regional lymph nodes.
+T4: Tumor has metastasis to non-regional lymph nodes or other organs.
+
+Based on the pathology report, the tumor is a seminoma with a diameter of 4 cm and is confined to the testis. However, there is angio-invasion present, which means the tumor has invaded blood vessels. There is no invasion in the rete testis. The spermatic cord is not mentioned in the report, so we cannot assume whether the tumor has extended into it. Therefore, we cannot rule out T2. Since there is no mention of scrotal invasion or metastasis to non-regional lymph nodes or other organs, we can rule out T3 and T4.
+
+Therefore, the T stage for this patient is either T1 or T2.
+
+However, since there is angio-invasion present, the tumor may have the potential to metastasize, and it is more likely to be a T2 tumor. But, since the spermatic cord is not mentioned, we cannot confirm T2.
+
+So, the final predicted T stage is T2, but it could also be T1.",T2
+TGCT,TCGA-2G-AAFH,TCGA-2G-AAFH.6F5C875D-1C2C-48BA-9B6B-58AA33236C09,T1,0.0,N2,2.0,Summary pathology report. Left orchidectomy; seminoma; diameter 2 cm; tumor confined to testis in available slides; no. angio-invasion; no rete testis present in the available slides. = date of orchidectomy). pathologist.,"The T stage for Testicular Germ Cell Tumors is determined by the extent of the primary tumor (T). The AJCC Cancer Staging Manual (7th edition) outlines the following T stages: 
+
+T1: Tumor limited to the testis and epididymis without any tumor extension into the tunica vaginalis and with no lymphovascular invasion.
+T2: Tumor extends into the tunica vaginalis without extension beyond the tunica albuginea.
+T3: Tumor invades the spermatic cord with or without lymphovascular invasion.
+T4: Tumor invades the scrotum with or without lymphovascular invasion.
+
+In this case, the pathology report states that the tumor is a seminoma with a diameter of 2 cm, confined to the testis in the available slides, with no angio-invasion (lymphovascular invasion) and no rete testis present in the available slides. Therefore, the tumor is limited to the testis and epididymis without any tumor extension into the tunica vaginalis and with no lymphovascular invasion. This corresponds to T1.",T1
+TGCT,TCGA-2G-AAFL,TCGA-2G-AAFL.78AFA2AD-0615-48B8-9B23-9D8FE87D6CB7,T2,1.0,N0,0.0,Summary pathology report. Left orchidectomy; nonseminoma (EC 100%); diameter 4 cm; tumor confined to the testis: angioinvasion present; no invasion in rete testis. = date of orchidectomy): pathologist.,"The T stage for Testicular Germ Cell Tumors is determined by the extent of the primary tumor (T). The AJCC Cancer Staging Manual (7th edition) outlines the following T stages: 
+
+T1: Tumor limited to the testis and epididymis without any tumor extension into the tunica vaginalis and without any lymphovascular invasion.
+T2: Tumor extends into the tunica vaginalis without invasion of the spermatic cord or scrotum.
+T3: Tumor invades the spermatic cord with or without vascular invasion.
+T4: Tumor invades the scrotum with or without vascular invasion.
+
+Based on the pathology report, the patient has nonseminoma testicular cancer with a diameter of 4 cm, and the tumor is confined to the testis. Angioinvasion (lymphovascular invasion) is present, but there is no invasion in the rete testis. 
+
+Since the tumor is confined to the testis and epididymis without any tumor extension into the tunica vaginalis, this would typically correspond to a T1 stage. However, the presence of angioinvasion (lymphovascular invasion) usually upstages the tumor to a T2 or higher stage. In this case, the tumor is still confined to the testis, so it does not meet the criteria for T3 or T4. Therefore, the most appropriate T stage for this patient would be T2.
+
+In summary:
+T1: Tumor limited to the testis and epididymis without any tumor extension into the tunica vaginalis and without any lymphovascular invasion.
+T2: Tumor extends into the tunica vaginalis without invasion of the spermatic cord or scrotum (this patient).
+T3: Tumor invades the spermatic cord with or without vascular invasion.
+T4: Tumor invades the scrotum with or without vascular invasion.
+
+Final predicted T stage: T2",T2
+TGCT,TCGA-2G-AAFM,TCGA-2G-AAFM.3BE9BC69-9A9E-48AA-B636-24A30EC02D07,T2,1.0,N1,1.0,Direct diai. Summary pathology report. Right orchidectomy; nonseminoma (EC 100%); diameter 3.8 cm; tumor confined to the testis: angioinvasion present; invasion in rete testis present. = date of orchidectomy): pathologist.,"The AJCC Cancer Staging Manual (7th edition) outlines the TNM staging system for Testicular Germ Cell Tumors (TGCTs). The T stage refers to the extent of the primary tumor. The report provides the following information: nonseminoma (EC 100%), diameter 3.8 cm, tumor confined to the testis, angioinvasion present, and invasion in rete testis present.
+
+Step 1: Determine if the tumor is confined to the testis or has extended outside. According to the report, the tumor is confined to the testis (T1-T3 range).
+
+Step 2: Identify the tumor size. The report states the tumor diameter is 3.8 cm. T1 is for tumors ≤5 cm in greatest dimension, so this patient falls into the T1-T3 range.
+
+Step 3: Look for evidence of angioinvasion (invasion of blood vessels) and invasion of the rete testis. The report indicates both angioinvasion and invasion in rete testis are present.
+
+Step 4: Assess if the tumor has invaded the tunica vaginalis (T3) or the spermatic cord (T3) or the scrotum (T4). Since the report does not mention tunica vaginalis, spermatic cord, or scrotal invasion, we cannot classify this as T3 or T4.
+
+Therefore, based on the information provided, the patient's T stage is T2, as angioinvasion and invasion in rete testis are indicative of T2 classification for TGCTs.",T2

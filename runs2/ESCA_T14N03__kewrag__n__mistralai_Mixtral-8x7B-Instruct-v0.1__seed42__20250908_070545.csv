@@ -1,0 +1,121 @@
+type,case_submitter_id,patient_filename,ajcc_pathologic_t,T14,ajcc_pathologic_n,N03,text,kewrag_rules,kewrag_reasoning,kewrag_stage
+ESCA,TCGA-2H-A9GF,TCGA-2H-A9GF.0BACDD9C-D4D0-4527-9B8A-E61968793466,T3,2.0,N1,1.0,"Coded sample ID: Histologic diagnosis: poor differentiated adenocarcinoma. Anatomic site with laterality: distal esophagus. Tumor size: diameter 7,0 cm. Lymph node status: 7 positive lymph nodes. Any comments or amendments: irradical resection.","['N stage is based on the number of regional lymph nodes with metastasis.', 'NX: Regional lymph nodes cannot be assessed.', 'N0: No regional lymph node metastasis.', 'N1: Regional lymph node metastases involving 1 to 2 nodes.', 'N2: Regional lymph node metastases involving 3 to 6 nodes.', 'N3: Regional lymph node metastases involving 7 or more nodes.']","To determine the N stage for this Esophageal Carcinoma patient, we will strictly apply the AJCC Cancer Staging Manual (7th edition) rules provided.
+
+Step 1: Examine the N stage rules.
+Step 2: Review the pathology report to find the number of positive lymph nodes.
+Step 3: Compare the number of positive lymph nodes with the N stage rules.
+
+Pathology report: 7 positive lymph nodes.
+
+Applying the N stage rules from the AJCC 7th edition:
+NX: Cannot be assessed.
+N0: No regional lymph node metastasis.
+N1: Regional lymph node metastases involving 1 to 2 nodes.
+N2: Regional lymph node metastases involving 3 to 6 nodes.
+N3: Regional lymph node metastases involving 7 or more nodes.
+
+The patient has 7 positive lymph nodes, which falls under the N3 category.
+
+Therefore, the final predicted N stage is:",N3
+ESCA,TCGA-2H-A9GG,TCGA-2H-A9GG.1092CAAD-DAA6-4008-A1F5-597F3B1B453E,T3,2.0,N1,1.0,"Coded sample ID: Histologic diagnosis: moderate/poor differentiated adenocarcinoma in Barrett-epithelium. Anatomic site with laterality: gastro-esophageal junction. Tumor size: diameter 4,5 cm. Lymph node status: 19 lymph nodes, of which 4 contains tumor. Any comments or amendments: irradical resection.","['N stage is based on the number of regional lymph nodes with metastasis.', 'NX: Regional lymph nodes cannot be assessed.', 'N0: No regional lymph node metastasis.', 'N1: Regional lymph node metastases involving 1 to 2 nodes.', 'N2: Regional lymph node metastases involving 3 to 6 nodes.', 'N3: Regional lymph node metastases involving 7 or more nodes.']","Given the AJCC 7th edition rules and the pathology report, we can determine the N stage as follows:
+1. The pathology report states that 19 lymph nodes were examined, and 4 of them contained tumor.
+2. According to the AJCC 7th edition rules, N stage is based on the number of regional lymph nodes with metastasis.
+3. In this case, the patient has 4 positive lymph nodes.
+4. The AJCC 7th edition rules state that N1 corresponds to 1-2 positive lymph nodes, N2 corresponds to 3-6 positive lymph nodes, and N3 corresponds to 7 or more positive lymph nodes.
+5. Since the patient has 4 positive lymph nodes, they fall into the N2 category.
+",N2
+ESCA,TCGA-2H-A9GH,TCGA-2H-A9GH.47177922-F455-4CD4-BC07-B0559439BC86,T1,0.0,N1,1.0,"Coded sample ID: Histologic diagnosis: moderate differentiated adenocarcinoma in Barrett-epithelium. Anatomic site with laterality: distal esophagus. Tumor size: diameter 2 cm. Lymph node status: 11 lymph nodes, of which 1 contains tumor. Any comments or amendments: radical resection.","['N stage is based on the number of regional lymph nodes with metastasis.', 'NX: Regional lymph nodes cannot be assessed.', 'N0: No regional lymph node metastasis.', 'N1: Regional lymph node metastases involving 1 to 2 nodes.', 'N2: Regional lymph node metastases involving 3 to 6 nodes.', 'N3: Regional lymph node metastases involving 7 or more nodes.']","To determine the N stage for this Esophageal Carcinoma patient, we will strictly apply the AJCC Cancer Staging Manual (7th edition) rules provided.
+
+1. We start by examining the pathology report to assess the regional lymph node status.
+2. The report states that 11 lymph nodes were examined, and 1 of those contained tumor.
+3. According to the AJCC 7th edition rules, N stage is based on the number of regional lymph nodes with metastasis.
+4. In this case, there is 1 regional lymph node with metastasis.
+5. Based on the AJCC 7th edition rules:
+   - NX: Regional lymph nodes cannot be assessed.
+   - N0: No regional lymph node metastasis.
+   - N1: Regional lymph node metastases involving 1 to 2 nodes.
+   - N2: Regional lymph node metastases involving 3 to 6 nodes.
+   - N3: Regional lymph node metastases involving 7 or more nodes.
+6. Since there is 1 regional lymph node with metastasis, the N stage for this patient is N1.
+
+",N1
+ESCA,TCGA-2H-A9GI,TCGA-2H-A9GI.339C5A0E-F816-4403-BFE6-4FBC13803C09,T3,2.0,N1,1.0,"Coded sample ID: Histologic diagnosis: moderate differentiated adenocarcinoma in Barrett-epithelium. Anatomic site with laterality: distal esophagus. Tumor size: 4x3,5 cm. Lymph node status: 8 lymph nodes, of which 4 contains tumor. Any comments or amendments: radical resection.","['N stage is based on the number of regional lymph nodes with metastasis.', 'NX: Regional lymph nodes cannot be assessed.', 'N0: No regional lymph node metastasis.', 'N1: Regional lymph node metastases involving 1 to 2 nodes.', 'N2: Regional lymph node metastases involving 3 to 6 nodes.', 'N3: Regional lymph node metastases involving 7 or more nodes.']","To determine the N stage for this Esophageal Carcinoma patient, we will strictly apply the AJCC Cancer Staging Manual (7th edition) rules provided.
+
+1. We start by examining the pathology report, which states that 8 lymph nodes were assessed, and 4 of those contained tumor.
+
+2. Now, we compare this information with the AJCC N staging rules (7th edition). According to these rules, N stage is based on the number of regional lymph nodes with metastasis.
+
+3. In our case, the patient has 4 positive lymph nodes out of 8 assessed lymph nodes.
+
+4. According to the AJCC N staging rules, N2 corresponds to regional lymph node metastases involving 3 to 6 nodes. Since our patient has 4 positive lymph nodes, they fall into the N2 category.
+
+5. Therefore, the final N stage for this patient is N2.",N2
+ESCA,TCGA-2H-A9GJ,TCGA-2H-A9GJ.AE005FFA-3FCC-4E8C-AF11-398E0FB2B8A7,T1,0.0,N0,0.0,Coded sample ID: Histologic diagnosis: moderate differentiated adenocarcinoma in Barrett-epithelium. Anatomic site with laterality: distal esophagus. Tumor size: diameter 5 cm. Lymph node status: 19 negative lymph nodes. Any comments or amendments: radical resection.,"['N stage is based on the number of regional lymph nodes with metastasis.', 'NX: Regional lymph nodes cannot be assessed.', 'N0: No regional lymph node metastasis.', 'N1: Regional lymph node metastases involving 1 to 2 nodes.', 'N2: Regional lymph node metastases involving 3 to 6 nodes.', 'N3: Regional lymph node metastases involving 7 or more nodes.']","Given the AJCC 7th edition rules for N staging of Esophageal Carcinoma and the pathology report provided,
+
+Step 1: Assess the N stage based on the number of regional lymph nodes with metastasis.
+
+Step 2: In the pathology report, it is stated that 19 negative lymph nodes were found.
+
+Step 3: Since there are no positive lymph nodes, there is no regional lymph node metastasis.
+
+Step 4: According to the AJCC 7th edition rules, N0 indicates no regional lymph node metastasis.
+
+Therefore,
+
+The final predicted N stage is N0.",N0
+ESCA,TCGA-2H-A9GK,TCGA-2H-A9GK.5D0508E6-8DA2-4B51-B00A-1B54AA6CC20D,T3,2.0,N1,1.0,"Coded sample ID: Histologic diagnosis: moderate/poor differentiated adenocarcinoma in Barrett-epithelium. Anatomic site with laterality: distal esophagus. Tumor size: diameter 5 cm. Lymph node status: 5 lymph nodes, of which 3 contains tumor. Any comments or amendments: radical resection.","['N stage is based on the number of regional lymph nodes with metastasis.', 'NX: Regional lymph nodes cannot be assessed.', 'N0: No regional lymph node metastasis.', 'N1: Regional lymph node metastases involving 1 to 2 nodes.', 'N2: Regional lymph node metastases involving 3 to 6 nodes.', 'N3: Regional lymph node metastases involving 7 or more nodes.']","To determine the N stage for this Esophageal Carcinoma patient, we will strictly apply the AJCC Cancer Staging Manual (7th edition) rules provided.
+
+1. We start by examining the pathology report, which states that 5 lymph nodes were examined, and 3 of them contained tumor.
+
+2. Now, we compare this information with the AJCC N staging rules (7th edition).
+
+3. N0: No regional lymph node metastasis. This is not the case, as 3 lymph nodes contained tumor.
+
+4. N1: Regional lymph node metastases involving 1 to 2 nodes. This is not the case, as 3 lymph nodes contained tumor.
+
+5. N2: Regional lymph node metastases involving 3 to 6 nodes. This is the case, as 3 lymph nodes contained tumor.
+
+6. N3: Regional lymph node metastases involving 7 or more nodes. This is not the case, as only 3 lymph nodes contained tumor.
+
+7. Based on the AJCC N staging rules (7th edition) and the pathology report, the patient's N stage is N2.",N2
+ESCA,TCGA-2H-A9GL,TCGA-2H-A9GL.EE6EFEB1-2B64-44A9-9FDF-14EA549040B7,T3,2.0,N1,1.0,"Coded sample ID: Histologic diagnosis: poor differentiated adenocarcinoma in Barrett-epithelium. Anatomic site with laterality: distal esophagus. Tumor size: diameter 6 cm. Lymph node status: 15 lymph nodes, of which 2 contains tumor. Any comments or amendments: irradical resection.","['N stage is based on the number of regional lymph nodes with metastasis.', 'NX: Regional lymph nodes cannot be assessed.', 'N0: No regional lymph node metastasis.', 'N1: Regional lymph node metastases involving 1 to 2 nodes.', 'N2: Regional lymph node metastases involving 3 to 6 nodes.', 'N3: Regional lymph node metastases involving 7 or more nodes.']","Given the AJCC N staging rules (7th edition) and the pathology report, we can determine the N stage as follows:
+1. The pathology report states that 15 lymph nodes were examined, and 2 of those contained tumor.
+2. According to the AJCC N staging rules, N stage is based on the number of regional lymph nodes with metastasis.
+3. In this case, we have 2 positive lymph nodes, which falls within the range for N1 (1 to 2 nodes).
+4. Therefore, the N stage for this patient is N1.
+",N1
+ESCA,TCGA-2H-A9GM,TCGA-2H-A9GM.92FD2446-E537-4194-B436-260954F5D66C,T1,0.0,N1,1.0,"Coded sample ID: Histologic diagnosis: moderate differentiated adenocarcinoma located in Barrett-epithelium. Anatomic site with laterality: distal esophagus. Tumor size: maximal diameter 4 cm. Lymph node status: 13 lymph nodes, of which 2 contain tumor. Any comments or amendments: radical resection.","['N stage is based on the number of regional lymph nodes with metastasis.', 'NX: Regional lymph nodes cannot be assessed.', 'N0: No regional lymph node metastasis.', 'N1: Regional lymph node metastases involving 1 to 2 nodes.', 'N2: Regional lymph node metastases involving 3 to 6 nodes.', 'N3: Regional lymph node metastases involving 7 or more nodes.']","To determine the N stage for this Esophageal Carcinoma patient, we will strictly apply the AJCC Cancer Staging Manual (7th edition) rules provided.
+
+1. We start by examining the pathology report, which states that 13 lymph nodes were assessed, and 2 of those contained tumor.
+
+2. Now, we compare these findings with the AJCC N staging rules (7th edition). According to these rules, N stage is based on the number of regional lymph nodes with metastasis.
+
+3. In our case, there are 2 regional lymph nodes with metastases.
+
+4. Referring to the AJCC N staging rules, N1 corresponds to regional lymph node metastases involving 1 to 2 nodes.
+
+5. Therefore, based on the pathology report and the AJCC 7th edition rules, the final N stage for this Esophageal Carcinoma patient is N1.
+",N1
+ESCA,TCGA-2H-A9GN,TCGA-2H-A9GN.834AC42A-BF84-4FDD-A427-2F8440329B25,T3,2.0,N1,1.0,"Coded sample ID: Histologic diagnosis: poor differentiated adenocarcinoma. Anatomic site with laterality: distal esophagus. Tumor size: max diameter 5,5 cm. Lymph node status: 22 lymp nodes, of which 5 contains tumor. Any comments or amendments: radical resection.","['N stage is based on the number of regional lymph nodes with metastasis.', 'NX: Regional lymph nodes cannot be assessed.', 'N0: No regional lymph node metastasis.', 'N1: Regional lymph node metastases involving 1 to 2 nodes.', 'N2: Regional lymph node metastases involving 3 to 6 nodes.', 'N3: Regional lymph node metastases involving 7 or more nodes.']","To determine the N stage for this Esophageal Carcinoma patient, we will strictly apply the AJCC Cancer Staging Manual (7th edition) rules provided.
+
+1. We start by examining the pathology report, which states that the patient had 22 lymph nodes removed and 5 of those contained tumor.
+
+2. Now, we compare this information with the AJCC N staging rules (7th edition). According to these rules, N stage is based on the number of regional lymph nodes with metastasis.
+
+3. In this case, the patient has 5 positive lymph nodes (regional lymph nodes with metastasis).
+
+4. We now compare the number of positive lymph nodes to the AJCC N stage criteria:
+   - N0: No regional lymph node metastasis.
+   - N1: Regional lymph node metastases involving 1 to 2 nodes.
+   - N2: Regional lymph node metastases involving 3 to 6 nodes.
+   - N3: Regional lymph node metastases involving 7 or more nodes.
+
+5. Since the patient has 5 positive lymph nodes, they fall into the N2 category.
+
+",N2
+ESCA,TCGA-2H-A9GO,TCGA-2H-A9GO.EBB6A6B5-F330-4A0D-B99D-2B42A12A68B0,T3,2.0,N1,1.0,"Coded sample ID: Histologic diagnosis: poor differentiated adenocarcinoma located in Barrett-epithelium. Anatomic site with laterality: distal esophagus. Tumor size: 4.5x2.5 cm. Lymph node status: 13 lymph nodes, of which 9 contain tumor. Any comments or amendments: irradical resection.","['N stage is based on the number of regional lymph nodes with metastasis.', 'NX: Regional lymph nodes cannot be assessed.', 'N0: No regional lymph node metastasis.', 'N1: Regional lymph node metastases involving 1 to 2 nodes.', 'N2: Regional lymph node metastases involving 3 to 6 nodes.', 'N3: Regional lymph node metastases involving 7 or more nodes.']","Given the AJCC 7th edition rules for N staging of Esophageal Carcinoma and the pathology report, we can determine the N stage as follows:
+1. The pathology report states that 13 lymph nodes were examined, and 9 of those contained tumor.
+2. According to the AJCC 7th edition rules, N stage is based on the number of regional lymph nodes with metastasis.
+3. In this case, the patient has 9 positive lymph nodes, which falls in the category of N3.
+4. Therefore, the N stage for this patient is N3.
+",N3

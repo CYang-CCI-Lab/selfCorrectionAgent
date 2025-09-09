@@ -7,7 +7,7 @@ from tqdm import tqdm
 from pydantic import BaseModel, Field
 from openai import OpenAI
 import copy
-from util import safe_json_load
+from utils import safe_json_load
 
 # ----------------------------------------------------------------------
 # System instruction & Prompts

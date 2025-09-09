@@ -1,0 +1,95 @@
+type,case_submitter_id,patient_filename,ajcc_pathologic_t,T14,ajcc_pathologic_n,N03,text,kewrag_rules,kewrag_reasoning,kewrag_stage
+SKCM,TCGA-BF-A1PU,TCGA-BF-A1PU.D6618B79-299C-4EDB-8EC4-7AFC61D6E460,T4b,3.0,N0,0.0,Project #. Specimen. Clinical. Ethnicity. Index. label. Tissue. Clinical Diagnosis. Anatomical. Tumor. Specimen. Site #. (Race). procuremen. Specificatio. Specimen. Site. Matrix. t. Format. n. 1. 5. Caucasian. Melanoma. (White). Female. Skin. Primary. Tumor. Tissue. Frozen. 5. Caucasian. Melanoma. (White). Female. Blood. n/a. normal. Blood. Frozen. Prior. Number of. Container. Amount/per. Type of. Histological. TNM Stage. Chemo /. TNM Stage. TNM Stage. Chemo /. Prior. containers. container. Grade. Cellular. description. (T). Horm Th. (N). (M). Hormonal. Radiation. Tumor %. Details. Th. cryomold. 1. 200. mg. Melanoma. n/a. 2a. 0. 0. 85. tube. 1. 4. ml. Blood draw. n/a. n/a. n/a. n/a. n/a. n/a.,"['T1: Melanomas 1.0 mm or less in thickness', 'T2: Melanomas 1.01-2.0 mm', 'T3: Melanomas 2.01-4.0 mm', 'T4: Melanomas more than 4.0 mm']","To determine the T stage of the Skin Cutaneous Melanoma cancer from the given pathology report, we strictly apply the AJCC T staging rules (7th edition) as follows: 
+
+1. Identify the thickness of the melanoma from the pathology report: 
+The pathology report does not explicitly provide the thickness of the melanoma. However, it does mention 'Tumor, Tissue, Frozen' which suggests that a tumor was present in the tissue sample and it was processed as a frozen section. 
+
+2. Compare the thickness with the AJCC T staging rules: 
+Without the exact thickness, we cannot directly assign a T stage. However, we can still provide a predicted T stage based on the information given. 
+
+3. Consider the possibility of a thin melanoma: 
+If the melanoma is thin, it is likely to be T1 (1.0 mm or less in thickness). This is consistent with the fact that the pathology report mentions 'Tumor, Tissue, Frozen' without any indication of a thick or ulcerated melanoma. 
+
+4. Final predicted T stage: 
+Based on the available information and the AJCC T staging rules (7th edition), we predict a T1 stage for this Skin Cutaneous Melanoma cancer. This is an educated guess and the actual T stage may differ if more information about the tumor thickness is provided.",T1
+SKCM,TCGA-BF-A1PV,TCGA-BF-A1PV.8D2DF32C-6921-47FF-AB4A-6C1C931E130D,T4b,3.0,N0,0.0,Project #. Tissue. Specimen. Clinical. Ethnicity. Anatomical. Tumor. Specimen. Specimen. Index. Clinical Diagnosis. procuremen. Specificatio. label. Site #. (Race). Site. Matrix. Format. t. n. Caucasian. 1. 5. Melanoma. Female. Skin. Primary. Tumor. Tissue. Frozen. (White). Caucasian. 5. Melanoma. Female. Blood. n/a. normal. Blood. Frozen. (White). Prior. Chemo /. Number of. Amount/per. Type of. Histological. TNM Stage. TNM Stage. TNM Stage. Chemo /. Prior. Cellular. Container. Grade. Horm Th. containers. container. description. (T). (N). (M). Hormonal. Radiation. Tumor %. Details. cryomold. 1. 200. mg. Melanoma. n/a. 4b. 0. 0. 90. tube. 1. 4. ml. Blood draw. n/a. n/a. n/a. n/a. n/a. n/a. Criteria.,"['T1: Melanomas 1.0 mm or less in thickness', 'T2: Melanomas 1.01-2.0 mm', 'T3: Melanomas 2.01-4.0 mm', 'T4: Melanomas more than 4.0 mm']","In order to determine the T stage of the Skin Cutaneous Melanoma cancer, we need to look at the 't' (tumor) parameter in the TNM stage provided in the pathology report.
+
+The 't' parameter is given as '4b' in the report. According to the AJCC T staging rules (7th edition), T4 melanomas are those that are more than 4.0 mm in thickness.
+
+Therefore, based on the information provided in the pathology report and applying the AJCC T staging rules (7th edition), the final predicted T stage for this patient is T4.",T4
+SKCM,TCGA-BF-A1PX,TCGA-BF-A1PX.4BF0286A-D82F-4ACF-AE53-4B03518D2362,T4b,3.0,N2a,2.0,Project #. Clinical. Specimen. Tissue. Index. Ethnicity. Anatomical. Tumor. label. Clinical Diagnosis. Specimen. Site #. (Race). procuremen. Specificatio. Specimen. Site. Matrix. Format. t. n. Caucasian. 1. 23. Melanoma. Male. Skin. Primary. Tumor. (White). Tissue. Frozen. Caucasian. 23. Melanoma. Male. Blood. n/a. (White). normal. Blood. Frozen. Prior. Number of. Container. Amount/per. Type of. Histological. Chemo /. TNM Stage. TNM Stage. TNM Stage. Chemo /. containers. Grade. Prior. Cellular. container. Horm Th. description. (T). (N). (M). Hormonal. Radiation. Tumor %. Details. Th. cryomold. 1. 200. mg. Melanoma. n/a. 2. 0. 1. 85. tube. 1. 4. ml. Blood draw. n/a. n/a. n/a. n/a. n/a. n/a. Criteria.,"['T1: Melanomas 1.0 mm or less in thickness', 'T2: Melanomas 1.01-2.0 mm', 'T3: Melanomas 2.01-4.0 mm', 'T4: Melanomas more than 4.0 mm']","To determine the T stage of the Skin Cutaneous Melanoma cancer from the given pathology report, we strictly apply the AJCC T staging rules (7th edition) as follows: 
+
+1. Identify the thickness of the melanoma from the pathology report: 
+The pathology report does not explicitly provide the thickness of the melanoma. However, it does mention 'Melanoma' under the 'Tumor label' and 'Tissue: Frozen' under the 'Specimen Site Matrix Format'. This suggests that the tissue sample has been taken from the melanoma tumor, and it is in a frozen state for further examination. 
+
+2. Compare the identified thickness with the AJCC T staging rules: 
+Due to the lack of explicit thickness information in the pathology report, we cannot directly compare it with the AJCC T staging rules. However, considering that the report mentions 'Melanomas' and the thickness is not specified, we can only provide a range of possible T stages based on the given rules. 
+
+3. Provide the final predicted T stage: 
+Since the pathology report does not provide enough information to accurately determine the T stage, we can only give a possible range of T stages based on the AJCC T staging rules. The possible T stage for this melanoma case would be T1 (melanomas 1.0 mm or less in thickness) or T2 (melanomas 1.01-2.0 mm), as the actual thickness is not mentioned in the report.",T1 or T2
+SKCM,TCGA-BF-A1PZ,TCGA-BF-A1PZ.1FAA6F42-BEE4-47B5-9D6A-87D310719766,T4a,3.0,N0,0.0,Project #. Tissue. Specimen. Clinical. Ethnicity. Anatomical. Tumor. Specimen. Specimen. Index. Clinical Diagnosis. procuremen. Specificatio. label. Site #. (Race). Site. Matrix. Format. t. n. Caucasian. 1. 52. Melanoma. Female. Skin. Primary. Tumor. Tissue. Frozen. (White). Caucasian. 52. Melanoma. Female. Blood. n/a. normal. Blood. Frozen. (White). Prior. Chemo /. Number of. Amount/per. Type of. Histological. TNM Stage. TNM Stage. TNM Stage. Chemo /. Prior. Cellular. Container. Grade. Horm Th. containers. container. description. (T). (N). (M). Hormonal. Radiation. Tumor %. Details. cryomold. 1. 200. mg. Melanoma. n/a. 4. 0. 0. 90. tube. 1. 4. ml. Blood draw. n/a. n/a. n/a. n/a. n/a. n/a. Criteria.,"['T1: Melanomas 1.0 mm or less in thickness', 'T2: Melanomas 1.01-2.0 mm', 'T3: Melanomas 2.01-4.0 mm', 'T4: Melanomas more than 4.0 mm']","To determine the T stage of the Skin Cutaneous Melanoma cancer based on the provided pathology report and the AJCC 7th edition rules, we need to look for the tumor thickness. The relevant information in the pathology report includes: 
+
+Tissue: Melanoma
+Tumor: Tumor
+Histological: Melanoma
+T (TNM Stage): 4
+
+Based on the AJCC 7th edition rules provided, the T stage is determined by the thickness of the melanoma:
+
+T1: Melanomas 1.0 mm or less in thickness
+T2: Melanomas 1.01-2.0 mm
+T3: Melanomas 2.01-4.0 mm
+T4: Melanomas more than 4.0 mm
+
+The pathology report indicates that the T stage (T) is 4. According to the AJCC 7th edition rules, this corresponds to a tumor thickness of more than 4.0 mm.
+
+Therefore, the final predicted T stage is:
+
+T4",T4
+SKCM,TCGA-BF-A1Q0,TCGA-BF-A1Q0.F66E3F2C-AC43-499A-82AD-D5FBC76A154B,T4b,3.0,N0,0.0,Project #. Tissue. Specimen. Clinical. Ethnicity. Anatomical. Tumor. Specimen. Specimen. Index. label. Clinical Diagnosis. procuremen. Specificatio. Site #. (Race). Site. Matrix. Format. t. n. Caucasian. 1. Melanoma. Female. Skin. Primary. Tumor. Tissue. Frozen. (White). Caucasian. Melanoma. Female. Blood. n/a. normal. Blood. Frozen. (White). Prior. Chemo /. Number of. Container. Amount/per. Type of. Histological. TNM Stage. TNM Stage. TNM Stage. Chemo /. Prior. Cellular. Grade. Horm Th. containers. container. description. (T). (N). (M). Hormonal. Radiation. Tumor %. Details. Th. cryomold. 1. 200. mg. Melanoma. n/a. 4. 0. 0. 70. tube. 1. 4. ml. Blood draw. n/a. n/a. n/a. n/a. n/a. n/a.,"['T1: Melanomas 1.0 mm or less in thickness', 'T2: Melanomas 1.01-2.0 mm', 'T3: Melanomas 2.01-4.0 mm', 'T4: Melanomas more than 4.0 mm']","To determine the T stage of the Skin Cutaneous Melanoma cancer, we will strictly apply the AJCC Cancer Staging Manual (7th edition) rules to the provided pathology report. The report contains the following relevant information: 'Clinical Diagnosis: Melanoma, Tissue: Frozen, Tumor: Primary, Histological description (T): 4'. The 'T' value in the histological description is the thickness of the tumor in millimeters. According to the AJCC rules, T1 tumors are 1.0 mm or less, T2 tumors are 1.01-2.0 mm, T3 tumors are 2.01-4.0 mm, and T4 tumors are more than 4.0 mm. Given that the tumor thickness in the pathology report is 4 mm, the T stage for this patient is T4.",T4
+SKCM,TCGA-BF-A3DJ,TCGA-BF-A3DJ.BF41787D-E227-4BD0-A090-A6A44B5763E0,T4b,3.0,N1,1.0,Sex: Female. Diagnosis: Melanoma Histological description: Melanoma. Anatomic Site: Skin Tumor location: Primary. Tissue Specification: Tumor Specimen Matrix: Tissue Specimen Format: Frozen. Container: cryomold Type of Procurement: Surgery Grade: 3. T Stage: 4b N Stage: 1 M Stage: 0 Treatment: no. Treatment Details: no/no. Normal Sample. Anatomic Site: Blood Sample Type: normal Type of Procurement: Blood draw. Matrix: Blood Specimen Format: Frozen Container: tube.,"['T1: Melanomas 1.0 mm or less in thickness', 'T2: Melanomas 1.01-2.0 mm', 'T3: Melanomas 2.01-4.0 mm', 'T4: Melanomas more than 4.0 mm']","The AJCC T staging rules for Skin Cutaneous Melanoma (7th edition) provided are as follows: 
+T1: Melanomas 1.0 mm or less in thickness 
+T2: Melanomas 1.01-2.0 mm 
+T3: Melanomas 2.01-4.0 mm 
+T4: Melanomas more than 4.0 mm 
+
+The pathology report states: 
+T Stage: 4b 
+
+However, the T stage in the pathology report is inconsistent with the AJCC 7th edition rules. The T stage in the pathology report appears to be using the 8th edition rules, where T4b is defined as melanomas with ulceration and thickness more than 4.0 mm. 
+
+Since we are strictly applying the 7th edition rules, we will ignore the T stage in the pathology report. 
+
+The report does not provide the thickness of the melanoma. Therefore, we cannot definitively assign a T stage based on the 7th edition rules. 
+
+However, if we had to make an educated guess based on the information provided, we could assume that the melanoma is more than 4.0 mm in thickness (given the T stage of 4b in the pathology report), which would correspond to a T4 stage. 
+
+Therefore, our final predicted T stage is: 
+T4",T4
+SKCM,TCGA-BF-A3DL,TCGA-BF-A3DL.EDB2BE60-AB50-4C1D-8B73-410E8B4A9AED,T3b,2.0,N2,2.0,Sex: Female. Diagnosis: Melanoma Histological description: Melanoma. Anatomic Site: Skin Tumor location: Primary. Tissue Specification: Tumor Specimen Matrix: Tissue Specimen Format: Frozen. Container: cryomold Type of Procurement: Surgery Grade: 2. T Stage: 4 N Stage: 2 M Stage: 0 Treatment: no. Treatment Details: no/no. Normal Sample. Anatomic Site: Blood Sample Type: normal Type of Procurement: Blood draw. Matrix: Blood Specimen Format: Frozen Container: tube.,"['T1: Melanomas 1.0 mm or less in thickness', 'T2: Melanomas 1.01-2.0 mm', 'T3: Melanomas 2.01-4.0 mm', 'T4: Melanomas more than 4.0 mm']","The AJCC T staging rules for Skin Cutaneous Melanoma (7th edition) are provided as follows: 
+T1: Melanomas 1.0 mm or less in thickness 
+T2: Melanomas 1.01-2.0 mm 
+T3: Melanomas 2.01-4.0 mm 
+T4: Melanomas more than 4.0 mm 
+
+The pathology report contains the following information: 
+T Stage: 4 
+
+The T stage in the pathology report indicates that the melanoma is more than 4.0 mm in thickness, which corresponds to T4 according to the AJCC 7th edition rules. 
+
+Therefore, the final predicted T stage is: 
+T4",T4
+SKCM,TCGA-BF-A3DM,TCGA-BF-A3DM.62947184-2FA4-4C16-B1DD-54C7C78293A7,T2b,1.0,N0,0.0,Sex: Male Ethnicity (Race. Diagnosis: Melanoma Histological description: Melanoma. Anatomic Site: Skin Tumor location: Primary. Tissue Specification: Tumor Specimen Matrix: Tissue Specimen Format: Frozen. Container: cryomold Type of Procurement: Surgery Grade: 3. T Stage: 4 N Stage: 0 M Stage: 0 Treatment: no. Treatment Details: no/no. Normal Sample. Anatomic Site: Blood Sample Type: normal Type of Procurement: Blood draw. Matrix: Blood Specimen Format: Frozen Container: tube.,"['T1: Melanomas 1.0 mm or less in thickness', 'T2: Melanomas 1.01-2.0 mm', 'T3: Melanomas 2.01-4.0 mm', 'T4: Melanomas more than 4.0 mm']","To determine the T stage of the Skin Cutaneous Melanoma cancer, we will strictly apply the AJCC Cancer Staging Manual (7th edition) rules provided to the pathology report. The report includes the T stage (4) as part of the diagnosis. However, since we are applying the 7th edition rules, we should note that the AJCC updated the rules in the 8th edition, which includes more specific criteria and subcategories. Nevertheless, based on the 7th edition rules:",T4
+SKCM,TCGA-BF-A3DN,TCGA-BF-A3DN.4CBF8716-B8CC-4A4C-8ACC-59F0AF1A7A79,T3b,2.0,N3,3.0,Sex: Female. Diagnosis: Melanoma Histological description: Melanoma. Anatomic Site: Skin Tumor location: Primary. Tissue Specification: Tumor Specimen Matrix: Tissue Specimen Format: Frozen. Container: cryomold Type of Procurement: Surgery Grade: 2. T Stage: 4 N Stage: 3 M Stage: 0 Treatment: no. Treatment Details: no/no. Normal Sample. Anatomic Site: Blood Sample Type: normal Type of Procurement: Blood draw. Matrix: Blood Specimen Format: Frozen Container: tube.,"['T1: Melanomas 1.0 mm or less in thickness', 'T2: Melanomas 1.01-2.0 mm', 'T3: Melanomas 2.01-4.0 mm', 'T4: Melanomas more than 4.0 mm']","The AJCC T staging rules for Skin Cutaneous Melanoma (7th edition) are provided as follows: 
+T1: Melanomas 1.0 mm or less in thickness 
+T2: Melanomas 1.01-2.0 mm 
+T3: Melanomas 2.01-4.0 mm 
+T4: Melanomas more than 4.0 mm 
+
+The pathology report contains the following information: 
+T Stage: 4 
+
+The T stage in the pathology report indicates the depth of the melanoma in millimeters. According to the AJCC 7th edition rules, a T4 melanoma is defined as 'Melanomas more than 4.0 mm'. 
+
+Therefore, based on the information provided in the pathology report and the AJCC 7th edition rules, the final predicted T stage for this patient is T4.",T4
+SKCM,TCGA-BF-A5EO,TCGA-BF-A5EO.FD5F5903-7586-4388-970A-36FBE8AE473D,T4b,3.0,N0,0.0,Clinical. Index. Specimen. Ethnicity. Clinical. Tissue. Component. Tumor. Anatomical Site. Specificati. Specimen. Specimen. Number of. Type of. (mm/dd/yyy. Amountiper. Histological. Site #. Diagnosis. Container. Grade. of treatment. (Race). Matrix. Procurem. y). container. description. TNM Stage. TNA Stage. TNM Stage. Treatment. Tumor cell. label. Format. containers. (Chemo. on. (Source). (source). (T). (N). (M). type. %. ent. Horm Th. Details). Caucasian. Male. Melanoma. (White). Skin. Primary. Tumor. Tissue. OCT. block. 1. 200. mg. Melanoma. n/a. 4. 0. 0. none. n/a. 80. Caucasian. Male. Melanoma. (White). Blood. n/a. Normal. Blood. frozen. tube. blood. 1. 4. ml. n/a. n/a. n/a. n/a. n/a. draw. none. n/a. n/a.,"['T1: Melanomas 1.0 mm or less in thickness', 'T2: Melanomas 1.01-2.0 mm', 'T3: Melanomas 2.01-4.0 mm', 'T4: Melanomas more than 4.0 mm']","To determine the T stage of the Skin Cutaneous Melanoma cancer, we will strictly apply the AJCC Cancer Staging Manual (7th edition) rules to the provided pathology report. The report contains information about the tumor's thickness, which is the key factor in determining the T stage.",T2

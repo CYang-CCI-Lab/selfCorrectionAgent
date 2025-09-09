@@ -1,0 +1,18 @@
+2025-09-08 11:14:49,870 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs2/STAD_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_111449.log
+2025-09-08 11:14:49,870 | INFO | === RUN START === method=kewltm task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/STAD_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-08 11:14:49,884 | INFO | Filtered dataset: Removed 3 rows with missing 'N03' labels.
+2025-09-08 11:14:49,884 | INFO | [KEwLTM] Dynamic train_size=5 (fraction=0.100)
+2025-09-08 11:14:49,910 | INFO | [KEwLTM] Inducing memory from 5 reports (threshold=80)...
+2025-09-08 11:24:54,015 | ERROR | Standard json.loads failed: Expecting value: line 29843 column 1 (char 32135)
+2025-09-08 11:24:54,015 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-08 11:24:54,088 | ERROR | demjson3 fallback failed: Unexpected end of input
+2025-09-08 11:24:54,088 | INFO | Attempting to parse with json5 as fallback.
+2025-09-08 11:24:54,235 | ERROR | json5 fallback failed: <string>:29843 Unexpected end of input at column 1
+2025-09-08 11:24:54,235 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-08 11:24:54,236 | ERROR | dirtyjson fallback failed: Expecting value: line 29843 column 1 (char 32135)
+2025-09-08 11:24:54,236 | INFO | Attempting to parse with jsom as fallback.
+2025-09-08 11:24:54,260 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-08 11:24:54,283 | INFO | json_repair successfully parsed the JSON.
+2025-09-08 11:25:07,816 | INFO | [KEwLTM] Final memory length: 6
+2025-09-08 11:25:07,820 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs2/STAD_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_111449.csv
+2025-09-08 11:25:07,821 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs2/STAD_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_111449.csv
