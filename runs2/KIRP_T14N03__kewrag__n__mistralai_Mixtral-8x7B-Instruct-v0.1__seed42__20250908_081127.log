@@ -1,7 +1,0 @@
-2025-09-08 08:11:27,758 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs2/KIRP_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_081127.log
-2025-09-08 08:11:27,759 | INFO | === RUN START === method=kewrag task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/KIRP_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
-2025-09-08 08:11:27,778 | INFO | Filtered dataset: Removed 9 rows with missing 'N03' labels.
-2025-09-08 08:11:27,799 | INFO | [KEwRAG] Generating rules from RAG excerpt...
-2025-09-08 08:11:38,864 | INFO | [KEwRAG] Macro P=0.250 R=0.250 F1=0.250
-2025-09-08 08:11:38,865 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs2/KIRP_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_081127.csv
-2025-09-08 08:11:38,865 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs2/KIRP_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_081127.csv

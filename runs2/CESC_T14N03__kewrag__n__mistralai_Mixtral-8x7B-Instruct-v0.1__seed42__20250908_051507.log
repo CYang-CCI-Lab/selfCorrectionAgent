@@ -1,5 +1,0 @@
-2025-09-08 05:15:07,791 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs2/CESC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_051507.log
-2025-09-08 05:15:07,791 | INFO | === RUN START === method=kewrag task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/CESC_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
-2025-09-08 05:15:07,834 | INFO | [KEwRAG] Generating rules from RAG excerpt...
-2025-09-08 05:16:01,335 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs2/CESC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_051507.csv
-2025-09-08 05:16:01,335 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs2/CESC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_051507.csv

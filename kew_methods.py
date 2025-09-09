@@ -501,9 +501,6 @@ class KEwRAG(BaseMethod):
 # KEwLTM
 # ---------------------------
 
-# ======================================================================
-# new version
-# ======================================================================
 class KEwLTM(BaseMethod):
     def __init__(self, llm: LLMClient, cfg: RunConfig) -> None:
         super().__init__(llm, cfg)
@@ -654,145 +651,6 @@ class KEwLTM(BaseMethod):
             logger.info("[KEwLTM] Macro P=%.3f R=%.3f F1=%.3f", p, r, f1)
 
         return out_df
-# class KEwLTM(BaseMethod):
-#     def __init__(self, llm: LLMClient, cfg: RunConfig) -> None:
-#         super().__init__(llm, cfg)
-#         self.memory: List[str] = []
-
-#     def _accept_update(self, old: List[str], new: List[str]) -> bool:
-#         if not old:
-#             return True
-#         if not new:
-#             return False
-#         old_str = "\n".join(old)
-#         new_str = "\n".join(new)
-#         ratio = fuzz.ratio(old_str, new_str)  # 0..100
-#         return ratio >= self.cfg.edit_threshold
-
-#     def _normalize_rules(self, rules: List[str]) -> List[str]:
-#         cleaned = []
-#         seen = set()
-#         for r in rules:
-#             if not isinstance(r, str):
-#                 continue
-#             s = r.strip()
-#             if not s:
-#                 continue
-#             k = re.sub(r"\s+", " ", s.lower())
-#             if k in seen:
-#                 continue
-#             seen.add(k)
-#             cleaned.append(s)
-#         return cleaned
-
-#     def _elicit_initial(self, report: str) -> Tuple[List[str], str, str, str]:
-#         prompt = PROMPT_ELICIT_INITIAL.format(
-#             report=report,
-#             task_upper=self.cfg.task.upper(),
-#             labels=self.label_list,
-#         )
-#         messages = [
-#             {"role": "system", "content": self.system_prompt},
-#             {"role": "user", "content": prompt},
-#         ]
-#         data, raw = self.llm.json_chat(messages, schema=elicit_schema(self.cfg.task))
-#         if not data:
-#             return [], "", "", raw
-#         rules = self._normalize_rules(data.get("rules", []) or [])
-#         return rules, data.get("reasoning", ""), data.get("predicted_stage", ""), raw
-
-#     def _elicit_update(self, report: str, memory: List[str]) -> Tuple[List[str], str, str, str]:
-#         prompt = PROMPT_ELICIT_UPDATE.format(
-#             memory="\n".join(memory) if memory else "(empty)",
-#             report=report,
-#             task_upper=self.cfg.task.upper(),
-#             labels=self.label_list,
-#         )
-#         messages = [
-#             {"role": "system", "content": self.system_prompt},
-#             {"role": "user", "content": prompt},
-#         ]
-#         data, raw = self.llm.json_chat(messages, schema=elicit_schema(self.cfg.task))
-#         if not data:
-#             return memory, "", "", raw
-#         rules = self._normalize_rules(data.get("rules", []) or [])
-#         return rules, data.get("reasoning", ""), data.get("predicted_stage", ""), raw
-
-#     def _infer_with_memory(self, report: str, memory: List[str]) -> Tuple[str, str, str]:
-#         prompt = PROMPT_INFER_WITH_MEMORY.format(
-#             memory="\n".join(memory) if memory else "(empty)",
-#             report=report,
-#             task_upper=self.cfg.task.upper(),
-#             labels=self.label_list,
-#         )
-#         messages = [
-#             {"role": "system", "content": self.system_prompt},
-#             {"role": "user", "content": prompt},
-#         ]
-#         data, raw = self.llm.json_chat(messages, schema=stage_schema(self.cfg.task))
-#         if not data:
-#             return "", "", raw
-#         return data.get("reasoning", ""), data.get("stage", ""), raw
-
-#     def run(self, df: pd.DataFrame) -> pd.DataFrame:
-#         out_df = df.copy()
-#         # Split: first train_size rows (after shuffle outside) for memory induction; rest for inference
-#         train_size = min(self.cfg.train_size, len(out_df))
-#         train_df = out_df.iloc[:train_size].copy()
-#         test_df = out_df.iloc[train_size:].copy()
-
-#         for c in ("kewltm_train_raw_llm", "kewltm_memory_snapshot"):
-#             if c not in train_df.columns:
-#                 train_df[c] = None
-
-#         logger.info("[KEwLTM] Inducing memory from %d reports (threshold=%d)...",
-#                     len(train_df), self.cfg.edit_threshold)
-#         memory: List[str] = []
-#         # Induction
-#         for i, row in tqdm(train_df.iterrows(), total=len(train_df), desc="KEwLTM-train"):
-#             report = str(row["text"])
-#             if not memory:
-#                 new_rules, reasoning, pred_stage, raw = self._elicit_initial(report)
-#                 if new_rules:
-#                     memory = new_rules
-#                 else:
-#                     train_df.loc[i, "kewltm_train_raw_llm"] = raw
-#             else:
-#                 updated_rules, reasoning, pred_stage, raw = self._elicit_update(report, memory)
-#                 if updated_rules == memory:
-#                     # No change proposed or parse fail: store raw if parsing failed
-#                     if not updated_rules and raw:
-#                         train_df.loc[i, "kewltm_train_raw_llm"] = raw
-#                 elif self._accept_update(memory, updated_rules):
-#                     memory = updated_rules
-
-#             train_df.at[i, "kewltm_memory_snapshot"] = list(memory)
-#             train_df.at[i, "kewltm_memory_snapshot_str"] = "\n".join(memory)
-
-#         self.memory = memory
-#         logger.info("[KEwLTM] Final memory length: %d", len(self.memory))
-#         out_df["kewltm_memory"] = [self.memory] * len(out_df)
-
-#         # Inference
-#         stages: List[Optional[int]] = []
-#         for j, row in tqdm(test_df.iterrows(), total=len(test_df), desc="KEwLTM-test"):
-#             report = str(row["text"])
-#             reasoning, stage, raw = self._infer_with_memory(report, self.memory)
-#             test_df.loc[j, "kewltm_reasoning"] = reasoning
-#             test_df.loc[j, "kewltm_stage"] = stage
-#             if not stage:
-#                 test_df.loc[j, "kewltm_raw_llm"] = raw
-#             stages.append(stage_to_idx(self.cfg.task, stage) if stage else None)
-
-#         # out_df.update(test_df)
-#         out_df = pd.concat([train_df, test_df], sort=False)
-
-#         y_true = extract_ground_truth(out_df.iloc[train_size:], self.cfg.task)
-#         if y_true is not None and all(s is not None for s in stages):
-#             y_pred = [int(s) for s in stages]  # type: ignore
-#             p, r, f1 = macro_prf(list(y_true), y_pred, 4)
-#             logger.info("[KEwLTM] Macro P=%.3f R=%.3f F1=%.3f", p, r, f1)
-#         return out_df
 
 
 # ---------------------------
@@ -809,7 +667,7 @@ def load_context(context_file: str, task: str) -> str:
 
 
 def read_dataset(path: str) -> pd.DataFrame:
-    df = pd.read_csv(path)[:10]
+    df = pd.read_csv(path)
     if "text" not in df.columns:
         raise ValueError("Dataset must contain a 'text' column.")
     return df

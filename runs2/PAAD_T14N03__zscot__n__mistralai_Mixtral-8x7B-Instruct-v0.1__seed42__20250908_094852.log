@@ -1,5 +1,0 @@
-2025-09-08 09:48:52,482 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs2/PAAD_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_094852.log
-2025-09-08 09:48:52,482 | INFO | === RUN START === method=zscot task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/PAAD_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
-2025-09-08 09:49:42,650 | INFO | [ZSCOT] Macro P=0.500 R=0.458 F1=0.477
-2025-09-08 09:49:42,653 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs2/PAAD_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_094852.csv
-2025-09-08 09:49:42,653 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs2/PAAD_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_094852.csv

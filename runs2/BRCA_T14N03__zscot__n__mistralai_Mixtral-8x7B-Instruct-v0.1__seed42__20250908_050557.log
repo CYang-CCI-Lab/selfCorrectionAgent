@@ -1,6 +1,0 @@
-2025-09-08 05:05:57,562 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs2/BRCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_050557.log
-2025-09-08 05:05:57,562 | INFO | === RUN START === method=zscot task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/BRCA_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
-2025-09-08 05:05:57,628 | INFO | Filtered dataset: Removed 3 rows with missing 'N03' labels.
-2025-09-08 05:06:39,312 | INFO | [ZSCOT] Macro P=0.750 R=0.750 F1=0.750
-2025-09-08 05:06:39,315 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs2/BRCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_050557.csv
-2025-09-08 05:06:39,315 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs2/BRCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_050557.csv

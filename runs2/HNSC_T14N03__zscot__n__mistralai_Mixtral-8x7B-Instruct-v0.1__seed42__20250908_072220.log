@@ -1,6 +1,0 @@
-2025-09-08 07:22:20,280 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs2/HNSC_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_072220.log
-2025-09-08 07:22:20,280 | INFO | === RUN START === method=zscot task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/HNSC_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
-2025-09-08 07:22:20,332 | INFO | Filtered dataset: Removed 1 rows with missing 'N03' labels.
-2025-09-08 07:23:24,628 | INFO | [ZSCOT] Macro P=0.500 R=0.438 F1=0.464
-2025-09-08 07:23:24,633 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs2/HNSC_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_072220.csv
-2025-09-08 07:23:24,633 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs2/HNSC_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_072220.csv

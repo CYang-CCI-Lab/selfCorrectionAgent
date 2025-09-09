@@ -37,14 +37,14 @@ CONFIG = {
     "CONTEXT_DIR": "rag/context",
 
     # Where to write CSV results and logs
-    "OUT_DIR": "runs2",
+    "OUT_DIR": "runs",
 
     # Model to use. If you leave this as None, the script will query the first model id
     # from your vLLM/OpenAI-compatible server at http://localhost:8000/v1
     "MODEL":"mistralai/Mixtral-8x7B-Instruct-v0.1",  
 
     # Which methods to run (any subset). Valid options: zscot, rag, kewrag, kewltm
-    "METHODS": ["zscot", "rag", "kewrag", "kewltm"], # "rag", "kewrag", "kewltm"
+    "METHODS": ["kewltm", "zscot", "rag", "kewrag"], # "rag", "kewrag", "kewltm"
 
     # Limit to only these TCGA codes (or set to [] to include all)
     "ONLY": [],  # e.g., ["BRCA", "LUAD"]
@@ -58,8 +58,8 @@ CONFIG = {
     # === Dynamic train-size control for KEwLTM ===
     # Use ~5% of the number of rows available for the task (T14 or N03) in each cancer type.
     # If you want to force a fixed integer instead, set FORCE_TRAIN_SIZE to a positive int.
-    "TRAIN_FRACTION": 0.1,     # 0.05 -> 5% (matches 40/800 in your BRCA setup)
-    "FORCE_TRAIN_SIZE": 5,   # e.g., set to 40 to override dynamic sizing
+    "TRAIN_FRACTION": 0.05,     # 0.05 -> 5% (matches 40/800 in your BRCA setup)
+    "FORCE_TRAIN_SIZE": None,   # e.g., set to 40 to override dynamic sizing
 
     # KEwLTM similarity gate
     "EDIT_THRESHOLD": 80,

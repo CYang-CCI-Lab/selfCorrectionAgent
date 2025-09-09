@@ -1,5 +1,0 @@
-2025-09-08 02:03:22,101 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/BRCA_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250908_020322.log
-2025-09-08 02:03:22,102 | INFO | === RUN START === method=kewltm task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/BRCA_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
-2025-09-08 02:03:22,170 | INFO | [KEwLTM] Dynamic train_size=5 (fraction=0.100)
-2025-09-08 02:03:22,184 | INFO | [KEwLTM] Inducing memory from 5 reports (threshold=80)...
-2025-09-08 02:03:51,079 | INFO | [KEwLTM] Final memory length: 5
