@@ -1,0 +1,50 @@
+2025-09-09 12:02:20,812 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/BLCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_120220.log
+2025-09-09 12:02:20,813 | INFO | === RUN START === method=zscot task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/BLCA_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-09 12:02:20,829 | INFO | Filtered dataset: Removed 25 rows with missing 'N03' labels.
+2025-09-09 12:14:41,779 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 1573 column 28 (char 33210)
+2025-09-09 12:14:41,779 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-09 12:14:41,849 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-09 12:14:41,849 | INFO | Attempting to parse with json5 as fallback.
+2025-09-09 12:14:42,477 | ERROR | json5 fallback failed: <string>:1573 Unexpected end of input at column 28
+2025-09-09 12:14:42,477 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-09 12:14:42,477 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 1573 column 28 (char 33210)
+2025-09-09 12:14:42,477 | INFO | Attempting to parse with jsom as fallback.
+2025-09-09 12:14:42,494 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-09 12:14:42,495 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-09 12:14:42,541 | INFO | json_repair successfully parsed the JSON.
+2025-09-09 12:36:59,644 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 1 column 28143 (char 28142)
+2025-09-09 12:36:59,645 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-09 12:36:59,707 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-09 12:36:59,707 | INFO | Attempting to parse with json5 as fallback.
+2025-09-09 12:37:00,294 | ERROR | json5 fallback failed: <string>:1 Unexpected end of input at column 28143
+2025-09-09 12:37:00,294 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-09 12:37:00,295 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 1 column 28143 (char 28142)
+2025-09-09 12:37:00,295 | INFO | Attempting to parse with jsom as fallback.
+2025-09-09 12:37:00,312 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-09 12:37:00,312 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-09 12:37:00,388 | INFO | json_repair successfully parsed the JSON.
+2025-09-09 12:53:50,496 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 31126 (char 31332)
+2025-09-09 12:53:50,496 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-09 12:53:50,564 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-09 12:53:50,564 | INFO | Attempting to parse with json5 as fallback.
+2025-09-09 12:53:51,234 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 31126
+2025-09-09 12:53:51,234 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-09 12:53:51,235 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 31126 (char 31332)
+2025-09-09 12:53:51,235 | INFO | Attempting to parse with jsom as fallback.
+2025-09-09 12:53:51,254 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-09 12:53:51,254 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-09 12:53:51,297 | INFO | json_repair successfully parsed the JSON.
+2025-09-09 13:05:18,974 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/BLCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_120220.csv
+2025-09-09 13:05:18,974 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/BLCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_120220.csv

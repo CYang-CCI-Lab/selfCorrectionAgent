@@ -1,0 +1,7 @@
+2025-09-15 19:58:52,784 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/READ_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_195852.log
+2025-09-15 19:58:52,784 | INFO | === RUN START === method=kewltm task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/READ_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-15 19:58:52,788 | INFO | [KEwLTM] Dynamic train_size=8 (fraction=0.050)
+2025-09-15 19:58:52,802 | INFO | [KEwLTM] Inducing memory from 8 reports (threshold=80)...
+2025-09-15 20:10:23,150 | INFO | [KEwLTM] Final memory length: 6
+2025-09-15 20:10:23,171 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/READ_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_195852.csv
+2025-09-15 20:10:23,178 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/READ_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_195852.csv

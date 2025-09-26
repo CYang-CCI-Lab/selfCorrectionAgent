@@ -1,0 +1,50 @@
+2025-09-15 20:43:27,505 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/READ_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_204327.log
+2025-09-15 20:43:27,505 | INFO | === RUN START === method=kewrag task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/READ_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-15 20:43:27,536 | INFO | [KEwRAG] Generating rules from RAG excerpt...
+2025-09-15 20:53:56,875 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 15450 column 1 (char 185486)
+2025-09-15 20:53:56,875 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-15 20:53:57,096 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-15 20:53:57,096 | INFO | Attempting to parse with json5 as fallback.
+2025-09-15 20:53:57,691 | ERROR | json5 fallback failed: <string>:15450 Unexpected end of input at column 1
+2025-09-15 20:53:57,691 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-15 20:53:57,692 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 15450 column 1 (char 185486)
+2025-09-15 20:53:57,692 | INFO | Attempting to parse with jsom as fallback.
+2025-09-15 20:53:57,710 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-15 20:53:57,710 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-15 20:53:57,909 | INFO | json_repair successfully parsed the JSON.
+2025-09-15 21:09:48,331 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 31335 (char 31433)
+2025-09-15 21:09:48,331 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-15 21:09:48,401 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-15 21:09:48,401 | INFO | Attempting to parse with json5 as fallback.
+2025-09-15 21:09:49,070 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 31335
+2025-09-15 21:09:49,070 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-15 21:09:49,070 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 31335 (char 31433)
+2025-09-15 21:09:49,070 | INFO | Attempting to parse with jsom as fallback.
+2025-09-15 21:09:49,087 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-15 21:09:49,087 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-15 21:09:49,121 | INFO | json_repair successfully parsed the JSON.
+2025-09-15 21:22:22,714 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 4 column 31841 (char 32159)
+2025-09-15 21:22:22,714 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-15 21:22:22,784 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-15 21:22:22,784 | INFO | Attempting to parse with json5 as fallback.
+2025-09-15 21:22:23,471 | ERROR | json5 fallback failed: <string>:4 Unexpected end of input at column 31841
+2025-09-15 21:22:23,471 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-15 21:22:23,471 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 4 column 31841 (char 32159)
+2025-09-15 21:22:23,471 | INFO | Attempting to parse with jsom as fallback.
+2025-09-15 21:22:23,488 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-15 21:22:23,488 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-15 21:22:23,526 | INFO | json_repair successfully parsed the JSON.
+2025-09-15 21:24:26,244 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/READ_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_204327.csv
+2025-09-15 21:24:26,245 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/READ_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_204327.csv

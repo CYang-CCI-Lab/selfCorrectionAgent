@@ -1,0 +1,19 @@
+2025-09-12 00:38:16,445 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/KICH_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_003816.log
+2025-09-12 00:38:16,445 | INFO | === RUN START === method=zscot task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/KICH_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-12 00:51:06,341 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 4 column 31077 (char 31304)
+2025-09-12 00:51:06,342 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-12 00:51:06,410 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-12 00:51:06,410 | INFO | Attempting to parse with json5 as fallback.
+2025-09-12 00:51:07,087 | ERROR | json5 fallback failed: <string>:4 Unexpected end of input at column 31077
+2025-09-12 00:51:07,087 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-12 00:51:07,087 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 4 column 31077 (char 31304)
+2025-09-12 00:51:07,087 | INFO | Attempting to parse with jsom as fallback.
+2025-09-12 00:51:07,105 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-12 00:51:07,105 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-12 00:51:07,144 | INFO | json_repair successfully parsed the JSON.
+2025-09-12 00:59:35,245 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/KICH_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_003816.csv
+2025-09-12 00:59:35,245 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/KICH_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_003816.csv

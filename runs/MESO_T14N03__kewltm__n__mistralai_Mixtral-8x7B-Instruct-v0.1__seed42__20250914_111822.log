@@ -1,0 +1,38 @@
+2025-09-14 11:18:22,950 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/MESO_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_111822.log
+2025-09-14 11:18:22,950 | INFO | === RUN START === method=kewltm task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/MESO_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-14 11:18:22,958 | INFO | Filtered dataset: Removed 4 rows with missing 'N03' labels.
+2025-09-14 11:18:22,959 | INFO | [KEwLTM] Dynamic train_size=4 (fraction=0.050)
+2025-09-14 11:18:22,985 | INFO | [KEwLTM] Inducing memory from 4 reports (threshold=80)...
+2025-09-14 11:30:40,621 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 29989 column 1 (char 32297)
+2025-09-14 11:30:40,621 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-14 11:30:40,692 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-14 11:30:40,692 | INFO | Attempting to parse with json5 as fallback.
+2025-09-14 11:30:40,998 | ERROR | json5 fallback failed: <string>:29989 Unexpected end of input at column 1
+2025-09-14 11:30:40,998 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-14 11:30:40,999 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 29989 column 1 (char 32297)
+2025-09-14 11:30:40,999 | INFO | Attempting to parse with jsom as fallback.
+2025-09-14 11:30:41,016 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-14 11:30:41,016 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-14 11:30:41,085 | INFO | json_repair successfully parsed the JSON.
+2025-09-14 11:43:19,717 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 4 column 32141 (char 32311)
+2025-09-14 11:43:19,717 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-14 11:43:19,788 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-14 11:43:19,788 | INFO | Attempting to parse with json5 as fallback.
+2025-09-14 11:43:20,475 | ERROR | json5 fallback failed: <string>:4 Unexpected end of input at column 32141
+2025-09-14 11:43:20,475 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-14 11:43:20,475 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 4 column 32141 (char 32311)
+2025-09-14 11:43:20,475 | INFO | Attempting to parse with jsom as fallback.
+2025-09-14 11:43:20,493 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-14 11:43:20,493 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-14 11:43:20,530 | INFO | json_repair successfully parsed the JSON.
+2025-09-14 11:43:51,304 | INFO | [KEwLTM] Final memory length: 4
+2025-09-14 11:43:51,323 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/MESO_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_111822.csv
+2025-09-14 11:43:51,324 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/MESO_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_111822.csv

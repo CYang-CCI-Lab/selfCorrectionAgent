@@ -1,0 +1,49 @@
+2025-09-12 23:23:45,363 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/LIHC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_232345.log
+2025-09-12 23:23:45,363 | INFO | === RUN START === method=zscot task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/LIHC_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-12 23:34:45,981 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 1 column 32409 (char 32408)
+2025-09-12 23:34:45,981 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-12 23:34:46,052 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-12 23:34:46,052 | INFO | Attempting to parse with json5 as fallback.
+2025-09-12 23:34:46,736 | ERROR | json5 fallback failed: <string>:1 Unexpected end of input at column 32409
+2025-09-12 23:34:46,736 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-12 23:34:46,737 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 1 column 32409 (char 32408)
+2025-09-12 23:34:46,737 | INFO | Attempting to parse with jsom as fallback.
+2025-09-12 23:34:46,755 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-12 23:34:46,755 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-12 23:34:46,860 | INFO | json_repair successfully parsed the JSON.
+2025-09-12 23:59:52,459 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 31784 (char 32255)
+2025-09-12 23:59:52,460 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-12 23:59:52,530 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-12 23:59:52,530 | INFO | Attempting to parse with json5 as fallback.
+2025-09-12 23:59:53,218 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 31784
+2025-09-12 23:59:53,218 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-12 23:59:53,218 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 31784 (char 32255)
+2025-09-12 23:59:53,218 | INFO | Attempting to parse with jsom as fallback.
+2025-09-12 23:59:53,235 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-12 23:59:53,236 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-12 23:59:53,291 | INFO | json_repair successfully parsed the JSON.
+2025-09-13 00:13:15,915 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 32004 (char 32174)
+2025-09-13 00:13:15,915 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-13 00:13:15,985 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-13 00:13:15,985 | INFO | Attempting to parse with json5 as fallback.
+2025-09-13 00:13:16,675 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 32004
+2025-09-13 00:13:16,675 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-13 00:13:16,675 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 32004 (char 32174)
+2025-09-13 00:13:16,675 | INFO | Attempting to parse with jsom as fallback.
+2025-09-13 00:13:16,692 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-13 00:13:16,692 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-13 00:13:16,733 | INFO | json_repair successfully parsed the JSON.
+2025-09-13 00:28:46,631 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/LIHC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_232345.csv
+2025-09-13 00:28:46,631 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/LIHC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_232345.csv

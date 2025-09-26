@@ -1,0 +1,33 @@
+2025-09-10 22:22:04,085 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/CESC_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_222204.log
+2025-09-10 22:22:04,085 | INFO | === RUN START === method=kewltm task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/CESC_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-10 22:22:04,099 | INFO | Filtered dataset: Removed 46 rows with missing 'N03' labels.
+2025-09-10 22:22:04,100 | INFO | [KEwLTM] Dynamic train_size=9 (fraction=0.050)
+2025-09-10 22:22:04,117 | INFO | [KEwLTM] Inducing memory from 9 reports (threshold=80)...
+2025-09-10 22:32:44,129 | ERROR | Standard json.loads failed: Expecting value: line 16064 column 1 (char 40167)
+2025-09-10 22:32:44,129 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 22:32:44,211 | ERROR | demjson3 fallback failed: Unexpected end of input
+2025-09-10 22:32:44,211 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 22:32:44,399 | ERROR | json5 fallback failed: <string>:16064 Unexpected end of input at column 1
+2025-09-10 22:32:44,399 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 22:32:44,399 | ERROR | dirtyjson fallback failed: Expecting value: line 16064 column 1 (char 40167)
+2025-09-10 22:32:44,399 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 22:32:44,526 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 22:32:44,556 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 22:48:33,816 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 30925 (char 31366)
+2025-09-10 22:48:33,817 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 22:48:33,886 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 22:48:33,886 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 22:48:34,554 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 30925
+2025-09-10 22:48:34,554 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 22:48:34,554 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 30925 (char 31366)
+2025-09-10 22:48:34,554 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 22:48:34,572 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 22:48:34,572 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 22:48:34,618 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 22:57:56,248 | INFO | [KEwLTM] Final memory length: 12
+2025-09-10 22:57:56,297 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/CESC_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_222204.csv
+2025-09-10 22:57:56,297 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/CESC_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_222204.csv

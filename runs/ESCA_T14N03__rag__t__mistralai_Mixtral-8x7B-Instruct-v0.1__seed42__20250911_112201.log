@@ -1,0 +1,5 @@
+2025-09-11 11:22:01,533 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/ESCA_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_112201.log
+2025-09-11 11:22:01,533 | INFO | === RUN START === method=rag task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/ESCA_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-11 11:22:01,544 | INFO | Filtered dataset: Removed 1 rows with missing 'T14' labels.
+2025-09-11 11:31:39,624 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/ESCA_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_112201.csv
+2025-09-11 11:31:39,624 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/ESCA_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_112201.csv

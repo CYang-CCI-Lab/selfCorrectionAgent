@@ -1,0 +1,20 @@
+2025-09-14 19:32:20,983 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/PAAD_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_193220.log
+2025-09-14 19:32:20,983 | INFO | === RUN START === method=rag task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/PAAD_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-14 19:32:20,999 | INFO | Filtered dataset: Removed 4 rows with missing 'N03' labels.
+2025-09-14 19:41:44,715 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 25753 column 1 (char 28693)
+2025-09-14 19:41:44,715 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-14 19:41:44,781 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-14 19:41:44,781 | INFO | Attempting to parse with json5 as fallback.
+2025-09-14 19:41:45,042 | ERROR | json5 fallback failed: <string>:25753 Unexpected end of input at column 1
+2025-09-14 19:41:45,042 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-14 19:41:45,042 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 25753 column 1 (char 28693)
+2025-09-14 19:41:45,042 | INFO | Attempting to parse with jsom as fallback.
+2025-09-14 19:41:45,060 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 3, column 10.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-14 19:41:45,060 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-14 19:41:45,091 | INFO | json_repair successfully parsed the JSON.
+2025-09-14 19:57:33,752 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/PAAD_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_193220.csv
+2025-09-14 19:57:33,752 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/PAAD_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_193220.csv

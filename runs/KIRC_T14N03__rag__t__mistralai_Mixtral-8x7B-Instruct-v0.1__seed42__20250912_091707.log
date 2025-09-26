@@ -1,0 +1,79 @@
+2025-09-12 09:17:07,504 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/KIRC_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_091707.log
+2025-09-12 09:17:07,505 | INFO | === RUN START === method=rag task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/KIRC_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-12 09:26:14,592 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 29148 (char 29246)
+2025-09-12 09:26:14,592 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-12 09:26:14,622 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-12 09:26:14,622 | INFO | Attempting to parse with json5 as fallback.
+2025-09-12 09:26:15,240 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 29148
+2025-09-12 09:26:15,240 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-12 09:26:15,240 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 29148 (char 29246)
+2025-09-12 09:26:15,240 | INFO | Attempting to parse with jsom as fallback.
+2025-09-12 09:26:15,257 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-12 09:26:15,258 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-12 09:26:15,291 | INFO | json_repair successfully parsed the JSON.
+2025-09-12 09:36:34,307 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 6 column 28822 (char 29510)
+2025-09-12 09:36:34,307 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-12 09:36:34,372 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-12 09:36:34,373 | INFO | Attempting to parse with json5 as fallback.
+2025-09-12 09:36:34,987 | ERROR | json5 fallback failed: <string>:6 Unexpected end of input at column 28822
+2025-09-12 09:36:34,987 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-12 09:36:34,987 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 6 column 28822 (char 29510)
+2025-09-12 09:36:34,987 | INFO | Attempting to parse with jsom as fallback.
+2025-09-12 09:36:35,005 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 4, column 10.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-12 09:36:35,005 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-12 09:36:35,055 | INFO | json_repair successfully parsed the JSON.
+2025-09-12 10:03:12,884 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 5420 column 6 (char 27282)
+2025-09-12 10:03:12,884 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-12 10:03:12,946 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-12 10:03:12,946 | INFO | Attempting to parse with json5 as fallback.
+2025-09-12 10:03:13,457 | ERROR | json5 fallback failed: <string>:5420 Unexpected end of input at column 6
+2025-09-12 10:03:13,457 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-12 10:03:13,457 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 5420 column 6 (char 27282)
+2025-09-12 10:03:13,457 | INFO | Attempting to parse with jsom as fallback.
+2025-09-12 10:03:13,474 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-12 10:03:13,474 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-12 10:03:13,508 | INFO | json_repair successfully parsed the JSON.
+2025-09-12 10:17:29,618 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 28905 (char 28970)
+2025-09-12 10:17:29,619 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-12 10:17:29,684 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-12 10:17:29,684 | INFO | Attempting to parse with json5 as fallback.
+2025-09-12 10:17:30,307 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 28905
+2025-09-12 10:17:30,307 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-12 10:17:30,307 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 28905 (char 28970)
+2025-09-12 10:17:30,307 | INFO | Attempting to parse with jsom as fallback.
+2025-09-12 10:17:30,325 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-12 10:17:30,325 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-12 10:17:30,358 | INFO | json_repair successfully parsed the JSON.
+2025-09-12 10:30:15,074 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 4 column 28508 (char 28717)
+2025-09-12 10:30:15,074 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-12 10:30:15,137 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-12 10:30:15,138 | INFO | Attempting to parse with json5 as fallback.
+2025-09-12 10:30:15,754 | ERROR | json5 fallback failed: <string>:4 Unexpected end of input at column 28508
+2025-09-12 10:30:15,754 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-12 10:30:15,754 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 4 column 28508 (char 28717)
+2025-09-12 10:30:15,754 | INFO | Attempting to parse with jsom as fallback.
+2025-09-12 10:30:15,771 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-12 10:30:15,772 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-12 10:30:15,814 | INFO | json_repair successfully parsed the JSON.
+2025-09-12 10:50:00,126 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/KIRC_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_091707.csv
+2025-09-12 10:50:00,127 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/KIRC_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_091707.csv

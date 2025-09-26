@@ -1,0 +1,48 @@
+2025-09-11 01:21:08,373 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/CHOL_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_012108.log
+2025-09-11 01:21:08,373 | INFO | === RUN START === method=rag task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/CHOL_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-11 01:21:08,376 | INFO | Filtered dataset: Removed 5 rows with missing 'N03' labels.
+2025-09-11 01:32:08,421 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 26041 column 1 (char 29701)
+2025-09-11 01:32:08,421 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-11 01:32:08,490 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-11 01:32:08,490 | INFO | Attempting to parse with json5 as fallback.
+2025-09-11 01:32:08,756 | ERROR | json5 fallback failed: <string>:26041 Unexpected end of input at column 1
+2025-09-11 01:32:08,756 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-11 01:32:08,756 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 26041 column 1 (char 29701)
+2025-09-11 01:32:08,756 | INFO | Attempting to parse with jsom as fallback.
+2025-09-11 01:32:08,774 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 1073.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-11 01:32:08,774 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-11 01:32:08,821 | INFO | json_repair successfully parsed the JSON.
+2025-09-11 01:42:19,634 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 15 (char 14)
+2025-09-11 01:42:19,634 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-11 01:42:19,796 | ERROR | demjson3 fallback failed: String literal is not terminated
+2025-09-11 01:42:19,796 | INFO | Attempting to parse with json5 as fallback.
+2025-09-11 01:42:21,177 | ERROR | json5 fallback failed: <string>:1 Unexpected end of input at column 101653
+2025-09-11 01:42:21,177 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-11 01:42:21,179 | ERROR | dirtyjson fallback failed: Unterminated string starting at: line 1 column 15 (char 14)
+2025-09-11 01:42:21,179 | INFO | Attempting to parse with jsom as fallback.
+2025-09-11 01:42:21,210 | ERROR | jsom fallback failed: No terminal matches '"' in the current parser context, at line 1 col 15
+
+{"reasoning": "The pathology report provides the follo
+              ^
+Expected one of: 
+	* NUMBER
+	* COLON
+	* LBRACE
+	* LSQB
+	* /'(\\\'|\\\\|[^'])*?'i?/
+	* IDENTIFIER
+	* RBRACE
+	* COMMA
+	* RSQB
+	* /"(\\\"|\\\\|[^"])*?"i?/
+
+Previous tokens: Token('COLON', ':')
+
+2025-09-11 01:42:21,211 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-11 01:42:21,656 | INFO | json_repair successfully parsed the JSON.
+2025-09-11 01:42:51,686 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/CHOL_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_012108.csv
+2025-09-11 01:42:51,686 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/CHOL_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_012108.csv

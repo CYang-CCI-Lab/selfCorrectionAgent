@@ -1,0 +1,35 @@
+2025-09-11 21:15:19,773 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/HNSC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_211519.log
+2025-09-11 21:15:19,774 | INFO | === RUN START === method=rag task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/HNSC_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-11 21:15:19,795 | INFO | Filtered dataset: Removed 39 rows with missing 'N03' labels.
+2025-09-11 21:34:18,143 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 1 column 27018 (char 27017)
+2025-09-11 21:34:18,143 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-11 21:34:18,205 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-11 21:34:18,205 | INFO | Attempting to parse with json5 as fallback.
+2025-09-11 21:34:18,775 | ERROR | json5 fallback failed: <string>:1 Unexpected end of input at column 27018
+2025-09-11 21:34:18,775 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-11 21:34:18,775 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 1 column 27018 (char 27017)
+2025-09-11 21:34:18,775 | INFO | Attempting to parse with jsom as fallback.
+2025-09-11 21:34:18,793 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-11 21:34:18,793 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-11 21:34:18,862 | INFO | json_repair successfully parsed the JSON.
+2025-09-11 21:53:21,279 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 1 column 28031 (char 28030)
+2025-09-11 21:53:21,279 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-11 21:53:21,342 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-11 21:53:21,342 | INFO | Attempting to parse with json5 as fallback.
+2025-09-11 21:53:21,932 | ERROR | json5 fallback failed: <string>:1 Unexpected end of input at column 28031
+2025-09-11 21:53:21,932 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-11 21:53:21,932 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 1 column 28031 (char 28030)
+2025-09-11 21:53:21,932 | INFO | Attempting to parse with jsom as fallback.
+2025-09-11 21:53:21,950 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-11 21:53:21,950 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-11 21:53:22,022 | INFO | json_repair successfully parsed the JSON.
+2025-09-11 22:26:37,201 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/HNSC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_211519.csv
+2025-09-11 22:26:37,201 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/HNSC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_211519.csv

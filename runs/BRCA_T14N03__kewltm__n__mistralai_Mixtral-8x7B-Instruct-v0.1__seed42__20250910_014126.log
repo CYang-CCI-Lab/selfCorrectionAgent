@@ -1,0 +1,488 @@
+2025-09-10 01:41:26,440 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/BRCA_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_014126.log
+2025-09-10 01:41:26,440 | INFO | === RUN START === method=kewltm task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/BRCA_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-10 01:41:26,472 | INFO | Filtered dataset: Removed 231 rows with missing 'N03' labels.
+2025-09-10 01:41:26,472 | INFO | [KEwLTM] Dynamic train_size=40 (fraction=0.050)
+2025-09-10 01:41:26,488 | INFO | [KEwLTM] Inducing memory from 40 reports (threshold=80)...
+2025-09-10 02:00:25,014 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 31258 (char 31348)
+2025-09-10 02:00:25,014 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 02:00:25,083 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 02:00:25,083 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 02:00:25,745 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 31258
+2025-09-10 02:00:25,745 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 02:00:25,745 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 31258 (char 31348)
+2025-09-10 02:00:25,745 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 02:00:25,763 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 02:00:25,763 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 02:00:25,798 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 02:12:07,035 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 31135 (char 31418)
+2025-09-10 02:12:07,035 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 02:12:07,105 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 02:12:07,105 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 02:12:07,771 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 31135
+2025-09-10 02:12:07,771 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 02:12:07,771 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 31135 (char 31418)
+2025-09-10 02:12:07,771 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 02:12:07,789 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 02:12:07,789 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 02:12:07,846 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 02:21:51,430 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 30387 (char 30477)
+2025-09-10 02:21:51,430 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 02:21:51,497 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 02:21:51,497 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 02:21:52,149 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 30387
+2025-09-10 02:21:52,149 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 02:21:52,149 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 30387 (char 30477)
+2025-09-10 02:21:52,149 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 02:21:52,166 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 02:21:52,166 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 02:21:52,201 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 02:33:06,882 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 31941 (char 32041)
+2025-09-10 02:33:06,883 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 02:33:06,952 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 02:33:06,952 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 02:33:07,625 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 31941
+2025-09-10 02:33:07,625 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 02:33:07,625 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 31941 (char 32041)
+2025-09-10 02:33:07,625 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 02:33:07,642 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 02:33:07,643 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 02:33:07,679 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 02:42:48,682 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 31247 (char 31347)
+2025-09-10 02:42:48,682 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 02:42:48,715 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 02:42:48,715 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 02:42:49,380 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 31247
+2025-09-10 02:42:49,380 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 02:42:49,380 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 31247 (char 31347)
+2025-09-10 02:42:49,380 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 02:42:49,398 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 02:42:49,398 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 02:42:49,434 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 02:55:33,687 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 32213 (char 32307)
+2025-09-10 02:55:33,687 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 02:55:33,757 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 02:55:33,757 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 02:55:34,428 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 32213
+2025-09-10 02:55:34,429 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 02:55:34,429 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 32213 (char 32307)
+2025-09-10 02:55:34,429 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 02:55:34,446 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 02:55:34,447 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 02:55:34,483 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 03:08:23,868 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 30338 (char 30428)
+2025-09-10 03:08:23,868 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 03:08:23,935 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 03:08:23,935 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 03:08:24,580 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 30338
+2025-09-10 03:08:24,581 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 03:08:24,581 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 30338 (char 30428)
+2025-09-10 03:08:24,581 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 03:08:24,598 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 03:08:24,598 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 03:08:24,633 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 03:18:29,313 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 30335 (char 30642)
+2025-09-10 03:18:29,313 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 03:18:29,381 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 03:18:29,381 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 03:18:29,894 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 30335
+2025-09-10 03:18:29,894 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 03:18:29,894 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 30335 (char 30642)
+2025-09-10 03:18:29,894 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 03:18:29,911 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 16.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 03:18:29,911 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 03:18:29,956 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 03:30:16,760 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 17258 column 1 (char 31315)
+2025-09-10 03:30:16,760 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 03:30:16,831 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 03:30:16,831 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 03:30:17,045 | ERROR | json5 fallback failed: <string>:17258 Unexpected end of input at column 1
+2025-09-10 03:30:17,045 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 03:30:17,045 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 17258 column 1 (char 31315)
+2025-09-10 03:30:17,045 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 03:30:17,062 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 03:30:17,062 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 03:30:17,130 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 03:42:16,999 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 30596 (char 30699)
+2025-09-10 03:42:16,999 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 03:42:17,066 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 03:42:17,066 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 03:42:17,722 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 30596
+2025-09-10 03:42:17,722 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 03:42:17,722 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 30596 (char 30699)
+2025-09-10 03:42:17,722 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 03:42:17,740 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 03:42:17,740 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 03:42:17,775 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 03:53:16,004 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 30217 (char 30320)
+2025-09-10 03:53:16,004 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 03:53:16,071 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 03:53:16,071 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 03:53:16,718 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 30217
+2025-09-10 03:53:16,718 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 03:53:16,719 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 30217 (char 30320)
+2025-09-10 03:53:16,719 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 03:53:16,736 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 03:53:16,736 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 03:53:16,771 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 04:08:43,581 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 26244 column 1 (char 29995)
+2025-09-10 04:08:43,581 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 04:08:43,652 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 04:08:43,652 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 04:08:43,923 | ERROR | json5 fallback failed: <string>:26244 Unexpected end of input at column 1
+2025-09-10 04:08:43,923 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 04:08:43,923 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 26244 column 1 (char 29995)
+2025-09-10 04:08:43,924 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 04:08:43,941 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 10.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 04:08:43,941 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 04:08:43,979 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 04:21:58,354 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 30184 (char 30287)
+2025-09-10 04:21:58,355 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 04:21:58,422 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 04:21:58,422 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 04:21:59,064 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 30184
+2025-09-10 04:21:59,064 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 04:21:59,064 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 30184 (char 30287)
+2025-09-10 04:21:59,064 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 04:21:59,081 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 04:21:59,081 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 04:21:59,116 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 04:31:43,484 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 29745 (char 30646)
+2025-09-10 04:31:43,484 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 04:31:43,552 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 04:31:43,552 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 04:31:44,183 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 29745
+2025-09-10 04:31:44,183 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 04:31:44,183 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 29745 (char 30646)
+2025-09-10 04:31:44,183 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 04:31:44,201 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 04:31:44,201 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 04:31:44,267 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 04:44:17,426 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 29894 (char 29998)
+2025-09-10 04:44:17,426 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 04:44:17,493 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 04:44:17,494 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 04:44:18,140 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 29894
+2025-09-10 04:44:18,141 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 04:44:18,141 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 29894 (char 29998)
+2025-09-10 04:44:18,141 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 04:44:18,158 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 04:44:18,158 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 04:44:18,192 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 04:55:01,793 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 575 column 41 (char 31981)
+2025-09-10 04:55:01,793 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 04:55:01,863 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 04:55:01,864 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 04:55:02,530 | ERROR | json5 fallback failed: <string>:575 Unexpected end of input at column 41
+2025-09-10 04:55:02,530 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 04:55:02,530 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 575 column 41 (char 31981)
+2025-09-10 04:55:02,530 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 04:55:02,548 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 04:55:02,548 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 04:55:02,620 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 05:07:08,718 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 30594 (char 30694)
+2025-09-10 05:07:08,718 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 05:07:08,785 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 05:07:08,785 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 05:07:09,440 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 30594
+2025-09-10 05:07:09,440 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 05:07:09,441 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 30594 (char 30694)
+2025-09-10 05:07:09,441 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 05:07:09,458 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 05:07:09,458 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 05:07:09,493 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 05:17:38,680 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 30011 (char 30114)
+2025-09-10 05:17:38,680 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 05:17:38,747 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 05:17:38,747 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 05:17:39,387 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 30011
+2025-09-10 05:17:39,387 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 05:17:39,388 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 30011 (char 30114)
+2025-09-10 05:17:39,388 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 05:17:39,405 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 05:17:39,405 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 05:17:39,439 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 05:32:36,314 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 29943 (char 30033)
+2025-09-10 05:32:36,314 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 05:32:36,380 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 05:32:36,380 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 05:32:37,023 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 29943
+2025-09-10 05:32:37,023 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 05:32:37,023 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 29943 (char 30033)
+2025-09-10 05:32:37,023 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 05:32:37,040 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 05:32:37,041 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 05:32:37,074 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 05:44:17,900 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 6272 column 5 (char 31454)
+2025-09-10 05:44:17,900 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 05:44:17,968 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 05:44:17,968 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 05:44:18,568 | ERROR | json5 fallback failed: <string>:6272 Unexpected end of input at column 5
+2025-09-10 05:44:18,568 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 05:44:18,568 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 6272 column 5 (char 31454)
+2025-09-10 05:44:18,568 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 05:44:18,586 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 05:44:18,586 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 05:44:18,622 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 05:56:57,603 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 30455 (char 30583)
+2025-09-10 05:56:57,603 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 05:56:57,670 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 05:56:57,670 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 05:56:58,310 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 30455
+2025-09-10 05:56:58,310 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 05:56:58,311 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 30455 (char 30583)
+2025-09-10 05:56:58,311 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 05:56:58,328 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 05:56:58,328 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 05:56:58,363 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 06:10:02,322 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 29690 (char 29793)
+2025-09-10 06:10:02,322 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 06:10:02,388 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 06:10:02,388 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 06:10:03,028 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 29690
+2025-09-10 06:10:03,028 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 06:10:03,028 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 29690 (char 29793)
+2025-09-10 06:10:03,028 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 06:10:03,046 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 06:10:03,046 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 06:10:03,080 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 06:22:19,171 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 30067 (char 30157)
+2025-09-10 06:22:19,171 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 06:22:19,237 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 06:22:19,237 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 06:22:19,883 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 30067
+2025-09-10 06:22:19,883 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 06:22:19,883 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 30067 (char 30157)
+2025-09-10 06:22:19,883 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 06:22:19,901 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 06:22:19,901 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 06:22:19,935 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 06:38:03,568 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 27904 (char 28006)
+2025-09-10 06:38:03,568 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 06:38:03,631 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 06:38:03,631 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 06:38:04,230 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 27904
+2025-09-10 06:38:04,230 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 06:38:04,230 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 27904 (char 28006)
+2025-09-10 06:38:04,230 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 06:38:04,247 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 06:38:04,247 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 06:38:04,279 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 06:49:59,831 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 31037 (char 31116)
+2025-09-10 06:49:59,831 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 06:49:59,900 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 06:49:59,900 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 06:50:00,276 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 31037
+2025-09-10 06:50:00,276 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 06:50:00,276 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 31037 (char 31116)
+2025-09-10 06:50:00,276 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 06:50:00,293 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 06:50:00,293 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 06:50:00,329 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 07:01:18,173 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 1 column 29880 (char 29879)
+2025-09-10 07:01:18,173 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 07:01:18,239 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 07:01:18,239 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 07:01:18,602 | ERROR | json5 fallback failed: <string>:1 Unexpected end of input at column 29880
+2025-09-10 07:01:18,602 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 07:01:18,602 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 1 column 29880 (char 29879)
+2025-09-10 07:01:18,602 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 07:01:18,619 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 07:01:18,619 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 07:01:18,674 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 07:14:02,049 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 30729 (char 30819)
+2025-09-10 07:14:02,049 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 07:14:02,118 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 07:14:02,118 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 07:14:02,777 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 30729
+2025-09-10 07:14:02,778 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 07:14:02,778 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 30729 (char 30819)
+2025-09-10 07:14:02,778 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 07:14:02,795 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 07:14:02,795 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 07:14:02,830 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 07:26:17,694 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 32219 (char 32326)
+2025-09-10 07:26:17,695 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 07:26:17,765 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 07:26:17,765 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 07:26:18,466 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 32219
+2025-09-10 07:26:18,466 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 07:26:18,466 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 32219 (char 32326)
+2025-09-10 07:26:18,466 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 07:26:18,484 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 07:26:18,484 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 07:26:18,521 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 07:36:17,507 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 1 column 32486 (char 32485)
+2025-09-10 07:36:17,508 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 07:36:17,542 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 07:36:17,542 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 07:36:17,933 | ERROR | json5 fallback failed: <string>:1 Unexpected end of input at column 32486
+2025-09-10 07:36:17,933 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 07:36:17,934 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 1 column 32486 (char 32485)
+2025-09-10 07:36:17,934 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 07:36:17,951 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 07:36:17,951 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 07:36:18,024 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 07:48:10,556 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 30344 (char 30418)
+2025-09-10 07:48:10,557 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 07:48:10,624 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 07:48:10,624 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 07:48:11,275 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 30344
+2025-09-10 07:48:11,275 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 07:48:11,275 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 30344 (char 30418)
+2025-09-10 07:48:11,275 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 07:48:11,292 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 07:48:11,292 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 07:48:11,327 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 07:58:11,722 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 30446 (char 30537)
+2025-09-10 07:58:11,722 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 07:58:11,789 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 07:58:11,789 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 07:58:12,443 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 30446
+2025-09-10 07:58:12,443 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 07:58:12,443 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 30446 (char 30537)
+2025-09-10 07:58:12,443 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 07:58:12,461 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 07:58:12,461 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 07:58:12,495 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 08:08:26,906 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 2 column 30567 (char 30653)
+2025-09-10 08:08:26,907 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 08:08:26,974 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 08:08:26,974 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 08:08:27,627 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 30567
+2025-09-10 08:08:27,627 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 08:08:27,627 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 2 column 30567 (char 30653)
+2025-09-10 08:08:27,627 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 08:08:27,644 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 08:08:27,644 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 08:08:27,679 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 08:09:03,387 | INFO | [KEwLTM] Final memory length: 11
+2025-09-10 08:09:03,512 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/BRCA_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_014126.csv
+2025-09-10 08:09:03,513 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/BRCA_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_014126.csv

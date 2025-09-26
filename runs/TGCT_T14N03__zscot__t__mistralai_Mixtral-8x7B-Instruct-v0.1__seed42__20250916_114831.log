@@ -1,0 +1,50 @@
+2025-09-16 11:48:31,037 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/TGCT_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_114831.log
+2025-09-16 11:48:31,037 | INFO | === RUN START === method=zscot task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/TGCT_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-16 12:01:27,102 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 31989 (char 32235)
+2025-09-16 12:01:27,103 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-16 12:01:27,173 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-16 12:01:27,173 | INFO | Attempting to parse with json5 as fallback.
+2025-09-16 12:01:27,852 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 31989
+2025-09-16 12:01:27,852 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-16 12:01:27,852 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 31989 (char 32235)
+2025-09-16 12:01:27,852 | INFO | Attempting to parse with jsom as fallback.
+2025-09-16 12:01:27,870 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-16 12:01:27,870 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-16 12:01:27,908 | INFO | json_repair successfully parsed the JSON.
+2025-09-16 12:31:39,878 | ERROR | [LLM ERROR] Request timed out.
+2025-09-16 12:44:53,511 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 32004 (char 32225)
+2025-09-16 12:44:53,511 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-16 12:44:53,581 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-16 12:44:53,581 | INFO | Attempting to parse with json5 as fallback.
+2025-09-16 12:44:54,269 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 32004
+2025-09-16 12:44:54,269 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-16 12:44:54,269 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 32004 (char 32225)
+2025-09-16 12:44:54,269 | INFO | Attempting to parse with jsom as fallback.
+2025-09-16 12:44:54,287 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-16 12:44:54,287 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-16 12:44:54,322 | INFO | json_repair successfully parsed the JSON.
+2025-09-16 12:54:50,429 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 32039 (char 32258)
+2025-09-16 12:54:50,430 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-16 12:54:50,463 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-16 12:54:50,463 | INFO | Attempting to parse with json5 as fallback.
+2025-09-16 12:54:51,152 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 32039
+2025-09-16 12:54:51,153 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-16 12:54:51,153 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 32039 (char 32258)
+2025-09-16 12:54:51,153 | INFO | Attempting to parse with jsom as fallback.
+2025-09-16 12:54:51,170 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-16 12:54:51,170 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-16 12:54:51,205 | INFO | json_repair successfully parsed the JSON.
+2025-09-16 12:56:30,726 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/TGCT_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_114831.csv
+2025-09-16 12:56:30,726 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/TGCT_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_114831.csv

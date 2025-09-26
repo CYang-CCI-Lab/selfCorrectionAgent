@@ -1,0 +1,20 @@
+2025-09-16 21:35:24,121 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/THCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_213524.log
+2025-09-16 21:35:24,121 | INFO | === RUN START === method=zscot task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/THCA_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-16 21:35:24,133 | INFO | Filtered dataset: Removed 49 rows with missing 'N03' labels.
+2025-09-16 21:52:21,460 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 27742 column 1 (char 31520)
+2025-09-16 21:52:21,461 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-16 21:52:21,532 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-16 21:52:21,532 | INFO | Attempting to parse with json5 as fallback.
+2025-09-16 21:52:21,799 | ERROR | json5 fallback failed: <string>:27742 Unexpected end of input at column 1
+2025-09-16 21:52:21,800 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-16 21:52:21,800 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 27742 column 1 (char 31520)
+2025-09-16 21:52:21,800 | INFO | Attempting to parse with jsom as fallback.
+2025-09-16 21:52:21,817 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 3, column 11.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-16 21:52:21,817 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-16 21:52:21,851 | INFO | json_repair successfully parsed the JSON.
+2025-09-16 22:35:30,269 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/THCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_213524.csv
+2025-09-16 22:35:30,269 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/THCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_213524.csv

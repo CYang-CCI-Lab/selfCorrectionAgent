@@ -1,0 +1,62 @@
+2025-09-11 14:49:27,811 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/HNSC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_144927.log
+2025-09-11 14:49:27,811 | INFO | === RUN START === method=zscot task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/HNSC_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-11 14:49:27,834 | INFO | Filtered dataset: Removed 2 rows with missing 'T14' labels.
+2025-09-11 15:10:41,772 | ERROR | Standard json.loads failed: Expecting ':' delimiter: line 2 column 27305 (char 27558)
+2025-09-11 15:10:41,772 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-11 15:10:41,834 | ERROR | demjson3 fallback failed: Missing value for object property, expected ":"
+2025-09-11 15:10:41,834 | INFO | Attempting to parse with json5 as fallback.
+2025-09-11 15:10:42,134 | ERROR | json5 fallback failed: <string>:2 Unexpected end of input at column 27305
+2025-09-11 15:10:42,134 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-11 15:10:42,134 | ERROR | dirtyjson fallback failed: Expecting ':' delimiter: line 2 column 27305 (char 27558)
+2025-09-11 15:10:42,134 | INFO | Attempting to parse with jsom as fallback.
+2025-09-11 15:10:42,152 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 245.
+Expected one of: 
+	* COLON
+
+2025-09-11 15:10:42,152 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-11 15:10:42,183 | INFO | json_repair successfully parsed the JSON.
+2025-09-11 15:23:11,247 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 1 column 31605 (char 31604)
+2025-09-11 15:23:11,247 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-11 15:23:11,316 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-11 15:23:11,316 | INFO | Attempting to parse with json5 as fallback.
+2025-09-11 15:23:11,977 | ERROR | json5 fallback failed: <string>:1 Unexpected end of input at column 31605
+2025-09-11 15:23:11,977 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-11 15:23:11,977 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 1 column 31605 (char 31604)
+2025-09-11 15:23:11,977 | INFO | Attempting to parse with jsom as fallback.
+2025-09-11 15:23:11,994 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-11 15:23:11,995 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-11 15:23:12,066 | INFO | json_repair successfully parsed the JSON.
+2025-09-11 15:49:18,562 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 15 (char 14)
+2025-09-11 15:49:18,562 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-11 15:49:18,735 | ERROR | demjson3 fallback failed: String literal is not terminated
+2025-09-11 15:49:18,735 | INFO | Attempting to parse with json5 as fallback.
+2025-09-11 15:49:20,116 | ERROR | json5 fallback failed: <string>:1 Unexpected end of input at column 105149
+2025-09-11 15:49:20,116 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-11 15:49:20,118 | ERROR | dirtyjson fallback failed: Unterminated string starting at: line 1 column 15 (char 14)
+2025-09-11 15:49:20,118 | INFO | Attempting to parse with jsom as fallback.
+2025-09-11 15:49:20,154 | ERROR | jsom fallback failed: No terminal matches '"' in the current parser context, at line 1 col 15
+
+{"reasoning": "1. The tumor size is reported as 2.2 cm
+              ^
+Expected one of: 
+	* NUMBER
+	* COLON
+	* LBRACE
+	* LSQB
+	* /'(\\\'|\\\\|[^'])*?'i?/
+	* IDENTIFIER
+	* RBRACE
+	* COMMA
+	* RSQB
+	* /"(\\\"|\\\\|[^"])*?"i?/
+
+Previous tokens: Token('COLON', ':')
+
+2025-09-11 15:49:20,154 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-11 15:49:35,747 | INFO | json_repair successfully parsed the JSON.
+2025-09-11 16:13:18,656 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/HNSC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_144927.csv
+2025-09-11 16:13:18,656 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/HNSC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_144927.csv

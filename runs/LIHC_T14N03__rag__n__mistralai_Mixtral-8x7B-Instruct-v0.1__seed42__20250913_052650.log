@@ -1,0 +1,50 @@
+2025-09-13 05:26:50,463 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/LIHC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_052650.log
+2025-09-13 05:26:50,463 | INFO | === RUN START === method=rag task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/LIHC_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-13 05:26:50,481 | INFO | Filtered dataset: Removed 111 rows with missing 'N03' labels.
+2025-09-13 05:40:45,031 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 27038 column 2 (char 30344)
+2025-09-13 05:40:45,031 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-13 05:40:45,103 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-13 05:40:45,103 | INFO | Attempting to parse with json5 as fallback.
+2025-09-13 05:40:45,371 | ERROR | json5 fallback failed: <string>:27038 Unexpected end of input at column 2
+2025-09-13 05:40:45,371 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-13 05:40:45,372 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 27038 column 2 (char 30344)
+2025-09-13 05:40:45,372 | INFO | Attempting to parse with jsom as fallback.
+2025-09-13 05:40:45,389 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 4, column 10.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-13 05:40:45,389 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-13 05:40:45,427 | INFO | json_repair successfully parsed the JSON.
+2025-09-13 05:53:53,784 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 1 column 30644 (char 30643)
+2025-09-13 05:53:53,785 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-13 05:53:53,854 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-13 05:53:53,854 | INFO | Attempting to parse with json5 as fallback.
+2025-09-13 05:53:54,227 | ERROR | json5 fallback failed: <string>:1 Unexpected end of input at column 30644
+2025-09-13 05:53:54,227 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-13 05:53:54,227 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 1 column 30644 (char 30643)
+2025-09-13 05:53:54,227 | INFO | Attempting to parse with jsom as fallback.
+2025-09-13 05:53:54,245 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-13 05:53:54,245 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-13 05:53:54,301 | INFO | json_repair successfully parsed the JSON.
+2025-09-13 06:11:03,011 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 5 column 29454 (char 29556)
+2025-09-13 06:11:03,011 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-13 06:11:03,076 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-13 06:11:03,076 | INFO | Attempting to parse with json5 as fallback.
+2025-09-13 06:11:03,695 | ERROR | json5 fallback failed: <string>:5 Unexpected end of input at column 29454
+2025-09-13 06:11:03,695 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-13 06:11:03,695 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 5 column 29454 (char 29556)
+2025-09-13 06:11:03,695 | INFO | Attempting to parse with jsom as fallback.
+2025-09-13 06:11:03,713 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-13 06:11:03,713 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-13 06:11:03,746 | INFO | json_repair successfully parsed the JSON.
+2025-09-13 06:14:04,973 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/LIHC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_052650.csv
+2025-09-13 06:14:04,973 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/LIHC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_052650.csv

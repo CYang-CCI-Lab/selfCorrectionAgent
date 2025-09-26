@@ -1,0 +1,4 @@
+2025-09-16 12:56:30,727 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/TGCT_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_125630.log
+2025-09-16 12:56:30,727 | INFO | === RUN START === method=rag task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/TGCT_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-16 13:04:10,551 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/TGCT_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_125630.csv
+2025-09-16 13:04:10,551 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/TGCT_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_125630.csv

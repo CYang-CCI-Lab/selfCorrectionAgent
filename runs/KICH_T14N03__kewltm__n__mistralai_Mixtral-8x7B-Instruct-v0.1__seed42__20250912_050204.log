@@ -1,0 +1,23 @@
+2025-09-12 05:02:04,890 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/KICH_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_050204.log
+2025-09-12 05:02:04,890 | INFO | === RUN START === method=kewltm task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/KICH_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-12 05:02:04,895 | INFO | Filtered dataset: Removed 59 rows with missing 'N03' labels.
+2025-09-12 05:02:04,895 | INFO | [KEwLTM] Dynamic train_size=3 (fraction=0.050)
+2025-09-12 05:02:04,909 | INFO | [KEwLTM] Inducing memory from 3 reports (threshold=80)...
+2025-09-12 05:15:21,707 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 1 column 31660 (char 31659)
+2025-09-12 05:15:21,707 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-12 05:15:21,777 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-12 05:15:21,777 | INFO | Attempting to parse with json5 as fallback.
+2025-09-12 05:15:22,435 | ERROR | json5 fallback failed: <string>:1 Unexpected end of input at column 31660
+2025-09-12 05:15:22,435 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-12 05:15:22,435 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 1 column 31660 (char 31659)
+2025-09-12 05:15:22,435 | INFO | Attempting to parse with jsom as fallback.
+2025-09-12 05:15:22,452 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-12 05:15:22,452 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-12 05:15:22,492 | INFO | json_repair successfully parsed the JSON.
+2025-09-12 05:16:06,090 | INFO | [KEwLTM] Final memory length: 4
+2025-09-12 05:16:06,103 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/KICH_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_050204.csv
+2025-09-12 05:16:06,103 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/KICH_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_050204.csv

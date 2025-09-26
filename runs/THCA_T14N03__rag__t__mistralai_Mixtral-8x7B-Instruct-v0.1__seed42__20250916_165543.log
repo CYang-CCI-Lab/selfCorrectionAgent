@@ -1,0 +1,50 @@
+2025-09-16 16:55:43,298 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/THCA_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_165543.log
+2025-09-16 16:55:43,298 | INFO | === RUN START === method=rag task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/THCA_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-16 16:55:43,310 | INFO | Filtered dataset: Removed 1 rows with missing 'T14' labels.
+2025-09-16 17:39:38,031 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 5944 column 4 (char 29961)
+2025-09-16 17:39:38,031 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-16 17:39:38,096 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-16 17:39:38,096 | INFO | Attempting to parse with json5 as fallback.
+2025-09-16 17:39:38,654 | ERROR | json5 fallback failed: <string>:5944 Unexpected end of input at column 4
+2025-09-16 17:39:38,654 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-16 17:39:38,654 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 5944 column 4 (char 29961)
+2025-09-16 17:39:38,654 | INFO | Attempting to parse with jsom as fallback.
+2025-09-16 17:39:38,672 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-16 17:39:38,672 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-16 17:39:38,715 | INFO | json_repair successfully parsed the JSON.
+2025-09-16 17:49:13,968 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 5914 column 7 (char 29768)
+2025-09-16 17:49:13,968 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-16 17:49:14,033 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-16 17:49:14,034 | INFO | Attempting to parse with json5 as fallback.
+2025-09-16 17:49:14,606 | ERROR | json5 fallback failed: <string>:5914 Unexpected end of input at column 7
+2025-09-16 17:49:14,606 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-16 17:49:14,606 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 5914 column 7 (char 29768)
+2025-09-16 17:49:14,606 | INFO | Attempting to parse with jsom as fallback.
+2025-09-16 17:49:14,624 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-16 17:49:14,624 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-16 17:49:14,662 | INFO | json_repair successfully parsed the JSON.
+2025-09-16 17:58:50,919 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 28146 column 2 (char 30046)
+2025-09-16 17:58:50,919 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-16 17:58:50,988 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-16 17:58:50,988 | INFO | Attempting to parse with json5 as fallback.
+2025-09-16 17:58:51,267 | ERROR | json5 fallback failed: <string>:28146 Unexpected end of input at column 2
+2025-09-16 17:58:51,267 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-16 17:58:51,268 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 28146 column 2 (char 30046)
+2025-09-16 17:58:51,268 | INFO | Attempting to parse with jsom as fallback.
+2025-09-16 17:58:51,285 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-16 17:58:51,285 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-16 17:58:51,327 | INFO | json_repair successfully parsed the JSON.
+2025-09-16 18:09:34,035 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/THCA_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_165543.csv
+2025-09-16 18:09:34,035 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/THCA_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_165543.csv

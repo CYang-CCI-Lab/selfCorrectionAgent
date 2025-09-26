@@ -1,0 +1,22 @@
+2025-09-12 16:44:28,749 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/KIRP_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_164428.log
+2025-09-12 16:44:28,750 | INFO | === RUN START === method=kewltm task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/KIRP_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-12 16:44:28,764 | INFO | [KEwLTM] Dynamic train_size=14 (fraction=0.050)
+2025-09-12 16:44:28,781 | INFO | [KEwLTM] Inducing memory from 14 reports (threshold=80)...
+2025-09-12 17:11:49,705 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 23920 column 1 (char 31019)
+2025-09-12 17:11:49,705 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-12 17:11:49,776 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-12 17:11:49,776 | INFO | Attempting to parse with json5 as fallback.
+2025-09-12 17:11:50,130 | ERROR | json5 fallback failed: <string>:23920 Unexpected end of input at column 1
+2025-09-12 17:11:50,130 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-12 17:11:50,130 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 23920 column 1 (char 31019)
+2025-09-12 17:11:50,130 | INFO | Attempting to parse with jsom as fallback.
+2025-09-12 17:11:50,148 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-12 17:11:50,148 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-12 17:11:50,211 | INFO | json_repair successfully parsed the JSON.
+2025-09-12 17:21:55,299 | INFO | [KEwLTM] Final memory length: 14
+2025-09-12 17:21:55,368 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/KIRP_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_164428.csv
+2025-09-12 17:21:55,368 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/KIRP_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_164428.csv

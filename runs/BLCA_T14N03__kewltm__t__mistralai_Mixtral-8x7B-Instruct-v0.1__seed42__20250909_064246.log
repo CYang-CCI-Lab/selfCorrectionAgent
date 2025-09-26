@@ -1,0 +1,53 @@
+2025-09-09 06:42:46,133 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/BLCA_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_064246.log
+2025-09-09 06:42:46,134 | INFO | === RUN START === method=kewltm task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/BLCA_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-09 06:42:46,159 | INFO | Filtered dataset: Removed 18 rows with missing 'T14' labels.
+2025-09-09 06:42:46,159 | INFO | [KEwLTM] Dynamic train_size=17 (fraction=0.050)
+2025-09-09 06:42:46,175 | INFO | [KEwLTM] Inducing memory from 17 reports (threshold=80)...
+2025-09-09 07:13:20,585 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 27786 column 2 (char 30679)
+2025-09-09 07:13:20,585 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-09 07:13:20,655 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-09 07:13:20,656 | INFO | Attempting to parse with json5 as fallback.
+2025-09-09 07:13:20,938 | ERROR | json5 fallback failed: <string>:27786 Unexpected end of input at column 2
+2025-09-09 07:13:20,938 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-09 07:13:20,939 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 27786 column 2 (char 30679)
+2025-09-09 07:13:20,939 | INFO | Attempting to parse with jsom as fallback.
+2025-09-09 07:13:20,957 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-09 07:13:20,957 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-09 07:13:21,030 | INFO | json_repair successfully parsed the JSON.
+2025-09-09 07:23:31,462 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 1 column 30385 (char 30384)
+2025-09-09 07:23:31,462 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-09 07:23:31,529 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-09 07:23:31,529 | INFO | Attempting to parse with json5 as fallback.
+2025-09-09 07:23:32,161 | ERROR | json5 fallback failed: <string>:1 Unexpected end of input at column 30385
+2025-09-09 07:23:32,161 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-09 07:23:32,161 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 1 column 30385 (char 30384)
+2025-09-09 07:23:32,161 | INFO | Attempting to parse with jsom as fallback.
+2025-09-09 07:23:32,178 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-09 07:23:32,178 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-09 07:23:32,216 | INFO | json_repair successfully parsed the JSON.
+2025-09-09 07:43:48,125 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 27123 column 1 (char 32492)
+2025-09-09 07:43:48,125 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-09 07:43:48,198 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-09 07:43:48,198 | INFO | Attempting to parse with json5 as fallback.
+2025-09-09 07:43:48,482 | ERROR | json5 fallback failed: <string>:27123 Unexpected end of input at column 1
+2025-09-09 07:43:48,482 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-09 07:43:48,483 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 27123 column 1 (char 32492)
+2025-09-09 07:43:48,483 | INFO | Attempting to parse with jsom as fallback.
+2025-09-09 07:43:48,500 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-09 07:43:48,500 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-09 07:43:48,574 | INFO | json_repair successfully parsed the JSON.
+2025-09-09 07:45:57,247 | INFO | [KEwLTM] Final memory length: 12
+2025-09-09 07:45:57,335 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/BLCA_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_064246.csv
+2025-09-09 07:45:57,335 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/BLCA_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_064246.csv

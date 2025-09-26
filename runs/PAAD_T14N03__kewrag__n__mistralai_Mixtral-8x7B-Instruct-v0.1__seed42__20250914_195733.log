@@ -1,0 +1,21 @@
+2025-09-14 19:57:33,752 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/PAAD_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_195733.log
+2025-09-14 19:57:33,753 | INFO | === RUN START === method=kewrag task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/PAAD_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-14 19:57:33,768 | INFO | Filtered dataset: Removed 4 rows with missing 'N03' labels.
+2025-09-14 19:57:33,788 | INFO | [KEwRAG] Generating rules from RAG excerpt...
+2025-09-14 20:13:15,639 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 30465 (char 30574)
+2025-09-14 20:13:15,639 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-14 20:13:15,706 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-14 20:13:15,706 | INFO | Attempting to parse with json5 as fallback.
+2025-09-14 20:13:16,346 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 30465
+2025-09-14 20:13:16,346 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-14 20:13:16,347 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 30465 (char 30574)
+2025-09-14 20:13:16,347 | INFO | Attempting to parse with jsom as fallback.
+2025-09-14 20:13:16,364 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 1, column 15.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-14 20:13:16,364 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-14 20:13:16,397 | INFO | json_repair successfully parsed the JSON.
+2025-09-14 20:20:54,971 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/PAAD_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_195733.csv
+2025-09-14 20:20:54,971 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/PAAD_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_195733.csv

@@ -1,0 +1,51 @@
+2025-09-10 21:33:29,708 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs/CESC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_213329.log
+2025-09-10 21:33:29,709 | INFO | === RUN START === method=kewrag task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/CESC_T14N03.csv model=mistralai/Mixtral-8x7B-Instruct-v0.1
+2025-09-10 21:33:29,724 | INFO | Filtered dataset: Removed 3 rows with missing 'T14' labels.
+2025-09-10 21:33:29,744 | INFO | [KEwRAG] Generating rules from RAG excerpt...
+2025-09-10 21:55:16,511 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 30329 (char 30427)
+2025-09-10 21:55:16,512 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 21:55:16,579 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 21:55:16,579 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 21:55:17,226 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 30329
+2025-09-10 21:55:17,226 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 21:55:17,226 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 30329 (char 30427)
+2025-09-10 21:55:17,226 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 21:55:17,244 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 21:55:17,244 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 21:55:17,278 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 22:08:03,248 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 29935 (char 30046)
+2025-09-10 22:08:03,248 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 22:08:03,313 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 22:08:03,314 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 22:08:03,960 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 29935
+2025-09-10 22:08:03,960 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 22:08:03,960 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 29935 (char 30046)
+2025-09-10 22:08:03,960 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 22:08:03,978 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 22:08:03,978 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 22:08:04,012 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 22:17:47,669 | ERROR | Standard json.loads failed: Expecting ',' delimiter: line 3 column 29473 (char 29607)
+2025-09-10 22:17:47,669 | INFO | Attempting to parse with demjson3 as fallback.
+2025-09-10 22:17:47,733 | ERROR | demjson3 fallback failed: Object literal (dictionary) is not terminated
+2025-09-10 22:17:47,734 | INFO | Attempting to parse with json5 as fallback.
+2025-09-10 22:17:48,356 | ERROR | json5 fallback failed: <string>:3 Unexpected end of input at column 29473
+2025-09-10 22:17:48,356 | INFO | Attempting to parse with dirtyjson as fallback.
+2025-09-10 22:17:48,356 | ERROR | dirtyjson fallback failed: Expecting ',' delimiter or '}': line 3 column 29473 (char 29607)
+2025-09-10 22:17:48,356 | INFO | Attempting to parse with jsom as fallback.
+2025-09-10 22:17:48,374 | ERROR | jsom fallback failed: Unexpected token Token('$END', '') at line 2, column 14.
+Expected one of: 
+	* RBRACE
+	* COMMA
+
+2025-09-10 22:17:48,374 | INFO | Attempting to repair JSON with json_repair as fallback.
+2025-09-10 22:17:48,408 | INFO | json_repair successfully parsed the JSON.
+2025-09-10 22:22:04,084 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs/CESC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_213329.csv
+2025-09-10 22:22:04,084 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs/CESC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_213329.csv
