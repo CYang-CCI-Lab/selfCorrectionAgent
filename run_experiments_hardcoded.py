@@ -20,8 +20,8 @@ CONFIG = {
     "DATA_ROOT": "/home/yl3427/cylab/selfCorrectionAgent",
     "PER_CANCER_DIR": "per_cancer_type",
     "CONTEXT_DIR": "rag/context",
-    "OUT_DIR": "runs",
-    "MODEL":"mistralai/Mixtral-8x7B-Instruct-v0.1",  
+    "OUT_DIR": "runs_med",
+    "MODEL":"m42-health/Llama3-Med42-70B",  # "m42-health/Llama3-Med42-70B", "mistralai/Mixtral-8x7B-Instruct-v0.1"
     "METHODS": ["kewltm", "zscot", "rag", "kewrag"], # "rag", "kewrag", "kewltm"
     "ONLY": [],  # ["BRCA", "LUAD"]
     "SKIP": [],  # ["KIRC"]
@@ -36,18 +36,18 @@ CONFIG = {
 
 
     # ====== 리페어 모드 관련 ======
-    "REPAIR_ONLY": True,               # True면 "새 실험"은 건너뛰고 리페어만 수행
-    "REPAIR_AFTER_RUN": False,          # 새 실험(run_all)을 돌린 직후에 리페어도 자동으로 돌리고 싶을 때만 True로 둡니다. REPAIR_ONLY와는 동시에 True로 쓰지 마세요. (둘 중 하나)
+    "REPAIR_ONLY": False,               # True면 "새 실험"은 건너뛰고 리페어만 수행
+    "REPAIR_AFTER_RUN": True,          # 새 실험(run_all)을 돌린 직후에 리페어도 자동으로 돌리고 싶을 때만 True로 둡니다. REPAIR_ONLY와는 동시에 True로 쓰지 마세요. (둘 중 하나)
 
 
-    "REPAIR_INPUT_DIR": "runs2",         # 리페어 대상 파일들이 있는 디렉토리
+    "REPAIR_INPUT_DIR": "runs_med",         # 리페어 대상 파일들이 있는 디렉토리
 
     "REPAIR_MAX_RETRIES": 2,            # 행당 재시도 횟수
     "REPAIR_TREAT_UNPARSEABLE_AS_MISSING": True,  # "stage 문자열은 있지만 파싱 불가"도 결측으로 간주
     "REPAIR_METHOD_FILTER": [],          # 예: ["kewltm", "rag"] 지정하면 그 메서드 결과만 리페어. 빈 리스트면 전부
 
     # ===== 리페어 디렉토리/반복 설정 =====
-    "REPAIR_OUTPUT_DIR": "runs3",                 # 1회 리페어 출력 디렉토리 (파일명 유지)
+    "REPAIR_OUTPUT_DIR": "runs_med2",                 # 1회 리페어 출력 디렉토리 (파일명 유지)
     "REPAIR_OUTPUT_DIR_PATTERN": "runs{}",        # 반복 리페어용 디렉토리 패턴
     "REPAIR_FIRST_INDEX": 2,                      # runs2부터 시작
     "REPAIR_ITERATE_ROUNDS": 1,                   # 1이면 한 번, 2 이상이면 반복

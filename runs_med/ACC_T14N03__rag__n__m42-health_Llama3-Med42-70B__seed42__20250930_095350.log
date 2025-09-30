@@ -1,0 +1,13 @@
+2025-09-30 09:53:50,142 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs_med/ACC_T14N03__rag__n__m42-health_Llama3-Med42-70B__seed42__20250930_095350.log
+2025-09-30 09:53:50,142 | INFO | === RUN START === method=rag task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/ACC_T14N03.csv model=m42-health/Llama3-Med42-70B
+2025-09-30 09:58:50,270 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 10:03:50,376 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 10:34:57,871 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 15 (char 14)
+2025-09-30 10:34:57,872 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-09-30 10:34:57,872 | ERROR | json5 fallback failed: No module named 'json5'
+2025-09-30 10:34:57,872 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-09-30 10:34:57,872 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-09-30 10:34:57,873 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-09-30 10:34:57,873 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-09-30 10:38:44,075 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs_med/ACC_T14N03__rag__n__m42-health_Llama3-Med42-70B__seed42__20250930_095350.csv
+2025-09-30 10:38:44,076 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs_med/ACC_T14N03__rag__n__m42-health_Llama3-Med42-70B__seed42__20250930_095350.csv

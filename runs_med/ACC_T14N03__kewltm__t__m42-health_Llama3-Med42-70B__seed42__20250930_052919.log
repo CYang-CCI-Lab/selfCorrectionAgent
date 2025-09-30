@@ -1,0 +1,9 @@
+2025-09-30 05:29:19,198 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs_med/ACC_T14N03__kewltm__t__m42-health_Llama3-Med42-70B__seed42__20250930_052919.log
+2025-09-30 05:29:19,198 | INFO | === RUN START === method=kewltm task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/ACC_T14N03.csv model=m42-health/Llama3-Med42-70B
+2025-09-30 05:29:19,203 | INFO | [KEwLTM] Dynamic train_size=4 (fraction=0.050)
+2025-09-30 05:29:19,229 | INFO | [KEwLTM] Inducing memory from 4 reports (threshold=80)...
+2025-09-30 05:34:19,472 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 05:39:19,577 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 06:24:35,845 | INFO | [KEwLTM] Final memory length: 4
+2025-09-30 06:24:35,869 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs_med/ACC_T14N03__kewltm__t__m42-health_Llama3-Med42-70B__seed42__20250930_052919.csv
+2025-09-30 06:24:35,869 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs_med/ACC_T14N03__kewltm__t__m42-health_Llama3-Med42-70B__seed42__20250930_052919.csv

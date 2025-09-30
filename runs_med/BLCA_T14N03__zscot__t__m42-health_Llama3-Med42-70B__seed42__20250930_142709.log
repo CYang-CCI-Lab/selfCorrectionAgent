@@ -1,0 +1,61 @@
+2025-09-30 14:27:09,432 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs_med/BLCA_T14N03__zscot__t__m42-health_Llama3-Med42-70B__seed42__20250930_142709.log
+2025-09-30 14:27:09,432 | INFO | === RUN START === method=zscot task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/BLCA_T14N03.csv model=m42-health/Llama3-Med42-70B
+2025-09-30 14:27:09,451 | INFO | Filtered dataset: Removed 18 rows with missing 'T14' labels.
+2025-09-30 14:43:25,401 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 450 (char 449)
+2025-09-30 14:43:25,402 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-09-30 14:43:25,402 | ERROR | json5 fallback failed: No module named 'json5'
+2025-09-30 14:43:25,402 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-09-30 14:43:25,403 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-09-30 14:43:25,403 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-09-30 14:43:25,403 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-09-30 14:56:20,349 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 693 (char 692)
+2025-09-30 14:56:20,349 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-09-30 14:56:20,350 | ERROR | json5 fallback failed: No module named 'json5'
+2025-09-30 14:56:20,350 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-09-30 14:56:20,350 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-09-30 14:56:20,350 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-09-30 14:56:20,350 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-09-30 15:22:00,126 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 15 (char 14)
+2025-09-30 15:22:00,127 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-09-30 15:22:00,127 | ERROR | json5 fallback failed: No module named 'json5'
+2025-09-30 15:22:00,127 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-09-30 15:22:00,128 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-09-30 15:22:00,128 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-09-30 15:22:00,128 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-09-30 15:22:51,304 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 15 (char 14)
+2025-09-30 15:22:51,304 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-09-30 15:22:51,304 | ERROR | json5 fallback failed: No module named 'json5'
+2025-09-30 15:22:51,305 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-09-30 15:22:51,305 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-09-30 15:22:51,305 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-09-30 15:22:51,305 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-09-30 16:07:24,678 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 576 (char 575)
+2025-09-30 16:07:24,679 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-09-30 16:07:24,679 | ERROR | json5 fallback failed: No module named 'json5'
+2025-09-30 16:07:24,679 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-09-30 16:07:24,680 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-09-30 16:07:24,680 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-09-30 16:07:24,680 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-09-30 16:30:40,658 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 15 (char 14)
+2025-09-30 16:30:40,658 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-09-30 16:30:40,659 | ERROR | json5 fallback failed: No module named 'json5'
+2025-09-30 16:30:40,659 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-09-30 16:30:40,659 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-09-30 16:30:40,659 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-09-30 16:30:40,659 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-09-30 16:58:55,756 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 614 (char 613)
+2025-09-30 16:58:55,756 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-09-30 16:58:55,756 | ERROR | json5 fallback failed: No module named 'json5'
+2025-09-30 16:58:55,757 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-09-30 16:58:55,757 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-09-30 16:58:55,757 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-09-30 16:58:55,757 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-09-30 17:11:30,630 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 476 (char 475)
+2025-09-30 17:11:30,630 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-09-30 17:11:30,630 | ERROR | json5 fallback failed: No module named 'json5'
+2025-09-30 17:11:30,631 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-09-30 17:11:30,631 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-09-30 17:11:30,631 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-09-30 17:11:30,631 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-09-30 17:29:56,274 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs_med/BLCA_T14N03__zscot__t__m42-health_Llama3-Med42-70B__seed42__20250930_142709.csv
+2025-09-30 17:29:56,274 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs_med/BLCA_T14N03__zscot__t__m42-health_Llama3-Med42-70B__seed42__20250930_142709.csv
