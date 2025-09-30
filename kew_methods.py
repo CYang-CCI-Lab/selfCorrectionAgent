@@ -1,8 +1,9 @@
 from __future__ import annotations
 import logging
+import httpx
 from utils import setup_logging, get_logger, safe_json_load
 logger = get_logger()
-
+from pathlib import Path
 import argparse
 import json
 import os
@@ -20,10 +21,8 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm
 
-# Optional fuzzy similarity for KEwLTM update gating
 from fuzzywuzzy import fuzz  
 
-# OpenAI-compatible client
 from openai import OpenAI  
 
 
@@ -39,20 +38,205 @@ def idx_to_stage(task: str, idx: int) -> str:
     raise ValueError("task must be 't' or 'n'")
 
 
-def stage_to_idx(task: str, stage: str) -> Optional[int]:
-    s = stage.strip().upper()
+_T_RE = re.compile(r"T\s*([1-4])(?:\s*[A-D])?(?!\s*\d)", re.IGNORECASE)
+_N_RE = re.compile(r"N\s*([0-3])(?:\s*[A-D])?(?!\s*\d)", re.IGNORECASE)
+
+def stage_to_idx(task: str, stage) -> Optional[int]:
+    """텍스트 어디에 있든 T/N 스테이지 토큰을 '부분 일치'로 찾아 정규화.
+    T -> 0..3 (T1..T4), N -> 0..3 (N0..N3). 못 찾으면 None.
+    """
+    if pd.isna(stage):
+        return None
+    s = str(stage)
+    if not s.strip():
+        return None
+
     if task.lower() == "t":
-        m = re.match(r"^T\s*([1-4])", s)
-        if not m:
-            return None
-        return int(m.group(1)) - 1
+        m = _T_RE.search(s)
+        return (int(m.group(1)) - 1) if m else None
     elif task.lower() == "n":
-        m = re.match(r"^N\s*([0-3])", s)
-        if not m:
-            return None
-        return int(m.group(1))
+        m = _N_RE.search(s)
+        return int(m.group(1)) if m else None
     return None
 
+def _coerce_list(cell) -> List[str]:
+    """Parse a cell that may be a list or a stringified list into a Python list[str]."""
+    if isinstance(cell, list):
+        return [str(x) for x in cell]
+    if cell is None or pd.isna(cell):
+        return []
+    s = str(cell)
+    # Try JSON then literal_eval
+    try:
+        v = json.loads(s)
+        if isinstance(v, list):
+            return [str(x) for x in v]
+    except Exception:
+        pass
+    try:
+        v = ast.literal_eval(s)
+        if isinstance(v, list):
+            return [str(x) for x in v]
+    except Exception:
+        pass
+    # Fallback: consider it a single rule/memory line if non-empty
+    s = s.strip()
+    return [s] if s else []
+
+def _is_missing_stage(val, *, task: str, treat_unparseable: bool) -> bool:
+    """True if the stage is empty/NaN; optionally also when parsing to idx fails."""
+    if pd.isna(val):
+        return True
+    if isinstance(val, str) and val.strip() == "":
+        return True
+    if treat_unparseable and stage_to_idx(task, val) is None:
+        return True
+    return False
+
+def _system_prompt_for(task: str, cancer_type: str) -> str:
+    return SYSTEM_T.format(cancer_type=cancer_type) if task == "t" else SYSTEM_N.format(cancer_type=cancer_type)
+
+def _labels_for(task: str) -> str:
+    return "{T1, T2, T3, T4}" if task == "t" else "{N0, N1, N2, N3}"
+
+def repair_missing_predictions(
+    method: str,
+    llm: LLMClient,
+    cfg: RunConfig,
+    df: pd.DataFrame,
+    *,
+    max_retries: int = 2,
+    treat_unparseable_as_missing: bool = True,
+    rag_context: Optional[str] = None,
+) -> pd.DataFrame:
+    """
+    Re-run ONLY rows whose {method}_stage is missing, and update cells in-place.
+    Returns a full DataFrame with fewer missing stage values.
+    """
+    out = df.copy()
+    method = method.lower()
+    assert method in {"zscot", "rag", "kewrag", "kewltm"}
+
+    stage_col = f"{method}_stage"
+    reason_col = f"{method}_reasoning"
+    raw_col = f"{method}_raw_llm"
+
+    if stage_col not in out.columns:
+        raise ValueError(f"'{stage_col}' column not found in the input results CSV.")
+
+    # mask of rows to repair
+    mask = out[stage_col].apply(lambda v: _is_missing_stage(v, task=cfg.task, treat_unparseable=treat_unparseable_as_missing))
+    # KEwLTM: never try to predict training rows
+    if method == "kewltm" and "is_train" in out.columns:
+        mask = mask & (~out["is_train"].fillna(False))
+
+    target_idxs = out.index[mask].tolist()
+    if not target_idxs:
+        logger.info("[REPAIR] No rows to repair for method=%s.", method)
+        return out
+
+    sys_prompt = _system_prompt_for(cfg.task, cfg.cancer_type)
+    labels = _labels_for(cfg.task)
+
+    for i in tqdm(target_idxs, desc=f"REPAIR-{method.upper()}"):
+        report = str(out.at[i, "text"])  # must exist in results CSV
+
+        for attempt in range(1, max_retries + 1):
+            if method == "zscot":
+                prompt = PROMPT_ZSCOT.format(
+                    cancer_type=cfg.cancer_type,
+                    report=report,
+                    task_upper=cfg.task.upper(),
+                    labels=labels,
+                )
+                messages = [
+                    {"role": "system", "content": sys_prompt},
+                    {"role": "user", "content": prompt},
+                ]
+                data, raw = llm.json_chat(messages, schema=stage_schema(cfg.task))
+                reasoning = data.get("reasoning", "") if data else ""
+                stage = data.get("stage", "") if data else ""
+
+            elif method == "rag":
+                if not rag_context:
+                    raise ValueError("RAG repair requires --context-file (rag_context).")
+                prompt = PROMPT_RAG_ONLY.format(
+                    cancer_type=cfg.cancer_type,
+                    rag_context=rag_context,
+                    report=report,
+                    task_upper=cfg.task.upper(),
+                    labels=labels,
+                )
+                messages = [
+                    {"role": "system", "content": sys_prompt},
+                    {"role": "user", "content": prompt},
+                ]
+                data, raw = llm.json_chat(messages, schema=stage_schema(cfg.task))
+                reasoning = data.get("reasoning", "") if data else ""
+                stage = data.get("stage", "") if data else ""
+
+            elif method == "kewrag":
+                rules = _coerce_list(out.at[i, "kewrag_rules"]) if "kewrag_rules" in out.columns else []
+                # If rules are missing, we can still proceed with a bland placeholder,
+                # or regenerate from rag_context if provided.
+                if not rules and rag_context:
+                    # regenerate lightweight rules once per repair call (optional)
+                    prompt_gen = PROMPT_GENERATE_RULES_FROM_RAG.format(
+                        cancer_type=cfg.cancer_type,
+                        rag_context=rag_context,
+                        task_upper=cfg.task.upper(),
+                        labels=labels,
+                    )
+                    messages = [
+                        {"role": "system", "content": sys_prompt},
+                        {"role": "user", "content": prompt_gen},
+                    ]
+                    data_rules, _ = llm.json_chat(messages, schema=rules_schema())
+                    rules = [r.strip() for r in (data_rules.get("rules") or []) if isinstance(r, str)] if data_rules else []
+                rules_text = "\n".join(rules) if rules else "No usable rules."
+
+                prompt = PROMPT_RULES_ONLY.format(
+                    cancer_type=cfg.cancer_type,
+                    rules=rules_text,
+                    report=report,
+                    task_upper=cfg.task.upper(),
+                    labels=labels,
+                )
+                messages = [
+                    {"role": "system", "content": sys_prompt},
+                    {"role": "user", "content": prompt},
+                ]
+                data, raw = llm.json_chat(messages, schema=stage_schema(cfg.task))
+                reasoning = data.get("reasoning", "") if data else ""
+                stage = data.get("stage", "") if data else ""
+
+            else:  # method == "kewltm"
+                memory = _coerce_list(out.at[i, "kewltm_memory"]) if "kewltm_memory" in out.columns else []
+                prompt = PROMPT_INFER_WITH_MEMORY.format(
+                    memory="\n".join(memory) if memory else "(empty)",
+                    report=report,
+                    task_upper=cfg.task.upper(),
+                    labels=labels,
+                )
+                messages = [
+                    {"role": "system", "content": sys_prompt},
+                    {"role": "user", "content": prompt},
+                ]
+                data, raw = llm.json_chat(messages, schema=stage_schema(cfg.task))
+                reasoning = data.get("reasoning", "") if data else ""
+                stage = data.get("stage", "") if data else ""
+
+            # success condition: parseable stage
+            if data and stage_to_idx(cfg.task, stage) is not None:
+                out.at[i, reason_col] = reasoning
+                out.at[i, stage_col] = stage
+                out.at[i, raw_col] = raw
+                break  # stop retry loop
+            # else: retry
+        else:
+            logger.warning("[REPAIR] Failed to repair row %s after %d attempts.", i, max_retries)
+
+    return out
 
 def extract_ground_truth(df: pd.DataFrame, task: str) -> Optional[pd.Series]:
     if task == "t":
@@ -145,8 +329,10 @@ def rules_schema() -> dict:
 
 class LLMClient:
     def __init__(self, model: str, temperature: float = 0.1) -> None:
-        self.client = OpenAI(api_key="dummy_key", base_url="http://localhost:8000/v1")
-        assert self.client.models.list().data[0].id == model, f"Model is not set correctly. Expected {model}, got {self.client.models.list().data[0].id}"
+        self.client = OpenAI(api_key="dummy_key", base_url="http://127.0.0.1:8000/v1",
+                             timeout=httpx.Timeout(300.0, read=300.0, write=120.0, connect=20.0),
+                             max_retries=0)
+        # assert self.client.models.list().data[0].id == model, f"Model is not set correctly. Expected {model}, got {self.client.models.list().data[0].id}"
         self.model = model
         self.temperature = temperature
 
@@ -702,6 +888,15 @@ def main() -> None:
     parser.add_argument("--output-csv", default=None, help="Path to save output CSV.")
     parser.add_argument("--log-file", default=None, help="Optional path to a log file.")
     parser.add_argument("--log-level", default="INFO", help="DEBUG, INFO, WARNING, ERROR, CRITICAL")
+    parser.add_argument("--repair-input", default=None,
+                        help="Path to an EXISTING results CSV to repair in-place (only missing {method}_stage will be re-predicted).")
+    parser.add_argument("--repair-output-dir", default=None,
+                        help="Used with --repair-input. If set, write repaired CSV into this directory keeping the same basename (unless --output-csv is provided).")
+    parser.add_argument("--max-retries", type=int, default=2,
+                        help="Max attempts per row during repair.")
+    parser.add_argument("--treat-unparseable-as-missing", action="store_true",
+                        help="Also repair rows whose stage string exists but cannot be parsed (e.g., 'stage ?').")
+
     args = parser.parse_args()
 
     setup_logging(args.log_file, args.log_level)
@@ -724,6 +919,56 @@ def main() -> None:
 
     # LLM
     llm = LLMClient(model=cfg.model, temperature=cfg.temperature)
+
+    # If --repair-input is provided, run the repair pass and exit.
+    if args.repair_input:
+        setup_logging(args.log_file, args.log_level)
+        llm = LLMClient(model=args.model, temperature=args.temperature)
+        cfg = RunConfig(
+            model=args.model,
+            task=args.task,
+            cancer_type=args.cancer_type,
+            temperature=args.temperature,
+            seed=args.seed,
+            context_file=args.context_file,
+            train_size=args.train_size,
+            edit_threshold=args.edit_threshold,
+            output_csv=args.output_csv,
+        )
+        df_in = pd.read_csv(args.repair_input)
+
+        rag_ctx = None
+        if args.method in {"rag", "kewrag"} and args.context_file:
+            rag_ctx = load_context(args.context_file, args.task)
+
+        df_out = repair_missing_predictions(
+            method=args.method,
+            llm=llm,
+            cfg=cfg,
+            df=df_in,
+            max_retries=args.max_retries,
+            treat_unparseable_as_missing=args.treat_unparseable_as_missing,
+            rag_context=rag_ctx,
+        )
+
+        # # default output path if not provided
+        # out_path = args.output_csv or re.sub(r"\.csv$", "", args.repair_input) + "__repair.csv"
+        # write_output(df_out, out_path)
+        # return
+        # default output path if not provided
+        if args.output_csv:
+            out_path = args.output_csv
+        elif args.repair_output_dir:
+            os.makedirs(args.repair_output_dir, exist_ok=True)
+            out_path = str(Path(args.repair_input).with_name(Path(args.repair_input).name)
+                           .with_suffix(".csv"))
+            out_path = str(Path(args.repair_output_dir) / Path(out_path).name)  # <-- 같은 파일명, 다른 디렉토리
+        else:
+            out_path = re.sub(r"\.csv$", "", args.repair_input) + "__repair.csv"
+
+        write_output(df_out, out_path)
+        return
+
 
     # Data
     df = read_dataset(args.dataset).copy()

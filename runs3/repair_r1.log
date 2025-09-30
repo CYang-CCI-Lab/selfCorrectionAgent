@@ -1,0 +1,708 @@
+2025-09-29 20:34:24,216 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs3/repair_r1.log
+2025-09-29 20:39:24,493 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 20:39:27,606 | WARNING | [REPAIR] Failed to repair row 4 after 2 attempts.
+2025-09-29 20:39:31,870 | WARNING | [REPAIR] Failed to repair row 5 after 2 attempts.
+2025-09-29 20:39:41,294 | WARNING | [REPAIR] Failed to repair row 6 after 2 attempts.
+2025-09-29 20:39:47,596 | WARNING | [REPAIR] Failed to repair row 8 after 2 attempts.
+2025-09-29 20:39:52,823 | WARNING | [REPAIR] Failed to repair row 9 after 2 attempts.
+2025-09-29 20:39:58,602 | WARNING | [REPAIR] Failed to repair row 10 after 2 attempts.
+2025-09-29 20:40:04,109 | WARNING | [REPAIR] Failed to repair row 11 after 2 attempts.
+2025-09-29 20:40:10,674 | WARNING | [REPAIR] Failed to repair row 12 after 2 attempts.
+2025-09-29 20:40:14,745 | WARNING | [REPAIR] Failed to repair row 13 after 2 attempts.
+2025-09-29 20:40:27,842 | WARNING | [REPAIR] Failed to repair row 16 after 2 attempts.
+2025-09-29 20:40:36,938 | WARNING | [REPAIR] Failed to repair row 18 after 2 attempts.
+2025-09-29 20:40:46,283 | WARNING | [REPAIR] Failed to repair row 20 after 2 attempts.
+2025-09-29 20:40:51,953 | WARNING | [REPAIR] Failed to repair row 23 after 2 attempts.
+2025-09-29 20:41:01,738 | WARNING | [REPAIR] Failed to repair row 24 after 2 attempts.
+2025-09-29 20:41:09,268 | WARNING | [REPAIR] Failed to repair row 26 after 2 attempts.
+2025-09-29 20:41:18,861 | WARNING | [REPAIR] Failed to repair row 28 after 2 attempts.
+2025-09-29 20:41:24,797 | WARNING | [REPAIR] Failed to repair row 29 after 2 attempts.
+2025-09-29 20:41:35,717 | WARNING | [REPAIR] Failed to repair row 30 after 2 attempts.
+2025-09-29 20:41:40,416 | WARNING | [REPAIR] Failed to repair row 31 after 2 attempts.
+2025-09-29 20:41:52,436 | WARNING | [REPAIR] Failed to repair row 33 after 2 attempts.
+2025-09-29 20:42:06,024 | WARNING | [REPAIR] Failed to repair row 35 after 2 attempts.
+2025-09-29 20:42:11,831 | WARNING | [REPAIR] Failed to repair row 36 after 2 attempts.
+2025-09-29 20:42:16,214 | WARNING | [REPAIR] Failed to repair row 37 after 2 attempts.
+2025-09-29 20:42:23,268 | WARNING | [REPAIR] Failed to repair row 38 after 2 attempts.
+2025-09-29 20:42:27,175 | WARNING | [REPAIR] Failed to repair row 43 after 2 attempts.
+2025-09-29 20:42:37,100 | WARNING | [REPAIR] Failed to repair row 44 after 2 attempts.
+2025-09-29 20:42:45,202 | WARNING | [REPAIR] Failed to repair row 46 after 2 attempts.
+2025-09-29 20:42:53,532 | WARNING | [REPAIR] Failed to repair row 47 after 2 attempts.
+2025-09-29 20:43:02,179 | WARNING | [REPAIR] Failed to repair row 48 after 2 attempts.
+2025-09-29 20:43:19,388 | WARNING | [REPAIR] Failed to repair row 50 after 2 attempts.
+2025-09-29 20:43:25,204 | WARNING | [REPAIR] Failed to repair row 51 after 2 attempts.
+2025-09-29 20:43:31,496 | WARNING | [REPAIR] Failed to repair row 54 after 2 attempts.
+2025-09-29 20:43:38,670 | WARNING | [REPAIR] Failed to repair row 55 after 2 attempts.
+2025-09-29 20:43:43,240 | WARNING | [REPAIR] Failed to repair row 59 after 2 attempts.
+2025-09-29 20:43:52,589 | WARNING | [REPAIR] Failed to repair row 60 after 2 attempts.
+2025-09-29 20:44:01,564 | WARNING | [REPAIR] Failed to repair row 61 after 2 attempts.
+2025-09-29 20:44:09,646 | WARNING | [REPAIR] Failed to repair row 62 after 2 attempts.
+2025-09-29 20:44:19,056 | WARNING | [REPAIR] Failed to repair row 63 after 2 attempts.
+2025-09-29 20:44:27,254 | WARNING | [REPAIR] Failed to repair row 64 after 2 attempts.
+2025-09-29 20:44:37,610 | WARNING | [REPAIR] Failed to repair row 66 after 2 attempts.
+2025-09-29 20:44:47,423 | WARNING | [REPAIR] Failed to repair row 67 after 2 attempts.
+2025-09-29 20:44:53,991 | WARNING | [REPAIR] Failed to repair row 69 after 2 attempts.
+2025-09-29 20:44:59,339 | WARNING | [REPAIR] Failed to repair row 70 after 2 attempts.
+2025-09-29 20:45:05,801 | WARNING | [REPAIR] Failed to repair row 71 after 2 attempts.
+2025-09-29 20:45:11,845 | WARNING | [REPAIR] Failed to repair row 75 after 2 attempts.
+2025-09-29 20:45:17,047 | WARNING | [REPAIR] Failed to repair row 76 after 2 attempts.
+2025-09-29 20:45:22,136 | WARNING | [REPAIR] Failed to repair row 77 after 2 attempts.
+2025-09-29 20:45:29,139 | WARNING | [REPAIR] Failed to repair row 79 after 2 attempts.
+2025-09-29 20:45:37,083 | WARNING | [REPAIR] Failed to repair row 82 after 2 attempts.
+2025-09-29 20:45:42,765 | WARNING | [REPAIR] Failed to repair row 83 after 2 attempts.
+2025-09-29 20:45:51,426 | WARNING | [REPAIR] Failed to repair row 84 after 2 attempts.
+2025-09-29 20:45:57,750 | WARNING | [REPAIR] Failed to repair row 87 after 2 attempts.
+2025-09-29 20:45:57,768 | INFO | [REPAIR] ACC_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_055701.csv -> ACC_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_055701.csv | repaired=4 (missing 56 -> 52)
+2025-09-29 20:46:10,103 | WARNING | [REPAIR] Failed to repair row 22 after 2 attempts.
+2025-09-29 20:51:10,207 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 20:56:10,311 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 20:56:10,311 | WARNING | [REPAIR] Failed to repair row 24 after 2 attempts.
+2025-09-29 21:01:10,416 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 21:01:20,533 | WARNING | [REPAIR] Failed to repair row 43 after 2 attempts.
+2025-09-29 21:01:26,156 | WARNING | [REPAIR] Failed to repair row 45 after 2 attempts.
+2025-09-29 21:01:37,704 | WARNING | [REPAIR] Failed to repair row 49 after 2 attempts.
+2025-09-29 21:01:42,109 | WARNING | [REPAIR] Failed to repair row 51 after 2 attempts.
+2025-09-29 21:01:47,140 | WARNING | [REPAIR] Failed to repair row 52 after 2 attempts.
+2025-09-29 21:01:52,671 | WARNING | [REPAIR] Failed to repair row 53 after 2 attempts.
+2025-09-29 21:01:59,469 | WARNING | [REPAIR] Failed to repair row 54 after 2 attempts.
+2025-09-29 21:02:03,271 | WARNING | [REPAIR] Failed to repair row 55 after 2 attempts.
+2025-09-29 21:07:03,375 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 21:07:05,695 | WARNING | [REPAIR] Failed to repair row 57 after 2 attempts.
+2025-09-29 21:07:08,613 | WARNING | [REPAIR] Failed to repair row 58 after 2 attempts.
+2025-09-29 21:07:13,468 | WARNING | [REPAIR] Failed to repair row 60 after 2 attempts.
+2025-09-29 21:07:21,964 | WARNING | [REPAIR] Failed to repair row 62 after 2 attempts.
+2025-09-29 21:07:25,844 | WARNING | [REPAIR] Failed to repair row 63 after 2 attempts.
+2025-09-29 21:08:03,001 | WARNING | [REPAIR] Failed to repair row 76 after 2 attempts.
+2025-09-29 21:08:06,021 | WARNING | [REPAIR] Failed to repair row 77 after 2 attempts.
+2025-09-29 21:08:18,211 | WARNING | [REPAIR] Failed to repair row 83 after 2 attempts.
+2025-09-29 21:08:18,226 | INFO | [REPAIR] ACC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_063723.csv -> ACC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_063723.csv | repaired=9 (missing 27 -> 18)
+2025-09-29 21:08:41,748 | WARNING | [REPAIR] Failed to repair row 59 after 2 attempts.
+2025-09-29 21:08:50,042 | INFO | [REPAIR] ACC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_054029.csv -> ACC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_054029.csv | repaired=2 (missing 3 -> 1)
+2025-09-29 21:09:34,309 | WARNING | [REPAIR] Failed to repair row 7 after 2 attempts.
+2025-09-29 21:09:57,595 | WARNING | [REPAIR] Failed to repair row 22 after 2 attempts.
+2025-09-29 21:10:10,331 | WARNING | [REPAIR] Failed to repair row 24 after 2 attempts.
+2025-09-29 21:10:18,994 | WARNING | [REPAIR] Failed to repair row 31 after 2 attempts.
+2025-09-29 21:10:39,118 | WARNING | [REPAIR] Failed to repair row 36 after 2 attempts.
+2025-09-29 21:15:43,738 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 21:20:43,842 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 21:20:43,843 | WARNING | [REPAIR] Failed to repair row 42 after 2 attempts.
+2025-09-29 21:25:43,947 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 21:26:12,158 | WARNING | [REPAIR] Failed to repair row 54 after 2 attempts.
+2025-09-29 21:26:52,242 | WARNING | [REPAIR] Failed to repair row 62 after 2 attempts.
+2025-09-29 21:27:01,184 | WARNING | [REPAIR] Failed to repair row 68 after 2 attempts.
+2025-09-29 21:27:12,190 | INFO | [REPAIR] ACC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_062852.csv -> ACC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_062852.csv | repaired=12 (missing 21 -> 9)
+2025-09-29 21:27:34,751 | INFO | [REPAIR] ACC_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_050540.csv -> ACC_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_050540.csv | repaired=2 (missing 2 -> 0)
+2025-09-29 21:27:42,746 | WARNING | [REPAIR] Failed to repair row 26 after 2 attempts.
+2025-09-29 21:27:59,039 | WARNING | [REPAIR] Failed to repair row 57 after 2 attempts.
+2025-09-29 21:28:10,201 | INFO | [REPAIR] ACC_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_060258.csv -> ACC_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_060258.csv | repaired=5 (missing 7 -> 2)
+2025-09-29 21:28:19,019 | INFO | [REPAIR] ACC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_045644.csv -> ACC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_045644.csv | repaired=1 (missing 1 -> 0)
+2025-09-29 21:28:33,930 | WARNING | [REPAIR] Failed to repair row 93 after 2 attempts.
+2025-09-29 21:28:37,383 | WARNING | [REPAIR] Failed to repair row 97 after 2 attempts.
+2025-09-29 21:28:40,700 | WARNING | [REPAIR] Failed to repair row 99 after 2 attempts.
+2025-09-29 21:28:44,062 | WARNING | [REPAIR] Failed to repair row 104 after 2 attempts.
+2025-09-29 21:28:48,314 | WARNING | [REPAIR] Failed to repair row 107 after 2 attempts.
+2025-09-29 21:28:57,578 | WARNING | [REPAIR] Failed to repair row 108 after 2 attempts.
+2025-09-29 21:34:05,511 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 21:34:09,198 | WARNING | [REPAIR] Failed to repair row 119 after 2 attempts.
+2025-09-29 21:34:15,218 | WARNING | [REPAIR] Failed to repair row 122 after 2 attempts.
+2025-09-29 21:34:20,939 | WARNING | [REPAIR] Failed to repair row 170 after 2 attempts.
+2025-09-29 21:34:26,287 | WARNING | [REPAIR] Failed to repair row 171 after 2 attempts.
+2025-09-29 21:34:31,174 | WARNING | [REPAIR] Failed to repair row 175 after 2 attempts.
+2025-09-29 21:34:36,309 | WARNING | [REPAIR] Failed to repair row 177 after 2 attempts.
+2025-09-29 21:34:41,184 | WARNING | [REPAIR] Failed to repair row 179 after 2 attempts.
+2025-09-29 21:34:52,820 | WARNING | [REPAIR] Failed to repair row 185 after 2 attempts.
+2025-09-29 21:35:00,532 | WARNING | [REPAIR] Failed to repair row 224 after 2 attempts.
+2025-09-29 21:35:04,844 | WARNING | [REPAIR] Failed to repair row 329 after 2 attempts.
+2025-09-29 21:35:04,925 | INFO | [REPAIR] BLCA_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_140723.csv -> BLCA_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_140723.csv | repaired=5 (missing 21 -> 16)
+2025-09-29 21:35:14,117 | WARNING | [REPAIR] Failed to repair row 178 after 2 attempts.
+2025-09-29 21:35:23,538 | WARNING | [REPAIR] Failed to repair row 300 after 2 attempts.
+2025-09-29 21:35:23,617 | INFO | [REPAIR] BLCA_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_095649.csv -> BLCA_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_095649.csv | repaired=0 (missing 2 -> 2)
+2025-09-29 21:36:02,226 | WARNING | [REPAIR] Failed to repair row 119 after 2 attempts.
+2025-09-29 21:36:28,456 | WARNING | [REPAIR] Failed to repair row 329 after 2 attempts.
+2025-09-29 21:36:28,538 | INFO | [REPAIR] BLCA_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_130518.csv -> BLCA_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_130518.csv | repaired=6 (missing 8 -> 2)
+2025-09-29 21:36:33,768 | INFO | [REPAIR] BLCA_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_085627.csv -> BLCA_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_085627.csv | repaired=1 (missing 1 -> 0)
+2025-09-29 21:37:07,639 | WARNING | [REPAIR] Failed to repair row 226 after 2 attempts.
+2025-09-29 21:37:12,097 | INFO | [REPAIR] BLCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_120220.csv -> BLCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_120220.csv | repaired=7 (missing 8 -> 1)
+2025-09-29 21:37:23,138 | WARNING | [REPAIR] Failed to repair row 178 after 2 attempts.
+2025-09-29 21:37:34,879 | INFO | [REPAIR] BLCA_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_074557.csv -> BLCA_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_074557.csv | repaired=2 (missing 3 -> 1)
+2025-09-29 21:37:52,133 | WARNING | [REPAIR] Failed to repair row 55 after 2 attempts.
+2025-09-29 21:38:07,133 | WARNING | [REPAIR] Failed to repair row 72 after 2 attempts.
+2025-09-29 21:38:43,750 | WARNING | [REPAIR] Failed to repair row 106 after 2 attempts.
+2025-09-29 21:39:20,177 | WARNING | [REPAIR] Failed to repair row 208 after 2 attempts.
+2025-09-29 21:39:59,461 | WARNING | [REPAIR] Failed to repair row 324 after 2 attempts.
+2025-09-29 21:40:14,334 | WARNING | [REPAIR] Failed to repair row 343 after 2 attempts.
+2025-09-29 21:40:50,797 | WARNING | [REPAIR] Failed to repair row 467 after 2 attempts.
+2025-09-29 21:41:14,793 | WARNING | [REPAIR] Failed to repair row 582 after 2 attempts.
+2025-09-29 21:41:45,680 | WARNING | [REPAIR] Failed to repair row 641 after 2 attempts.
+2025-09-29 21:42:17,006 | WARNING | [REPAIR] Failed to repair row 722 after 2 attempts.
+2025-09-29 21:42:53,852 | INFO | [REPAIR] BRCA_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_014126.csv -> BRCA_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_014126.csv | repaired=27 (missing 37 -> 10)
+2025-09-29 21:43:44,614 | WARNING | [REPAIR] Failed to repair row 191 after 2 attempts.
+2025-09-29 21:43:50,999 | WARNING | [REPAIR] Failed to repair row 366 after 2 attempts.
+2025-09-29 21:43:58,368 | WARNING | [REPAIR] Failed to repair row 596 after 2 attempts.
+2025-09-29 21:44:04,728 | INFO | [REPAIR] BRCA_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_150326.csv -> BRCA_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_150326.csv | repaired=7 (missing 10 -> 3)
+2025-09-29 21:44:13,639 | WARNING | [REPAIR] Failed to repair row 352 after 2 attempts.
+2025-09-29 21:44:26,784 | WARNING | [REPAIR] Failed to repair row 358 after 2 attempts.
+2025-09-29 21:45:16,336 | WARNING | [REPAIR] Failed to repair row 463 after 2 attempts.
+2025-09-29 21:45:42,060 | WARNING | [REPAIR] Failed to repair row 658 after 2 attempts.
+2025-09-29 21:46:29,201 | WARNING | [REPAIR] Failed to repair row 785 after 2 attempts.
+2025-09-29 21:46:33,159 | WARNING | [REPAIR] Failed to repair row 786 after 2 attempts.
+2025-09-29 21:46:33,263 | INFO | [REPAIR] BRCA_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_133732.csv -> BRCA_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_133732.csv | repaired=17 (missing 23 -> 6)
+2025-09-29 21:47:21,425 | WARNING | [REPAIR] Failed to repair row 507 after 2 attempts.
+2025-09-29 21:47:35,056 | WARNING | [REPAIR] Failed to repair row 510 after 2 attempts.
+2025-09-29 21:47:56,872 | INFO | [REPAIR] BRCA_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_215249.csv -> BRCA_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_215249.csv | repaired=8 (missing 10 -> 2)
+2025-09-29 21:48:14,478 | WARNING | [REPAIR] Failed to repair row 104 after 2 attempts.
+2025-09-29 21:49:53,878 | WARNING | [REPAIR] Failed to repair row 795 after 2 attempts.
+2025-09-29 21:49:53,979 | INFO | [REPAIR] BRCA_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_105936.csv -> BRCA_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_105936.csv | repaired=10 (missing 12 -> 2)
+2025-09-29 21:50:46,413 | WARNING | [REPAIR] Failed to repair row 873 after 2 attempts.
+2025-09-29 21:51:00,819 | INFO | [REPAIR] BRCA_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_193536.csv -> BRCA_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_193536.csv | repaired=7 (missing 8 -> 1)
+2025-09-29 21:51:49,612 | WARNING | [REPAIR] Failed to repair row 405 after 2 attempts.
+2025-09-29 21:52:09,434 | WARNING | [REPAIR] Failed to repair row 492 after 2 attempts.
+2025-09-29 21:57:09,534 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 22:02:09,548 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 22:02:09,548 | WARNING | [REPAIR] Failed to repair row 507 after 2 attempts.
+2025-09-29 22:02:17,780 | WARNING | [REPAIR] Failed to repair row 658 after 2 attempts.
+2025-09-29 22:02:28,640 | INFO | [REPAIR] BRCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_080903.csv -> BRCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_080903.csv | repaired=7 (missing 11 -> 4)
+2025-09-29 22:03:13,080 | INFO | [REPAIR] BRCA_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_170159.csv -> BRCA_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250909_170159.csv | repaired=8 (missing 8 -> 0)
+2025-09-29 22:04:02,764 | WARNING | [REPAIR] Failed to repair row 93 after 2 attempts.
+2025-09-29 22:05:24,910 | WARNING | [REPAIR] Failed to repair row 190 after 2 attempts.
+2025-09-29 22:05:37,119 | INFO | [REPAIR] CESC_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_184840.csv -> CESC_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_184840.csv | repaired=16 (missing 18 -> 2)
+2025-09-29 22:05:44,063 | INFO | [REPAIR] CESC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_235227.csv -> CESC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_235227.csv | repaired=1 (missing 1 -> 0)
+2025-09-29 22:05:55,431 | WARNING | [REPAIR] Failed to repair row 25 after 2 attempts.
+2025-09-29 22:06:00,868 | WARNING | [REPAIR] Failed to repair row 30 after 2 attempts.
+2025-09-29 22:06:38,119 | WARNING | [REPAIR] Failed to repair row 138 after 2 attempts.
+2025-09-29 22:12:10,988 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 22:12:13,899 | WARNING | [REPAIR] Failed to repair row 182 after 2 attempts.
+2025-09-29 22:17:20,804 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 22:22:20,813 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 22:22:20,814 | WARNING | [REPAIR] Failed to repair row 216 after 2 attempts.
+2025-09-29 22:22:34,307 | INFO | [REPAIR] CESC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_213329.csv -> CESC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_213329.csv | repaired=15 (missing 20 -> 5)
+2025-09-29 22:22:53,071 | WARNING | [REPAIR] Failed to repair row 81 after 2 attempts.
+2025-09-29 22:23:02,139 | WARNING | [REPAIR] Failed to repair row 144 after 2 attempts.
+2025-09-29 22:23:22,679 | INFO | [REPAIR] CESC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_232506.csv -> CESC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_232506.csv | repaired=4 (missing 6 -> 2)
+2025-09-29 22:24:30,943 | INFO | [REPAIR] CESC_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_203447.csv -> CESC_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_203447.csv | repaired=8 (missing 8 -> 0)
+2025-09-29 22:24:43,588 | WARNING | [REPAIR] Failed to repair row 23 after 2 attempts.
+2025-09-29 22:24:49,639 | WARNING | [REPAIR] Failed to repair row 34 after 2 attempts.
+2025-09-29 22:24:56,036 | WARNING | [REPAIR] Failed to repair row 60 after 2 attempts.
+2025-09-29 22:25:27,965 | WARNING | [REPAIR] Failed to repair row 183 after 2 attempts.
+2025-09-29 22:25:28,007 | INFO | [REPAIR] CESC_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_225756.csv -> CESC_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_225756.csv | repaired=5 (missing 9 -> 4)
+2025-09-29 22:31:11,490 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 22:31:11,490 | WARNING | [REPAIR] Failed to repair row 180 after 2 attempts.
+2025-09-29 22:36:11,497 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 22:36:16,534 | WARNING | [REPAIR] Failed to repair row 183 after 2 attempts.
+2025-09-29 22:36:34,282 | INFO | [REPAIR] CESC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_195102.csv -> CESC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250910_195102.csv | repaired=11 (missing 13 -> 2)
+2025-09-29 22:36:44,123 | WARNING | [REPAIR] Failed to repair row 7 after 2 attempts.
+2025-09-29 22:36:53,699 | INFO | [REPAIR] CHOL_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_005610.csv -> CHOL_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_005610.csv | repaired=3 (missing 4 -> 1)
+2025-09-29 22:36:59,650 | WARNING | [REPAIR] Failed to repair row 3 after 2 attempts.
+2025-09-29 22:37:08,682 | WARNING | [REPAIR] Failed to repair row 10 after 2 attempts.
+2025-09-29 22:42:13,266 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 22:42:13,266 | WARNING | [REPAIR] Failed to repair row 36 after 2 attempts.
+2025-09-29 22:42:13,274 | INFO | [REPAIR] CHOL_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_014251.csv -> CHOL_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_014251.csv | repaired=0 (missing 3 -> 3)
+2025-09-29 22:42:14,551 | INFO | [REPAIR] CHOL_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_004202.csv -> CHOL_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_004202.csv | repaired=1 (missing 1 -> 0)
+2025-09-29 22:42:29,961 | WARNING | [REPAIR] Failed to repair row 35 after 2 attempts.
+2025-09-29 22:42:29,970 | INFO | [REPAIR] CHOL_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_012108.csv -> CHOL_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_012108.csv | repaired=0 (missing 1 -> 1)
+2025-09-29 22:42:39,458 | WARNING | [REPAIR] Failed to repair row 26 after 2 attempts.
+2025-09-29 22:42:57,243 | WARNING | [REPAIR] Failed to repair row 378 after 2 attempts.
+2025-09-29 22:42:57,297 | INFO | [REPAIR] COAD_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_055245.csv -> COAD_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_055245.csv | repaired=3 (missing 5 -> 2)
+2025-09-29 22:43:02,720 | INFO | [REPAIR] COAD_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_014544.csv -> COAD_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_014544.csv | repaired=1 (missing 1 -> 0)
+2025-09-29 22:43:08,935 | WARNING | [REPAIR] Failed to repair row 174 after 2 attempts.
+2025-09-29 22:48:09,038 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 22:53:09,045 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 22:53:09,045 | WARNING | [REPAIR] Failed to repair row 244 after 2 attempts.
+2025-09-29 22:53:24,797 | WARNING | [REPAIR] Failed to repair row 362 after 2 attempts.
+2025-09-29 22:53:32,033 | WARNING | [REPAIR] Failed to repair row 363 after 2 attempts.
+2025-09-29 22:53:34,771 | WARNING | [REPAIR] Failed to repair row 367 after 2 attempts.
+2025-09-29 22:53:34,819 | INFO | [REPAIR] COAD_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_092804.csv -> COAD_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_092804.csv | repaired=1 (missing 6 -> 5)
+2025-09-29 22:53:45,361 | WARNING | [REPAIR] Failed to repair row 362 after 2 attempts.
+2025-09-29 22:53:54,514 | WARNING | [REPAIR] Failed to repair row 363 after 2 attempts.
+2025-09-29 22:54:20,389 | INFO | [REPAIR] COAD_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_090109.csv -> COAD_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_090109.csv | repaired=2 (missing 4 -> 2)
+2025-09-29 22:54:28,913 | INFO | [REPAIR] COAD_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_043142.csv -> COAD_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_043142.csv | repaired=1 (missing 1 -> 0)
+2025-09-29 22:54:48,666 | WARNING | [REPAIR] Failed to repair row 362 after 2 attempts.
+2025-09-29 22:54:57,851 | INFO | [REPAIR] COAD_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_074615.csv -> COAD_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_074615.csv | repaired=6 (missing 7 -> 1)
+2025-09-29 23:00:02,988 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 23:00:02,988 | WARNING | [REPAIR] Failed to repair row 244 after 2 attempts.
+2025-09-29 23:00:03,039 | INFO | [REPAIR] COAD_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_031641.csv -> COAD_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_031641.csv | repaired=0 (missing 1 -> 1)
+2025-09-29 23:05:03,064 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 23:10:03,178 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 23:10:03,179 | WARNING | [REPAIR] Failed to repair row 14 after 2 attempts.
+2025-09-29 23:15:03,184 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 23:15:08,207 | WARNING | [REPAIR] Failed to repair row 90 after 2 attempts.
+2025-09-29 23:15:10,279 | INFO | [REPAIR] ESCA_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_120020.csv -> ESCA_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_120020.csv | repaired=1 (missing 3 -> 2)
+2025-09-29 23:15:14,522 | WARNING | [REPAIR] Failed to repair row 96 after 2 attempts.
+2025-09-29 23:15:22,456 | WARNING | [REPAIR] Failed to repair row 101 after 2 attempts.
+2025-09-29 23:15:29,431 | WARNING | [REPAIR] Failed to repair row 102 after 2 attempts.
+2025-09-29 23:15:29,452 | INFO | [REPAIR] ESCA_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_134023.csv -> ESCA_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_134023.csv | repaired=0 (missing 3 -> 3)
+2025-09-29 23:15:35,161 | WARNING | [REPAIR] Failed to repair row 98 after 2 attempts.
+2025-09-29 23:15:35,181 | INFO | [REPAIR] ESCA_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_113139.csv -> ESCA_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_113139.csv | repaired=0 (missing 1 -> 1)
+2025-09-29 23:15:44,926 | WARNING | [REPAIR] Failed to repair row 41 after 2 attempts.
+2025-09-29 23:15:50,528 | WARNING | [REPAIR] Failed to repair row 271 after 2 attempts.
+2025-09-29 23:15:50,621 | INFO | [REPAIR] HNSC_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_193840.csv -> HNSC_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_193840.csv | repaired=0 (missing 2 -> 2)
+2025-09-29 23:15:55,162 | WARNING | [REPAIR] Failed to repair row 14 after 2 attempts.
+2025-09-29 23:16:05,657 | WARNING | [REPAIR] Failed to repair row 108 after 2 attempts.
+2025-09-29 23:16:13,002 | WARNING | [REPAIR] Failed to repair row 176 after 2 attempts.
+2025-09-29 23:16:17,114 | WARNING | [REPAIR] Failed to repair row 293 after 2 attempts.
+2025-09-29 23:16:20,868 | WARNING | [REPAIR] Failed to repair row 294 after 2 attempts.
+2025-09-29 23:16:35,965 | WARNING | [REPAIR] Failed to repair row 296 after 2 attempts.
+2025-09-29 23:16:40,922 | WARNING | [REPAIR] Failed to repair row 298 after 2 attempts.
+2025-09-29 23:16:44,496 | WARNING | [REPAIR] Failed to repair row 300 after 2 attempts.
+2025-09-29 23:16:49,695 | WARNING | [REPAIR] Failed to repair row 309 after 2 attempts.
+2025-09-29 23:16:55,711 | WARNING | [REPAIR] Failed to repair row 316 after 2 attempts.
+2025-09-29 23:17:01,574 | WARNING | [REPAIR] Failed to repair row 330 after 2 attempts.
+2025-09-29 23:17:01,665 | INFO | [REPAIR] HNSC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_222637.csv -> HNSC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_222637.csv | repaired=2 (missing 13 -> 11)
+2025-09-29 23:17:09,635 | WARNING | [REPAIR] Failed to repair row 338 after 2 attempts.
+2025-09-29 23:17:09,694 | INFO | [REPAIR] HNSC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_172032.csv -> HNSC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_172032.csv | repaired=0 (missing 1 -> 1)
+2025-09-29 23:17:25,072 | WARNING | [REPAIR] Failed to repair row 14 after 2 attempts.
+2025-09-29 23:17:51,056 | WARNING | [REPAIR] Failed to repair row 103 after 2 attempts.
+2025-09-29 23:18:02,129 | INFO | [REPAIR] HNSC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_211519.csv -> HNSC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_211519.csv | repaired=3 (missing 5 -> 2)
+2025-09-29 23:18:13,899 | WARNING | [REPAIR] Failed to repair row 338 after 2 attempts.
+2025-09-29 23:18:13,955 | INFO | [REPAIR] HNSC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_144927.csv -> HNSC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250911_144927.csv | repaired=0 (missing 1 -> 1)
+2025-09-29 23:18:42,890 | INFO | [REPAIR] KICH_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_050204.csv -> KICH_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_050204.csv | repaired=3 (missing 3 -> 0)
+2025-09-29 23:18:54,636 | INFO | [REPAIR] KICH_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_052935.csv -> KICH_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_052935.csv | repaired=1 (missing 1 -> 0)
+2025-09-29 23:19:19,747 | WARNING | [REPAIR] Failed to repair row 118 after 2 attempts.
+2025-09-29 23:19:37,435 | INFO | [REPAIR] KIRC_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_131848.csv -> KIRC_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_131848.csv | repaired=5 (missing 6 -> 1)
+2025-09-29 23:19:42,794 | WARNING | [REPAIR] Failed to repair row 3 after 2 attempts.
+2025-09-29 23:19:54,086 | WARNING | [REPAIR] Failed to repair row 9 after 2 attempts.
+2025-09-29 23:19:59,003 | WARNING | [REPAIR] Failed to repair row 13 after 2 attempts.
+2025-09-29 23:20:05,726 | WARNING | [REPAIR] Failed to repair row 14 after 2 attempts.
+2025-09-29 23:20:09,804 | WARNING | [REPAIR] Failed to repair row 22 after 2 attempts.
+2025-09-29 23:20:16,519 | WARNING | [REPAIR] Failed to repair row 45 after 2 attempts.
+2025-09-29 23:20:32,719 | WARNING | [REPAIR] Failed to repair row 49 after 2 attempts.
+2025-09-29 23:20:39,444 | WARNING | [REPAIR] Failed to repair row 52 after 2 attempts.
+2025-09-29 23:20:49,083 | WARNING | [REPAIR] Failed to repair row 54 after 2 attempts.
+2025-09-29 23:20:59,818 | WARNING | [REPAIR] Failed to repair row 56 after 2 attempts.
+2025-09-29 23:21:28,731 | WARNING | [REPAIR] Failed to repair row 63 after 2 attempts.
+2025-09-29 23:21:35,425 | WARNING | [REPAIR] Failed to repair row 64 after 2 attempts.
+2025-09-29 23:21:51,669 | WARNING | [REPAIR] Failed to repair row 68 after 2 attempts.
+2025-09-29 23:21:58,426 | WARNING | [REPAIR] Failed to repair row 69 after 2 attempts.
+2025-09-29 23:22:04,059 | WARNING | [REPAIR] Failed to repair row 70 after 2 attempts.
+2025-09-29 23:22:12,053 | WARNING | [REPAIR] Failed to repair row 72 after 2 attempts.
+2025-09-29 23:22:16,574 | WARNING | [REPAIR] Failed to repair row 74 after 2 attempts.
+2025-09-29 23:22:25,254 | WARNING | [REPAIR] Failed to repair row 76 after 2 attempts.
+2025-09-29 23:22:33,554 | WARNING | [REPAIR] Failed to repair row 77 after 2 attempts.
+2025-09-29 23:22:39,309 | WARNING | [REPAIR] Failed to repair row 78 after 2 attempts.
+2025-09-29 23:22:54,064 | WARNING | [REPAIR] Failed to repair row 83 after 2 attempts.
+2025-09-29 23:22:57,553 | WARNING | [REPAIR] Failed to repair row 84 after 2 attempts.
+2025-09-29 23:23:07,144 | WARNING | [REPAIR] Failed to repair row 89 after 2 attempts.
+2025-09-29 23:23:24,685 | WARNING | [REPAIR] Failed to repair row 96 after 2 attempts.
+2025-09-29 23:28:24,789 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 23:33:24,894 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 23:33:24,894 | WARNING | [REPAIR] Failed to repair row 97 after 2 attempts.
+2025-09-29 23:33:48,482 | WARNING | [REPAIR] Failed to repair row 107 after 2 attempts.
+2025-09-29 23:33:57,361 | WARNING | [REPAIR] Failed to repair row 108 after 2 attempts.
+2025-09-29 23:34:04,862 | WARNING | [REPAIR] Failed to repair row 109 after 2 attempts.
+2025-09-29 23:34:17,660 | WARNING | [REPAIR] Failed to repair row 126 after 2 attempts.
+2025-09-29 23:34:26,624 | WARNING | [REPAIR] Failed to repair row 136 after 2 attempts.
+2025-09-29 23:34:26,662 | INFO | [REPAIR] KIRC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_153908.csv -> KIRC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_153908.csv | repaired=15 (missing 45 -> 30)
+2025-09-29 23:34:34,467 | WARNING | [REPAIR] Failed to repair row 195 after 2 attempts.
+2025-09-29 23:34:43,564 | WARNING | [REPAIR] Failed to repair row 198 after 2 attempts.
+2025-09-29 23:34:43,639 | INFO | [REPAIR] KIRC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_105000.csv -> KIRC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_105000.csv | repaired=0 (missing 2 -> 2)
+2025-09-29 23:34:53,953 | WARNING | [REPAIR] Failed to repair row 5 after 2 attempts.
+2025-09-29 23:35:04,052 | WARNING | [REPAIR] Failed to repair row 18 after 2 attempts.
+2025-09-29 23:35:27,999 | WARNING | [REPAIR] Failed to repair row 20 after 2 attempts.
+2025-09-29 23:35:36,604 | WARNING | [REPAIR] Failed to repair row 21 after 2 attempts.
+2025-09-29 23:35:53,817 | WARNING | [REPAIR] Failed to repair row 22 after 2 attempts.
+2025-09-29 23:36:21,932 | WARNING | [REPAIR] Failed to repair row 48 after 2 attempts.
+2025-09-29 23:36:34,248 | WARNING | [REPAIR] Failed to repair row 52 after 2 attempts.
+2025-09-29 23:36:54,399 | WARNING | [REPAIR] Failed to repair row 63 after 2 attempts.
+2025-09-29 23:37:05,755 | WARNING | [REPAIR] Failed to repair row 64 after 2 attempts.
+2025-09-29 23:37:28,913 | WARNING | [REPAIR] Failed to repair row 71 after 2 attempts.
+2025-09-29 23:38:02,282 | WARNING | [REPAIR] Failed to repair row 94 after 2 attempts.
+2025-09-29 23:43:23,100 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 23:43:23,100 | WARNING | [REPAIR] Failed to repair row 103 after 2 attempts.
+2025-09-29 23:43:34,119 | WARNING | [REPAIR] Failed to repair row 104 after 2 attempts.
+2025-09-29 23:43:40,913 | WARNING | [REPAIR] Failed to repair row 121 after 2 attempts.
+2025-09-29 23:43:47,606 | WARNING | [REPAIR] Failed to repair row 125 after 2 attempts.
+2025-09-29 23:43:57,937 | WARNING | [REPAIR] Failed to repair row 131 after 2 attempts.
+2025-09-29 23:44:38,688 | WARNING | [REPAIR] Failed to repair row 136 after 2 attempts.
+2025-09-29 23:44:42,296 | INFO | [REPAIR] KIRC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_145730.csv -> KIRC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_145730.csv | repaired=13 (missing 30 -> 17)
+2025-09-29 23:45:04,377 | WARNING | [REPAIR] Failed to repair row 27 after 2 attempts.
+2025-09-29 23:45:14,002 | WARNING | [REPAIR] Failed to repair row 28 after 2 attempts.
+2025-09-29 23:45:40,232 | WARNING | [REPAIR] Failed to repair row 65 after 2 attempts.
+2025-09-29 23:46:05,389 | WARNING | [REPAIR] Failed to repair row 98 after 2 attempts.
+2025-09-29 23:51:16,980 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 23:56:17,084 | ERROR | [LLM ERROR] Request timed out.
+2025-09-29 23:56:17,084 | WARNING | [REPAIR] Failed to repair row 107 after 2 attempts.
+2025-09-30 00:01:17,188 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 00:06:17,293 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 00:06:17,293 | WARNING | [REPAIR] Failed to repair row 108 after 2 attempts.
+2025-09-30 00:06:38,048 | WARNING | [REPAIR] Failed to repair row 125 after 2 attempts.
+2025-09-30 00:06:51,661 | WARNING | [REPAIR] Failed to repair row 137 after 2 attempts.
+2025-09-30 00:06:51,698 | INFO | [REPAIR] KIRC_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_141729.csv -> KIRC_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_141729.csv | repaired=12 (missing 20 -> 8)
+2025-09-30 00:07:04,990 | WARNING | [REPAIR] Failed to repair row 88 after 2 attempts.
+2025-09-30 00:07:05,022 | INFO | [REPAIR] KIRP_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_164428.csv -> KIRP_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_164428.csv | repaired=0 (missing 1 -> 1)
+2025-09-30 00:07:08,927 | WARNING | [REPAIR] Failed to repair row 2 after 2 attempts.
+2025-09-30 00:07:25,028 | WARNING | [REPAIR] Failed to repair row 17 after 2 attempts.
+2025-09-30 00:07:29,514 | INFO | [REPAIR] KIRP_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_205155.csv -> KIRP_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_205155.csv | repaired=3 (missing 5 -> 2)
+2025-09-30 00:07:36,731 | INFO | [REPAIR] KIRP_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_190300.csv -> KIRP_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_190300.csv | repaired=1 (missing 1 -> 0)
+2025-09-30 00:07:49,688 | WARNING | [REPAIR] Failed to repair row 9 after 2 attempts.
+2025-09-30 00:07:58,363 | INFO | [REPAIR] KIRP_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_204443.csv -> KIRP_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_204443.csv | repaired=1 (missing 2 -> 1)
+2025-09-30 00:08:09,354 | WARNING | [REPAIR] Failed to repair row 1 after 2 attempts.
+2025-09-30 00:08:25,624 | WARNING | [REPAIR] Failed to repair row 73 after 2 attempts.
+2025-09-30 00:08:25,640 | INFO | [REPAIR] KIRP_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_203820.csv -> KIRP_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_203820.csv | repaired=2 (missing 4 -> 2)
+2025-09-30 00:08:32,939 | WARNING | [REPAIR] Failed to repair row 12 after 2 attempts.
+2025-09-30 00:08:43,663 | WARNING | [REPAIR] Failed to repair row 13 after 2 attempts.
+2025-09-30 00:08:51,832 | WARNING | [REPAIR] Failed to repair row 15 after 2 attempts.
+2025-09-30 00:08:59,966 | WARNING | [REPAIR] Failed to repair row 17 after 2 attempts.
+2025-09-30 00:09:07,753 | WARNING | [REPAIR] Failed to repair row 19 after 2 attempts.
+2025-09-30 00:09:12,794 | WARNING | [REPAIR] Failed to repair row 20 after 2 attempts.
+2025-09-30 00:09:18,319 | WARNING | [REPAIR] Failed to repair row 21 after 2 attempts.
+2025-09-30 00:09:43,227 | WARNING | [REPAIR] Failed to repair row 22 after 2 attempts.
+2025-09-30 00:09:49,653 | WARNING | [REPAIR] Failed to repair row 24 after 2 attempts.
+2025-09-30 00:09:57,268 | WARNING | [REPAIR] Failed to repair row 26 after 2 attempts.
+2025-09-30 00:10:02,113 | WARNING | [REPAIR] Failed to repair row 27 after 2 attempts.
+2025-09-30 00:15:07,990 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 00:15:07,991 | WARNING | [REPAIR] Failed to repair row 28 after 2 attempts.
+2025-09-30 00:20:08,001 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 00:25:08,106 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 00:25:08,106 | WARNING | [REPAIR] Failed to repair row 29 after 2 attempts.
+2025-09-30 00:25:20,739 | WARNING | [REPAIR] Failed to repair row 30 after 2 attempts.
+2025-09-30 00:25:28,918 | WARNING | [REPAIR] Failed to repair row 33 after 2 attempts.
+2025-09-30 00:25:35,127 | WARNING | [REPAIR] Failed to repair row 36 after 2 attempts.
+2025-09-30 00:25:41,014 | WARNING | [REPAIR] Failed to repair row 37 after 2 attempts.
+2025-09-30 00:25:46,178 | WARNING | [REPAIR] Failed to repair row 38 after 2 attempts.
+2025-09-30 00:25:53,260 | WARNING | [REPAIR] Failed to repair row 39 after 2 attempts.
+2025-09-30 00:26:00,791 | WARNING | [REPAIR] Failed to repair row 40 after 2 attempts.
+2025-09-30 00:26:08,554 | WARNING | [REPAIR] Failed to repair row 41 after 2 attempts.
+2025-09-30 00:26:27,986 | WARNING | [REPAIR] Failed to repair row 42 after 2 attempts.
+2025-09-30 00:26:34,042 | WARNING | [REPAIR] Failed to repair row 43 after 2 attempts.
+2025-09-30 00:26:42,629 | WARNING | [REPAIR] Failed to repair row 44 after 2 attempts.
+2025-09-30 00:26:48,917 | WARNING | [REPAIR] Failed to repair row 45 after 2 attempts.
+2025-09-30 00:26:54,512 | WARNING | [REPAIR] Failed to repair row 46 after 2 attempts.
+2025-09-30 00:27:01,736 | WARNING | [REPAIR] Failed to repair row 48 after 2 attempts.
+2025-09-30 00:27:07,711 | WARNING | [REPAIR] Failed to repair row 49 after 2 attempts.
+2025-09-30 00:27:15,718 | WARNING | [REPAIR] Failed to repair row 50 after 2 attempts.
+2025-09-30 00:27:44,419 | WARNING | [REPAIR] Failed to repair row 52 after 2 attempts.
+2025-09-30 00:27:51,240 | WARNING | [REPAIR] Failed to repair row 53 after 2 attempts.
+2025-09-30 00:28:04,842 | WARNING | [REPAIR] Failed to repair row 56 after 2 attempts.
+2025-09-30 00:28:14,454 | WARNING | [REPAIR] Failed to repair row 57 after 2 attempts.
+2025-09-30 00:28:20,970 | WARNING | [REPAIR] Failed to repair row 58 after 2 attempts.
+2025-09-30 00:28:27,949 | WARNING | [REPAIR] Failed to repair row 60 after 2 attempts.
+2025-09-30 00:28:34,568 | WARNING | [REPAIR] Failed to repair row 61 after 2 attempts.
+2025-09-30 00:28:41,652 | WARNING | [REPAIR] Failed to repair row 62 after 2 attempts.
+2025-09-30 00:28:48,456 | WARNING | [REPAIR] Failed to repair row 64 after 2 attempts.
+2025-09-30 00:29:04,074 | WARNING | [REPAIR] Failed to repair row 66 after 2 attempts.
+2025-09-30 00:29:11,209 | WARNING | [REPAIR] Failed to repair row 67 after 2 attempts.
+2025-09-30 00:29:17,464 | WARNING | [REPAIR] Failed to repair row 68 after 2 attempts.
+2025-09-30 00:29:24,801 | WARNING | [REPAIR] Failed to repair row 69 after 2 attempts.
+2025-09-30 00:29:32,991 | WARNING | [REPAIR] Failed to repair row 70 after 2 attempts.
+2025-09-30 00:29:48,044 | WARNING | [REPAIR] Failed to repair row 71 after 2 attempts.
+2025-09-30 00:29:53,080 | WARNING | [REPAIR] Failed to repair row 72 after 2 attempts.
+2025-09-30 00:30:02,051 | WARNING | [REPAIR] Failed to repair row 73 after 2 attempts.
+2025-09-30 00:30:13,778 | WARNING | [REPAIR] Failed to repair row 75 after 2 attempts.
+2025-09-30 00:30:24,756 | WARNING | [REPAIR] Failed to repair row 76 after 2 attempts.
+2025-09-30 00:30:37,921 | WARNING | [REPAIR] Failed to repair row 77 after 2 attempts.
+2025-09-30 00:30:47,224 | WARNING | [REPAIR] Failed to repair row 78 after 2 attempts.
+2025-09-30 00:30:51,855 | WARNING | [REPAIR] Failed to repair row 80 after 2 attempts.
+2025-09-30 00:30:57,034 | WARNING | [REPAIR] Failed to repair row 81 after 2 attempts.
+2025-09-30 00:31:05,066 | WARNING | [REPAIR] Failed to repair row 82 after 2 attempts.
+2025-09-30 00:31:09,259 | WARNING | [REPAIR] Failed to repair row 84 after 2 attempts.
+2025-09-30 00:31:15,200 | WARNING | [REPAIR] Failed to repair row 85 after 2 attempts.
+2025-09-30 00:31:31,769 | WARNING | [REPAIR] Failed to repair row 87 after 2 attempts.
+2025-09-30 00:31:40,280 | WARNING | [REPAIR] Failed to repair row 88 after 2 attempts.
+2025-09-30 00:31:45,496 | WARNING | [REPAIR] Failed to repair row 91 after 2 attempts.
+2025-09-30 00:32:12,721 | WARNING | [REPAIR] Failed to repair row 92 after 2 attempts.
+2025-09-30 00:32:20,433 | WARNING | [REPAIR] Failed to repair row 93 after 2 attempts.
+2025-09-30 00:32:28,941 | WARNING | [REPAIR] Failed to repair row 94 after 2 attempts.
+2025-09-30 00:32:36,687 | WARNING | [REPAIR] Failed to repair row 96 after 2 attempts.
+2025-09-30 00:32:42,571 | WARNING | [REPAIR] Failed to repair row 97 after 2 attempts.
+2025-09-30 00:32:55,555 | WARNING | [REPAIR] Failed to repair row 98 after 2 attempts.
+2025-09-30 00:32:59,962 | WARNING | [REPAIR] Failed to repair row 101 after 2 attempts.
+2025-09-30 00:33:06,300 | WARNING | [REPAIR] Failed to repair row 102 after 2 attempts.
+2025-09-30 00:33:11,925 | WARNING | [REPAIR] Failed to repair row 103 after 2 attempts.
+2025-09-30 00:33:17,044 | WARNING | [REPAIR] Failed to repair row 104 after 2 attempts.
+2025-09-30 00:33:23,117 | WARNING | [REPAIR] Failed to repair row 106 after 2 attempts.
+2025-09-30 00:33:30,967 | WARNING | [REPAIR] Failed to repair row 108 after 2 attempts.
+2025-09-30 00:33:36,601 | WARNING | [REPAIR] Failed to repair row 110 after 2 attempts.
+2025-09-30 00:33:49,307 | WARNING | [REPAIR] Failed to repair row 111 after 2 attempts.
+2025-09-30 00:34:06,294 | WARNING | [REPAIR] Failed to repair row 113 after 2 attempts.
+2025-09-30 00:34:14,008 | WARNING | [REPAIR] Failed to repair row 116 after 2 attempts.
+2025-09-30 00:34:21,373 | WARNING | [REPAIR] Failed to repair row 117 after 2 attempts.
+2025-09-30 00:34:27,851 | WARNING | [REPAIR] Failed to repair row 118 after 2 attempts.
+2025-09-30 00:34:37,009 | WARNING | [REPAIR] Failed to repair row 125 after 2 attempts.
+2025-09-30 00:34:43,739 | WARNING | [REPAIR] Failed to repair row 127 after 2 attempts.
+2025-09-30 00:34:50,887 | WARNING | [REPAIR] Failed to repair row 128 after 2 attempts.
+2025-09-30 00:34:57,811 | WARNING | [REPAIR] Failed to repair row 130 after 2 attempts.
+2025-09-30 00:35:03,549 | WARNING | [REPAIR] Failed to repair row 131 after 2 attempts.
+2025-09-30 00:35:07,697 | WARNING | [REPAIR] Failed to repair row 132 after 2 attempts.
+2025-09-30 00:35:15,450 | WARNING | [REPAIR] Failed to repair row 133 after 2 attempts.
+2025-09-30 00:35:21,611 | WARNING | [REPAIR] Failed to repair row 134 after 2 attempts.
+2025-09-30 00:35:28,526 | WARNING | [REPAIR] Failed to repair row 135 after 2 attempts.
+2025-09-30 00:35:36,394 | WARNING | [REPAIR] Failed to repair row 136 after 2 attempts.
+2025-09-30 00:35:45,094 | WARNING | [REPAIR] Failed to repair row 138 after 2 attempts.
+2025-09-30 00:35:51,595 | WARNING | [REPAIR] Failed to repair row 140 after 2 attempts.
+2025-09-30 00:35:59,649 | WARNING | [REPAIR] Failed to repair row 141 after 2 attempts.
+2025-09-30 00:36:08,222 | WARNING | [REPAIR] Failed to repair row 142 after 2 attempts.
+2025-09-30 00:36:16,189 | WARNING | [REPAIR] Failed to repair row 143 after 2 attempts.
+2025-09-30 00:36:21,886 | WARNING | [REPAIR] Failed to repair row 144 after 2 attempts.
+2025-09-30 00:36:29,149 | WARNING | [REPAIR] Failed to repair row 145 after 2 attempts.
+2025-09-30 00:36:43,343 | WARNING | [REPAIR] Failed to repair row 150 after 2 attempts.
+2025-09-30 00:36:51,305 | WARNING | [REPAIR] Failed to repair row 155 after 2 attempts.
+2025-09-30 00:36:58,713 | WARNING | [REPAIR] Failed to repair row 156 after 2 attempts.
+2025-09-30 00:37:03,171 | WARNING | [REPAIR] Failed to repair row 157 after 2 attempts.
+2025-09-30 00:37:11,233 | WARNING | [REPAIR] Failed to repair row 159 after 2 attempts.
+2025-09-30 00:37:19,532 | WARNING | [REPAIR] Failed to repair row 160 after 2 attempts.
+2025-09-30 00:37:28,822 | WARNING | [REPAIR] Failed to repair row 162 after 2 attempts.
+2025-09-30 00:37:32,744 | WARNING | [REPAIR] Failed to repair row 163 after 2 attempts.
+2025-09-30 00:37:39,227 | WARNING | [REPAIR] Failed to repair row 166 after 2 attempts.
+2025-09-30 00:37:43,465 | WARNING | [REPAIR] Failed to repair row 167 after 2 attempts.
+2025-09-30 00:37:55,003 | WARNING | [REPAIR] Failed to repair row 169 after 2 attempts.
+2025-09-30 00:38:03,527 | WARNING | [REPAIR] Failed to repair row 171 after 2 attempts.
+2025-09-30 00:38:11,032 | WARNING | [REPAIR] Failed to repair row 175 after 2 attempts.
+2025-09-30 00:38:20,354 | WARNING | [REPAIR] Failed to repair row 176 after 2 attempts.
+2025-09-30 00:38:27,887 | WARNING | [REPAIR] Failed to repair row 177 after 2 attempts.
+2025-09-30 00:38:35,537 | WARNING | [REPAIR] Failed to repair row 179 after 2 attempts.
+2025-09-30 00:38:51,911 | WARNING | [REPAIR] Failed to repair row 182 after 2 attempts.
+2025-09-30 00:38:56,757 | WARNING | [REPAIR] Failed to repair row 183 after 2 attempts.
+2025-09-30 00:39:25,743 | WARNING | [REPAIR] Failed to repair row 187 after 2 attempts.
+2025-09-30 00:39:35,194 | WARNING | [REPAIR] Failed to repair row 188 after 2 attempts.
+2025-09-30 00:39:43,822 | WARNING | [REPAIR] Failed to repair row 190 after 2 attempts.
+2025-09-30 00:39:49,523 | WARNING | [REPAIR] Failed to repair row 191 after 2 attempts.
+2025-09-30 00:40:04,650 | WARNING | [REPAIR] Failed to repair row 192 after 2 attempts.
+2025-09-30 00:40:10,251 | WARNING | [REPAIR] Failed to repair row 194 after 2 attempts.
+2025-09-30 00:40:28,781 | WARNING | [REPAIR] Failed to repair row 199 after 2 attempts.
+2025-09-30 00:40:40,725 | WARNING | [REPAIR] Failed to repair row 202 after 2 attempts.
+2025-09-30 00:40:45,967 | WARNING | [REPAIR] Failed to repair row 203 after 2 attempts.
+2025-09-30 00:40:51,331 | WARNING | [REPAIR] Failed to repair row 207 after 2 attempts.
+2025-09-30 00:45:55,994 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 00:45:55,994 | WARNING | [REPAIR] Failed to repair row 208 after 2 attempts.
+2025-09-30 00:50:56,099 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 00:51:01,720 | WARNING | [REPAIR] Failed to repair row 209 after 2 attempts.
+2025-09-30 00:51:10,122 | WARNING | [REPAIR] Failed to repair row 210 after 2 attempts.
+2025-09-30 00:51:17,432 | WARNING | [REPAIR] Failed to repair row 211 after 2 attempts.
+2025-09-30 00:51:24,394 | WARNING | [REPAIR] Failed to repair row 212 after 2 attempts.
+2025-09-30 00:51:31,575 | WARNING | [REPAIR] Failed to repair row 213 after 2 attempts.
+2025-09-30 00:51:39,677 | WARNING | [REPAIR] Failed to repair row 217 after 2 attempts.
+2025-09-30 00:51:47,685 | WARNING | [REPAIR] Failed to repair row 218 after 2 attempts.
+2025-09-30 00:51:55,573 | WARNING | [REPAIR] Failed to repair row 221 after 2 attempts.
+2025-09-30 00:52:04,437 | WARNING | [REPAIR] Failed to repair row 222 after 2 attempts.
+2025-09-30 00:52:23,568 | WARNING | [REPAIR] Failed to repair row 223 after 2 attempts.
+2025-09-30 00:52:31,225 | INFO | [REPAIR] LIHC_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_032702.csv -> LIHC_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_032702.csv | repaired=9 (missing 141 -> 132)
+2025-09-30 00:52:52,935 | WARNING | [REPAIR] Failed to repair row 153 after 2 attempts.
+2025-09-30 00:52:53,995 | WARNING | [REPAIR] Failed to repair row 156 after 2 attempts.
+2025-09-30 00:52:55,630 | WARNING | [REPAIR] Failed to repair row 204 after 2 attempts.
+2025-09-30 00:52:56,463 | WARNING | [REPAIR] Failed to repair row 232 after 2 attempts.
+2025-09-30 00:52:57,926 | WARNING | [REPAIR] Failed to repair row 250 after 2 attempts.
+2025-09-30 00:53:00,634 | WARNING | [REPAIR] Failed to repair row 287 after 2 attempts.
+2025-09-30 00:53:09,740 | WARNING | [REPAIR] Failed to repair row 302 after 2 attempts.
+2025-09-30 00:53:15,614 | INFO | [REPAIR] LIHC_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_211621.csv -> LIHC_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_211621.csv | repaired=7 (missing 14 -> 7)
+2025-09-30 00:53:21,354 | WARNING | [REPAIR] Failed to repair row 4 after 2 attempts.
+2025-09-30 00:53:25,813 | WARNING | [REPAIR] Failed to repair row 5 after 2 attempts.
+2025-09-30 00:53:31,161 | WARNING | [REPAIR] Failed to repair row 31 after 2 attempts.
+2025-09-30 00:53:36,743 | WARNING | [REPAIR] Failed to repair row 84 after 2 attempts.
+2025-09-30 00:53:42,742 | WARNING | [REPAIR] Failed to repair row 100 after 2 attempts.
+2025-09-30 00:54:02,002 | WARNING | [REPAIR] Failed to repair row 128 after 2 attempts.
+2025-09-30 00:54:08,964 | WARNING | [REPAIR] Failed to repair row 164 after 2 attempts.
+2025-09-30 00:54:22,012 | WARNING | [REPAIR] Failed to repair row 176 after 2 attempts.
+2025-09-30 00:54:31,846 | WARNING | [REPAIR] Failed to repair row 189 after 2 attempts.
+2025-09-30 00:54:41,316 | WARNING | [REPAIR] Failed to repair row 194 after 2 attempts.
+2025-09-30 00:54:46,185 | WARNING | [REPAIR] Failed to repair row 201 after 2 attempts.
+2025-09-30 00:54:46,215 | INFO | [REPAIR] LIHC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_061404.csv -> LIHC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_061404.csv | repaired=7 (missing 18 -> 11)
+2025-09-30 00:54:56,502 | INFO | [REPAIR] LIHC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_013618.csv -> LIHC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_013618.csv | repaired=1 (missing 1 -> 0)
+2025-09-30 00:55:28,002 | WARNING | [REPAIR] Failed to repair row 197 after 2 attempts.
+2025-09-30 01:00:28,015 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 01:05:28,119 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 01:05:28,119 | WARNING | [REPAIR] Failed to repair row 199 after 2 attempts.
+2025-09-30 01:10:28,149 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 01:15:28,236 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 01:15:28,236 | WARNING | [REPAIR] Failed to repair row 206 after 2 attempts.
+2025-09-30 01:15:28,267 | INFO | [REPAIR] LIHC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_052650.csv -> LIHC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_052650.csv | repaired=3 (missing 6 -> 3)
+2025-09-30 01:15:50,385 | WARNING | [REPAIR] Failed to repair row 162 after 2 attempts.
+2025-09-30 01:16:11,247 | WARNING | [REPAIR] Failed to repair row 190 after 2 attempts.
+2025-09-30 01:16:18,571 | WARNING | [REPAIR] Failed to repair row 201 after 2 attempts.
+2025-09-30 01:16:18,601 | INFO | [REPAIR] LIHC_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_042214.csv -> LIHC_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_042214.csv | repaired=4 (missing 7 -> 3)
+2025-09-30 01:16:30,749 | WARNING | [REPAIR] Failed to repair row 142 after 2 attempts.
+2025-09-30 01:16:30,799 | INFO | [REPAIR] LIHC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_232345.csv -> LIHC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250912_232345.csv | repaired=0 (missing 1 -> 1)
+2025-09-30 01:16:46,897 | WARNING | [REPAIR] Failed to repair row 133 after 2 attempts.
+2025-09-30 01:16:46,973 | INFO | [REPAIR] LUAD_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_143702.csv -> LUAD_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_143702.csv | repaired=0 (missing 1 -> 1)
+2025-09-30 01:16:47,962 | WARNING | [REPAIR] Failed to repair row 153 after 2 attempts.
+2025-09-30 01:16:53,505 | INFO | [REPAIR] LUAD_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_070508.csv -> LUAD_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_070508.csv | repaired=1 (missing 2 -> 1)
+2025-09-30 01:17:02,043 | INFO | [REPAIR] LUAD_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_183703.csv -> LUAD_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_183703.csv | repaired=1 (missing 1 -> 0)
+2025-09-30 01:17:07,065 | WARNING | [REPAIR] Failed to repair row 106 after 2 attempts.
+2025-09-30 01:17:07,137 | INFO | [REPAIR] LUAD_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_112656.csv -> LUAD_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_112656.csv | repaired=0 (missing 1 -> 1)
+2025-09-30 01:17:10,496 | WARNING | [REPAIR] Failed to repair row 12 after 2 attempts.
+2025-09-30 01:17:25,156 | WARNING | [REPAIR] Failed to repair row 100 after 2 attempts.
+2025-09-30 01:17:35,810 | WARNING | [REPAIR] Failed to repair row 349 after 2 attempts.
+2025-09-30 01:18:00,691 | INFO | [REPAIR] LUAD_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_171436.csv -> LUAD_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_171436.csv | repaired=3 (missing 6 -> 3)
+2025-09-30 01:18:13,737 | WARNING | [REPAIR] Failed to repair row 5 after 2 attempts.
+2025-09-30 01:18:24,785 | WARNING | [REPAIR] Failed to repair row 28 after 2 attempts.
+2025-09-30 01:18:32,708 | WARNING | [REPAIR] Failed to repair row 365 after 2 attempts.
+2025-09-30 01:18:32,787 | INFO | [REPAIR] LUAD_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_160940.csv -> LUAD_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_160940.csv | repaired=0 (missing 3 -> 3)
+2025-09-30 01:18:39,543 | WARNING | [REPAIR] Failed to repair row 222 after 2 attempts.
+2025-09-30 01:18:39,601 | INFO | [REPAIR] LUSC_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_042814.csv -> LUSC_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_042814.csv | repaired=0 (missing 1 -> 1)
+2025-09-30 01:23:39,691 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 01:28:39,772 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 01:28:39,772 | WARNING | [REPAIR] Failed to repair row 35 after 2 attempts.
+2025-09-30 01:33:43,403 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 01:38:43,412 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 01:38:43,412 | WARNING | [REPAIR] Failed to repair row 192 after 2 attempts.
+2025-09-30 01:43:43,517 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 01:48:43,587 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 01:48:43,588 | WARNING | [REPAIR] Failed to repair row 228 after 2 attempts.
+2025-09-30 01:48:43,677 | INFO | [REPAIR] LUSC_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_195601.csv -> LUSC_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_195601.csv | repaired=1 (missing 4 -> 3)
+2025-09-30 01:48:47,613 | WARNING | [REPAIR] Failed to repair row 2 after 2 attempts.
+2025-09-30 01:48:53,788 | WARNING | [REPAIR] Failed to repair row 36 after 2 attempts.
+2025-09-30 01:49:00,671 | WARNING | [REPAIR] Failed to repair row 75 after 2 attempts.
+2025-09-30 01:49:07,254 | WARNING | [REPAIR] Failed to repair row 114 after 2 attempts.
+2025-09-30 01:49:16,340 | WARNING | [REPAIR] Failed to repair row 117 after 2 attempts.
+2025-09-30 01:49:26,018 | WARNING | [REPAIR] Failed to repair row 120 after 2 attempts.
+2025-09-30 01:50:00,064 | WARNING | [REPAIR] Failed to repair row 365 after 2 attempts.
+2025-09-30 01:50:06,038 | WARNING | [REPAIR] Failed to repair row 371 after 2 attempts.
+2025-09-30 01:50:13,407 | WARNING | [REPAIR] Failed to repair row 372 after 2 attempts.
+2025-09-30 01:50:13,484 | INFO | [REPAIR] LUSC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_080955.csv -> LUSC_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_080955.csv | repaired=5 (missing 14 -> 9)
+2025-09-30 01:50:25,145 | WARNING | [REPAIR] Failed to repair row 36 after 2 attempts.
+2025-09-30 01:50:39,138 | WARNING | [REPAIR] Failed to repair row 39 after 2 attempts.
+2025-09-30 01:50:45,637 | WARNING | [REPAIR] Failed to repair row 112 after 2 attempts.
+2025-09-30 01:50:55,909 | WARNING | [REPAIR] Failed to repair row 113 after 2 attempts.
+2025-09-30 01:51:07,722 | WARNING | [REPAIR] Failed to repair row 114 after 2 attempts.
+2025-09-30 01:51:12,255 | WARNING | [REPAIR] Failed to repair row 118 after 2 attempts.
+2025-09-30 01:51:12,334 | INFO | [REPAIR] LUSC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_012323.csv -> LUSC_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_012323.csv | repaired=1 (missing 7 -> 6)
+2025-09-30 01:51:28,842 | WARNING | [REPAIR] Failed to repair row 75 after 2 attempts.
+2025-09-30 01:51:39,463 | WARNING | [REPAIR] Failed to repair row 117 after 2 attempts.
+2025-09-30 01:52:22,224 | WARNING | [REPAIR] Failed to repair row 364 after 2 attempts.
+2025-09-30 01:52:33,240 | INFO | [REPAIR] LUSC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_070526.csv -> LUSC_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_070526.csv | repaired=3 (missing 6 -> 3)
+2025-09-30 01:57:46,799 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 02:02:46,903 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 02:02:46,903 | WARNING | [REPAIR] Failed to repair row 167 after 2 attempts.
+2025-09-30 02:03:01,695 | INFO | [REPAIR] LUSC_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_230601.csv -> LUSC_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_230601.csv | repaired=3 (missing 4 -> 1)
+2025-09-30 02:03:10,244 | WARNING | [REPAIR] Failed to repair row 39 after 2 attempts.
+2025-09-30 02:03:17,895 | WARNING | [REPAIR] Failed to repair row 117 after 2 attempts.
+2025-09-30 02:03:33,047 | WARNING | [REPAIR] Failed to repair row 362 after 2 attempts.
+2025-09-30 02:03:49,142 | WARNING | [REPAIR] Failed to repair row 370 after 2 attempts.
+2025-09-30 02:03:53,046 | INFO | [REPAIR] LUSC_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_055912.csv -> LUSC_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_055912.csv | repaired=4 (missing 8 -> 4)
+2025-09-30 02:03:56,799 | WARNING | [REPAIR] Failed to repair row 2 after 2 attempts.
+2025-09-30 02:04:15,219 | WARNING | [REPAIR] Failed to repair row 37 after 2 attempts.
+2025-09-30 02:04:29,003 | WARNING | [REPAIR] Failed to repair row 374 after 2 attempts.
+2025-09-30 02:04:29,081 | INFO | [REPAIR] LUSC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_214624.csv -> LUSC_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250913_214624.csv | repaired=2 (missing 5 -> 3)
+2025-09-30 02:04:35,440 | WARNING | [REPAIR] Failed to repair row 5 after 2 attempts.
+2025-09-30 02:04:41,508 | WARNING | [REPAIR] Failed to repair row 9 after 2 attempts.
+2025-09-30 02:04:47,436 | WARNING | [REPAIR] Failed to repair row 11 after 2 attempts.
+2025-09-30 02:04:52,215 | WARNING | [REPAIR] Failed to repair row 13 after 2 attempts.
+2025-09-30 02:04:56,924 | WARNING | [REPAIR] Failed to repair row 16 after 2 attempts.
+2025-09-30 02:05:09,827 | WARNING | [REPAIR] Failed to repair row 20 after 2 attempts.
+2025-09-30 02:05:14,255 | WARNING | [REPAIR] Failed to repair row 21 after 2 attempts.
+2025-09-30 02:05:19,846 | WARNING | [REPAIR] Failed to repair row 22 after 2 attempts.
+2025-09-30 02:05:28,153 | WARNING | [REPAIR] Failed to repair row 25 after 2 attempts.
+2025-09-30 02:05:35,665 | WARNING | [REPAIR] Failed to repair row 26 after 2 attempts.
+2025-09-30 02:05:40,887 | WARNING | [REPAIR] Failed to repair row 27 after 2 attempts.
+2025-09-30 02:05:44,704 | WARNING | [REPAIR] Failed to repair row 29 after 2 attempts.
+2025-09-30 02:05:50,692 | WARNING | [REPAIR] Failed to repair row 33 after 2 attempts.
+2025-09-30 02:05:56,902 | WARNING | [REPAIR] Failed to repair row 34 after 2 attempts.
+2025-09-30 02:06:03,177 | WARNING | [REPAIR] Failed to repair row 37 after 2 attempts.
+2025-09-30 02:06:09,413 | WARNING | [REPAIR] Failed to repair row 39 after 2 attempts.
+2025-09-30 02:06:15,877 | WARNING | [REPAIR] Failed to repair row 44 after 2 attempts.
+2025-09-30 02:11:20,341 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 02:11:20,341 | WARNING | [REPAIR] Failed to repair row 46 after 2 attempts.
+2025-09-30 02:11:26,641 | WARNING | [REPAIR] Failed to repair row 51 after 2 attempts.
+2025-09-30 02:11:33,062 | WARNING | [REPAIR] Failed to repair row 55 after 2 attempts.
+2025-09-30 02:11:39,234 | WARNING | [REPAIR] Failed to repair row 56 after 2 attempts.
+2025-09-30 02:11:43,545 | WARNING | [REPAIR] Failed to repair row 59 after 2 attempts.
+2025-09-30 02:11:48,845 | WARNING | [REPAIR] Failed to repair row 61 after 2 attempts.
+2025-09-30 02:11:54,429 | WARNING | [REPAIR] Failed to repair row 62 after 2 attempts.
+2025-09-30 02:12:00,226 | WARNING | [REPAIR] Failed to repair row 65 after 2 attempts.
+2025-09-30 02:12:06,494 | WARNING | [REPAIR] Failed to repair row 68 after 2 attempts.
+2025-09-30 02:12:13,419 | WARNING | [REPAIR] Failed to repair row 70 after 2 attempts.
+2025-09-30 02:12:19,390 | WARNING | [REPAIR] Failed to repair row 71 after 2 attempts.
+2025-09-30 02:12:19,412 | INFO | [REPAIR] MESO_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_111822.csv -> MESO_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_111822.csv | repaired=1 (missing 29 -> 28)
+2025-09-30 02:12:25,976 | INFO | [REPAIR] MESO_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_092048.csv -> MESO_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_092048.csv | repaired=1 (missing 1 -> 0)
+2025-09-30 02:12:30,638 | WARNING | [REPAIR] Failed to repair row 1 after 2 attempts.
+2025-09-30 02:12:34,221 | WARNING | [REPAIR] Failed to repair row 2 after 2 attempts.
+2025-09-30 02:12:40,406 | WARNING | [REPAIR] Failed to repair row 7 after 2 attempts.
+2025-09-30 02:12:44,961 | WARNING | [REPAIR] Failed to repair row 31 after 2 attempts.
+2025-09-30 02:12:44,979 | INFO | [REPAIR] MESO_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_115925.csv -> MESO_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_115925.csv | repaired=1 (missing 5 -> 4)
+2025-09-30 02:12:52,406 | WARNING | [REPAIR] Failed to repair row 4 after 2 attempts.
+2025-09-30 02:12:52,432 | INFO | [REPAIR] MESO_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_110040.csv -> MESO_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_110040.csv | repaired=0 (missing 1 -> 1)
+2025-09-30 02:13:23,673 | WARNING | [REPAIR] Failed to repair row 32 after 2 attempts.
+2025-09-30 02:13:37,383 | WARNING | [REPAIR] Failed to repair row 40 after 2 attempts.
+2025-09-30 02:13:53,434 | WARNING | [REPAIR] Failed to repair row 59 after 2 attempts.
+2025-09-30 02:14:04,443 | WARNING | [REPAIR] Failed to repair row 65 after 2 attempts.
+2025-09-30 02:14:04,462 | INFO | [REPAIR] MESO_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_115049.csv -> MESO_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_115049.csv | repaired=2 (missing 6 -> 4)
+2025-09-30 02:14:12,640 | WARNING | [REPAIR] Failed to repair row 4 after 2 attempts.
+2025-09-30 02:14:25,237 | WARNING | [REPAIR] Failed to repair row 7 after 2 attempts.
+2025-09-30 02:14:34,397 | WARNING | [REPAIR] Failed to repair row 20 after 2 attempts.
+2025-09-30 02:14:52,393 | WARNING | [REPAIR] Failed to repair row 31 after 2 attempts.
+2025-09-30 02:19:59,154 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 02:20:04,180 | INFO | [REPAIR] MESO_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_114351.csv -> MESO_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_114351.csv | repaired=3 (missing 7 -> 4)
+2025-09-30 02:20:13,422 | WARNING | [REPAIR] Failed to repair row 17 after 2 attempts.
+2025-09-30 02:20:38,773 | INFO | [REPAIR] MESO_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_094812.csv -> MESO_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_094812.csv | repaired=2 (missing 3 -> 1)
+2025-09-30 02:25:46,646 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 02:30:46,750 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 02:30:46,750 | WARNING | [REPAIR] Failed to repair row 152 after 2 attempts.
+2025-09-30 02:30:46,796 | INFO | [REPAIR] PAAD_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_134251.csv -> PAAD_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_134251.csv | repaired=1 (missing 2 -> 1)
+2025-09-30 02:35:46,924 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 02:40:46,960 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 02:40:46,961 | WARNING | [REPAIR] Failed to repair row 102 after 2 attempts.
+2025-09-30 02:40:47,001 | INFO | [REPAIR] PAAD_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_193220.csv -> PAAD_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250914_193220.csv | repaired=0 (missing 1 -> 1)
+2025-09-30 02:40:55,813 | WARNING | [REPAIR] Failed to repair row 107 after 2 attempts.
+2025-09-30 02:40:55,851 | INFO | [REPAIR] PRAD_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_163206.csv -> PRAD_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_163206.csv | repaired=0 (missing 1 -> 1)
+2025-09-30 02:41:00,125 | WARNING | [REPAIR] Failed to repair row 129 after 2 attempts.
+2025-09-30 02:41:05,169 | INFO | [REPAIR] PRAD_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_193014.csv -> PRAD_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_193014.csv | repaired=1 (missing 2 -> 1)
+2025-09-30 02:46:05,277 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 02:51:05,289 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 02:51:05,289 | WARNING | [REPAIR] Failed to repair row 6 after 2 attempts.
+2025-09-30 02:51:05,360 | INFO | [REPAIR] PRAD_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_010715.csv -> PRAD_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_010715.csv | repaired=0 (missing 1 -> 1)
+2025-09-30 02:51:11,926 | WARNING | [REPAIR] Failed to repair row 109 after 2 attempts.
+2025-09-30 02:51:16,517 | WARNING | [REPAIR] Failed to repair row 306 after 2 attempts.
+2025-09-30 02:51:16,581 | INFO | [REPAIR] PRAD_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_185222.csv -> PRAD_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_185222.csv | repaired=0 (missing 2 -> 2)
+2025-09-30 02:51:25,404 | WARNING | [REPAIR] Failed to repair row 109 after 2 attempts.
+2025-09-30 02:51:25,436 | INFO | [REPAIR] PRAD_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_173305.csv -> PRAD_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_173305.csv | repaired=0 (missing 1 -> 1)
+2025-09-30 02:51:29,699 | WARNING | [REPAIR] Failed to repair row 107 after 2 attempts.
+2025-09-30 02:51:36,860 | WARNING | [REPAIR] Failed to repair row 153 after 2 attempts.
+2025-09-30 02:51:36,879 | INFO | [REPAIR] READ_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_225334.csv -> READ_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_225334.csv | repaired=1 (missing 3 -> 2)
+2025-09-30 02:51:42,470 | WARNING | [REPAIR] Failed to repair row 110 after 2 attempts.
+2025-09-30 02:51:49,585 | WARNING | [REPAIR] Failed to repair row 130 after 2 attempts.
+2025-09-30 02:51:49,610 | INFO | [REPAIR] READ_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_204327.csv -> READ_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_204327.csv | repaired=0 (missing 2 -> 2)
+2025-09-30 02:52:00,129 | WARNING | [REPAIR] Failed to repair row 91 after 2 attempts.
+2025-09-30 02:52:23,135 | INFO | [REPAIR] READ_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_224144.csv -> READ_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_224144.csv | repaired=3 (missing 4 -> 1)
+2025-09-30 02:52:30,652 | INFO | [REPAIR] READ_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_223230.csv -> READ_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_223230.csv | repaired=1 (missing 1 -> 0)
+2025-09-30 02:52:39,101 | INFO | [REPAIR] READ_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_201023.csv -> READ_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_201023.csv | repaired=1 (missing 1 -> 0)
+2025-09-30 02:52:46,017 | INFO | [REPAIR] SKCM_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_000117.csv -> SKCM_T14N03__kewltm__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_000117.csv | repaired=1 (missing 1 -> 0)
+2025-09-30 02:52:55,596 | WARNING | [REPAIR] Failed to repair row 6 after 2 attempts.
+2025-09-30 02:53:03,065 | WARNING | [REPAIR] Failed to repair row 46 after 2 attempts.
+2025-09-30 02:53:03,080 | INFO | [REPAIR] SKCM_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_230116.csv -> SKCM_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_230116.csv | repaired=0 (missing 2 -> 2)
+2025-09-30 02:53:14,386 | WARNING | [REPAIR] Failed to repair row 81 after 2 attempts.
+2025-09-30 02:53:14,399 | INFO | [REPAIR] SKCM_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_234428.csv -> SKCM_T14N03__kewrag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_234428.csv | repaired=1 (missing 2 -> 1)
+2025-09-30 02:53:48,343 | WARNING | [REPAIR] Failed to repair row 39 after 2 attempts.
+2025-09-30 02:54:01,789 | WARNING | [REPAIR] Failed to repair row 43 after 2 attempts.
+2025-09-30 02:54:08,471 | INFO | [REPAIR] SKCM_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_001827.csv -> SKCM_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_001827.csv | repaired=3 (missing 5 -> 2)
+2025-09-30 02:54:29,470 | WARNING | [REPAIR] Failed to repair row 12 after 2 attempts.
+2025-09-30 02:54:29,483 | INFO | [REPAIR] SKCM_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_232737.csv -> SKCM_T14N03__rag__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_232737.csv | repaired=1 (missing 2 -> 1)
+2025-09-30 02:54:33,829 | WARNING | [REPAIR] Failed to repair row 12 after 2 attempts.
+2025-09-30 02:54:33,842 | INFO | [REPAIR] SKCM_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_001048.csv -> SKCM_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_001048.csv | repaired=0 (missing 1 -> 1)
+2025-09-30 02:54:44,481 | WARNING | [REPAIR] Failed to repair row 22 after 2 attempts.
+2025-09-30 02:54:44,503 | INFO | [REPAIR] SKCM_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_230832.csv -> SKCM_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250915_230832.csv | repaired=0 (missing 1 -> 1)
+2025-09-30 02:54:51,644 | INFO | [REPAIR] STAD_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_095445.csv -> STAD_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_095445.csv | repaired=1 (missing 1 -> 0)
+2025-09-30 02:59:51,687 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 03:00:03,437 | INFO | [REPAIR] STAD_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_043835.csv -> STAD_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_043835.csv | repaired=2 (missing 2 -> 0)
+2025-09-30 03:00:21,252 | WARNING | [REPAIR] Failed to repair row 7 after 2 attempts.
+2025-09-30 03:00:21,290 | INFO | [REPAIR] STAD_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_012118.csv -> STAD_T14N03__zscot__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_012118.csv | repaired=1 (missing 2 -> 1)
+2025-09-30 03:00:35,052 | WARNING | [REPAIR] Failed to repair row 14 after 2 attempts.
+2025-09-30 03:00:41,805 | INFO | [REPAIR] TGCT_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_135625.csv -> TGCT_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_135625.csv | repaired=1 (missing 2 -> 1)
+2025-09-30 03:00:50,117 | WARNING | [REPAIR] Failed to repair row 295 after 2 attempts.
+2025-09-30 03:00:50,948 | WARNING | [REPAIR] Failed to repair row 347 after 2 attempts.
+2025-09-30 03:00:51,033 | INFO | [REPAIR] THCA_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_140110.csv -> THCA_T14N03__kewltm__t__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_140110.csv | repaired=0 (missing 2 -> 2)
+2025-09-30 03:01:04,001 | WARNING | [REPAIR] Failed to repair row 12 after 2 attempts.
+2025-09-30 03:01:10,832 | WARNING | [REPAIR] Failed to repair row 28 after 2 attempts.
+2025-09-30 03:01:15,701 | WARNING | [REPAIR] Failed to repair row 32 after 2 attempts.
+2025-09-30 03:01:25,934 | WARNING | [REPAIR] Failed to repair row 43 after 2 attempts.
+2025-09-30 03:06:32,523 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 03:06:32,523 | WARNING | [REPAIR] Failed to repair row 133 after 2 attempts.
+2025-09-30 03:06:44,972 | WARNING | [REPAIR] Failed to repair row 145 after 2 attempts.
+2025-09-30 03:06:50,756 | INFO | [REPAIR] THCA_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_234056.csv -> THCA_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_234056.csv | repaired=2 (missing 8 -> 6)
+2025-09-30 03:07:06,339 | WARNING | [REPAIR] Failed to repair row 10 after 2 attempts.
+2025-09-30 03:07:31,728 | WARNING | [REPAIR] Failed to repair row 168 after 2 attempts.
+2025-09-30 03:07:59,841 | WARNING | [REPAIR] Failed to repair row 242 after 2 attempts.
+2025-09-30 03:08:29,693 | WARNING | [REPAIR] Failed to repair row 380 after 2 attempts.
+2025-09-30 03:08:29,769 | INFO | [REPAIR] THCA_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_223530.csv -> THCA_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_223530.csv | repaired=3 (missing 7 -> 4)
+2025-09-30 03:13:31,842 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 03:13:31,842 | WARNING | [REPAIR] Failed to repair row 299 after 2 attempts.
+2025-09-30 03:18:31,859 | ERROR | [LLM ERROR] Request timed out.
+2025-09-30 03:18:33,558 | WARNING | [REPAIR] Failed to repair row 418 after 2 attempts.
+2025-09-30 03:18:33,630 | INFO | [REPAIR] THCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_213524.csv -> THCA_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250916_213524.csv | repaired=0 (missing 2 -> 2)
+2025-09-30 03:19:09,299 | WARNING | [REPAIR] Failed to repair row 26 after 2 attempts.
+2025-09-30 03:19:17,987 | WARNING | [REPAIR] Failed to repair row 29 after 2 attempts.
+2025-09-30 03:19:29,806 | INFO | [REPAIR] UVM_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250917_013915.csv -> UVM_T14N03__kewrag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250917_013915.csv | repaired=7 (missing 9 -> 2)
+2025-09-30 03:19:39,203 | INFO | [REPAIR] UVM_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250917_013627.csv -> UVM_T14N03__rag__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250917_013627.csv | repaired=1 (missing 1 -> 0)
+2025-09-30 03:19:42,132 | INFO | [REPAIR] UVM_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250917_012423.csv -> UVM_T14N03__zscot__n__mistralai_Mixtral-8x7B-Instruct-v0.1__seed42__20250917_012423.csv | repaired=1 (missing 1 -> 0)
+2025-09-30 03:19:42,153 | INFO | 
+Repair pass done. Manifest: /home/yl3427/cylab/selfCorrectionAgent/runs3/manifest_repair_r1__20250929_203424.csv
+
+2025-09-30 03:19:42,154 | INFO | [REPAIR] round=1, repaired_total=385
