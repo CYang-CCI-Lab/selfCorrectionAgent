@@ -1,0 +1,10 @@
+2025-10-01 00:01:11,280 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs_med/BLCA_T14N03__kewltm__n__m42-health_Llama3-Med42-70B__seed42__20251001_000111.log
+2025-10-01 00:01:11,280 | INFO | === RUN START === method=kewltm task=n dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/BLCA_T14N03.csv model=m42-health/Llama3-Med42-70B
+2025-10-01 00:01:11,300 | INFO | Filtered dataset: Removed 25 rows with missing 'N03' labels.
+2025-10-01 00:01:11,300 | INFO | [KEwLTM] Dynamic train_size=17 (fraction=0.050)
+2025-10-01 00:01:11,309 | INFO | [KEwLTM] Inducing memory from 17 reports (threshold=80)...
+2025-10-01 00:06:11,413 | ERROR | [LLM ERROR] Request timed out.
+2025-10-01 01:45:21,931 | ERROR | [LLM ERROR] Request timed out.
+2025-10-01 03:00:07,481 | INFO | [KEwLTM] Final memory length: 4
+2025-10-01 03:00:07,565 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs_med/BLCA_T14N03__kewltm__n__m42-health_Llama3-Med42-70B__seed42__20251001_000111.csv
+2025-10-01 03:00:07,565 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs_med/BLCA_T14N03__kewltm__n__m42-health_Llama3-Med42-70B__seed42__20251001_000111.csv

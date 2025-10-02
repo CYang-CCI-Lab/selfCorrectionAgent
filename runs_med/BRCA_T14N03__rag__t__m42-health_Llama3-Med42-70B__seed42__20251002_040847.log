@@ -1,0 +1,23 @@
+2025-10-02 04:08:47,705 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs_med/BRCA_T14N03__rag__t__m42-health_Llama3-Med42-70B__seed42__20251002_040847.log
+2025-10-02 04:08:47,705 | INFO | === RUN START === method=rag task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/BRCA_T14N03.csv model=m42-health/Llama3-Med42-70B
+2025-10-02 04:26:48,055 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 277 (char 276)
+2025-10-02 04:26:48,056 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-10-02 04:26:48,056 | ERROR | json5 fallback failed: No module named 'json5'
+2025-10-02 04:26:48,057 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-10-02 04:26:48,057 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-10-02 04:26:48,057 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-10-02 04:26:48,057 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-10-02 05:21:24,000 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 15 (char 14)
+2025-10-02 05:21:24,001 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-10-02 05:21:24,001 | ERROR | json5 fallback failed: No module named 'json5'
+2025-10-02 05:21:24,002 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-10-02 05:21:24,002 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-10-02 05:21:24,002 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-10-02 05:21:24,002 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-10-02 05:56:33,685 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 15 (char 14)
+2025-10-02 05:56:33,685 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-10-02 05:56:33,686 | ERROR | json5 fallback failed: No module named 'json5'
+2025-10-02 05:56:33,686 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-10-02 05:56:33,686 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-10-02 05:56:33,686 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-10-02 05:56:33,686 | ERROR | All JSON parsing attempts failed. Returning None.

@@ -16,3 +16,5 @@
 2025-09-30 22:59:01,832 | ERROR | jsom fallback failed: No module named 'jsom'
 2025-09-30 22:59:01,833 | ERROR | json_repair fallback failed: No module named 'json_repair'
 2025-09-30 22:59:01,833 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-10-01 00:01:11,279 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs_med/BLCA_T14N03__kewrag__t__m42-health_Llama3-Med42-70B__seed42__20250930_210315.csv
+2025-10-01 00:01:11,279 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs_med/BLCA_T14N03__kewrag__t__m42-health_Llama3-Med42-70B__seed42__20250930_210315.csv

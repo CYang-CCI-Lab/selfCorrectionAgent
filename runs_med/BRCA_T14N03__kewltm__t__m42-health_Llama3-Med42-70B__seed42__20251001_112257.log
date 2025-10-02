@@ -1,0 +1,28 @@
+2025-10-01 11:22:57,600 | INFO | Logging initialized. Level=INFO, File=/home/yl3427/cylab/selfCorrectionAgent/runs_med/BRCA_T14N03__kewltm__t__m42-health_Llama3-Med42-70B__seed42__20251001_112257.log
+2025-10-01 11:22:57,600 | INFO | === RUN START === method=kewltm task=t dataset=/home/yl3427/cylab/selfCorrectionAgent/per_cancer_type/BRCA_T14N03.csv model=m42-health/Llama3-Med42-70B
+2025-10-01 11:22:57,636 | INFO | [KEwLTM] Dynamic train_size=52 (fraction=0.050)
+2025-10-01 11:22:57,645 | INFO | [KEwLTM] Inducing memory from 52 reports (threshold=80)...
+2025-10-01 14:12:39,668 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 241 (char 240)
+2025-10-01 14:12:39,668 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-10-01 14:12:39,669 | ERROR | json5 fallback failed: No module named 'json5'
+2025-10-01 14:12:39,669 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-10-01 14:12:39,669 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-10-01 14:12:39,669 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-10-01 14:12:39,669 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-10-01 15:51:31,465 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 343 (char 342)
+2025-10-01 15:51:31,466 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-10-01 15:51:31,466 | ERROR | json5 fallback failed: No module named 'json5'
+2025-10-01 15:51:31,466 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-10-01 15:51:31,466 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-10-01 15:51:31,467 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-10-01 15:51:31,467 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-10-01 18:07:01,590 | ERROR | Standard json.loads failed: Unterminated string starting at: line 1 column 459 (char 458)
+2025-10-01 18:07:01,590 | ERROR | demjson3 fallback failed: No module named 'demjson3'
+2025-10-01 18:07:01,590 | ERROR | json5 fallback failed: No module named 'json5'
+2025-10-01 18:07:01,591 | ERROR | dirtyjson fallback failed: No module named 'dirtyjson'
+2025-10-01 18:07:01,591 | ERROR | jsom fallback failed: No module named 'jsom'
+2025-10-01 18:07:01,591 | ERROR | json_repair fallback failed: No module named 'json_repair'
+2025-10-01 18:07:01,591 | ERROR | All JSON parsing attempts failed. Returning None.
+2025-10-01 19:37:51,938 | INFO | [KEwLTM] Final memory length: 7
+2025-10-01 19:37:52,077 | INFO | Saved results to /home/yl3427/cylab/selfCorrectionAgent/runs_med/BRCA_T14N03__kewltm__t__m42-health_Llama3-Med42-70B__seed42__20251001_112257.csv
+2025-10-01 19:37:52,077 | INFO | === RUN END === results=/home/yl3427/cylab/selfCorrectionAgent/runs_med/BRCA_T14N03__kewltm__t__m42-health_Llama3-Med42-70B__seed42__20251001_112257.csv

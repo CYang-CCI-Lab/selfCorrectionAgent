@@ -42,8 +42,9 @@ _T_RE = re.compile(r"T\s*([1-4])(?:\s*[A-D])?(?!\s*\d)", re.IGNORECASE)
 _N_RE = re.compile(r"N\s*([0-3])(?:\s*[A-D])?(?!\s*\d)", re.IGNORECASE)
 
 def stage_to_idx(task: str, stage) -> Optional[int]:
-    """텍스트 어디에 있든 T/N 스테이지 토큰을 '부분 일치'로 찾아 정규화.
-    T -> 0..3 (T1..T4), N -> 0..3 (N0..N3). 못 찾으면 None.
+    """
+    Find and normalize a T/N stage token with 'partial match' anywhere in the text.
+    T -> 0..3 (T1..T4), N -> 0..3 (N0..N3). Return None if not found.
     """
     if pd.isna(stage):
         return None
@@ -177,10 +178,8 @@ def repair_missing_predictions(
 
             elif method == "kewrag":
                 rules = _coerce_list(out.at[i, "kewrag_rules"]) if "kewrag_rules" in out.columns else []
-                # If rules are missing, we can still proceed with a bland placeholder,
-                # or regenerate from rag_context if provided.
+      
                 if not rules and rag_context:
-                    # regenerate lightweight rules once per repair call (optional)
                     prompt_gen = PROMPT_GENERATE_RULES_FROM_RAG.format(
                         cancer_type=cfg.cancer_type,
                         rag_context=rag_context,
@@ -630,7 +629,7 @@ class KEwRAG(BaseMethod):
         data, raw = self.llm.json_chat(messages, schema=rules_schema())
         if data and isinstance(data.get("rules"), list):
             rules = [r.strip() for r in data["rules"] if isinstance(r, str) and r.strip()]
-            # dedupe
+        
             dedup = []
             seen = set()
             for r in rules:
@@ -880,7 +879,7 @@ def main() -> None:
     parser.add_argument("--dataset", required=True, help="Path to CSV with a 'text' column.")
     parser.add_argument("--context-file", default=None, help="JSON with 'rag_raw_t14'/'rag_raw_n03' (for rag/kewrag).")
     parser.add_argument("--cancer-type", default="breast", help="Human-readable cancer type for prompts.")
-    parser.add_argument("--model", required=True, help="Model name served by your OpenAI-compatible endpoint.")
+    parser.add_argument("--model", required=True, help="Model name served by OpenAI-compatible endpoint.")
     parser.add_argument("--temperature", type=float, default=0.1)
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--train-size", type=int, default=40, help="KEwLTM: number of reports to induce memory.")
